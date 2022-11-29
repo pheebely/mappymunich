@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Display a globe on a webpage</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    
+
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYWlkZW4xMTEyIiwiYSI6ImNsYXJiNWR0eTFkOTQzb25wbHhiY2tlMncifQ.1PbHt2YX0xMcRB7TOfYaaw';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+            style: 'mapbox://styles/mapbox/dark-v11',  // https://docs.mapbox.com/api/maps/styles/ to find all default styles
+            zoom: 15,  // low to see the entire world, high to 20 or 30 to the sidewalk level
+            center: [11.575409, 48.137121],  // http://bboxfinder.com/ to get coordinates
+            projection: 'globe'
+        });
+
+        // create the popup
+        const popup = new mapboxgl.Popup({ offset: 25 }).setText(
+            'Neues Rathaus'
+        );
+
+
+
+        // Create a default Marker and add it to the map.
+        const marker1 = new mapboxgl.Marker({ // https://docs.mapbox.com/mapbox-gl-js/api/markers/ marker parameters
+            color: '#34eb95',  // search for html color picker
+            scale: 0.8
+        })
+            .setLngLat([11.575918, 48.137755])
+            .addTo(map)
+            .setPopup(popup)
+            .color('#4FB1CE');
+
+        map.on('load', () => {
+            // Set the default atmosphere style
+            map.setFog({});
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- Press CONTROL can move the seeing view of map -->
