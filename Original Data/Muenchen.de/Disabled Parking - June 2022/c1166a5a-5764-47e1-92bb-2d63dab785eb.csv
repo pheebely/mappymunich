@@ -1,0 +1,865 @@
+﻿_id,ADDRESS.ID,ADDRESS.Organisation,ADDRESS.Organisationsbereich,ADDRESS.Bezeichnung,ADDRESS.Strasse,ADDRESS.Hausnummer,ADDRESS.Postleitzahl,ADDRESS.Ort,ADDRESS.c/o (Postanschrift),ADDRESS.Strasse (Postanschrift),ADDRESS.Hausnummer (Postanschrift),ADDRESS.Postfach (Postanschrift),ADDRESS.Postleitzahl (Postanschrift),ADDRESS.Ort (Postanschrift),ADDRESS.Lat,ADDRESS.Lon,SERVICE.ID,ADDRESS.Telefon,ADDRESS.Fax,ADDRESS.Mobilnummer,ADDRESS.E-Mail,ADDRESS.Homepage,ADDRESS.Offnungszeiten (Text),ADDRESS.Erreichbarkeit,ADDRESS.Kfz-Parkplatze fur Behinderte,ADDRESS.Hilfen fur Gehbehinderte,ADDRESS.Hilfen fur Sehbehinderte,ADDRESS.Hilfen fur gehorlose und schwerhorige Menschen,ADDRESS.Barrierefreiheit (Anmerkung),SERVICE.Bezeichnung,SERVICE.Anzeigename,SERVICE.Beschreibung,SERVICE.Kurzbeschreibung,Schlagworte,Dokumente & Links,Angebot
+1,10112306,,,"Behindertenparkplatz ""Zumpestraße ggü. 10""",,,,,,,,,,,48.13842345619924,11.606018984666873,10112307,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<div class=""textarea"">
+Akademietheater - Anzahl: 1 - zeitliche Einschränkung: 9.00-23.00 Uhr</div>
+",,,,
+2,10112611,,,"Behindertenparkplatz ""Herzogspitalstraße 13""",,,,,,,,,,,48.13789128996503,11.56678953679768,10112612,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,<p>allgemeiner Bedarf (Stadtsteueramt) - Anzahl: 2 - zeitliche Einschränkung: keine</p>,,,,
+3,10113573,,,"Behindertenparkplatz ""Sternwartstraße 2""",,,,,,,,,,,48.14591524513895,11.603489108966377,10113574,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Sternwartstraße 2""","Behindertenparkplatz ""Sternwartstraße 2""","<div class=""textarea"">
+Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: werktags 7.00-18.00 Uhr</div>",,,,
+4,10114101,,,"Behindertenparkplatz ""Weißenburger Straße ggü. 50""",,,,,,,,,,,48.12827521646025,11.602328355325922,10114102,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Weißenburger Straße ggü. 50""","Behindertenparkplatz ""Weißenburger Straße ggü. 50""","<div class=""textarea"">
+<p>
+Behindertenberatung - Anzahl: 1 - zeitliche Einschränkung: 9.00-23.00 Uhr</p>
+</div>",,,,
+5,10114672,,,"Behindertenparkplatz ""Keferloherstraße 71""",,,,,,,,,,,48.18175083847455,11.5677116077315,10114673,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<div class=""textarea"">
+Kulturzentrum, Kirche, allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine</div>
+",,,,
+6,10115132,,,"Behindertenparkplatz ""Grohmannstraße 3""",,,,,,,,,,,48.2196994944478,11.552867662131002,10115133,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Grohmannstraße 3""","Behindertenparkplatz ""Grohmannstraße 3""","<div class=""textarea"">
+<p>
+Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+</div>",,,,
+7,10115983,,,"Behindertenparkplatz ""Floriansmühlstraße 5""",,,,,,,,,,,48.1920363818967,11.61912636060894,10115984,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<div class=""type-text"">
+<div class=""textarea"">
+Theater - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr 17.00-22.00 Uhr, Sa+So 10.00-22.00 Uhr</div>
+</div>
+",,,,
+8,10139105,,,"Behindertenparkplatz ""Frauenlobstraße 5""",,,,,,,,,,,48.13045873512116,11.56453456430077,10139106,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Kirche - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+9,10165520,,,"Behindertenparkplatz ""Muspillistraße 31""",,,,,,,,,,,48.17125567111625,11.624093272875202,10165521,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Pfarramt und Kirche St. Lorenz - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+10,10165522,,,"Behindertenparkplatz ""Winzererstraße 106""",,,,,,,,,,,48.16431234614394,11.562836974786382,10165523,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Landesarbeitsgericht - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr,,,,
+11,10165524,,,"Behindertenparkplatz ""Breslauer Straße 2""",,,,,,,,,,,48.181279789901595,11.508586995706164,10165525,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Postamt, Ärztehaus und Apotheke - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-19.00, Sa werktags 9.00-13.00, bis 2 Stunden",,,,
+12,10165526,,,"Behindertenparkplatz ""Wörthstraße 9""",,,,,,,,,,,48.131550094320374,11.598810146068455,10165527,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Osteopathiepraxis - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00,,,,
+13,10165799,,,"Behindertenparkplatz ""Mariahilfplatz 17""",,,,,,,,,,,48.12411692619948,11.583581712267785,10165800,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<div class=""textarea"">
+Landratsamt - Anzahl: 1 - zeitliche Einschränkung: keine</div>
+",,,,
+14,10165801,,,"Behindertenparkplatz ""Theresienstraße 35 a""",,,,,,,,,,,48.14825710769967,11.574275218863704,10165802,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<div class=""textarea"">
+Museum Brandhorst - Anzahl: 2 - zeitliche Einschränkung: 9.00-20.00 bis 3 Stunden</div>
+",,,,
+15,10165803,,,"Behindertenparkplatz ""Fraunbergplatz 1""",,,,,,,,,,,48.100095977676744,11.544537130491742,10165804,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<div class=""textarea"">
+Kirche Maria Thalheim - Anzahl: 1 - zeitliche Einschränkung: keine</div>
+",,,,
+16,10170596,,,"Behindertenparkplatz ""Rathenaustraße 74""",,,,,,,,,,,48.20121925078049,11.573178017458758,10170597,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,lokaler Bedarf - Anzahl: 1 - zeitliche Einschränkung: 7.00-20.00 Uhr bis 3 Stunden,,,,
+17,10172281,,,"Behindertenparkplatz ""Freischützstraße 65""",,,,,,,,,,,48.16547913360779,11.64444156547407,10172282,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Ärztehaus, Apotheke - Anzahl: 1 - zeitliche Einschränkung: keine",,,,
+18,10176137,,,"Behindertenparkplatz ""Landsberger Straße 511""",,,,,,,,,,,48.14653932440124,11.461547900908574,10176140,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+19,10182040,,,"Behindertenparkplatz ""Elisenstraße Nähe Nr. 3""",,,,,,,,,,,48.1412966884266,11.563589787551834,10182041,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<div class=""textarea"">
+Oberlandesgericht - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 7.00-20.00 Uhr</div>
+",,,,
+20,10193655,,,"Behindertenparkplatz ""Oberföhringer Straße 2""",,,,,,,,,,,48.1511981531218,11.6085420863385,10193656,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Geschäfte und Arztpraxen - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+21,10195363,,,"Behindertenparkplatz ""Haydnstraße 7""",,,,,,,,,,,48.13074470721654,11.556988804611265,10195364,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Krankenhaus - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 08.00-17.00 Uhr,,,,
+22,10195365,,,"Behindertenparkplatz ""Meindstraße 8""",,,,,,,,,,,48.11885358982158,11.538220100803029,10195366,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Schule - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+23,10195367,,,"Behindertenparkplatz ""Hans-Stützle-Straße 20""",,,,,,,,,,,48.13941436601904,11.41063728332681,10195368,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Gesundheitszentrum, Ladengeschäfte - Anzahl: 1 - zeitliche Einschränkung: werktags 07.00-19.00 Uhr",,,,
+24,10195369,,,"Behindertenparkplatz ""Frundsbergstraße Höhe Dom-Pedro-Platz""",,,,,,,,,,,48.159534354287516,11.53355424194032,10195370,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Schule - Anzahl: 1 - zeitliche Einschränkung: Schultage 07.00-17.00 Uhr bis 1 Stunde,,,,
+25,10198081,,,"Behindertenparkplatz ""Schwanthalerstraße 69""",,,,,,,,,,,48.13744328957994,11.555246114734524,10198082,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Referat für Umwelt und Gesundheit - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 7.00-18.00 Uhr,,,,
+26,10198083,,,"Behindertenparkplatz ""Welfenstraße 60""",,,,,,,,,,,48.12234453511017,11.59035623073441,10198084,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Welfenstraße 60""","Behindertenparkplatz ""Welfenstraße 60""","Welfenhöfe, allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine",,,,
+27,10202212,,,"Behindertenparkplatz ""Dantestraße 22""",,,,,,,,,,,48.168847502957036,11.527265310294947,10202213,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Physiotherapie - Anzahl: 1 - zeitliche Einschränkung: Mo-Sa 07.30-20.00 Uhr,,,,
+28,10202340,,,"Behindertenparkplatz ""Belgradstraße 106/108""",,,,,,,,,,,48.17190279558922,11.573501229287409,10202341,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Mehrgenerationenprojekt - Anzahl: 2 - zeitliche Einschränkung: bis 5 Stunden,,,,
+29,10204520,,,"Behindertenparkplatz ""Siebertstraße 2""",,,,,,,,,,,48.14375430573502,11.599143147465968,10204521,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Siebertstraße 2""","Behindertenparkplatz ""Siebertstraße 2""",Bibliothek - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+30,10204526,,,"Behindertenparkplatz ""Schießstättstraße 30""",,,,,,,,,,,48.13506795578483,11.545488238338763,10204527,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Berdarf - Anzahl: 1 - zeitliche Beschränkung: Mo-Fr werktags 08.00-18.00 Uhr,,,,
+31,10204674,,,"Behindertenparkplatz ""Nikolaistraße 2""",,,,,,,,,,,48.15901852976265,11.58603250980315,10204675,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 08.00 bis 19.00 Uhr,,,,
+32,10204676,,,"Behindertenparkplatz ""Nikolaistraße 2""",,,,,,,,,,,48.15901852976265,11.586027145384971,10204677,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 08.00-19.00 Uhr,,,,
+33,10204678,,,"Behindertenparkplatz ""Maxburgstraße 5""",,,,,,,,,,,48.13997065294227,11.569257974627027,10204679,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Erzbischöfliche Ordinariat München - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+34,10207484,,,"Behindertenparkplatz ""Hackenstraße 1""",,,,,,,,,,,48.135749958120336,11.5709102153792,10207485,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Hackenstraße 1""","Behindertenparkplatz ""Hackenstraße 1""",Fußgängerzone - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+35,10207486,,,"Behindertenparkplatz ""Weimarer Straße 4""",,,,,,,,,,,48.18505922399964,11.587496995925374,10207487,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Hotel mit barrierefreien Zimmern - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+36,10207854,,,"Behindertenparkplatz ""Hackenstraße 1""",,,,,,,,,,,48.13566045701896,11.570963859559185,10207855,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Fußgängerzone - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+37,10207856,,,"Behindertenparkplatz ""Kreillerstr. 62 a""",,,,,,,,,,,48.126372974680784,11.64081931113272,10207857,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Praxis für Orthopädie - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-19.00 Uhr,,,,
+38,10216483,,,"Behindertenparkplatz ""Sonnenstraße 17""",,,,,,,,,,,48.136773839631644,11.56520515680523,10216484,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Sanitätshaus - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+39,10216485,,,"Behindertenparkplatz ""Seidlstraße 23""",,,,,,,,,,,48.1461202893541,11.558161675933082,10216486,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Orthopädiefirma - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 09.00-18.00 Uhr,,,,
+40,10216487,,,"Behindertenparkplatz ""Brienner Straße 55""",,,,,,,,,,,48.14718691498562,11.560208201411024,10216488,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Schmerzzentrum - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 09.00 bis 19.00 Uhr,,,,
+41,10216489,,,"Behindertenparkplatz ""Herzogspitalstraße 3""",,,,,,,,,,,48.13760438585833,11.568418443204145,10216490,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>Geschäfte, Fußgängerzone - Anzahl: 2 - zeitliche Einschränkung: keine</p><p>Hinweis:<br>Aufgrund einer Baustelle befindet sich ab 20. Juni 2022&nbsp; der Behindertenparkplatz bei Herzogspitalstraße 5.</p>",,,,
+42,10217321,,,"Behindertenparkplatz ""Galeriestraße 2""",,,,,,,,,,,48.144194580235684,11.578605473041588,10217322,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Fußgängerzone und Geschäfte - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+43,10217323,,,"Behindertenparkplatz ""Steinerstr. 4""",,,,,,,,,,,48.10388845344518,11.53979659080979,10217324,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Orthopädigeschäft - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 07.30-18.00 Uhr bis 2 Stunden,,,,
+44,10222956,,,"Behindertenparkplatz ""Landaubogen 3 a""",,,,,,,,,,,48.12926609455491,11.531497836119872,10222957,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Rehability Reha-Fachhandel - Anzahl: 2 - zeitliche Einschränkung: Mo-Do 08.00-18.00 Uhr, Fr 08.00-21.00 Uhr, Sa 08.00-15.00 Uhr werktags bis 3 Stunden",,,,
+45,10222958,,,"Behindertenparkplatz ""Wasserburger Landstraße 182""",,,,,,,,,,,48.115516951452385,11.6949167847475,10222959,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Radiologie München Ost - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr 07.00 bis 20.00 Uhr werktags bis 3 Stunden,,,,
+46,10229536,,,"Behindertenparkplatz ""Truderinger Str. 265 b""",,,,,,,,,,,48.12445189601849,11.665707528579249,10229537,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Schule - Anzahl: 1 - zeitliche Einschränkung: Schultage 07.00-16.00 Uhr,,,,
+47,10229538,,,"Behindertenparkplatz ""Perchtinger Str. 5""",,,,,,,,,,,48.09584743749234,11.511389315138068,10229539,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+48,10233693,,,"Behindertenparkplatz ""Sparkassenstraße 2""",,,,,,,,,,,48.13668613030149,11.577344834804745,10233694,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Stadtsparkasse, Fußgängerzone, Geschäfte - Anzahl: 3 - zeitliche Einschränkung: keine",,,,
+49,10233876,,,"Behindertenparkplatz ""Leonrodstraße 57""",,,,,,,,,,,48.1573581168261,11.543213725094084,10233877,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung Mo-Fr werktags 09.00-16.00 Uhr bis 4 Stunden,,,,
+50,10237984,,,"Behindertenparkplatz ""Arcisstraße 16""",,,,,,,,,,,48.14695247400521,11.567643284800303,10237985,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Ägyptisches Museum - Anzahl: 1 - zeitliche Einschränkung: Mo-So 09.00-20.00 Uhr,,,,
+51,10237986,,,"Behindertenparkplatz ""Garchinger Straße 37""",,,,,,,,,,,48.18153257360788,11.603686809535347,10237987,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: 08.00-18.00 Uhr bis 2 Stunden,,,,
+52,10237988,,,"Behindertenparkplatz ""Hansastraße 2""",,,,,,,,,,,48.13546534407322,11.524776220329429,10237989,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Sozialbürgerhaus - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 08.00-17.00 Uhr,,,,
+53,10237990,,,"Behindertenparkplatz ""Hohenzollernstraße 16/18""",,,,,,,,,,,48.15968947879654,11.583532691001276,10237991,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: werktags 09.00-19.00 Uhr,,,,
+54,10237992,,,"Behindertenparkplatz ""Kaflerstraße 14 Seite: Emil-Neuburger-Straße""",,,,,,,,,,,48.1496601126171,11.458673179165997,10237993,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+55,10237994,,,"Behindertenparkplatz ""Luise-Kiesselbach-Platz 2""",,,,,,,,,,,48.11347369272783,11.518191397199388,10237995,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Altenheim - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+56,10238004,,,"Behindertenparkplatz ""Werner-Eckert-Straße 7""",,,,,,,,,,,48.134321501899215,11.686620712265325,10238005,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+57,10238006,,,"Behindertenparkplatz ""Zamdorfer Straße 90""",,,,,,,,,,,48.138721306151176,11.64204776286229,10238007,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Zamdorfer Straße 90""","Behindertenparkplatz ""Zamdorfer Straße 90""",Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+58,10238770,,,"Behindertenparkplatz ""Agnes-Bernauer-Straße 89""",,,,,,,,,,,48.13960551748289,11.499255001556735,10238771,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Sa werktags 08.00-20.00 Uhr,,,,
+59,10238772,,,"Behindertenparkplatz ""Fürstenrieder Straße 51 Seite: Hogenbergstraße""",,,,,,,,,,,48.13687407868202,11.503305137168093,10238773,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgeminer Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Sa werktags 09.00-20.00 Uhr,,,,
+60,10238774,,,"Behindertenparkplatz ""Fürstenrieder Straße 51 Seite: Hogenbergstraße""",,,,,,,,,,,48.1368633387934,11.50331318379491,10238775,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Sa werktags 09.00-20.00 Uhr,,,,
+61,10242222,,,"Behindertenparkplatz ""Deisenhofener Straße 17 Seite: Herzogstandstraße""",,,,,,,,,,,48.114399526423746,11.58277630805881,10242223,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Sa werktags 09.00-23.00 Uhr,,,,
+62,10245342,,,"Behindertenparkplatz ""Fritz-Winter-Straße 10""",,,,,,,,,,,48.18385031843814,11.597509682176069,10245343,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+63,10268124,,,"Behindertenparkplatz ""Markgrafenstraße 33""",,,,,,,,,,,48.108602494077715,11.675178408609217,10268125,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Grundschule Markgrafenstraße 33 - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 6.00 - 18.00 Uhr bis 2 Stunden,,,,
+64,10268126,,,"Behindertenparkplatz ""Baubergerstraße 8""",,,,,,,,,,,48.180345046458804,11.510434448729297,10268127,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Münchner Volkshochschule - Anzahl: 1 - zeitliche Einschränkung: Mo-Sa 07.00-21.00 Uhr, So 09.00-18.00 Uhr",,,,
+65,10268128,,,"Behindertenparkplatz ""Herzogstraße 129""",,,,,,,,,,,48.16343052973116,11.564438045027309,10268129,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+66,10268130,,,"Behindertenparkplatz ""Kirchenstraße 84""",,,,,,,,,,,48.13292164785178,11.607541143890836,10268131,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 07.00-18.00 Uhr,,,,
+67,10268132,,,"Behindertenparkplatz ""Edmund-Rumpler-Straße 1""",,,,,,,,,,,48.194890358491996,11.609271168704348,10268133,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 4 - zeitliche Einschränkung: 06.00-20.00 Uhr,,,,
+68,10268134,,,"Behindertenparkplätze ""Gärtnerplatz 3 Seite: Klenzestraße""",,,,,,,,,,,48.13137854200965,11.575539708138534,10268135,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,<p>Staatstheater am Gärtnerplatz - Anzahl: 3 - zeitliche Einschränkung: 09.00-23.00 Uhr<br><br></p><p>Hinweis:<br>Am 28. Juni 2022 von 7 bis 18 Uhr steht der Behindertenparkplatz nicht zur Verfügung.</p>,,,,
+69,10268136,,,"Behindertenparkplätze ""Gärtnerplatz 3 Seite: Reichenbachstraße""",,,,,,,,,,,48.13123532797867,11.575917899609767,10268137,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Staatstheater am Gärtnerplatz - Anzahl: 3 - zeitliche Einschränkung: 09.00-23-00 Uhr,,,,
+70,10268138,,,"Behindertenparkplätze ""Burgstraße 3""",,,,,,,,,,,48.137432549809795,11.57742530107562,10268139,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 3 - zeitliche Einschränkung: keine,,,,
+71,10268836,,,"Behindertenparkplatz ""Pacellistraße 5""",,,,,,,,,,,48.140736713015365,11.569802463056392,10268837,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Amtsgericht München - Anzahl: 3 - zeitliche Einschränkung: keine,,,,
+72,10271564,,,"Behindertenparkplatz ""Dachauer Straße 272""",,,,,,,,,,,48.180650873099324,11.512408554563182,10271565,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Sanitätshaus - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr 08.00-18.00 Uhr, Sa 09.-14.00 Uhr",,,,
+73,10271566,,,"Behindertenparkplatz ""Weilheimer Straße 6""",,,,,,,,,,,48.11685281550887,11.519435942181698,10271567,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+74,10288045,,,"Behindertenparkplatz ""Partnachplatz 7 Seite: Partnachstraße""",,,,,,,,,,,48.117298692696984,11.526111960418072,10288046,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,U-Bahnhaltestelle Partnachplatz - Anzahl: 2  -  zeitliche Einschränkung: keine,,,,
+75,10288047,,,"Behindertenparkplatz ""Garmischer Straße 223""",,,,,,,,,,,48.11743478295507,11.517158746728379,10288048,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,U-Bahnhof Westpark - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+76,10288049,,,"Behindertenparkplatz ""Zechstraße 10 a Seite: Neuhofener Platz""",,,,,,,,,,,48.1073828312574,11.537125110631603,10288050,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,S-Bahnhof Mittersendling - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+77,10288051,,,"Behindertenparkplatz ""Baubergerstraße 65""",,,,,,,,,,,48.175056282018446,11.503549218189361,10288052,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Mehrere Kindereinrichtungen und Pfennigparade - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 07.00-17.00 Uhr,&nbsp; bis 1/2 Stunde",,,,
+78,10288053,,,"Behindertenparkplatz ""Siegenburger Straße 105""",,,,,,,,,,,48.128832853069184,11.519513726243034,10288054,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+79,10288055,,,"Behindertenparkplatz "" Schillerstraße 36""",,,,,,,,,,,48.135825138926755,11.56082510948445,10288056,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+80,10288057,,,"Behindertenparkplatz ""Landsberger Straße 115""",,,,,,,,,,,48.13994738458386,11.532538533216798,10288058,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Mehrere Arztpraxen - Anzahl: 1 -&nbsp, zeitliche Einschränkung:&nbsp, Mo-Fr werktags 08.00 bis 19.00 Uhr,,
+81,10288059,,,"Behindertenparkplatz ""Emil-Geis-Straße 35""",,,,,,,,,,,48.10104584993855,11.544184684759188,10288060,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,ASZ Thalkirchen - Anzahl: 2 - zeitliche Einschränkung: 08.00-21.00 Uhr,,,,
+82,10320898,,,"Behindertenparkplatz ""Erika-Mann-Straße 68""",,,,,,,,,,,48.143645785215845,11.53569005825253,10320899,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Erika-Mann-Straße 68""","Behindertenparkplatz ""Erika-Mann-Straße 68""",Lebensmittelgeschäfte - Anzahl: 3 - ohne zeitliche Einschränkung,,,,
+83,10320900,,,"Behindertenparkplatz ""Maxburgstraße 7""",,,,,,,,,,,48.14003199317715,11.568750445833125,10320901,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Maxburgstraße 7""","Behindertenparkplatz ""Maxburgstraße 7""",Allgemeiner Bedarf - Anzahl: 4 - zeitliche Einschränkung: keine,,,,
+84,10320909,,,"Behindertenparkplatz ""Haager Straße 4""",,,,,,,,,,,48.127085426772666,11.607513204943416,10320910,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Haager Straße 4""","Behindertenparkplatz ""Haager Straße 4""",Autohaus - Anzahl: 4 - zeitliche Einschränkung: keine,,,,
+85,10320911,,,"Behindertenparkplatz ""Orleansplatz 6a""",,,,,,,,,,,48.128732442691614,11.60411939190845,10320912,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Orleansplatz 6a""","Behindertenparkplatz ""Orleansplatz 6a""","Ostbahnhof, Hotel, Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkungen: keine",,,,
+86,10320913,,,"Behindertenparkplatz ""Ridlerstraße ggü. Heimeranplatz""",,,,,,,,,,,48.13326438751638,11.533425172533926,10320914,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Ridlerstraße ggü. Heimeranplatz""","Behindertenparkplatz ""Ridlerstraße ggü. Heimeranplatz""",Oberhalb Überführung Garmischer Straße - Anzahl: 4 - zeitliche Einschränkungen: keine,,,,
+87,10320915,,,"Behindertenparkplatz ""Nymphenburger Straße 163""",,,,,,,,,,,48.15427825478107,11.532801866323974,10320916,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Nymphenburger Straße 163""","Behindertenparkplatz ""Nymphenburger Straße 163""",Rotkreuzklinikum München - Anzahl: 4 - zeitliche Einschränkung: keine,,,,
+88,10320917,,,"Behindertenparkplatz ""Winthirstraße ggü. 2""",,,,,,,,,,,48.153173663636295,11.531951986141037,10320918,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Winthirstraße ggü. 2""","Behindertenparkplatz ""Winthirstraße ggü. 2""","Bank, Post - Anzahl: 4 - zeitliche Einschränkungen: keine",,,,
+89,10320951,,,"Behindertenparkplatz ""Maximilianstraße 18""",,,,,,,,,,,48.141551776178396,11.571385864179987,10320952,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Maximilianstraße 18""","Behindertenparkplatz ""Maximilianstraße 18""",Maximiliansplatz - Anzahl: 2 - zeitliche Einschränkungen: keine,,,,
+90,10320953,,,"Behindertenparkplatz ""Max-Joseph-Straße ggü. 2""",,,,,,,,,,,48.142478412618814,11.57067042736535,10320954,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Max-Joseph-Straße ggü. 2""","Behindertenparkplatz ""Max-Joseph-Straße ggü. 2""",IHK - Anzahl: 2 - zeitliche Einschränkungen: keine,,,,
+91,10320989,,,"Behindertenparkplatz ""Hopfenstraße 4-8""",,,,,,,,,,,48.1426661314215,11.554205417636698,10320990,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Hopfenstraße 4-8""","Behindertenparkplatz ""Hopfenstraße 4-8""",Allgemeiner Bedarf - Anzahl: 3 - zeitliche Einschränkung: keine,,,,
+92,10320991,,,"Behindertenparkplatz ""Mittererstraße""",,,,,,,,,,,48.13902150247348,11.557428918575688,10320992,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Mittererstraße""","Behindertenparkplatz ""Mittererstraße""",Allgemeiner Bedarf - Anzahl: 3 - zeitliche Einschränkung: keine,,,,
+93,10320993,,,"Behindertenparkplatz ""Josephspitalstraße""","Behindertenparkplatz ""Josephspitalstraße"" in Höhe des Referates für Arbeit und Wirtschaft",,,,,,,,,,48.13650786178363,11.566954236588229,10320994,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Josephspitalstraße""","Behindertenparkplatz ""Josephspitalstraße""",Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+94,10320995,,,"Behindertenparkplatz ""Falckenbergstraße 2""",Münchner Kammerspiele,,,,,,,,,,48.13787640167752,11.581644088666664,10320996,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Falckenbergstraße 2""","Behindertenparkplatz ""Falckenbergstraße 2""",Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+95,10321018,,,"Behindertenparkplatz ""Hochstraße 10""",,,,,,,,,,,48.13020556540375,11.588979492967216,10321019,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Hochstraße 10""","Behindertenparkplatz ""Hochstraße 10""",Sudetendeutsches Museum - Anzahl: 2 - zeitliche Einschränkung: 9 bis 18 Uhr,,,,
+96,10321020,,,"Behindertenparkplatz ""Nymphenburger Straße 43""",,,,,,,,,,,48.14894787255266,11.550809741022421,10321021,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Nymphenburger Straße 43""","Behindertenparkplatz ""Nymphenburger Straße 43""",Augenklinik - Anzahl: 3 - zeitliche Einschränkung: werktags Montag - Freitag von 9 bis 18 Uhr,,,,
+97,10321022,,,"Behindertenparkplatz ""Oberbiberger Straße 8""",,,,,,,,,,,48.0970545575233,11.580822607813237,10321023,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Oberbiberger Straße 8""","Behindertenparkplatz ""Oberbiberger Straße 8""",Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+98,10321024,,,"Behindertenparkplatz ""Wittelsbacherplatz (Südseite)""",,,,,,,,,,,48.14298426593781,11.575937982722651,10321025,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Wittelsbacherplatz (Südseite)""","Behindertenparkplatz ""Wittelsbacherplatz (Südseite)""",Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+99,10321026,,,"Behindertenparkplatz ""Akademiestraße 1""",,,,,,,,,,,48.15228241507317,11.581579318372185,10321027,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Akademiestraße 1""","Behindertenparkplatz ""Akademiestraße 1""",Siegestor / Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+100,10321031,,,"Behindertenparkplatz ""Elisabethstraße 55""",,,,,,,,,,,48.15966805046555,11.563559550530945,10321032,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Elisabethstraße 55""","Behindertenparkplatz ""Elisabethstraße 55""","Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: werktags Montag bis Freitag von 8 bis 20 Uhr, Samstag von 9 bis 16 Uhr",,,,
+101,10321033,,,"Behindertenparkplatz ""Rosenheimer Straße 172""",,,,,,,,,,,48.117859619711545,11.609441633069258,10321034,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Rosenheimer Straße 172""","Behindertenparkplatz ""Rosenheimer Straße 172""",Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+102,10321035,,,"Behindertenparkplatz ""Claudius-Keller-Straße ggü. 26""",,,,,,,,,,,48.11688191872041,11.605874295079566,10321036,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Claudius-Keller-Straße ggü. 26""","Behindertenparkplatz ""Claudius-Keller-Straße ggü. 26""",Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+103,10321037,,,"Behindertenparkplatz ""Dientzenhoferstraße 64""",,,,,,,,,,,48.20528635085668,11.577140015430908,10321038,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Dientzenhoferstraße 64""","Behindertenparkplatz ""Dientzenhoferstraße 64""",Arztpraxis - Anzahl: 1 - zeitliche Einschränkung: Montag bis Freitag von 8 bis 18 Uhr,,,,
+104,10321039,,,"Behindertenparkplatz ""Rümannstraße 5""",,,,,,,,,,,48.175645293282244,11.574130006596766,10321040,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Rümannstraße 5""","Behindertenparkplatz ""Rümannstraße 5""","Apotheke / Post - Anzahl: 1 - zeitliche Einschränkung: werktags, Montag bis Freitag von 9 bis 18 Uhr, Samstag von 9 bis 13 Uhr",,,,
+105,10321041,,,"Behindertenparkplatz ""Feilitzschstraße 19""",,,,,,,,,,,48.16103759457697,11.589933338430782,10321042,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Feilitzschstraße 19""","Behindertenparkplatz ""Feilitzschstraße 19""","Sanitätshaus - Anzahl: 1 - zeitliche Einschränkung: werktags, Montag bis Freitag von 9 bis 19 Uhr",,,,
+106,10322557,,,"Behindertenparkplatz ""Baldurstraße ggü. 85""",,,,,,,,,,,48.1679684154636,11.517919723159338,10322558,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Baldurstraße ggü. 85""","Behindertenparkplatz ""Baldurstraße ggü. 85""",,,,,
+107,10322559,,,"Behindertenparkplatz ""Garmischer Straße 2""",,,,,,,,,,,48.13367349236591,11.532860398298507,10322560,,,,,,,,Nein,Nein,Nein,Nein,,Sonstige Angebote,"Behindertenparkplatz ""Garmischer Straße 2""",,,,,
+108,10327531,,,"Behindertenparkplatz ""Baaderstraße 59 - 61""",,,,,,,,,,,48.12849710131507,11.576299596013488,10327540,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Baaderstraße 59 - 61""","Behindertenparkplatz ""Baaderstraße 59 - 61""",Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+109,10327541,,,"Behindertenparkplatz ""Bauseweinallee 8""",,,,,,,,,,,48.16479166068491,11.477576373854589,10327542,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Bauseweinallee 8""","Behindertenparkplatz ""Bauseweinallee 8""",Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+110,10327543,,,"Behindertenparkplatz ""Bergsonstraße""",,,,,,,,,,,48.16432170430024,11.447259569368235,10327544,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Bergsonstraße""","Behindertenparkplatz ""Bergsonstraße""",Friedhof - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+111,10327545,,,"Behindertenparkplatz ""Claudius-Keller-Straße 66""",,,,,,,,,,,48.117834550687675,11.609269971692045,10327546,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Claudius-Keller-Straße 66""","Behindertenparkplatz ""Claudius-Keller-Straße 66""",Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+112,10327611,,,"Behindertenparkplatz ""Elsenheimerstraße 15""",,,,,,,,,,,48.13954703902351,11.51932946270613,10327612,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Elsenheimerstraße 15""","Behindertenparkplatz ""Elsenheimerstraße 15""",Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+113,10338466,,,"Behindertenparkplatz ""Rindermarkt 5""",,,,,,,,,,,48.13612433247667,11.574586289503182,10338468,,,,,,,,Nein,Nein,Nein,Nein,,Sonstige Angebote,"Behindertenparkplatz ""Rindermarkt 5""",<p>Allgemeiner Bedarf - Anzahl: 3 - zeitliche Einschränkung: keine</p><p>Hinweis:<br>Vom 1. Juni bis 4. August 2022 steht von Montag bis Freitag zwischen 6 und 10 Uhr nur ein Behindertenparkplatz zur Verfügung.</p>,,,,
+114,10338469,,,"Behindertenparkplatz ""Rindermarkt vor Rosental 4""",,,,,,,,,,,48.13580723874445,11.573694348336433,10338470,,,,,,,,Nein,Nein,Nein,Nein,,Sonstige Angebote,"Behindertenparkplatz ""Rindermarkt vor Rosental 4""",<p>Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine</p>,,,,
+115,10338471,,,"Behindertenparkplatz ""Rosental 5""",,,,,,,,,,,48.135351475473016,11.574406850903008,10338472,,,,,,,,Nein,Nein,Nein,Nein,,Sonstige Angebote,"Behindertenparkplatz ""Rosental 5""",<p>Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine</p>,,,,
+116,10338488,,,"Behindertenparkplatz ""Möhlstraße 3""",,,,,,,,,,,48.142184750536224,11.599564771252291,10338489,,,,,,,,Nein,Nein,Nein,Nein,,Sonstige Angebote,"Behindertenparkplatz ""Möhlstraße 3""","<p>Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: werktags von Montag bis Freitag von 9 bis 16 Uhr, Höchstparkdauer 1 Stunde</p>",,,,
+117,10338541,,,"Behindertenparkplatz ""Sankt-Koloman-Straße ggü. 10""",,,,,,,,,,,48.10188270961847,11.631177298641903,10338542,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Sankt-Koloman-Straße ggü. 10""","Behindertenparkplatz ""Sankt-Koloman-Straße ggü. 10""","<p>Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: 7 bis 21 Uhr, maximal 2 Stunden</p>",,,,
+118,1064527,,,"Behindertenparkplatz ""Albert-Roßhaupter-Straße 2""",,,,,,,,,,,48.11698079072741,11.538800949876924,1064528,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Orthopädische Praxis - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 7.30-17.00 Uhr,,,,
+119,1064529,,,"Behindertenparkplatz ""Albert-Roßhaupter-Straße 73""",,,,,,,,,,,48.11637841879779,11.526665130325892,1064530,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Ärztehaus - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+120,1064531,,,"Behindertenparkplatz ""Alexandrastraße 3""",,,,,,,,,,,48.14165482706939,11.590064598315113,1064532,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Staatsbehörden - Anzahl: 3 - zeitliche Einschränkung: Mo-Fr werktags 8.00-17.00 Uhr,,,,
+121,1064533,,,"Behindertenparkplatz ""Altheimer Eck 2""",,,,,,,,,,,48.137412670423785,11.571066209663966,1064534,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Fußgängerzone, Sanitätshaus - Anzahl: 1 - zeitliche Einschränkung: keine",,,,
+122,1064535,,,"Behindertenparkplatz ""Am Harras 2""",,,,,,,,,,,48.11645636203678,11.539221984216274,1064536,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Postamt - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+123,1064537,,,"Behindertenparkplatz ""Am Isarkanal 30""",,,,,,,,,,,48.10275391359027,11.54919969926279,1064538,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Klinik Dr. Rinecker - Anzahl: 1 - zeitliche Einschränkung: bis 3 Stunden,,,,
+124,1064539,,,"Behindertenparkplatz ""Am Isarkanal 36""",,,,,,,,,,,48.10228860934149,11.54865326079096,1064540,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Klinik Dr. Müller - Anzahl: 1 - zeitliche Einschränkung: bis 3 Stunden,,,,
+125,1064541,,,"Behindertenparkplatz ""Am Mitterfeld 68""",,,,,,,,,,,48.13183842811386,11.679307706492326,1064542,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Friedhof Riem - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+126,1064545,,,"Behindertenparkplatz ""Am Schützeneck 8""",,,,,,,,,,,48.147898767255775,11.460895355286851,1064546,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Orthopädiefachgeschäft - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr Sa werktags 9.00-14.00 Uhr bis 1 Stunde,,,,
+127,1064547,,,"Behindertenparkplatz ""Amalienstraße 87""",,,,,,,,,,,48.15145911826941,11.579268492642608,1064548,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Ludwig-Maximilians-Universität - Anzahl: 1 - zeitliche Einschränkung: keine</p>",,,,
+128,1064549,,,"Behindertenparkplatz ""Anzinger Straße 1""",,,,,,,,,,,48.12109711438415,11.606008071649992,1064550,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>Arztpraxen, Apotheken - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr</p><p><br></p><p>Hinweis:<br>Vom 30. Mai bis 7. Oktober 2022 wird&nbsp; der Behindertenparkplatz in die Rosenheimer Straße 145i verlegt.</p><p><span><!--EndFragment--></span></p>",,,,
+129,1064551,,,"Behindertenparkplatz ""Anzinger Straße 40""",,,,,,,,,,,48.12080667021785,11.611687346143519,1064552,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"""Gaststätte """"Wilder Mann"""" - Anzahl: 2 - zeitliche Einschränkung: keine""",,,,
+130,1064553,,,"Behindertenparkplatz ""Arcisstraße 21""",,,,,,,,,,,48.14877598193714,11.568707196612081,1064554,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Technische Universität - Anzahl: 2 - zeitliche Einschränkung: täglich 9.00-24.00 Uhr bis 2 Stunden,,,,
+131,1064555,,,"Behindertenparkplatz ""Arnulfstraße 1a""",,,,,,,,,,,48.141099131346145,11.558948984296945,1064556,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Hauptbahnhof (Vorplatz Nord) - Anzahl: 2 - zeitliche Einschränkung: bis 1 Stunde</p>
+",,,,
+132,1064557,,,"Behindertenparkplatz ""Arnulfstraße 15""",,,,,,,,,,,48.14251124266029,11.553158845749508,1064558,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Spardabank - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr,,,,
+133,1064559,,,"Behindertenparkplatz ""Arnulfstraße 22""",,,,,,,,,,,48.14198793435285,11.557375946384392,1064560,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Bayerischer Blindenbund - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr Sa 9.00-14.00 Uhr,,,,
+134,1064563,,,"Behindertenparkplatz ""August-Exter-Straße 3""",,,,,,,,,,,48.15064743229618,11.462109751919463,1064564,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Bahnhof Pasing - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+135,1064565,,,"Behindertenparkplatz ""Bad-Schachener-Straße 2b""",,,,,,,,,,,48.120630237378855,11.614045924382344,1064566,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Arztpraxis, Stadtsparkasse - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr",,,,
+136,1064567,,,"Behindertenparkplatz ""Bad-Schachener-Straße 35""",,,,,,,,,,,48.12057509071571,11.617733314582042,1064568,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,U-Bahnhof Innsbrucker Ring (Nordseite) - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+137,1064569,,,"Behindertenparkplatz ""Barlachstraße 24""",,,,,,,,,,,48.17754833493612,11.57546517651901,1064570,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Stiftung Pfennigparade - Anzahl: 2 - zeitliche Einschränkung: Mo-Sa werktags 6.00-23.00 Uhr bis 3 Stunden</p>
+",,,,
+138,1064573,,,"Behindertenparkplatz ""Baubergerstraße 16""",,,,,,,,,,,48.179556783442244,11.509457329063707,1064574,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Ärztehaus, Geschäfte - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-19.00 Uhr Sa 8.00-14.00 Uhr",,,,
+139,1064575,,,"Behindertenparkplatz ""Baumkirchner Straße 22""",,,,,,,,,,,48.12904983226355,11.631043897491683,1064576,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Baumkirchner Straße 22""","Behindertenparkplatz ""Baumkirchner Straße 22""",Geschäfte (nördlich Kreillerstraße) - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr Sa werktags 9.00-14.00 Uhr,,,,
+140,1064577,,,"Behindertenparkplatz ""Bayerstraße 10""",,,,,,,,,,,48.1394690122762,11.558344846443548,1064578,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Hauptbahnhof (südlicher Parkplatz) - Anzahl: 3 - zeitliche Einschränkung: bis 1 Stunde,,,,
+141,1064579,,,"Behindertenparkplatz ""Bayerstraße 77a""",,,,,,,,,,,48.13903991330907,11.553188928754407,1064580,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Selbsthilfezentrum - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 10.00-22.00 Uhr,,,,
+142,1064581,,,"Behindertenparkplatz ""Belgradstraße 115""",,,,,,,,,,,48.171496551718505,11.573229422863188,1064582,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Scheidplatz (Westseite) - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+143,1064583,,,"Behindertenparkplatz ""Belgradstraße 7""",,,,,,,,,,,48.16112859658704,11.574814108596911,1064584,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Krankengymnastik - Anzahl: 2 - zeitliche Einschränkung: 9.00-23.00 Uhr</p>
+",,,,
+144,1064585,,,"Behindertenparkplatz ""Biedersteiner Straße 29""",,,,,,,,,,,48.164025769500924,11.593859037919765,1064586,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Poliklinik - Anzahl: 3 - zeitliche Einschränkung: keine</p>
+",,,,
+145,1064587,,,"Behindertenparkplatz ""Blumenstraße 28b""",,,,,,,,,,,48.13209267040959,11.570750454429223,1064588,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Behörden, Stadtwerke - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr 7.00-18.00 Uhr",,,,
+146,1064589,,,"Behindertenparkplatz ""Blutenburgstraße 71""",,,,,,,,,,,48.15039955944033,11.537507470269729,1064590,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Wohnheim für Behinderte - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+147,1064591,,,"Behindertenparkplatz ""Bonner Platz 1""",,,,,,,,,,,48.16714887496208,11.578273248509651,1064592,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Arbeitsgemeinschaft Behinderte in den Medien - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-17.00 Uhr,,,,
+148,1064593,,,"Behindertenparkplatz ""Brienner Straße 20""",,,,,,,,,,,48.14375013736521,11.572713352650885,1064594,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,BayernLB - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr bis 1 Stunde,,,,
+149,1064595,,,"Behindertenparkplatz ""Brienner Straße 50""",,,,,,,,,,,48.147366979760065,11.55998388719881,1064596,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Volkstheater - Anzahl: 3 - zeitliche Einschränkung: 18.00-23.00 Uhr,,,,
+150,1064599,,,"Behindertenparkplatz ""Buschingstraße 13""",,,,,,,,,,,48.14349729182833,11.617146859717282,1064600,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,U-Bahnhof Böhmerwaldplatz - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+151,1064603,,,"Behindertenparkplatz ""Carl-Wery-Straße 34""",,,,,,,,,,,48.0888302494955,11.64502970023863,1064604,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,S-/U-Bahnhof Neuperlach Süd - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+152,1064605,,,"Behindertenparkplatz ""Charles-de-Gaulle-Straße 4""",,,,,,,,,,,48.102276175394174,11.643809445574655,1064606,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Vertrauensärztliche Dienststelle - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 7.00-19.00 Sa 8.00-13.00 bis 3 Stunden</p>
+",,,,
+153,1064607,,,"Behindertenparkplatz ""Christophstraße 12""",,,,,,,,,,,48.141386925890856,11.585572035996794,1064608,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Bayerisches Rotes Kreuz - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+154,1064609,,,"Behindertenparkplatz ""Claude-Lorrain-Straße 24""",,,,,,,,,,,48.11984801110784,11.56971463120293,1064610,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Schyrenbad - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+155,1064611,,,"Behindertenparkplatz ""Claudius-Keller-Straße ggü. 64""",,,,,,,,,,,48.11821169616078,11.608919938148162,1064612,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Karl-Preis-Platz (Nordseite) - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+156,1064615,,,"Behindertenparkplatz ""Cosimastraße 5""",,,,,,,,,,,48.154251327532904,11.628887825991288,1064616,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Cosimabad (Zufahrtsstraße) - Anzahl: 3 - zeitliche Einschränkung: 8.00-18.00 Uhr,,,,
+157,1064617,,,"Behindertenparkplatz ""Dachauer Straße 90""",,,,,,,,,,,48.150773108309224,11.558194235500016,1064618,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Städtisches Gesundheitsamt - Anzahl: 2 - zeitliche Einschränkung: bis 2 Stunden,,,,
+158,1064621,,,"Behindertenparkplatz ""Dachauer Straße 419""",,,,,,,,,,,48.180293970329956,11.51257006153705,1064622,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Apotheke, Banken, Geschäfte - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-19.00 Uhr Sa werktags 8.00-14.00 Uhr",,,,
+159,1064623,,,"Behindertenparkplatz ""Daiserstraße 37""",,,,,,,,,,,48.118479963666566,11.54375704987509,1064624,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Alten-und Service-Zentrum - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-17.00 Uhr,,,,
+160,1064625,,,"Behindertenparkplatz ""Damenstiftstraße 12""",,,,,,,,,,,48.13671540835229,11.568586380410903,1064626,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Städtischer Bestattungsdienst - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+161,1064627,,,"Behindertenparkplatz ""Dantestraße 8""",,,,,,,,,,,48.166736121241634,11.527573811678261,1064628,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Dantebad, Seniorenheim - Anzahl: 1 - zeitliche Einschränkung: keine",,,,
+162,1064631,,,"Behindertenparkplatz ""Denninger Straße 44""",,,,,,,,,,,48.14894761077843,11.614552975951911,1064632,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Chirurgische Privatklinik Bogenhausen - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr 9.00-20.00 Uhr Sa 9.00-12.00 Uhr,,,,
+163,1064633,,,"Behindertenparkplatz ""Deroystraße 4""",,,,,,,,,,,48.14571193837981,11.546022304334107,1064634,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Finanzämter - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+164,1064635,,,"Behindertenparkplatz ""Dillwächterstraße 7""",,,,,,,,,,,48.132588835527876,11.52552219174487,1064636,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Sozialbürgerhaus - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+165,1064637,,,"Behindertenparkplatz ""Dollmannstraße ggü. 19""",,,,,,,,,,,48.11935418306208,11.577213415743381,1064638,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Alten-und Service-Zentrum (Kolumbusstraße 33) - Anzahl: 2 - zeitliche Einschränkung: davon 1 nur Mo-Fr werktags 9.00-17.00 Uhr,,,,
+166,1064639,,,"Behindertenparkplatz ""Donnersbergerstraße 5""",,,,,,,,,,,48.15209886030498,11.532942830586492,1064640,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arztpraxen, Apotheke, Geschäfte - Anzahl: 2 - zeitliche Einschränkung: werktags 8.00-20.00 Uhr</p>
+",,,,
+167,1064643,,,"Behindertenparkplatz ""Ebenböckstraße 15""",,,,,,,,,,,48.14580460639728,11.461172587591273,1064644,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Alten-und Service-Zentrum - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+168,1064645,,,"Behindertenparkplatz ""Edmund-Rumpler-Straße 13""",,,,,,,,,,,48.194141752166914,11.612667835608583,1064646,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Besucherparkplätze (Nordseite, östlich) - Anzahl: 2 - zeitliche Einschränkung: keine",,,,
+169,1064647,,,"Behindertenparkplatz ""Ehrwalder Straße 87a""",,,,,,,,,,,48.11632953126928,11.503330040470868,1064648,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,U-Bahnhof Holzapfelkreuth (östlich Fürstenrieder Straße) - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+170,1064649,,,"Behindertenparkplatz ""Eichstätter Straße 2""",,,,,,,,,,,48.131844965190226,11.52071945973605,1064650,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Kraftfahrzeugzulassung, Fahrerlaubnisbehörde (Privatgrund) - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 9.00-14.00 Uhr</p>
+",,,,
+171,1064651,,,"Behindertenparkplatz ""Einsteinstraße 127""",,,,,,,,,,,48.136274105476495,11.608675519592202,1064652,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Arztpraxen - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr,,,,
+172,1064653,,,"Behindertenparkplatz ""Einsteinstraße 5""",,,,,,,,,,,48.1358032159276,11.601182034911835,1064654,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"U-Bahnhof Max-Weber-Platz, Klinikum rechts der Isar (Nordseite, vor dem Max-Weber-Platz) - Anzahl: 1 - zeitliche Einschränkung: 8.00-19.00 Uhr",,,,
+173,1064657,,,"Behindertenparkplatz ""Einsteinstraße 74""",,,,,,,,,,,48.135538387747154,11.603924928258051,1064658,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Friedhof - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+174,1064659,,,"Behindertenparkplatz ""Elritzenstraße 27""",,,,,,,,,,,48.1248391708032,11.662728207484832,1064660,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,AOK Bayern - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-17.00 Uhr bis 1 Stunde,,,,
+175,1064661,,,"Behindertenparkplatz ""Emil-Riedel-Straße 3""",,,,,,,,,,,48.145895524497185,11.593961561613403,1064662,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+176,1064663,,,"Behindertenparkplatz ""Englschalkinger Straße 77""",,,,,,,,,,,48.15390803888271,11.62425339075045,1064664,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Klinikum Bogenhausen - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+177,1064665,,,"Behindertenparkplatz ""Entenbachstraße 25""",,,,,,,,,,,48.1231533537499,11.57829044988783,1064666,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Altenheim - Anzahl: 2 - zeitliche Einschränkung: 7.00-23.00 Uhr bis 3 Stunden,,,,
+178,1064667,,,"Behindertenparkplatz ""Erhardtstraße 38""",,,,,,,,,,,48.13221008807654,11.584577717221908,1064668,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Deutsches Patent- und Markenamt - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr</p>
+",,,,
+179,1064669,,,"Behindertenparkplatz ""Erika-Cremer-Straße 5""",,,,,,,,,,,48.131421397803315,11.692932810692687,1064670,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Wohngebiet - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+180,1064671,,,"Behindertenparkplatz ""Ettstraße ggü. 2""",,,,,,,,,,,48.139007869973526,11.570764057592948,1064672,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Fußgängerzone, Polizeipräsidium - Anzahl: 3 - zeitliche Einschränkung: keine",,,,
+181,1064673,,,"Behindertenparkplatz ""Falkenstraße 20""",,,,,,,,,,,48.12250071286696,11.579350205518546,1064674,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Altenheim - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+182,1064675,,,"Behindertenparkplatz ""Fallmerayerstraße 2""",,,,,,,,,,,48.16074946475959,11.573217626532747,1064676,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Jugendcafe für behinderte Jugendliche - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+183,1064677,,,"Behindertenparkplatz ""Fellererplatz 2""",,,,,,,,,,,48.076842660685436,11.51787479962685,1064678,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf (Südseite) - Anzahl: 2 - zeitliche Einschränkung: 7.00-18.00 Uhr,,,,
+184,1064679,,,"Behindertenparkplatz ""Forstenrieder Allee 55""",,,,,,,,,,,48.09529850789548,11.498182485603294,1064680,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Forstenrieder Allee, Arztpraxen - Anzahl: 4 - zeitliche Einschränkung: keine</p>
+",,,,
+185,1064681,,,"Behindertenparkplatz ""Frankenthaler Straße 9""",,,,,,,,,,,48.110200669185744,11.597787629596288,1064682,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Behörden - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+186,1064683,,,"Behindertenparkplatz ""Franziskanerstraße 6""",,,,,,,,,,,48.12782585084795,11.593405253750593,1064684,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Flüchtlingsamt - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+187,1064685,,,"Behindertenparkplatz ""Freihamer Weg 73""",,,,,,,,,,,48.153445948662295,11.41012733658067,1064686,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Aubinger Friedhof - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+188,1064687,,,"Behindertenparkplatz ""Friedrichshafener Straße 8""",,,,,,,,,,,48.14867409326329,11.440567509508151,1064688,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,BRK Seniorenheim (Südseite) - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+189,1064689,,,"Behindertenparkplatz ""Friedrichshafener Straße 11""",,,,,,,,,,,48.14798008367943,11.442107066881146,1064690,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Ärzte, Bürgerhaus, Geschäfte - Anzahl: 2 - zeitliche Einschränkung: keine",,,,
+190,1064693,,,"Behindertenparkplatz ""Fritz-Schäffer-Straße 26""",,,,,,,,,,,48.10351136111099,11.64773508543236,1064694,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Deutsche Rentenversicherung - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr 8.00-18.00 Uhr,,,,
+191,1064695,,,"Behindertenparkplatz ""Führichstraße 43""",,,,,,,,,,,48.11770884749709,11.614484127141495,1064696,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Stadtbücherei - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr 10.00-19.00 Uhr,,,,
+192,1064703,,,"Behindertenparkplatz ""Schlierseestraße 75""",,,,,,,,,,,48.11118438468783,11.594919552067338,1064704,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Giesinger Gesundheits-Zentrum - Anzahl: 3 - zeitliche Einschränkung: keine</p>
+",,,,
+193,1064705,,,"Behindertenparkplatz ""Gilmstraße 52""",,,,,,,,,,,48.11951180345848,11.507187783277546,1064706,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Westpark - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+194,1064707,,,"Behindertenparkplatz ""Goethestraße 69""",,,,,,,,,,,48.131501567399546,11.55852726819291,1064708,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Kinderklinik - Anzahl: 3 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+195,1064709,,,"Behindertenparkplatz ""Gollierstraße 4""",,,,,,,,,,,48.13571492369508,11.546943325316958,1064710,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+196,1064713,,,"Behindertenparkplatz ""Gollierstraße 75""",,,,,,,,,,,48.13638937502896,11.53121085223395,1064714,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Altenheim - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+197,1064715,,,"Behindertenparkplatz ""Gotthardstraße 47""",,,,,,,,,,,48.135272061862196,11.503886556631068,1064716,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Geschäfte - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+198,1064717,,,"Behindertenparkplatz ""Gräfelfinger Straße 59""",,,,,,,,,,,48.1167620350189,11.492185159534511,1064718,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Arztpraxen - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+199,1064719,,,"Behindertenparkplatz ""Gravelottestraße 8""",,,,,,,,,,,48.12753720647928,11.600869799841872,1064720,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arztpraxen - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-19.00 Uhr</p>
+",,,,
+200,1064721,,,"Behindertenparkplatz ""Guardinistraße 89""",,,,,,,,,,,48.11841395029309,11.489502831755125,1064722,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"U-Bahnhof Haderner Stern, Geschäfte - Anzahl: 2 - zeitliche Einschränkung: keine",,,,
+201,1064723,,,"Behindertenparkplatz ""Guardinistraße 135""",,,,,,,,,,,48.118566455329535,11.486385304115073,1064724,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Praxis für Physiotherapie - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr bis 2 Stunden,,,,
+202,1064725,,,"Behindertenparkplatz ""Gulbranssonstraße ggü. 47""",,,,,,,,,,,48.08207840964282,11.504478150555453,1064726,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Einkaufszentrum - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr Sa werktags 9.00-14.00 Uhr bis 2 Stunden</p>
+",,,,
+203,1064727,,,"Behindertenparkplatz ""Gunezrainerstraße 7""",,,,,,,,,,,48.16002951038058,11.59167933964068,1064728,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Katholische Akademie (nördlich Mandlstraße 23) - Anzahl: 2 - zeitliche Einschränkung: 9.00-19.00 Uhr</p>
+",,,,
+204,1064729,,,"Behindertenparkplatz ""Harlachinger Straße ggü. 1a""",,,,,,,,,,,48.110655109502424,11.572900090666948,1064730,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Fußballstadion - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+205,1064731,,,"Behindertenparkplatz ""Harlachinger Straße 51""",,,,,,,,,,,48.104142071953746,11.566408143420995,1064732,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Orthopädische Klinik - Anzahl: 3 - zeitliche Einschränkung: keine,,,,
+206,1064733,,,"Behindertenparkplatz ""Heckscherstraße 9""",,,,,,,,,,,48.17234927667618,11.585080967263368,1064734,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Klinik - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr 7.00-16.00 Uhr,,,,
+207,1064735,,,"Behindertenparkplatz ""Heimeranstraße 70""",,,,,,,,,,,48.133624013983926,11.534561161437928,1064736,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Arztpraxen - Anzahl: 3 - zeitliche Einschränkung: keine,,,,
+208,1064737,,,"Behindertenparkplatz ""Heinrich-Wieland-Straße 16""",,,,,,,,,,,48.118072065780105,11.633445928607456,1064738,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Michaelibad (westlich u. östlich der Rampe U-Bahnhof) - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+209,1064739,,,"Behindertenparkplatz ""Herkomerplatz 2""",,,,,,,,,,,48.1506550509328,11.608835158769573,1064740,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Geschäfte - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+210,1064747,,,"Behindertenparkplatz ""Herzog-Wilhelm-Straße bei Sendlinger Tor""",,,,,,,,,,,48.13393914510478,11.568105787196775,1064748,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+211,1064749,,,"Behindertenparkplatz ""Heßstraße 76""",,,,,,,,,,,48.1529923270577,11.562341637306504,1064750,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Orthopädiefach-geschäft - Anzahl: 1 - zeitliche Einschränkung: Mo-Do werktags 8.00-18.00 Uhr Fr werktags 8.00-14.00 Uhr,,,,
+212,1064751,,,"Behindertenparkplatz ""Hiltenspergerstraße 72""",,,,,,,,,,,48.165166746585456,11.566412353752895,1064752,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Alten-und Service-Zentrum - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 9.00-20.00 Uhr,,,,
+213,1064753,,,"Behindertenparkplatz ""Himbselstraße 2""",,,,,,,,,,,48.14366024022622,11.59129835516562,1064754,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Nationalmuseum - Anzahl: 1 - zeitliche Einschränkung: 9.00-17.00 Uhr,,,,
+214,1064755,,,"Behindertenparkplatz ""Hirschgartenallee 38""",,,,,,,,,,,48.153826055691226,11.507175547419909,1064756,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Arztpraxis - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-19.00 Uhr Sa werktags 8.00-14.00 Uhr,,,,
+215,1064759,,,"Behindertenparkplatz ""Hohenzollernstraße 44""",,,,,,,,,,,48.15999660278717,11.580032188534451,1064760,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Geschäfte (Nordseite, westlich Friedrichstraße) - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.30-18.00 Uhr",,,,
+216,1064761,,,"Behindertenparkplatz ""Hohenzollernstraße 128""",,,,,,,,,,,48.161197120328914,11.56785719289508,1064762,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof, Geschäfte - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+217,1064763,,,"Behindertenparkplatz ""Homerstraße 3""",,,,,,,,,,,48.167388989361314,11.53218578578906,1064764,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Dantebad - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+218,1064765,,,"Behindertenparkplatz ""Hugo-Troendle-Straße 53""",,,,,,,,,,,48.17845780069095,11.514335522493928,1064766,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Sozialzentrum Moosach - Anzahl: 2 - zeitliche Einschränkung: 8.00-19.00 Uhr</p>
+",,,,
+219,1064767,,,"Behindertenparkplatz ""Ickstattstraße 30""",,,,,,,,,,,48.12773067605633,11.573322944400784,1064768,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Orthopädisches Schuhfachwerk - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 7.30-18.00 Uhr,,,,
+220,1064769,,,"Behindertenparkplatz ""Institutstraße 12""",,,,,,,,,,,48.14640509406263,11.456906341801485,1064770,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Arztpraxen - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+221,1064771,,,"Behindertenparkplatz ""Isartalstraße 42""",,,,,,,,,,,48.119807468019246,11.560178659578144,1064772,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Adventgemeinde - Anzahl: 1 - zeitliche Einschränkung: Sa 7.00-22.00 Uhr,,,,
+222,1064773,,,"Behindertenparkplatz ""Isenschmidstraße 19""",,,,,,,,,,,48.09055074991047,11.55638727364861,1064774,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Ärztehaus - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-20.00 Uhr</p>
+",,,,
+223,1064775,,,"Behindertenparkplatz ""Jahnstraße 38""",,,,,,,,,,,48.12770617044373,11.569158768153242,1064776,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Münchner Mädchen e.V. - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags,,,,
+224,1064777,,,"Behindertenparkplatz ""Josef-Retzer-Straße 47""",,,,,,,,,,,48.14383659690157,11.4615022293285,1064778,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Arztpraxis - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 7.00-18.00 Uhr,,,,
+225,1064779,,,"Behindertenparkplatz ""Josef-Retzer-Straße 57""",,,,,,,,,,,48.14476075594196,11.46008158846452,1064780,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Krankengymnastik - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr,,,,
+226,1064781,,,"Behindertenparkplatz ""Josephsburgstraße 8""",,,,,,,,,,,48.12834007032465,11.62707933339189,1064782,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Berg-Bad, Massagepraxis - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr 7.00-19.00 Uhr",,,,
+227,1064783,,,"Behindertenparkplatz ""Josephsburgstraße ggü. 40""",,,,,,,,,,,48.12620898516089,11.632783644174989,1064784,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,U-Bahnhof Josephsburg (gegenüber) - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+228,1064785,,,"Behindertenparkplatz ""Kaiser-Ludwig-Platz 6""",,,,,,,,,,,48.13188084796696,11.555427352907191,1064786,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Arztpraxis - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr 8.00-18.00 Uhr,,,,
+229,1064787,,,"Behindertenparkplatz ""Kaiserstraße 24""",,,,,,,,,,,48.16095925598603,11.582605237190835,1064788,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Arztpraxen - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-19.00 Uhr,,,,
+230,1064789,,,"Behindertenparkplatz ""Kardinal-Faulhaber-Straße 14""",,,,,,,,,,,48.14024323576718,11.57406593321742,1064790,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Banken - Anzahl: 2 - zeitliche Einschränkung: derzeit aufgehoben,,,,
+231,1064791,,,"Behindertenparkplatz ""Kardinal-Wendel-Straße 8""",,,,,,,,,,,48.16537023888858,11.655963224451847,1064792,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Wohnanlage für Behinderte - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+232,1064793,,,"Behindertenparkplatz ""Karlstraße 9""",,,,,,,,,,,48.14297241570567,11.566753563964049,1064794,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Finanzamt - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-17.00 Uhr,,,,
+233,1064795,,,"Behindertenparkplatz ""Karlstraße 42""",,,,,,,,,,,48.14457582347231,11.561499315384674,1064796,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Arztpraxen, Krankengymnastik - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-20.00 Uhr",,,,
+234,1064799,,,"Behindertenparkplatz ""Kellerstraße 6""",,,,,,,,,,,48.13169276554802,11.59206490955423,1064800,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Philharmonie - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+235,1064801,,,"Behindertenparkplatz ""Kiem-Pauli-Weg 45""",,,,,,,,,,,48.134106857015034,11.514296583250102,1064802,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Alten-und Service-Zentrum - Anzahl: 3 - zeitliche Einschränkung: keine,,,,
+236,1064803,,,"Behindertenparkplatz ""Knöpflerstraße 9""",,,,,,,,,,,48.094748328907414,11.496791642111951,1064804,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Arztpraxen, Sparkasse - Anzahl: 1 - zeitliche Einschränkung: keine",,,,
+237,1064807,,,"Behindertenparkplatz ""Kölblstraße 1""",,,,,,,,,,,48.11885354061774,11.611225235005739,1064808,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Fahrschule (Behindertenausbildung) (südlich Melusinenstraße 15) - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+238,1064809,,,"Behindertenparkplatz ""Königinstraße 8""",,,,,,,,,,,48.15027806139687,11.584653880040149,1064810,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Englischer Garten (nördlich Veterinärstraße) - Anzahl: 2 - zeitliche Einschränkung: 9.00-23.00 Uhr,,,,
+239,1064811,,,"Behindertenparkplatz ""Konradinstraße ggü. 23""",,,,,,,,,,,48.11452255940051,11.568154141913125,1064812,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+240,1064813,,,"Behindertenparkplatz ""Kreillerstraße 5""",,,,,,,,,,,48.12819229517523,11.631459754054585,1064814,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr Sa werktags 8.00-14.00 Uhr,,,,
+241,1064815,,,"Behindertenparkplatz ""Kreillerstraße 18""",,,,,,,,,,,48.12762999514496,11.632800398445596,1064816,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Postfiliale - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr Sa 9.00-14.00 Uhr bis 1 Stunde,,,,
+242,1064821,,,"Behindertenparkplatz ""Kufsteiner Straße 2""",,,,,,,,,,,48.14975004681832,11.601934262989637,1064822,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Apotheke - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+243,1064823,,,"Behindertenparkplatz ""Ainmillerstraße 43""",,,,,,,,,,,48.159130414668205,11.575583330350195,1064824,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: werktags 9.00-20.00 Uhr</p>
+",,,,
+244,1064825,,,"Behindertenparkplatz ""Lachnerstraße 1""",,,,,,,,,,,48.1562892847809,11.53061316796265,1064826,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Arztpraxis - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-17.00 Uhr,,,,
+245,1064827,,,"Behindertenparkplatz ""Landsberger Straße 203""",,,,,,,,,,,48.14136881082889,11.51745306250103,1064828,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Sanitätshaus - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr Sa 9.00-13.00 Uhr,,,,
+246,1064829,,,"Behindertenparkplatz ""Landshuter Allee 181""",,,,,,,,,,,48.16436636488502,11.537536686913883,1064830,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+behinderten-gerechte Wohnungen - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+247,1064831,,,"Behindertenparkplatz ""Landwehrstraße 20""",,,,,,,,,,,48.136363139890975,11.562227504526387,1064832,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Deutsches Theater, allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: 9.00-23.00 Uhr</p>
+",,,,
+248,1064833,,,"Behindertenparkplatz ""Landwehrstraße 60""",,,,,,,,,,,48.13642329456011,11.555630037320634,1064834,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Kreisjugendring, Sozialreferat - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 7.00-18.00 Uhr",,,,
+249,1064835,,,"Behindertenparkplatz ""Lazarettstraße 1""",,,,,,,,,,,48.1507974192802,11.54481499472292,1064836,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Ärztehaus - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+250,1064837,,,"Behindertenparkplatz ""Lehrer-Götz-Weg 2""",,,,,,,,,,,48.123443736367115,11.668419211125475,1064838,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Post - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-20.00 Uhr Sa 8.00-14.00 Uhr bis 2 Stunden,,,,
+251,1064841,,,"Behindertenparkplatz ""Leonrodstraße 21""",,,,,,,,,,,48.15354900229698,11.535711815939218,1064842,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Meldestelle, Geschäfte - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr",,,,
+252,1064843,,,"Behindertenparkplatz ""Leonrodstraße 69""",,,,,,,,,,,48.157981509694245,11.544408779807222,1064844,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Ärztehaus - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+253,1064845,,,"Behindertenparkplatz ""Leopoldstraße 59""",,,,,,,,,,,48.1614575978985,11.586123079986555,1064846,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Post - Anzahl: 1 - zeitliche Einschränkung: werktags 6.00-23.00 Uhr</p>
+",,,,
+254,1064847,,,"Behindertenparkplatz ""Leopoldstraße 80""",,,,,,,,,,,48.160851023470705,11.58625565214991,1064848,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: 9.00-23.00 Uhr,,,,
+255,1064849,,,"Behindertenparkplatz ""Liebherrstraße 20""",,,,,,,,,,,48.133346482206136,11.584225973502635,1064850,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Praxis für Physiotherapie - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-16.00 Uhr</p>
+",,,,
+256,1064851,,,"Behindertenparkplatz ""Lindwurmstraße 9""",,,,,,,,,,,48.132374496190415,11.56457884596842,1064852,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Medizinisches Kaufhaus - Anzahl: 1 - zeitliche Einschränkung: werktags 8.00-18.00 Uhr,,,,
+257,1064853,,,"Behindertenparkplatz ""Lindwurmstraße 71""",,,,,,,,,,,48.12993595095966,11.5595012038902,1064854,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Alten- u. Service-Zentrum - Anzahl: 1 - zeitliche Einschränkung: bis 3 Stunden,,,,
+258,1064855,,,"Behindertenparkplatz ""Linprunstraße 25""",,,,,,,,,,,48.149808611719656,11.554123689903292,1064856,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Oberlandesgericht - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 6.30-18.30 bis 3 Stunden</p>
+",,,,
+259,1064857,,,"Behindertenparkplatz ""Lorettoplatz""",,,,,,,,,,,48.10273212389771,11.488093693326288,1064858,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Lorettoplatz""","Behindertenparkplatz ""Lorettoplatz""","<p>
+Eingang Waldfriedhof</p>",,,,
+260,1064859,,,"Behindertenparkplatz ""Lothringer Straße 1""",,,,,,,,,,,48.12829563247673,11.59656517111341,1064860,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Geschäfte - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+261,1064861,,,"Behindertenparkplatz ""Schackstraße 2""",,,,,,,,,,,48.15213180583068,11.582475126680446,1064862,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Universitätsbibliothek - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+262,1064865,,,"Behindertenparkplatz ""Luisenstraße 33""",,,,,,,,,,,48.146789540280174,11.564221931475284,1064866,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Luisenstraße 33""","Behindertenparkplatz ""Luisenstraße 33""","<p>
+Lenbachgalerie - Anzahl: 2 - zeitliche Einschränkung: 9.00-23.00 Uhr</p>",,,,
+263,1064869,,,"Behindertenparkplatz ""Maistraße 11""",,,,,,,,,,,48.130263514275626,11.56285694381831,1064870,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Frauenklinik - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+264,1064871,,,"Behindertenparkplatz ""Maistraße 46""",,,,,,,,,,,48.126394327198874,11.561143423194371,1064872,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Krankengymnastik - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+265,1064875,,,"Behindertenparkplatz ""Manzostraße 105""",,,,,,,,,,,48.183659753932,11.487222124148403,1064876,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Seniorenwohnheim - Anzahl: 4 - zeitliche Einschränkung: keine,,,,
+266,1064879,,,"Behindertenparkplatz ""Maria-Montessori-Straße 2""",,,,,,,,,,,48.13145714330389,11.69453801347,1064880,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Wohngebiet (Lehrer-Wirth-Straße 15) - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+267,1064881,,,"Behindertenparkplatz ""Martiusstraße 4""",,,,,,,,,,,48.15694599150635,11.585722476743886,1064882,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Versorgungsärztliche Untersuchungsstelle - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-16.30 Uhr</p>
+",,,,
+268,1064883,,,"Behindertenparkplatz ""Mathildenstraße 3a""",,,,,,,,,,,48.13524344202433,11.563405893299748,1064884,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Augenklinik - Anzahl: 2 - zeitliche Einschränkung: 8.00-20.00 Uhr,,,,
+269,1064885,,,"Behindertenparkplatz ""Maxburgstraße 2""",,,,,,,,,,,48.13971490559604,11.571047059329176,1064886,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Familiengericht, Nachlassgericht - Anzahl: 4 - zeitliche Einschränkung: keine</p>",,,,
+270,1064887,,,"Behindertenparkplatz ""Maximilianstraße ggü. 8""",,,,,,,,,,,48.13923869089112,11.579697400932151,1064888,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Nationaltheater (Nordseite, Bühneneingang) - Anzahl: 5 - zeitliche Einschränkung: keine",,,,
+271,1064889,,,"Behindertenparkplatz ""Maximilianstraße 18""",,,,,,,,,,,48.13878190995041,11.581447851739386,1064890,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Geschäfte - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+272,1064891,,,"Behindertenparkplatz ""Maximilianstraße 30""",,,,,,,,,,,48.13851709146826,11.582820503560805,1064892,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Schauspielhaus - Anzahl: 3 - zeitliche Einschränkung: keine,,,,
+273,1064895,,,"Behindertenparkplatz ""Maximilianstraße 42""",,,,,,,,,,,48.13777597000074,11.585540592053812,1064896,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Völkerkundemuseum (Ortsfahrbahn) - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+274,1064897,,,"Behindertenparkplatz ""Maximilianstraße 47""",,,,,,,,,,,48.137950953022795,11.587937538565885,1064898,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Theater (Ortsfahrbahn) - Anzahl: 2 - zeitliche Einschränkung: 18.00-23.00 Uhr,,,,
+275,1064899,,,"Behindertenparkplatz ""Max-Joseph-Platz 2""",,,,,,,,,,,48.13990504305685,11.578697656767417,1064900,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Nationaltheater, Residenz - Anzahl: 2 - zeitliche Einschränkung: keine",,,,
+276,1064901,,,"Behindertenparkplatz ""Meindlstraße 20""",,,,,,,,,,,48.11752199146869,11.538077563169177,1064902,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Sozialamt - Anzahl: 1 - zeitliche Einschränkung: Mo-Sa werktags 8.00-18.00 Uhr,,,,
+277,1064905,,,"Behindertenparkplatz ""Murnauer Straße 267""",,,,,,,,,,,48.10257351569015,11.524488996637082,1064906,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Seniorenzentrum - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+278,1064907,,,"Behindertenparkplatz ""Museumsinsel 1 (Bosch-Brücke)""",,,,,,,,,,,48.131012084580775,11.582814032396456,1064908,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Deutsches Museum - Anzahl: 3 - zeitliche Einschränkung: 9.00-16.00,,,,
+279,1064909,,,"Behindertenparkplatz ""Museumsinsel 1 (Ludwigsbrücke)""",,,,,,,,,,,48.130501008987096,11.583241343265858,1064910,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Deutsches Museum - Anzahl: 4 - zeitliche Einschränkung: keine</p>
+",,,,
+280,1064911,,,"Behindertenparkplatz ""Nestroystraße 20""",,,,,,,,,,,48.12169696370384,11.53190179676636,1064912,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Zugang zum Westpark - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+281,1064913,,,"Behindertenparkplatz ""Schweizer Platz""",,,,,,,,,,,48.088152290850275,11.481748108378028,1064914,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Schweizer Platz""","Behindertenparkplatz ""Schweizer Platz""","<p>
+U-Bahnhof Fürstenried West - Anzahl: 2 - zeitliche Einschränkung: keine</p>",,,,
+282,1064915,,,"Behindertenparkplatz ""Neustifter Straße 43""",,,,,,,,,,,48.18611735564202,11.566585594741673,1064916,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Alten-und Service-Zentrum - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+283,1064917,,,"Behindertenparkplatz ""Nigerstraße""",,,,,,,,,,,48.139220577269306,11.605058905309656,1064918,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Nigerstraße""","Behindertenparkplatz ""Nigerstraße""",Prinzregententheater - Anzahl: 2 - zeitliche Einschränkung: 9.00-22.00 Uhr,,,,
+284,1064919,,,"Behindertenparkplatz ""Nordendstraße 48""",,,,,,,,,,,48.15711425405872,11.575136215077501,1064920,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Schauburg - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+285,1064921,,,"Behindertenparkplatz ""Nußbaumstraße 30""",,,,,,,,,,,48.132911330805236,11.559126486300919,1064922,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Beratungsstelle für Behinderte - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 7.00-17.00 Uhr,,,,
+286,1064923,,,"Behindertenparkplatz ""Nymphenburger Straße 2""",,,,,,,,,,,48.147702927441564,11.558469165749132,1064924,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Löwenbräukeller - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+287,1064927,,,"Behindertenparkplatz ""Nymphenburger Straße 16""",,,,,,,,,,,48.14848101443192,11.55384623733077,1064928,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Strafjustizzentrum - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+288,1064929,,,"Behindertenparkplatz ""Nymphenburger Straße 148""",,,,,,,,,,,48.152003797872354,11.53612221158368,1064930,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+289,1064931,,,"Behindertenparkplatz ""Nymphenburger Straße 163""",,,,,,,,,,,48.15429722132035,11.532815382881946,1064932,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Rotkreuz-Klinikum - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+290,1064933,,,"Behindertenparkplatz ""Orleansplatz 11""",,,,,,,,,,,48.12779161704089,11.604226205929582,1064934,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Sozialreferat, Ostbahnhof (Arkadenfahrbahn Privatgrund) - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+291,1064935,,,"Behindertenparkplatz ""Orleansplatz 13""",,,,,,,,,,,48.12745999102083,11.603248110868833,1064936,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Orleansplatz 13""","Behindertenparkplatz ""Orleansplatz 13""","<p>
+Bezirksinspektion, Sozialreferat - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr</p>",,,,
+292,1064939,,,"Behindertenparkplatz ""Ostpreußenstraße 47""",,,,,,,,,,,48.151681244144754,11.640867682717074,1064940,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Orthopädiefachgeschäft - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-19.00 Uhr Sa werktags 8.00-14.00 Uhr,,,,
+293,1064941,,,"Behindertenparkplatz ""Partnachplatz ggü. 7""",,,,,,,,,,,48.11713256699994,11.52634930543648,1064942,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Partnachplatz, Geschäfte - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+294,1064943,,,"Behindertenparkplatz ""Parzivalstraße 16""",,,,,,,,,,,48.17049724331631,11.580282700215308,1064944,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Klinikum Schwabing (Zufahrt zur Kinderklinik) - Anzahl: 4 - zeitliche Einschränkung: keine</p>
+",,,,
+295,1064945,,,"Behindertenparkplatz ""Kölner Platz 1""",,,,,,,,,,,48.17047943051972,11.580179733694877,1064946,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Kölner Platz 1""","Behindertenparkplatz ""Kölner Platz 1""","<p>
+Klinikum Schwabing - Anzahl: 2 - zeitliche Einschränkung: werktags 9.00-20.00 Uhr</p>",,,,
+296,1064949,,,"Behindertenparkplatz ""Pettenkoferstraße östlich 8a""",,,,,,,,,,,48.13423397071156,11.562823290865689,1064950,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Poliklinik - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+297,1064951,,,"Behindertenparkplatz ""Planegger Straße ggü. 13""",,,,,,,,,,,48.145100102716334,11.458613286839748,1064952,,,,,,"<p><strong>Wir haben für den Publikumsverkehr geschlossen, die Servicetelefone sind besetzt.</strong></p>",,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arztpraxen - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr</p>",,,,
+298,1064953,,,"Behindertenparkplatz ""Plinganserstraße 45""",,,,,,,,,,,48.11759376296621,11.540279580090507,1064954,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Orthopädische Praxis - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+299,1064955,,,"Behindertenparkplatz ""Pognerstraße 38""",,,,,,,,,,,48.10180619788812,11.546045978020977,1064956,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"U-Bahnhof Thalkirchen, Wohngebiet - Anzahl: 1 - zeitliche Einschränkung: keine",,,,
+300,1064961,,,"Behindertenparkplatz ""Prannerstraße 7""",,,,,,,,,,,48.14123696433568,11.572841675191361,1064962,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Kleine Komödie - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+301,1064963,,,"Behindertenparkplatz ""Preysingstraße 21""",,,,,,,,,,,48.13231939736398,11.595062604811206,1064964,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Altenheim - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+302,1064965,,,"Behindertenparkplatz ""Prielmayerstraße 7""",,,,,,,,,,,48.14017468992091,11.564163626691458,1064966,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Prielmayerstraße 7""","Behindertenparkplatz ""Prielmayerstraße 7""",Justizpalast - Anzahl: 4 - zeitliche Einschränkung: werktags 8 bis 23 Uhr,,,,
+303,1064969,,,"Behindertenparkplatz ""Reichenbachstraße 3a""",,,,,,,,,,,48.13407354404572,11.576441166782619,1064970,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+304,1064971,,,"Behindertenparkplatz ""Reichenbachstraße ggü. 23""",,,,,,,,,,,48.13095077895614,11.575882416427339,1064972,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Reichenbachstraße ggü. 23""","Behindertenparkplatz ""Reichenbachstraße ggü. 23""",Gärtnerplatztheater - Anzahl: 3 - zeitliche Einschränkung: 9 bis 23 Uhr,,,,
+305,1064975,,,"Behindertenparkplatz ""Reitmorstraße 28""",,,,,,,,,,,48.14168872502849,11.593282520181845,1064976,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Physiotherapie - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr 7.30-17.00 Uhr</p>
+",,,,
+306,1064977,,,"Behindertenparkplatz ""Reitmorstraße 30""",,,,,,,,,,,48.14260768456743,11.593745579581183,1064978,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Altenheim - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+307,1064979,,,"Behindertenparkplatz ""Richard-Wagner-Straße 9""",,,,,,,,,,,48.147505192354124,11.563214702418621,1064980,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Psychosomatische Beratungsstelle ZWIST - Anzahl: 1 - zeitliche Einschränkung: Mi 13.00-18.00 Uhr bis 2 Stunden,,,,
+308,1064981,,,"Behindertenparkplatz ""Ridlerstraße ggü. 52""",,,,,,,,,,,48.13370248071707,11.532840766599822,1064982,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Heimeranplatz - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+309,1064983,,,"Behindertenparkplatz ""Riesenfeldstraße 18""",,,,,,,,,,,48.17881939210902,11.564233318557074,1064984,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Siloah - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+310,1064985,,,"Behindertenparkplatz ""Riesenfeldstraße 75""",,,,,,,,,,,48.18562952776988,11.56244080498455,1064986,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Bürgerbüro - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr</p>
+",,,,
+311,1064987,,,"Behindertenparkplatz ""Rindermarkt 15""",,,,,,,,,,,48.136233153509956,11.57432746061104,1064988,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Fußgängerzone, Tourismusamt - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+312,1064991,,,"Behindertenparkplatz ""Romanstraße 93""",,,,,,,,,,,48.15561706142159,11.5095911982658,1064992,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Krankenhaus Barmherzige Brüder (Nordseite) - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+313,1064993,,,"Behindertenparkplatz ""Rosenkavalierplatz 4""",,,,,,,,,,,48.15220154804511,11.619461077313694,1064994,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Stiftung Pfennigparade - Anzahl: 3 - zeitliche Einschränkung: keine</p>
+",,,,
+314,1064997,,,"Behindertenparkplatz ""Rosental 7""",,,,,,,,,,,48.135344548372686,11.574798318726149,1064998,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+315,1064999,,,"Behindertenparkplatz ""Rottmannstraße 20""",,,,,,,,,,,48.14880517854667,11.559790184131876,1065000,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Sanitätshaus - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 7.30-18.00 Uhr Sa 7.30-14.00 Uhr,,,,
+316,1065001,,,"Behindertenparkplatz ""Rümannstraße 60""",,,,,,,,,,,48.17596308599401,11.578476720599816,1065002,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Altenheim - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+317,1065003,,,"Behindertenparkplatz ""Rumfordstraße 20""",,,,,,,,,,,48.133493532746414,11.577681948897384,1065004,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,BRK-Reisedienst - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-17.00 Uhr bis 2 Stunden,,,,
+318,1065005,,,"Behindertenparkplatz ""Salvatorplatz 2""",,,,,,,,,,,48.14208709201882,11.57534067608934,1065006,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Kirche, Staatsministerien - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+319,1065007,,,"Behindertenparkplatz ""Sandstraße bei 9""",,,,,,,,,,,48.14771800884488,11.555378134406444,1065008,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Ärzteversorgung Niedersachsen - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-19.00 Uhr bis 2 Stunden</p>
+",,,,
+320,1065009,,,"Behindertenparkplatz ""Schellingstraße 31""",,,,,,,,,,,48.15041919827745,11.575272037493873,1065010,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Sozialverband VdK Bayern - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 7.00-18.00 Uhr,,,,
+321,1065011,,,"Behindertenparkplatz ""Schellingstraße 155""",,,,,,,,,,,48.15528318353826,11.558169012663948,1065012,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Landesamt für Versorgung -Behinderten-beratung - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-17.00 Uhr,,,,
+322,1065015,,,"Behindertenparkplatz ""Schinkelstraße 52""",,,,,,,,,,,48.17374825186426,11.592780691740748,1065016,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+behindertengerechte Wohnungen - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+323,1065019,,,"Behindertenparkplatz ""Schleißheimer Straße 142""",,,,,,,,,,,48.160141275735114,11.563322669563805,1065020,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Nordbad - Anzahl: 2 - zeitliche Einschränkung: 7.00-22.00 Uhr</p>
+",,,,
+324,1065025,,,"Behindertenparkplatz ""Schlüterstraße 1""",,,,,,,,,,,48.17442088947346,11.589723205460986,1065026,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Behindertengerechte Wohnungen - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+325,1065027,,,"Behindertenparkplatz ""Schrammerstraße ggü. 3""",,,,,,,,,,,48.13905617500619,11.576521170442872,1065028,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+allgemeiner Bedarf - Anzahl: 6 - zeitliche Einschränkung: keine</p>
+",,,,
+326,1065029,,,"Behindertenparkplatz ""Seeaustraße 2""",,,,,,,,,,,48.14445698991957,11.591533920882421,1065030,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Prähistorische Sammlung - Anzahl: 2 - zeitliche Einschränkung: 8.00-20.00 Uhr,,,,
+327,1065031,,,"Behindertenparkplatz ""Seerieder Straße 12""",,,,,,,,,,,48.13467806260618,11.602198381699388,1065032,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Verbund behinderter Arbeitgeberinnen - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+328,1065033,,,"Behindertenparkplatz ""Seitzstraße 10""",,,,,,,,,,,48.141096507321784,11.584842055150279,1065034,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Orthopädiefirma - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 08.00 bis 17.00 Uhr,,,,
+329,1065037,,,"Behindertenparkplatz ""Siegenburger Straße ggü. 15""",,,,,,,,,,,48.12785344902975,11.530919014981528,1065038,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Kleingartenanlage - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+330,1065039,,,"Behindertenparkplatz ""Siegenburger Straße ggü. 58""",,,,,,,,,,,48.12801322670866,11.521668549357168,1065040,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Kleingartenanlage - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+331,1065041,,,"Behindertenparkplatz ""Siegfriedstraße 22""",,,,,,,,,,,48.164340344233025,11.58373394860399,1065042,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Gymnasium - Anzahl: 2 - zeitliche Einschränkung: Mo-Do werktags 17.00-22.00 Uhr,,,,
+332,1065043,,,"Behindertenparkplatz ""Sollner Straße 85""",,,,,,,,,,,48.073852796577015,11.5266521866857,1065044,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 17.00-22.00 Uhr bis 2 Stunden,,,,
+333,1065045,,,"Behindertenparkplatz ""Sonnenstraße 9""",,,,,,,,,,,48.13791570496419,11.56572776541928,1065046,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Sonnenstraße 9""","Behindertenparkplatz ""Sonnenstraße 9""",Medizinisches Kaufhaus - Anzahl: 3 - zeitliche Einschränkung: keine,,,,
+334,1065047,,,"Behindertenparkplatz ""Sophienstraße 1""",,,,,,,,,,,48.141194533613636,11.5663049263157,1065048,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Barmer - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-17.00 Uhr bis 2 Stunden,,,,
+335,1065049,,,"Behindertenparkplatz ""Soxhletstraße ggü. 6""",,,,,,,,,,,48.1711571211558,11.593755758187314,1065050,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Ungererbad (Privatgrund) - Anzahl: 5 - zeitliche Einschränkung: keine,,,,
+336,1065051,,,"Behindertenparkplatz ""St.-Anna-Straße 27""",,,,,,,,,,,48.14058559298672,11.586566083774027,1065052,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf (gegenüber) - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+337,1065053,,,"Behindertenparkplatz ""Tegernseer Landstraße 10""",,,,,,,,,,,48.11937364833718,11.583787880603529,1065054,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arztpraxen, Geschäfte - Anzahl: 1 - zeitliche Einschränkung: 8.00-18.00 Uhr</p>
+",,,,
+338,1065055,,,"Behindertenparkplatz ""St.-Bonifatius-Straße ggü. 20""",,,,,,,,,,,48.11835129632248,11.585837643988052,1065056,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Ostfriedhof (gegenüber Zugspitzstraße) - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+339,1065059,,,"Behindertenparkplatz ""Stephensonplatz 1""",,,,,,,,,,,48.093601054367426,11.630666181051788,1065060,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,S-Bahnhof Perlach (P+R-Anlage) - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+340,1065061,,,"Behindertenparkplatz ""Stiftsbogen 89""",,,,,,,,,,,48.12023031109704,11.48539495140267,1065062,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,VdK Außenstelle - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+341,1065063,,,"Behindertenparkplatz ""St.-Jakobs-Platz 12""",,,,,,,,,,,48.133858715787156,11.573064007224547,1065064,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Stadtmuseum, DMSG - Anzahl: 3 - zeitliche Einschränkung: keine</p>
+",,,,
+342,1065065,,,"Behindertenparkplatz ""St.-Martin-Straße 2""",,,,,,,,,,,48.11597722446917,11.58092101608654,1065066,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Bibliothek - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+343,1065067,,,"Behindertenparkplatz ""St.-Martin-Straße ggü. 64""",,,,,,,,,,,48.11844743322467,11.595164745603537,1065068,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Ostfriedhof, S-Bahnhof St.-Martin-Straße - Anzahl: 2 - zeitliche Einschränkung: keine",,,,
+344,1065069,,,"Behindertenparkplatz ""Stockacher Straße 5""",,,,,,,,,,,48.14970062853055,11.44268648562867,1065070,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+345,1065071,,,"Behindertenparkplatz ""Streitfeldstraße 23""",,,,,,,,,,,48.13148597148391,11.61966092580469,1065072,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Sozialreferat - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+346,1065073,,,"Behindertenparkplatz ""Milbertshofener Platz 1""",,,,,,,,,,,48.184835551060594,11.564135328045486,1065074,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Kirche - Anzahl: 1 - zeitliche Einschränkung: Sa 17.00-19.00 Uhr So u. Feiertag 9.00-12.00 Uhr</p>
+",,,,
+347,1065079,,,"Behindertenparkplatz ""Tegernseer Landstraße 210""",,,,,,,,,,,48.10167437141395,11.583729163574882,1065080,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Polizeipräsidium - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 7.00-18.00 Uhr,,,,
+348,1065081,,,"Behindertenparkplatz ""Tegernseer Landstraße 224""",,,,,,,,,,,48.100261025902384,11.584593128575953,1065082,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Staatliches Hochbauamt München II - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+349,1065083,,,"Behindertenparkplatz ""Tegernseer Platz 7""",,,,,,,,,,,48.11534865100054,11.579952426448074,1065084,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Postamt - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-20.00 Uhr Sa werktags 8.00-14.00 Uhr,,,,
+350,1065085,,,"Behindertenparkplatz ""Tengstraße 22""",,,,,,,,,,,48.1576894587289,11.568988795900434,1065086,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-19.00 Uhr Sa 9.00-14.00 Uhr</p>
+",,,,
+351,1065087,,,"Behindertenparkplatz ""Terofalstraße 66""",,,,,,,,,,,48.12570089492976,11.47501712955876,1065088,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Kirche, Geschäfte - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+352,1065091,,,"Behindertenparkplatz ""Theresienstraße bei 72""",,,,,,,,,,,48.14907485043887,11.57167472756563,1065092,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Pinakotheken - Anzahl: 3 - zeitliche Einschränkung: 9.00-20.00 Uhr</p>
+",,,,
+353,1065093,,,"Behindertenparkplatz ""Thierschstraße 2""",,,,,,,,,,,48.13405944499272,11.583669385723514,1065094,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Postamt - Anzahl: 3 - zeitliche Einschränkung: keine,,,,
+354,1065095,,,"Behindertenparkplatz ""Fritz-Schäffer-Straße bei 26""""",,,,,,,,,,,48.103464626903595,11.648628309618827,1065096,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Deutsche Rentenversicherung - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr</p>
+",,,,
+355,1065097,,,"Behindertenparkplatz ""Thomas-Dehler-Straße 9""",,,,,,,,,,,48.10178545106345,11.646538452394694,1065098,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Deutsche Rentenversicherung - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr,,,,
+356,1065099,,,"Behindertenparkplatz ""Thomas-Dehler-Straße ggü. 12""",,,,,,,,,,,48.10082212213311,11.646202669824989,1065100,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Kulturhaus (gegenüber auf der Ostseite) - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+357,1065101,,,"Behindertenparkplatz ""Thomas-Dehler-Straße 10""",,,,,,,,,,,48.10115883230634,11.64602581833255,1065102,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Einkaufszentrum (PEP) - Anzahl: 6 - zeitliche Einschränkung: keine,,,,
+358,1065103,,,"Behindertenparkplatz ""Thomas-Dehler-Straße 16""",,,,,,,,,,,48.09969111528971,11.645445125012404,1065104,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Sozialamt - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+359,1065105,,,"Behindertenparkplatz ""Torquato-Tasso-Straße 40""",,,,,,,,,,,48.180816492584185,11.581355066002576,1065106,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Kirche - Anzahl: 2 - zeitliche Einschränkung: Sa 17.00-20.00 Uhr So u. Feiertag 9.00-12.00 Uhr,,,,
+360,1065107,,,"Behindertenparkplatz ""Trappentreustraße 20""",,,,,,,,,,,48.13720279245696,11.534414652752885,1065108,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Orthopädiegeschäft - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 7.00-17.00 Uhr</p>
+",,,,
+361,1065111,,,"Behindertenparkplatz ""Truderinger Straße 261""",,,,,,,,,,,48.12581018311026,11.662634547817948,1065112,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-/S-Bahnhof Trudering (Parkplatz) - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+362,1065113,,,"Behindertenparkplatz ""Truderinger Straße 301""",,,,,,,,,,,48.12201832695208,11.669999909120707,1065114,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Geschäftszentrum Trudering - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-20.00 Uhr Sa 8.00-14.00 Uhr,,,,
+363,1065115,,,"Behindertenparkplatz ""Tulbeckstraße 31""",,,,,,,,,,,48.13689646204545,11.538743773555776,1065116,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Alten-und Service-Zentrum - Anzahl: 2 - zeitliche Einschränkung: keine,,,,
+364,1065117,,,"Behindertenparkplatz ""Tumblingerstraße 21""",,,,,,,,,,,48.12558416316197,11.557422677241181,1065118,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Arbeitsamt - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 7.00-18.00 Uhr,,,,
+365,1065119,,,"Behindertenparkplatz ""Ungererstraße 130""",,,,,,,,,,,48.174682618797576,11.598918008910385,1065120,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Nordfriedhof - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+366,1065121,,,"Behindertenparkplatz ""Ungererstraße 215""",,,,,,,,,,,48.18314381708817,11.607613449047264,1065122,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Studentenstadt - Anzahl: 6 - zeitliche Einschränkung: keine</p>
+",,,,
+367,1065123,,,"Behindertenparkplatz ""Unsöldstraße 2""",,,,,,,,,,,48.14253279834204,11.585354547423302,1065124,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Versicherung - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-16.00 Uhr,,,,
+368,1065125,,,"Behindertenparkplatz ""Valleystraße 37""",,,,,,,,,,,48.1169840751237,11.544139620097837,1065126,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Südbad - Anzahl: 1 - zeitliche Einschränkung: 8.00-21.00 Uhr,,,,
+369,1065127,,,"Behindertenparkplatz ""Wackersberger Straße 62""",,,,,,,,,,,48.115980325801814,11.542758437801563,1065128,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Blindenheim - Anzahl: 3 - zeitliche Einschränkung: keine,,,,
+370,1065129,,,"Behindertenparkplatz ""Waldfriedhofstraße 90""",,,,,,,,,,,48.112289265990334,11.50385910348204,1065130,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Arztpraxen, Geschäfte (Nordseite, östlich der Schongauer Straße) - Anzahl: 1 - zeitliche Einschränkung: Mo-Sa werktags 9.00-20.00 Uhr",,,,
+371,1065131,,,"Behindertenparkplatz ""Waltherstraße 32a""",,,,,,,,,,,48.12904506776984,11.559361039675581,1065132,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"Arztpraxen, Apotheke - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr Sa werktags 9.00-14.00 Uhr",,,,
+372,1065133,,,"Behindertenparkplatz ""Weißenburger Straße 12""",,,,,,,,,,,48.12849416431425,11.596758406982808,1065134,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arztpraxen - Anzahl: 1 - zeitliche Einschränkung: werktags 8.00-19.00 Uhr</p>
+",,,,
+373,1065135,,,"Behindertenparkplatz ""Werinherstraße 2""",,,,,,,,,,,48.11549010202874,11.580515347557508,1065136,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Postamt - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+374,1065137,,,"Behindertenparkplatz ""Werinherstraße 33""",,,,,,,,,,,48.115432935136894,11.587089933457214,1065138,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Volkshochschule - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+375,1065141,,,"Behindertenparkplatz ""Westendstraße 91""",,,,,,,,,,,48.13808865558714,11.540009547353385,1065142,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+376,1065143,,,"Behindertenparkplatz ""Westendstraße 93""",,,,,,,,,,,48.13805599808445,11.539714242585987,1065144,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+377,1065145,,,"Behindertenparkplatz ""Westendstraße 230""",,,,,,,,,,,48.13094832227811,11.518134965620948,1065146,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Kleingartenanlage - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+378,1065147,,,"Behindertenparkplatz ""Westenriederstraße 51""",,,,,,,,,,,48.13505299076488,11.581128793782517,1065148,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arztpraxen, Geschäfte - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+379,1065149,,,"Behindertenparkplatz ""Wettersteinplatz""",,,,,,,,,,,48.1086493392435,11.575266675608967,1065150,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Wettersteinplatz""","Behindertenparkplatz ""Wettersteinplatz""","<p>
+U-Bahnhof Wettersteinplatz - Anzahl: 4 - zeitliche Einschränkung: keine</p>",,,,
+380,1065151,,,"Behindertenparkplatz ""Winthirstraße 24""",,,,,,,,,,,48.15627790481742,11.527830995792769,1065152,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Blindeninstitut - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+381,1065153,,,"Behindertenparkplatz ""Wolfgangstraße 18""",,,,,,,,,,,48.13308297518556,11.601256806629875,1065154,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Alten-und Service-Zentrum - Anzahl: 1 - zeitliche Einschränkung: keine,,,,
+382,1065155,,,"Behindertenparkplatz ""Wörthstraße 10""",,,,,,,,,,,48.13120020401949,11.599054686174894,1065156,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arztpraxis - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 6.00-20.00 Uhr</p>
+",,,,
+383,1065157,,,"Behindertenparkplatz ""Wörthstraße 43""",,,,,,,,,,,48.129389323305105,11.60201750445273,1065158,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Ärztehaus - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr Sa werktags 8.00-12.00 Uhr,,,,
+384,1065159,,,"Behindertenparkplatz ""Wotanstraße 117""",,,,,,,,,,,48.15453311305722,11.510589390911893,1065160,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Postamt - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr Sa werktags 9.00-14.00 Uhr bis 1 Stunde,,,,
+385,1065165,,,"Behindertenparkplatz ""Züricher Straße 37""",,,,,,,,,,,48.09474952794627,11.499127564425144,1065166,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Geschäfte, U-Bahnhof - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+386,1065167,,,"Behindertenparkplatz ""Zwillingstraße 5""",,,,,,,,,,,48.18271149751249,11.568476793190882,1065168,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Berufsgenossen-schaft für Gesundheitsdienst u. Wohlfahrtspflege - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr 8.00-15.00 Uhr,,,,
+387,1074911,,,"Behindertenparkplatz ""Meindlstraße ggü. 22""",,,,,,,,,,,48.117068217264794,11.538175640305683,1074912,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Meindlstraße ggü. 22""","Behindertenparkplatz ""Meindlstraße ggü. 22""","<p>
+Nähe Aufzug zum U-Bahnhof Harras - Anzahl: 2 - zeitliche Einschränkung: keine</p>",,,,
+388,1080862,,,"Behindertenparkplatz ""Amalienstraße 17""",,,,,,,,,,,48.146919656576834,11.576187810520613,1080863,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Ludwig-Maximilians-Universität (Universitätsgebäude für Mathematik, Informatik und Statistik) - Anzahl: 1 - zeitliche Einschränkung: werktags 7.00-20.00 Uhr</p>
+",,,,
+389,1080865,,,"Behindertenparkplatz ""Augustenstraße 115""",,,,,,,,,,,48.1542524186278,11.56617489383839,1080866,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Diagnoseklinik München - Anzahl: 1 - zeitliche Einschränkung: 7.00-20.00 Uhr bis 2 Stunden</p>
+",,,,
+390,1080868,,,"Behindertenparkplatz ""Alfred-Neumann-Anger 8""",,,,,,,,,,,48.09541633992585,11.651864789275757,1080869,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+391,1080870,,,"Behindertenparkplatz ""Balanstraße 28""",,,,,,,,,,,48.12547323915461,11.59572081863373,1080871,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Alten- und Service-Zentrum - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr</p>
+",,,,
+392,1080872,,,"Behindertenparkplatz ""Baldestraße 21""",,,,,,,,,,,48.12396588380327,11.567020653469964,1080873,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arztpraxen und Apotheke - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr 8.00-19.00 Uhr Sa 8.00-13.00 Uhr</p>
+",,,,
+393,1080874,,,"Behindertenparkplatz ""Baldurstraße 49a""",,,,,,,,,,,48.16862740444851,11.523859316642957,1080875,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Kleingartenanlage - Anzahl: 4 - zeitliche Einschränkung: keine</p>
+",,,,
+394,1080891,,,"Behindertenparkplatz ""Bayerwaldstraße 51""",,,,,,,,,,,48.08772520592203,11.628298743125212,1080892,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Praxis für Physiotherapie - Anzahl: 1 - zeitliche Einschränkung: Mo-Do werktags 8.00-20.00 Uhr Fr werktags 8.00-18.00 Uhrbis 2 Stunden</p>",,,,
+395,1080893,,,"Behindertenparkplatz ""Belgradstraße 59""",,,,,,,,,,,48.16613028331635,11.57397294146259,1080894,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Supermarkt - Anzahl: 1 - zeitliche Einschränkung: werktags 7.00-20.00 Uhr bis 1 Stunde</p>
+",,,,
+396,1080895,,,"Behindertenparkplatz ""Belgradstraße 68""",,,,,,,,,,,48.16827977500729,11.57399549733471,1080896,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Supermarkt - Anzahl: 1 - zeitliche Einschränkung: werktags 7.00-20.00 Uhr bis 1 Stunde</p>
+",,,,
+397,1080897,,,"Behindertenparkplatz ""Birnauer Straße 4""",,,,,,,,,,,48.17542975412019,11.565646933494504,1080898,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Petuelring - Anzahl: 3 - zeitliche Einschränkung: keine</p>
+",,,,
+398,1080899,,,"Behindertenparkplatz ""Bodenehrstraße 18""",,,,,,,,,,,48.117534880837134,11.535693474526164,1080900,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Sozialverband Deutschland - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr 7.00-16.00 Uhr</p>
+",,,,
+399,1080913,,,"Behindertenparkplatz ""Corneliusstraße 22""",,,,,,,,,,,48.13096475822958,11.576980022661692,1080914,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Corneliusstraße 22""","Behindertenparkplatz ""Corneliusstraße 22""","<p>
+amubante Behinderteneinrichtung - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr</p>",,,,
+400,1080915,,,"Behindertenparkplatz ""Corneliusstraße 42""",,,,,,,,,,,48.12988557532185,11.578470511674508,1080916,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr</p>
+",,,,
+401,1080917,,,"Behindertenparkplatz ""Deroystraße 12""",,,,,,,,,,,48.14501819987678,11.545705901617193,1080918,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Deroystraße 12""","Behindertenparkplatz ""Deroystraße 12""","<p>
+Finanzämter - Anzahl: 2 - zeitliche Einschränkung: keine</p>",,,,
+402,1080919,,,"Behindertenparkplatz ""Elsenheimerstraße 39""",,,,,,,,,,,48.13791921476804,11.521610247771436,1080920,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Regierung von Oberbayern - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 8.00-17.00 Uhr</p>
+",,,,
+403,1080921,,,"Behindertenparkplatz ""Emmy-Noether-Straße 2""",,,,,,,,,,,48.171126471565145,11.531264478890705,1080922,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Stadtwerke München - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 7.00-18.00 Uhr bis 2 Stunden</p>
+",,,,
+404,1080923,,,"Behindertenparkplatz ""Karl-Theodor-Straße 95""",,,,,,,,,,,48.167311331686,11.571126528350863,1080924,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Orthopädie-Schuhtechnik Geschäft&nbsp; - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr Sa werktags 9.00-12.00 Uhr</p>
+",,,,
+405,1080925,,,"Behindertenparkplatz ""Am Aubinger Wasserturm 28""",,,,,,,,,,,48.15268862453485,11.416815705322323,1080926,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Alten- und Service-Zentrum&nbsp; - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-17.00 Uhr</p>
+",,,,
+406,1080930,,,"Behindertenparkplatz ""Goethestraße 74""",,,,,,,,,,,48.130425834933924,11.558261074560876,1080931,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Sozialverband VdK Bayern - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr</p>
+",,,,
+407,1080932,,,"Behindertenparkplatz ""Gollierstraße 55""",,,,,,,,,,,48.13577892371934,11.538155885967585,1080933,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Evangelische Kirche - Anzahl: 1 - zeitliche Einschränkung: 9.00-12.00 Uhr</p>
+",,,,
+408,1080934,,,"Behindertenparkplatz ""Hanauer Straße ggü. 61""",,,,,,,,,,,48.18160989007072,11.529474644162855,1080935,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Olympia-Einkaufszentrum, Ausgang Hanauer Str. Süd - Anzahl: 3 - zeitliche Einschränkung: keine</p>
+",,,,
+409,1080936,,,"Behindertenparkplatz ""Hanns-Schwindt-Straße 17""",,,,,,,,,,,48.13515695857116,11.687475961907358,1080937,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arztpraxen - Anzahl: 3 - zeitliche Einschränkung: Mo-Fr werktags 8.00-19.00 Uhr</p>
+",,,,
+410,1080938,,,"Behindertenparkplatz ""Heimburgstraße 2c""",,,,,,,,,,,48.14606150641268,11.444277964291148,1080939,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Stiftung Pfennigparade - Anzahl: 1- zeitliche Einschränkung: keine</p>
+",,,,
+411,1080940,,,"Behindertenparkplatz ""Herzogspitalstraße westl. 24""",,,,,,,,,,,48.13793680289851,11.565741134732876,1080941,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arztpraxen, Geschäfte, Krankenkasse - Anzahl: 3 - zeitliche Einschränkung: keine</p>
+",,,,
+412,1080942,,,"Behindertenparkplatz ""Heßstraße 22""",,,,,,,,,,,48.15100878303328,11.569360492196347,1080943,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Diakoniewerk München - Anzahl: 2 - zeitliche Einschränkung: bis 2 Stunden</p>
+",,,,
+413,1080944,,,"Behindertenparkplatz ""Linprunstraße 22""",,,,,,,,,,,48.14974262073213,11.55450055931081,1080945,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Oberlandesgericht - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-16.00 bis 2 Stunden</p>
+",,,,
+414,1080946,,,"Behindertenparkplatz ""Hirtenstraße 4""",,,,,,,,,,,48.14192917066662,11.559640617989256,1080947,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Caritas Verwaltungsgebäude - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr bis 2 Stunden</p>
+",,,,
+415,1080948,,,"Behindertenparkplatz ""Hohenstaufenstraße 1""",,,,,,,,,,,48.15656914465404,11.576081579960997,1080949,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Zentrum Seniorenstudium - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr</p>
+",,,,
+416,1080950,,,"Behindertenparkplatz ""Holzstraße 9""",,,,,,,,,,,48.13034290778947,11.568404582841307,1080951,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Kirche - Anzahl: 1 - zeitliche Einschränkung: Mo-Sa 15.00-23.00 Uhr So 9.00-23.00 Uhr</p>
+",,,,
+417,1080952,,,"Behindertenparkplatz ""Häberlstraße 17""",,,,,,,,,,,48.12736448121217,11.55849550802295,1080953,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Elternsein e.V. - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr 9.00-18.00 Uhr</p>
+",,,,
+418,1080954,,,"Behindertenparkplatz ""Infanteriestraße 5""",,,,,,,,,,,48.15799896086056,11.556942722839997,1080955,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Amtsgericht - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 7.00-18.00 Uhr</p>
+",,,,
+419,1080956,,,"Behindertenparkplatz ""Ismaninger Straße ggü. 50""",,,,,,,,,,,48.14056999763509,11.59996944910986,1080957,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Museum Villa Stuck - Anzahl: 2 - zeitliche Einschränkung: Mi-So 9.00-18.00 Uhr</p>
+",,,,
+420,1080958,,,"Behindertenparkplatz ""Bunzlauer Straße 7""",,,,,,,,,,,48.18045112763521,11.507236731570694,1080959,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Bahnhof Moosach - Anzahl: 1 - zeitliche Einschränkung: keine</p>",,,,
+421,1080960,,,"Behindertenparkplatz ""Cuvilliesstraße 14a""",,,,,,,,,,,48.143383201978715,11.604677647810583,1080961,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Internistische Praxis - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr bis 2 Stunden</p>
+",,,,
+422,1080962,,,"Behindertenparkplatz ""Kapellenstraße ggü. 2""",,,,,,,,,,,48.13936920480588,11.56878588089319,1080963,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Fußgängerzone - Anzahl: 1 - zeitliche Einschränkung: bis 2 Stunden</p>
+",,,,
+423,1080971,,,"Behindertenparkplatz ""Lindwurmstraße 127""",,,,,,,,,,,48.127420298379334,11.554310523480908,1080972,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,<p>Münchner Volkshochschule mit Rollstuhlfahrer-Kursen - Anzahl: 1 - zeitliche Einschränkung: werktags 8.00-20.00 Uhr</p>,,,,
+424,1080973,,,"Behindertenparkplatz ""Mühldorfstraße 1""",,,,,,,,,,,48.12898932238538,11.609959971159446,1080974,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Jobcenter München Fachstelle für berufliche Wiedereingliederung - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 7.30-17.00 Uhr</p>
+",,,,
+425,1080975,,,"Behindertenparkplatz ""Klingsorstraße ggü. 3""",,,,,,,,,,,48.15517260717971,11.63011773231274,1080976,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Geschäfte, Arztpraxen, Apotheke - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+426,1080977,,,"Behindertenparkplatz ""Fraunbergplatz 5""",,,,,,,,,,,48.099997106334996,11.544551428921412,1080978,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Maria Thalkirchen Pfarramt - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+427,1080985,,,"Behindertenparkplatz ""Luganoweg 8""",,,,,,,,,,,48.09113492665846,11.474106783785995,1080986,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Seniorenzentrum - Anzahl: 1 - zeitliche Einschränkung: 8.00-20.00 Uhr bis 3 Stunden</p>
+",,,,
+428,1080987,,,"Behindertenparkplatz ""Müllerstraße 14""",,,,,,,,,,,48.132606566002565,11.573719240296985,1080988,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Beratungsstelle, behindertengerechte Wohnungen - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr bis 3 Stunden</p>
+",,,,
+429,1080989,,,"Behindertenparkplatz ""Barthstraße 20""",,,,,,,,,,,48.138031523707646,11.52811903652757,1080990,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Verwaltungs-Berufsgenossenschaft Beratungsstelle für Behinderte - Anzahl: 2 - zeitliche Einschränkung: werktags 8.00-17.00 Uhr</p>
+",,,,
+430,1080991,,,"Behindertenparkplatz ""Ricarda-Huch-Straße 4""",,,,,,,,,,,48.17912492812669,11.57499498388612,1080992,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Generationengarten - Anzahl: 1 - zeitliche Einschränkung: 8.00-20.00 Uhr bis 5 Stunden</p>
+",,,,
+431,1080993,,,"Behindertenparkplatz ""Salzmesserstraße 43""",,,,,,,,,,,48.13008642665279,11.67035805940646,1080994,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Am Moosfeld - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+432,1080995,,,"Behindertenparkplatz ""Salzmesserstraße 43a""",,,,,,,,,,,48.13024868914963,11.670491364189834,1080996,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Am Moosfeld - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+433,1080997,,,"Behindertenparkplatz ""Marsstraße 42""",,,,,,,,,,,48.144496072536505,11.554781061855786,1081110,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Deutsche Angestellten Akademie - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr</p>
+",,,,
+434,1081002,,,"Behindertenparkplatz ""Nordendstraße 43""",,,,,,,,,,,48.15824176910003,11.574824486590662,1081003,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Sanotätshaus - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-19.00 Uhr Sa werktags 9.00-14.00 Uhr</p>
+",,,,
+435,1081004,,,"Behindertenparkplatz ""Nymphenburger Straße 171""",,,,,,,,,,,48.15540573209672,11.532281144970169,1081005,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Alten- und Service-Zentrum - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr</p>
+",,,,
+436,1081006,,,"Behindertenparkplatz ""Oberföhringer Straße 228""",,,,,,,,,,,48.17271042507221,11.627578415557712,1081007,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Orthopädiegeschäft - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.30-18.00 Uhr bis 1 Stunde</p>
+",,,,
+437,1081008,,,"Behindertenparkplatz ""Milbertshofener Straße 90""",,,,,,,,,,,48.184193473575924,11.578886753500646,1081009,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Shuttle-Service für Behinderte,, Geschäfte, Ärztehaus - Anzahl: 2 - zeitliche Einschränkung: bis 3 Stunden</p>
+",,,,
+438,1081010,,,"Behindertenparkplatz ""Volkartstraße 5""",,,,,,,,,,,48.1545699401684,11.531321014999927,1081011,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Sanitätshaus, othopädische Werkstatt, Ärzte - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr Sa werktags 8.00-14.00 Uhr bis 2 Stunden</p>
+",,,,
+439,1081012,,,"Behindertenparkplatz ""St.-Magnus-Straße 34""",,,,,,,,,,,48.093528439726455,11.569638604174685,1081013,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Geschäfte, Orthopädiegeschäft - Anzahl: 1 - zeitliche Einschränkung: Mo-Sa werktags 7.00-20.00 Uhr bis 3 Stunden</p>
+",,,,
+440,1081014,,,"Behindertenparkplatz ""Greinerberg 17""",,,,,,,,,,,48.105105577494754,11.543465722552876,1081015,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Pflegeeinrichtung - Anzahl: 1 - zeitliche Einschränkung: 7.00-18.00 Uhr</p>
+",,,,
+441,1081016,,,"Behindertenparkplatz ""Packenreiterstraße 48""",,,,,,,,,,,48.16362912644273,11.47569937460066,1081017,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Alten- und Servicezentrum - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+442,1081018,,,"Behindertenparkplatz ""Pelkovenstraße ggü. 61""",,,,,,,,,,,48.18182218463234,11.517753099332642,1081019,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Moosacher St.-Martins-Platz - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+443,1081020,,,"Behindertenparkplatz ""Peschelanger 3""",,,,,,,,,,,48.10780023352265,11.656333498332796,1081021,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Behörden, Ärzte, Apotheke - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+444,1081026,,,"Behindertenparkplatz ""Pidinger Straße 10""",,,,,,,,,,,48.099991501949965,11.51139531315706,1081027,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Psychologische Praxis für Menschen und Tiere - Anzahl: 1 - zeitliche Einschränkung: 8.00-22.00 Uhr</p>
+",,,,
+445,1081028,,,"Behindertenparkplatz ""Untere Weidenstraße bei 29""",,,,,,,,,,,48.118001697777224,11.573833181560074,1081029,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Kreisverwaltungsreferat Verkehsüberwachung (Parkausweise für Schwerbehinderte) - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 7.00-18.00 Uhr bis 2 Stunden</p>
+",,,,
+446,1081034,,,"Behindertenparkplatz ""Renatastraße 64""",,,,,,,,,,,48.15605776667617,11.526784623650599,1081035,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Blindeninstitut - Anzahl: 2 - zeitliche Beschränkung: keine</p>
+",,,,
+447,1081036,,,"Behindertenparkplatz ""Zellstraße (Volksbad)""",,,,,,,,,,,48.131887368261864,11.588624121313584,1081037,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Zellstraße (Volksbad)""","Behindertenparkplatz ""Zellstraße (Volksbad)""","<p>
+Müllersches Volksbad - Anzahl: 2 - zeitliche Einschränkung: werktags 7.00 bis 23.00 Uhr</p>",,,,
+448,1081038,,,"Behindertenparkplatz ""Rupprechtstraße 25""",,,,,,,,,,,48.148874058134766,11.539469815269982,1081039,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Fachstelle Kreisjugendring - Anzahl: 1 - zeitliche Einschränkung: werktags 9.00-20.00 Uhr</p>
+",,,,
+449,1081040,,,"Behindertenparkplatz ""Schleißheimer Straße 93""",,,,,,,,,,,48.15962701309737,11.562890168814267,1081041,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Allgemeiner Bedarf - Anzahl: 2 - zeitliche Einschränkung: werktags 9.00-20.00 Uhr</p>
+",,,,
+450,1081042,,,"Behindertenparkplatz ""Schleißheimer Straße 131""",,,,,,,,,,,48.16348674265391,11.563758578985368,1081043,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: werktags Mo-Fr 8.00-18.00 Uhr</p>
+",,,,
+451,1081044,,,"Behindertenparkplatz ""Schleißheimer Straße 413""",,,,,,,,,,,48.20400760392643,11.563697130197443,1081045,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Geschäfte - Anzahl: 2 - zeitliche Einschränkung: werktags 7.00-19.00 Uhr</p>
+",,,,
+452,1081046,,,"Behindertenparkplatz ""Bahnhofplatz 1""",,,,,,,,,,,48.1396284467477,11.56123234831227,1081047,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Hauptbahnhof, Post, Geschäfte - Anzahl: 3 - zeitliche Einschränkung: keine</p>
+",,,,
+453,1081048,,,"Behindertenparkplatz ""Schneeglöckchenstraße 89a""",,,,,,,,,,,48.19919814513887,11.51156367624931,1081049,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Behindertengerechte Wohnungen - Anzahl:1 - zeitliche Einschränkung: keine</p>
+",,,,
+454,1081050,,,"Behindertenparkplatz ""Schumacherring 24""",,,,,,,,,,,48.099448768404706,11.641244417817202,1081051,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Kirche - Anzahl: 1 - zeitliche Einschränkung: Montag bis Sonntag von 9 bis 18 Uhr</p>",,,,
+455,1081052,,,"Behindertenparkplatz ""Schwanthalerstraße 62""",,,,,,,,,,,48.137545562353026,11.555136668513727,1081053,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Sozialbürgerhaus Mitte - Anzahl: 1 - zeitliche Einschränkung: werktags Mo-Fr 8.00-19.00 Uhr bis 2 Stunden</p>
+",,,,
+456,1081054,,,"Behindertenparkplatz ""Sonnenstraße 26""",,,,,,,,,,,48.13486883632678,11.565417649423315,1081055,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Isar-Medizin-Zentrum - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+457,1081056,,,"Behindertenparkplatz ""Sonnenstraße bei 26""",,,,,,,,,,,48.134725301685904,11.565512906110252,1081057,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Isar-Medizin-Zentrum - Anzahl: 1 - zeitliche Einschränkung: bis 3 Stunden</p>
+",,,,
+458,1081058,,,"Behindertenparkplatz ""Sparkassenstraße 17""",,,,,,,,,,,48.13796685476896,11.578666464644181,1081059,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Postbank, allgemeiner Bedarf - Anzahl: 3 - zeitliche Einschränkung: keine</p>",,,,
+459,1081060,,,"Behindertenparkplatz ""Tegernseer Landstraße bei 10""",,,,,,,,,,,48.11933305773396,11.583754629746737,1081061,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Tegernseer Landstraße bei 10""","Behindertenparkplatz ""Tegernseer Landstraße bei 10""","<p>
+Arztpraxen, Geschäfte - Anzahl: 1 - zeitliche Einschränkung: keine</p>",,,,
+460,1081062,,,"Behindertenparkplatz ""St.-Cajetan-Straße 3""",,,,,,,,,,,48.12156935108427,11.599364578861945,1081063,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Selbsthilfeorganisation Rollstuhlfahrer und Ihre Freunde e.V. - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-16.00 Uhr bis 2 Stunden</p>
+",,,,
+461,1081064,,,"Behindertenparkplatz ""St.-Cajetan-Straße bei 7""",,,,,,,,,,,48.12196086402563,11.600745032870092,1081065,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: 9.00-18.00 bis 2 Stunden</p>
+",,,,
+462,1081066,,,"Behindertenparkplatz ""Stuntzstraße ggü. 6""",,,,,,,,,,,48.14243341620184,11.616348519148314,1081067,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arztpraxen, Geschäfte - Anzahl: 1 - zeitliche Einschränkung: werktags 8.00-20.00 Uhr</p>
+",,,,
+463,1081071,,,"Behindertenparkplatz ""Rheinbergerstraße bei 7""",,,,,,,,,,,48.146120092101796,11.578868602032173,1081072,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Bayerisches Landessozialgericht - Anzahl: 2 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr</p>
+",,,,
+464,1081073,,,"Behindertenparkplatz ""Maderbräustraße bei 4""",,,,,,,,,,,48.13714410754303,11.578706776341212,1081074,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Ärztehaus - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr</p>
+",,,,
+465,1081075,,,"Behindertenparkplatz ""Moosacher Straße ggü. 80""",,,,,,,,,,,48.18594587670072,11.547725242154497,1081076,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Oberwiesenfeld - Anzahl: 9 - zeitliche Einschränkung: keine</p>
+",,,,
+466,1081077,,,"Behindertenparkplatz ""Orleansplatz bei 13""",,,,,,,,,,,48.12742422671067,11.603308836198718,1081078,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Bezirksinspektion, Sozialreferat, allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+467,1081081,,,"Behindertenparkplatz ""Stösserstraße 14""",,,,,,,,,,,48.22175057892831,11.556440723663695,1081082,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Arbeiterwohlfahrt - Anzahl: 2 - zeitliche Einschränkung: bis 2 Stunden</p>
+",,,,
+468,1081083,,,"Behindertenparkplatz ""Therese-Giehse-Alle 71""",,,,,,,,,,,48.08772152531154,11.641312419491246,1081084,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Therese-Giehse-Alle 71""","Behindertenparkplatz ""Therese-Giehse-Alle 71""","<p>
+Soziale Einrichtungen - Anzahl: 1 - zeitliche Einschränkung: keine</p>",,,,
+469,1081091,,,"Behindertenparkplatz ""Salvatorstraße 5""",,,,,,,,,,,48.14126575873207,11.575763987946527,1081092,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Fußgängerzone - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+470,1081093,,,"Behindertenparkplatz ""Richelstraße 11""",,,,,,,,,,,48.14558309991858,11.529615455919537,1081094,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Sozialgericht - Anzahl: 2 - zeitliche Einschränkung: Mo-Do werktags 7.30-16.30 Uhr Fr werktags 7.30-15.00 Uhr</p>
+",,,,
+471,1081095,,,"Behindertenparkplatz ""Reitmorstraße ggü. 39""",,,,,,,,,,,48.14337290615352,11.593967989149931,1081096,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Altenheim - Anzahl: 2 - zeitliche Einschränkung: keine</p>
+",,,,
+472,1081097,,,"Behindertenparkplatz ""Pettenkoferstraße westlich 8a""",,,,,,,,,,,48.13423599049633,11.562171667254685,1081098,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Poliklinik (Privatstraße) - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+473,1081099,,,"Behindertenparkplatz ""Pfanzeltplatz ggü. 11""",,,,,,,,,,,48.09994563220086,11.63057382321338,1081100,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Geschäfte, Arztpraxen, Stadtsparkasse - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+474,1081102,,,"Behindertenparkplatz ""Ridlerstraße 55""",,,,,,,,,,,48.134328775083134,11.532042415303476,1081103,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Integrationsfachdienst München-Freising - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-20.00 Uhr bis 2 Stunden</p>
+",,,,
+475,1081104,,,"Behindertenparkplatz ""Westendstraße 66a""",,,,,,,,,,,48.13828113117567,11.54091477682262,1081105,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Selbsthilfezentrum - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+476,1081106,,,"Behindertenparkplatz ""Ehrenbreitsteiner Straße ggü. 5""",,,,,,,,,,,48.182655152812714,11.528873385617565,1081107,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Ärztehaus und Apotheke - Anzahl: 1 - zeitliche Einschränkung: werktags 7.00-22.00 Uhr bis 3 Stunden</p>
+",,,,
+477,1081108,,,"Behindertenparkplatz ""Meindlstraße 16""",,,,,,,,,,,48.11773779888481,11.538068915802686,1081109,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Sozialbürgerhaus Sendling - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00 bis 22.00 Uhr</p>
+",,,,
+478,1081124,,,"Behindertenparkplatz ""Rosenheimer Straße 30""",,,,,,,,,,,48.129879623448794,11.591790415643281,1081125,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Orthopädiegeschäft - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18.00 Uhr</p>
+",,,,
+479,1081126,,,"Behindertenparkplatz ""St.-Pauls-Platz 11""",,,,,,,,,,,48.13655152553872,11.551591477072407,1081127,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Kirche - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+480,1081131,,,"Behindertenparkplatz ""Ungererstraße 44""",,,,,,,,,,,48.16580035334917,11.58960364975732,1081132,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+allgemeiner Bedarf - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-19.00 Uhr</p>
+",,,,
+481,1081133,,,"Behindertenparkplatz ""Ungererstraße 175""",,,,,,,,,,,48.178165167798305,11.602124807879997,1081134,,,,,,,,Nein,Nein,Nein,Nein,,"Behindertenparkplatz ""Ungererstraße 175""","Behindertenparkplatz ""Ungererstraße 175""","<p>
+Reha-Zentrum - Anzahl: 1 - zeitliche Einschränkung: werktags 8.00-20.00</p>",,,,
+482,1081140,,,"Behindertenparkplatz ""Dachauer Straße 34""",,,,,,,,,,,48.145440687361756,11.559536714072358,1081141,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Begegnungsstätte für Behinderte - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-17.00 Uhr</p>
+",,,,
+483,1081151,,,"Behindertenparkplatz ""Paul-Löbe-Straße 11""",,,,,,,,,,,48.100899103900474,11.640569733328958,1081152,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Alte- und Service-Zentrum und Caritas Zentrum Perlach - Anzahl: 2 - zeitliche Einschränkung: Mo-Do 9.00-17.00 Uhr Fr 9.00-15.00 Uhr</p>
+",,,,
+484,1082955,,,Behindertenparkplatz Angererstraße 7d,,,,,,,,,,,48.16593177482639,11.572583184962793,1082956,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz Angererstraße 7d,Behindertenparkplatz Angererstraße 7d,"<p>
+Postamt - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 9.00-18 Uhr, Sa werktags 9.00-12.00 Uhr</p>
+",,,,
+485,1083097,,,"Behindertenparkplatz ""Grillparzerstraße 16""",,,,,,,,,,,48.1347190121411,11.610225659640053,1083098,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Zweigstelle des Sozialverband VdK Bayern e.V. - Anzahl: 1 - zeitliche Einschränkung: werktags Mo-Fr 7.30-18.00 Uhr bis 3 Stunden</p>
+",,,,
+486,1086267,,,"Behindertenparkplatz ""Menzinger Straße 54""",,,,,,,,,,,48.164786194841376,11.502352139455146,1086268,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Diagnose- und Therapiezentrum Franz-Schrank-Straße 2 - Anzahl: 4 - zeitliche Einschränkung: werktags Mo-Fr 7.00-19.00 Uhr</p>
+",,,,
+487,1087857,,,"Behindertenparkplatz ""Mundesgasse 4""",,,,,,,,,,,48.16205180411732,11.414370700592833,1087858,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Hausarztzentrum - Anzahl: 1 - zeitliche Einschränkung: werktags Mo-Fr 7.00-20.00 Uhr</p>
+",,,,
+488,1088409,,,"Behindertenparkplatz ""ggü. Baldurstraße 83""",,,,,,,,,,,48.168109040291654,11.518157114007735,1088410,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+Friedhof - Anzahl: 2 - zeitliche Einschränkung: 8.00-18.00 Uhr bis 4 Stunden</p>
+",,,,
+489,1091454,,,"Behindertenparkplatz ""Neuherbergstr. 100""",,,,,,,,,,,48.20944994872508,11.567647058666376,1091455,,,,,,,,Nein,Nein,Nein,Nein,,Service Sonstige Angebote,Service Sonstige Angebote,"<p>
+Ärztehaus - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr bis 3 Stunden</p>
+",,,,
+490,1093227,,,"Behindertenparkplatz ""Parlerstraße ggü. 74""",,,,,,,,,,,48.20486460025552,11.570376324424316,1093228,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<p>
+U-Bahnhof Harthof - Anzahl: 1 - zeitliche Einschränkung: keine</p>
+",,,,
+491,1097204,,,"Behindertenparkplatz ""Einsteinstraße 46""",,,,,,,,,,,48.13556475794439,11.601143572158557,1097258,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<div class=""textarea"">
+Orthopädiefachgeschäft - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-18.00 Uhr, Sa werktags 9.00-14.00</div>
+",,,,
+492,1097561,,,"Behindertenparkplatz ""Heinrich-Groh-Straße 10""",,,,,,,,,,,48.19299863746078,11.616408959302028,1097562,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,"<div class=""textarea"">
+<div class=""textarea"">
+Kirche, Stadtsparkasse - Anzahl: 1 - zeitliche Einschränkung: 7.00-19.00 Uhr, bis 2 Stunden</div>
+</div>
+",,,,
+493,1099886,,,"Behindertenparkplatz ""Gottfried-Keller-Straße ggü. 2""",,,,,,,,,,,48.15061658978877,11.466108319781076,1099887,,,,,,,,Nein,Nein,Nein,Nein,,Behindertenparkplatz,Behindertenparkplatz,Integrative Kinderkrippe - Anzahl: 1 - zeitliche Einschränkung: Mo-Fr werktags 8.00-17.00 Uhr,,,,
