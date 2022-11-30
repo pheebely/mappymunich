@@ -1,5 +1,7 @@
 # mappingproject
 Work In Progress files:
-mappymunich.html
+Mapbox_mappymunich.html
 
-Sources: MapBox, GPSMYCITY
+Spatial Data files are located in the folder 'Original Data'
+
+Sources: MapBox, GPSMYCITY, OSM, City of Munich
