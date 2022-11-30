@@ -4,9 +4,11 @@
 <meta charset="utf-8">
 <title>Mappy Munich 🗺</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+<!-- GOOGLE FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fjalla+One&family=Pragati+Narrow&family=Righteous&display=swap" rel="stylesheet">
 
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
@@ -22,16 +24,47 @@ background-position-x: center;
 background-blend-mode: lighten;
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+  margin-top: -20px;
+  margin-right: 20px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: rgb(93, 93, 93);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(93, 93, 93);
+}
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+  background-color: #d4d1c7;
+  color: rgb(93, 93, 93);
+} */
+
 .headertitle {
   position: absolute;
   top: 10px;
   left: 0%;
-  font-family: 'Pragati Narrow', sans-serif;
-  font-size: 1.3em;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.1em;
   line-height: 0;
   text-align: center;
   color:#000;
-  margin: 0 0 0 6%;
+  margin: 1% 0 0 6%;
   }
 
 #map { position: absolute; top:80px; left: 80px; width: 70vw; height: 60%;}
@@ -61,7 +94,16 @@ background-blend-mode: lighten;
 <body>
 
   <div class="headertitle">
-    <h1>Mappy Munich</h1></div>
+    <h1>MAPPY MUNICH</h1></div>
+
+  <div class="topnav">
+    <a href="#about">FAQ</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#tours">TOURS</a>
+    <a class="active" href="#home">MAIN</a>
+
+
+  </div>
 
 <!-- Load the `mapbox-gl-geocoder` plugin. -->
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
@@ -76,7 +118,7 @@ container: 'map',
 // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
 style: 'mapbox://styles/pheebely/clazrqxnm000x15nwlwkpd8qn',
 center: [11.575366, 48.138666],
-zoom: 14.5,
+zoom: 14,
 minZoom: 9.1
 });
  
