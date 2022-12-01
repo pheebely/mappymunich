@@ -9,10 +9,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fjalla+One&family=Pragati+Narrow&family=Righteous&display=swap" rel="stylesheet">
+<!-- FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/e1e6165088.js" crossorigin="anonymous"></script>
+<!-- MAPBOX -->
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
-<!-- <script src="customcontrol.js"></script> -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js">
+</script>
 
 <!-- Embed CSS Code -->
 <style>
@@ -20,8 +23,8 @@ body { margin: 3% 0; padding: 0;
 background-image: url("Picture\ 1.png");
 background-size: 100%;
 background-repeat: no-repeat;
-background-position: top;
-background-position-x: center;
+background-position: center;
+background-position-y: top;
 background-blend-mode: lighten;
 }
 
@@ -119,31 +122,11 @@ background-blend-mode: lighten;
 
 #map { position: absolute; top:10%; left: 6%; width: 65vw; height: 58%;}
 
-.my-custom-control {
-  /* background-image: url("home-button-svgrepo-com.svg"); */
-  position: absolute;
-  top: 200px; 
-  right: 10px;
-  background-color: white;
-  border:2px solid #ddd;
-  /* border-color: rgb(221, 221, 221, 0.3); */
-  border-radius: 5px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: block;
-  height: 30px;
-  outline: none;
-  overflow: hidden;
-  padding: 0.3em 0.1em 0.1em 0.35em ;
-  width:30px;
-  box-shadow: 0 0 10px 2px rgba(0,0,0,.1)
-}
 
 </style>
 </head>
-
-
 <body>
+    
 
   <div class="headertitle">
     <h1>MAPPY MUNICH</h1></div>
@@ -176,8 +159,9 @@ background-blend-mode: lighten;
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
 <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
  
-<div id="map"></div>
- 
+<div id="map">
+</div>
+
 <script> // Embed JS Code with <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoicGhlZWJlbHkiLCJhIjoiY2s2aGZoZTR4MDJsdTNlcXI2NnI1bXhuaiJ9.l0hhT8MPnRuT8LuyPP8Ovw';
 const map = new mapboxgl.Map({
@@ -186,9 +170,10 @@ container: 'map',
 style: 'mapbox://styles/pheebely/clazrqxnm000x15nwlwkpd8qn',
 center: [11.575366, 48.138666],
 zoom: 14,
-minZoom: 9.1
+minZoom: 4
 });
  
+
 // Add the geocoder control to the map.
 map.addControl(
 new MapboxGeocoder({
@@ -211,31 +196,39 @@ showUserHeading: true
 })
 );
 
-// Add home button
-class MyCustomControl {
-  onAdd(map){
-    this.map = map;
-    this.container = document.createElement('div');
-    this.container.className = 'my-custom-control';
-    this.container.textContent = '🏡';
-    return this.container;
-  }
-  onRemove(){
-    this.container.parentNode.removeChild(this.container);
-    this.map = undefined;
-  }
-}
+// Add home button to fly to home
+const homePosition = {
+    center: [11.575366, 48.138666],
+    zoom: 14,
+};
 
-const myCustomControl = new MyCustomControl();
+class HomeButton {
+    onAdd(map){
+      this.map = map;
+      this.container = document.createElement('div');
+      this.container.className = 'mapboxgl-ctrl mapboxgl-ctrl-group';
+      this.container.innerHTML = `<button class="icon" title="Home"><i class="fa-solid fa-house"></i></button>`;
+      this.container.addEventListener("click",() => map.flyTo(homePosition));
+      return this.container;
+    }
+    onRemove(){
+      this.container.parentNode.removeChild(this.container);
+      this.map = undefined;
+    }
+  }
+  
+  const FlytoControl = new HomeButton();
+  
+  map.addControl(FlytoControl);
 
-map.addControl(myCustomControl);
 
 // Add zoom and rotation controls to the map.
+
+
 map.addControl(new mapboxgl.NavigationControl());
 
 
-
-// Add GeoJSON data 
+// Add GeoJSON data for route
 
 map.on('load', () => {
     map.addSource('old-town-route', { 
@@ -294,7 +287,5 @@ map.on('click', (event) => {
 
 });
 </script>
-
-
 </body>
 </html>
