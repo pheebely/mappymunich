@@ -122,6 +122,38 @@ background-blend-mode: lighten;
 
 #map { position: absolute; top:10%; left: 6%; width: 65vw; height: 58%;}
 
+.mapboxgl-popup{
+  padding-bottom: 25px;
+}
+
+.mapboxgl-popup-close-button {
+position: absolute;
+margin-top: -15px;
+color: #fff;
+}
+
+.mapboxgl-popup-content {
+  inline-size: 140px;
+  overflow-wrap: break-word;
+  font: 400 10px/11px 'Comfortaa', cursive;
+  padding: 0;
+  max-width: 150px;
+}
+
+.mapboxgl-popup-content h3 {
+  background: #fbb904;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  border-radius: 3px 3px 0 0;
+  font-weight: 700;
+  margin-top: -15px;
+}
+
+.mapboxgl-popup-content p {
+  padding: 10px;
+  font-weight: 400;
+}
 
 </style>
 </head>
@@ -276,7 +308,7 @@ map.on('click', (event) => {
     Create a popup, specify its options 
     and properties, and add it to the map.
   */
-  const popup = new mapboxgl.Popup({ offset: [0, -15] })
+  const popup = new mapboxgl.Popup({ offset: [7, 0] })
   .setLngLat(feature.geometry.coordinates)
   .setHTML(
     `<h3>${feature.properties.AttractionName}</h3><p>${feature.properties.Type}</p>`
