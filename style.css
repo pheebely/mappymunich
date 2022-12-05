@@ -108,7 +108,7 @@ body { margin: 3% 0; padding: 0;
     .mapboxgl-popup-close-button {
     position: absolute;
     margin-top: -15px;
-    color: #fff;
+    color: #ddd;
     }
     
     .mapboxgl-popup-content {
@@ -120,17 +120,22 @@ body { margin: 3% 0; padding: 0;
     }
     
     .mapboxgl-popup-content h3 {
-      background: #fbb904;
-      color: #fff;
+      background: #f4f4f4;
+      color: #000;
       margin: 0;
       padding: 10px;
       border-radius: 3px 3px 0 0;
       font-weight: 700;
+      font-kerning: auto;
+      line-height: normal;
       margin-top: -15px;
     }
     
     .mapboxgl-popup-content p {
       padding: 10px;
       font-weight: 400;
+      margin-top: -5px;
+      margin-bottom: -5px;
+
     }
     
