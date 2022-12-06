@@ -150,3 +150,54 @@ color: #ddd;
     margin-bottom: -5px;
 
 }
+
+ /* Set the basics of the filter function */
+ .filter-group {
+    font: 11px/20px 'DIN Pro Medium', sans-serif;
+    font-weight: lighter;
+    line-height: normal;
+    position: absolute;
+    padding: 10px;
+    bottom: 12%;
+    right: 6%;
+    z-index: 1;
+    border-radius: 3px;
+    width: 80px;
+    color: rgb(0, 0, 0);  /* Text color */
+}
+
+.filter-group input[type='checkbox']:first-child + label {
+    border-radius: 3px 3px 0 0;
+}
+
+.filter-group label:last-child {
+    border-radius: 0 0 3px 3px;
+    border: none;
+}
+
+.filter-group input[type='checkbox'] {
+    display: none;
+}
+
+.filter-group input[type='checkbox'] + label {
+    background-color: #e5ff00;  /* Background color of the very base */
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.filter-group input[type='checkbox'] + label {
+    background-color: #ffffff;  /* Background color without showing*/
+    text-transform: capitalize;
+}
+
+.filter-group input[type='checkbox'] + label:hover,
+.filter-group input[type='checkbox']:checked + label {
+    background-color: #ffffff; /* Background color with showing*/
+}
+
+.filter-group input[type='checkbox']:checked + label:before {
+    content: '☑️';
+    margin-right: 5px;
+}
