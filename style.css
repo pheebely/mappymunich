@@ -1,141 +1,152 @@
 body { margin: 3% 0; padding: 0;
-    background-image: url("images/Picture\ 1.png");
+    /* background-image: url("images/Picture\ 1.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: top;
-    background-blend-mode: lighten;
+    background-blend-mode: lighten; */
     }
-    
-    /* Add a black background color to the top navigation */
-    .topnav {
-      background-color: rgba(188, 188, 188, 0.037);
-      overflow: hidden;
-      margin-top: 25px;
-      margin-right: 3%;
-      min-height: 30px;
-    }
-    
-    /* Style the links inside the navigation bar */
-    .topnav a {
-      float: right;
-      color: #5d5d5d;
-      text-align: center;
-      padding: 8px 1%;
-      text-decoration: none;
-      font-family: 'Comfortaa', cursive;
-      font-size: 14px;
-    }
-    
-    /* Change the color of links on hover */
-    .topnav a:hover {
-      background-color: transparent;
-      color: rgb(93, 93, 93);
-    }
-    
-    /* Add a color to the active/current link */
-    /* .topnav a.active {
-      background-color: #d4d1c7;
-      color: rgb(93, 93, 93);
-    } */
-    
-    /* Hide the link that should open and close the topnav on small screens */
-    .topnav .icon {
-      display: none;
-    }
-    
-    @media screen and (max-width: 600px) {
-      .topnav a:not(:first-child) {display: none;}
-      .topnav a.icon {
-        float: right;
-        display: block;
-      }
-    }
-    
-    @media screen and (max-width: 600px) {
-      .topnav.responsive {position: relative;}
-      .topnav.responsive .icon {
-        position: absolute;
-        right: 12%;
-        top: 0;
-      }
-      .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: right;
-      }
-    }
-    
-    .headertitle {
-      position: absolute;
-      top: 1.5%;
-      left: 0%;
-      font-family: 'Comfortaa', cursive;
-      font-size: 1.1em;
-      line-height: 0;
-      text-align: center;
-      color:#000;
-      margin: 1% 0 0 6%;
-      min-height: 30px;
-      }
-    
-    .h2 {
-      position: absolute;
-      top: 35px;
-      left: 21%;
-      font-family: 'Comfortaa', cursive;
-      font-size: 0.6em;
-      line-height: 0;
-      text-align: left;
-      color: #5d5d5d;
-      margin: 0.5% 0 0 6%;
-    
-    }
-    
-    @media screen and (max-width: 800px){
-      .h2 {
-        display: none;
-      }
-      
-    }
-    
-    #map { position: absolute; top:10%; left: 6%; width: 65vw; height: 58%;}
-    
-    .mapboxgl-popup{
-      padding-bottom: 25px;
-    }
-    
-    .mapboxgl-popup-close-button {
-    position: absolute;
-    margin-top: -15px;
-    color: #ddd;
-    }
-    
-    .mapboxgl-popup-content {
-      inline-size: 140px;
-      overflow-wrap: break-word;
-      font: 400 10px/11px 'Comfortaa', cursive;
-      padding: 0;
-      max-width: 150px;
-    }
-    
-    .mapboxgl-popup-content h3 {
-      background: #f4f4f4;
-      color: #000;
-      margin: 0;
-      padding: 10px;
-      border-radius: 3px 3px 0 0;
-      font-weight: 700;
-      font-kerning: auto;
-      line-height: normal;
-      margin-top: -15px;
-    }
-    
-    .mapboxgl-popup-content p {
-      padding: 10px;
-      font-weight: 400;
-      margin-top: -5px;
-      margin-bottom: -5px;
 
+#menu {
+    position: absolute;
+    bottom: 5%;
+    left: 6%;
+    background: transparent;
+    padding: 10px 0;
+    font-family: 'Din Pro Medium', sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    }
+
+#map { position: absolute; top:15%; left: 6%; width: 88vw; height: 75%;}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgba(188, 188, 188, 0.037);
+    overflow: hidden;
+    margin-top: 25px;
+    margin-right: 5%;
+    min-height: 30px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #5d5d5d;
+    text-align: center;
+    padding: 8px 1%;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: transparent;
+    color: rgb(93, 93, 93);
+}
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+    background-color: #d4d1c7;
+    color: rgb(93, 93, 93);
+} */
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 12%;
+    top: 0;
+    }
+    .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    }
+}
+
+.headertitle {
+    position: absolute;
+    top: 1.5%;
+    left: 0%;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.1em;
+    line-height: 60%;
+    text-align: center;
+    color:#000;
+    margin: 2% 0 0 6%;
+    min-height: 30px;
+    }
+
+.h2 {
+    position: absolute;
+    top: 35px;
+    left: 21%;
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.6em;
+    line-height: 0;
+    text-align: left;
+    color: #5d5d5d;
+    margin: 0.5% 0 0 6%;
+
+}
+
+@media screen and (max-width: 800px){
+    .h2 {
+    display: none;
     }
     
+}
+
+
+.mapboxgl-popup{
+    padding-bottom: 25px;
+}
+
+.mapboxgl-popup-close-button {
+position: absolute;
+margin-top: -15px;
+color: #ddd;
+}
+
+.mapboxgl-popup-content {
+    inline-size: 140px;
+    overflow-wrap: break-word;
+    font: 400 10px/11px 'Comfortaa', cursive;
+    padding: 0;
+    max-width: 150px;
+}
+
+.mapboxgl-popup-content h3 {
+    background: #f4f4f4;
+    color: #000;
+    margin: 0;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    font-weight: 700;
+    font-kerning: auto;
+    line-height: normal;
+    margin-top: -15px;
+}
+
+.mapboxgl-popup-content p {
+    padding: 10px;
+    font-weight: 400;
+    margin-top: -5px;
+    margin-bottom: -5px;
+
+}
