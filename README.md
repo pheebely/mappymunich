@@ -1,11 +1,13 @@
 # mappingproject
 To open website you need these files:
+
 Mapbox_mappymunich.html;
 
 style.css;
 
-images folder
+mapbox.js
 
+functionfilter.js
 
 
 Spatial Data files are located in the folder 'Original Data'. Formats include shapefile, geojson.
