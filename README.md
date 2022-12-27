@@ -2,9 +2,13 @@
 To open website you need these files:
 
 MainPage.html -> Main page when website loads
+
 CityTours.html and CityTours.css -> Created CityTours page
+
 About.html -> About page
+
 Hiking.html -> Copied code from CityTours and still needs to be updated for hiking routes only
+
 style.css -> still used as main style css
 
 mapbox.js -> main javascript for all mapbox related content
