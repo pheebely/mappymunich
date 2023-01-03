@@ -328,13 +328,7 @@ function addSource() {
     map.addSource('district-boundaries', {
       type: 'geojson',
       data: 'data/OSM_munichdistricts_271222.geojson',
-  });
-
-  map.addSource('Munich_Districts_Centroids', {
-    type: 'vector',
-    url: 'mapbox://pheebely.clc6tlx164b6628qp1zoe1zad-8z5x5',
-
-})
+  })
 
   //Add source before this//          
   }
@@ -471,36 +465,6 @@ function addLayer() {
   map.setLayerZoomRange('district-line', 9, 14);
 
 
-  map.addLayer({
-    'id': 'district-label',
-    'type': 'symbol',
-    'source': 'Munich_Districts_Centroids',
-    'source-layer': 'Munich_Districts_Centroids',
-    'minZoom': 10,
-    'maxZoom': 13,
-    'paint':{
-      'text-color': '#0d68a0',
-      'text-halo-color': "hsla(0, 0%, 100%, 0.75)",
-      'text-halo-width': 1,
-      'text-halo-blur': 0.5
-    },
-    'layout': {
-      'visibility': 'visible',
-      'text-field': ["get", "ref"],
-      'text-font' : [
-        "DIN Pro Regular",
-        "Arial Unicode MS Regular"
-      ],
-      'text-size': 16
-  },
-    'metadata': {
-      'displayName': 'Munich Districts Label',
-      'showInLegend': true
-}
-});
-
-map.setLayerZoomRange('district-label', 10, 13);
-
  //Add layer before this// 
 }
 
@@ -509,7 +473,7 @@ map.setLayerZoomRange('district-label', 10, 13);
 map.on('style.load', function() {
 		  addSource();
 		  addLayer();
-      
+
   // TOGGLE LAYERS ON AND OFF
   // If these layers were not added to the map, abort
   if (
@@ -582,6 +546,7 @@ map.on('style.load', function() {
     const layers = document.getElementById("layernav");
     layers.appendChild(link);
   }
+
 		});
 
 for (const input of inputs) {

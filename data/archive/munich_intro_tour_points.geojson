@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "munich_intro_tour_points",
+"features": [
+{ "type": "Feature", "properties": { "Latitude": 48.137245, "Longitude": 11.57551, "Name": " Marienplatz", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.57551, 48.137245 ] } },
+{ "type": "Feature", "properties": { "Latitude": 48.137429, "Longitude": 11.575474, "Name": " Neues Rathaus", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.575474, 48.137429 ] } },
+{ "type": "Feature", "properties": { "Latitude": 48.136405, "Longitude": 11.576584, "Name": " Peterskirche", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.576584, 48.136405 ] } },
+{ "type": "Feature", "properties": { "Latitude": 48.135887, "Longitude": 11.576776, "Name": " Viktualienmarkt", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.576776, 48.135887 ] } },
+{ "type": "Feature", "properties": { "Latitude": 48.136592, "Longitude": 11.577096, "Name": " Altes Rathaus", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.577096, 48.136592 ] } },
+{ "type": "Feature", "properties": { "Latitude": 48.137665, "Longitude": 11.579815, "Name": " Hofbrauhaus Beer Hall", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.579815, 48.137665 ] } },
+{ "type": "Feature", "properties": { "Latitude": 48.139152, "Longitude": 11.580089, "Name": " Maximilianstrasse", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.580089, 48.139152 ] } },
+{ "type": "Feature", "properties": { "Latitude": 48.140292, "Longitude": 11.578246, "Name": " Residenz Royal Palace", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.578246, 48.140292 ] } },
+{ "type": "Feature", "properties": { "Latitude": 48.141756, "Longitude": 11.577346, "Name": " Feldherrnhalle", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.577346, 48.141756 ] } },
+{ "type": "Feature", "properties": { "Latitude": 48.141978, "Longitude": 11.577134, "Name": " Theatine Church", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.577134, 48.141978 ] } },
+{ "type": "Feature", "properties": { "Latitude": 48.14236, "Longitude": 11.581422, "Name": " Hofgarten and War Memorial", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.581422, 48.14236 ] } },
+{ "type": "Feature", "properties": { "Latitude": 48.144495, "Longitude": 11.583641, "Name": " English Garden", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.583641, 48.144495 ] } }
+]
+}

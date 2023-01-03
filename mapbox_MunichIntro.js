@@ -6,7 +6,7 @@ container: 'map',
 // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
 style: 'mapbox://styles/pheebely/clazrqxnm000x15nwlwkpd8qn',
 center: home,
-zoom: 11,
+zoom: 14.5,
 minZoom: 4,
 maxZoom: 17,
 pitch: 40 // pitch in degrees
@@ -38,7 +38,7 @@ showUserHeading: true
 // Add home button to fly to home
 const homePosition = {
     center: home,
-    zoom: 11,
+    zoom: 14.5,
     pitch: 40,
     bearing: 0
 };
@@ -66,96 +66,43 @@ class HomeButton {
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
-// Add Popup on Click to Layer 'old-town-points'
-map.on('click', (event) => {
-  // If the user clicked on one of your markers, get its information.
-  const features = map.queryRenderedFeatures(event.point, {
-    layers: ['old-town-points'] // replace with your layer name
-  });
-  if (!features.length) {
-    return;
+
+// Add attractions layer as constant
+const attractions = {
+  "type": "FeatureCollection",
+  "name": "Munich-Intro",
+  "features": [
+    { "type": "Feature", "properties": { "Latitude": 48.139185, "Longitude": 11.566191, "Name": "Karlsplatz", "MustSee": false, "Number": 1, "Type": "Landmark", "Address": "Karlsplatz 1, 80335 München", "Hours": "Open 24 hours", "Website": "https://www.muenchen.de/sehenswuerdigkeiten/orte/120328.html", "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.566191, 48.139185 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.138169, "Longitude": 11.57152, "Name": "Kaufingerstrasse/Neuhauserstrasse", "MustSee": false, "Number": 2, "Type": "Shopping", "Address": " ", "Hours": null, "Description": null, "Accessibility": null }, "geometry": { "type": "Point", "coordinates": [ 11.57152, 48.138169 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.135184, "Longitude": 11.569654, "Name": "Asamkirche", "MustSee": false, "Number": 3, "Type": "Religious", "Address": "Sendlinger Str. 32, 80331 München", "Hours": "Mo-Su 09:00-18:00", "Website": "https://alterpeter.de/nebenkirchen/#asamkirche", "Phone": "+49 89236879 89" }, "geometry": { "type": "Point", "coordinates": [ 11.569654, 48.135184 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.135455, "Longitude": 11.572886, "Name": "Münchner Stadtmuseum", "MustSee": false, "Number": 4, "Type": "Museum", "Address": "Sankt-Jakobs-Platz 1, 80331 München", "Hours": "Tu-Su 10:00-18:00", "Website": "https://www.muenchner-stadtmuseum.de/", "Phone": "+49 89 233223 70" }, "geometry": { "type": "Point", "coordinates": [ 11.572886, 48.135455 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.135146, "Longitude": 11.576256, "Name": "Viktualienmarkt", "MustSee": true, "Number": 5, "Type": "Shopping", "Address": "Viktualienmarkt 3, 80331 München", "Hours": "Mo-Sa 08:00-20:00", "Website": "https://www.viktualienmarkt-muenchen.de", "Phone": "+49 89 890682 05" }, "geometry": { "type": "Point", "coordinates": [ 11.576256, 48.135146 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.136503, "Longitude": 11.576054, "Name": "Peterskirche", "MustSee": true, "Number": 6, "Type": "Religious", "Address": "Rindermarkt 1, 80331 München", "Hours": "Mo-Su 07:30-19:00", "Website": "https://alterpeter.de/pfarrkirche-st-peter/", "Phone": "+49 89 210237 760" }, "geometry": { "type": "Point", "coordinates": [ 11.576054, 48.136503 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.136663, "Longitude": 11.576848, "Name": "Altes Rathaus", "MustSee": false, "Number": 7, "Type": "Landmark", "Address": "Marienplatz 15, 80331 München" }, "geometry": { "type": "Point", "coordinates": [ 11.576848, 48.136663 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.137245, "Longitude": 11.57551, "Name": "Marienplatz", "MustSee": true, "Number": 8, "Type": "Landmark", "Address": "Marienplatz, 80331 München", "Hours": null, "image":"<img src='/images/Marienplatz.jpg' border='0' alt='nyc-all-cause'/>",
+    "Description":
+    "Marienplatz is a square in the heart of Munich that has been the main square of the city since 1158. As such, it was the main venue where public events, tournaments and executions traditionally took place. <br><br><strong>Why You Should Visit:</strong><br>Ideal location for the very first encounter with Munich. Historic, architecturally attractive and vibrant, filled with people (locals and tourists alike) throughout the day, it never lacks excitement. Also, just like the rest of Munich, it's spotlessly clean."
+  }, "geometry": { "type": "Point", "coordinates": [ 11.57551, 48.137245 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.137348, "Longitude": 11.576202, "Name": "Neues Rathaus", "MustSee": true, "Number": 9, "Type": "Landmark", "Address": " ", "Hours": "Oct-Apr Mo-Fr 10:00-17:00; May-Sep 10:00-19:00" }, "geometry": { "type": "Point", "coordinates": [ 11.576202, 48.137348 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.137665, "Longitude": 11.579815, "Name": "Hofbräuhaus", "MustSee": true, "Number": 10, "Type": "Food", "Address": "Platzl 9, 80331 München", "Hours": "Mo-Su 09:00-24:00", "Website": "https://www.hofbraeuhaus.de/de/willkommen.html", "Phone": "+49 89 290136 129" }, "geometry": { "type": "Point", "coordinates": [ 11.579815, 48.137665 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.139152, "Longitude": 11.580089, "Name": "Maximilianstrasse", "MustSee": false, "Number": 11, "Type": "Landmark", "Address": " ", "Hours":""}, "geometry": { "type": "Point", "coordinates": [ 11.580089, 48.139152 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.140292, "Longitude": 11.578246, "Name": "Residenz München", "MustSee": true, "Number": 12, "Type": "Landmark", "Address": "Residenzstraße 1, 80333 München", "Website": "https://www.residenz-muenchen.de/", "Phone": "+49 89 29067-1" }, "geometry": { "type": "Point", "coordinates": [ 11.578246, 48.140292 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.141756, "Longitude": 11.577346, "Name": "Feldherrnhalle", "MustSee": false, "Number": 13, "Type": "Landmark", "Address": "Residenzstraße 1, 80333 München", "Hours": "Open 24 hours" }, "geometry": { "type": "Point", "coordinates": [ 11.577346, 48.141756 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.141978, "Longitude": 11.577134, "Name": "Theatine Church", "MustSee": false, "Number": 14, "Type": "Religious", "Address": "Salvatorplatz 2A, 80333 München", "Hours": "Mo-Su 07:00-20:00", "Website": "http://www.theatinerkirche.de/", "Phone": "+49 89 2106960" }, "geometry": { "type": "Point", "coordinates": [ 11.577134, 48.141978 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.14236, "Longitude": 11.581422, "Name": "Hofgarten and War Memorial", "MustSee": false, "Number": 15, "Type": "Garden", "Address": "Hofgartenstraße 1, 80538 München", "Hours": "Open 24 hours", "Website": "http://www.muenchen.de/sehenswuerdigkeiten/orte/120231.html" }, "geometry": { "type": "Point", "coordinates": [ 11.581422, 48.14236 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.144495, "Longitude": 11.583641, "Name": "Englischer Garden", "MustSee": true, "Number": 16, "Type": "Park", "Address": "Prinzregentenstraße, 80538 München", "Hours": "Open 24 hours", "Website": "https://www.muenchen.de/sehenswuerdigkeiten/orte/120242.html" }, "geometry": { "type": "Point", "coordinates": [ 11.583641, 48.144495 ] } },
+  ]
   }
-  const feature = features[0];
+  ;
 
-  // Code from the next step will go here.
-  /* 
-    Create a popup, specify its options 
-    and properties, and add it to the map.
-  */
-  const popup = new mapboxgl.Popup({ offset: [0, 15] })
-  .setLngLat(feature.geometry.coordinates)
-  .setHTML(
-    `<h3>${feature.properties.AttractionName}</h3><p>${feature.properties.Type}</p>`
-  )
-  .addTo(map);
-});
-
-// Add Popup on Click to Layer 'munich-intro-tour-points'
-map.on('click', (event) => {
-  // If the user clicked on one of your markers, get its information.
-  const features1 = map.queryRenderedFeatures(event.point, {
-    layers: ['munich-intro-tour-points'] // replace with your layer name
-  });
-  if (!features1.length) {
-    return;
-  }
-  const feature1 = features1[0];
-
-  // Code from the next step will go here.
-  /* 
-    Create a popup, specify its options 
-    and properties, and add it to the map.
-  */
-  const popup1 = new mapboxgl.Popup({ offset: [0, 15] })
-  .setLngLat(feature1.geometry.coordinates)
-  .setHTML(
-    `<h3>${feature1.properties.Name}</h3>`
-  )
-  .addTo(map);
-});
-
-// Change thickness of line when hover
-map.on("mouseenter", "old-town-route", (e) => {
-  map.setPaintProperty("old-town-route", "line-width", 8);
-  map.getCanvas().style.cursor = 'pointer';
-});
-
-map.on("mouseleave", "old-town-route", (e) => {
-  map.setPaintProperty("old-town-route", "line-width", 4);
-  map.getCanvas().style.cursor = '';
-});
-
-map.on("mouseenter", "walking-routes", (e) => {
-  map.setPaintProperty("walking-routes", "line-width", 8);
-  map.getCanvas().style.cursor = 'pointer';
-});
-
-map.on("mouseleave", "walking-routes", (e) => {
-  map.setPaintProperty("walking-routes", "line-width", 4);
-  map.getCanvas().style.cursor = '';
-});
-
-// Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter', 'old-town-points', () => {
-map.getCanvas().style.cursor = 'pointer';
-});
- 
-// Change it back to a pointer when it leaves.
-map.on('mouseleave', 'old-town-points', () => {
-map.getCanvas().style.cursor = '';
-});
-
-// Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter', 'munich-intro-tour-points', () => {
-map.getCanvas().style.cursor = 'pointer';
-});
- 
-// Change it back to a pointer when it leaves.
-map.on('mouseleave', 'munich-intro-tour-points', () => {
-map.getCanvas().style.cursor = '';
-});
-
-
+/**USE properties.Number instead of assigning a new unique id!!!
+ * Assign a unique id to each attraction. You'll use this `id`
+ * later to associate each point on the map with a listing
+ * in the sidebar.
+ */
+// attractions.features.forEach((attraction, i) => {
+//   attractions.properties.id = i;
+// });
 
 // CHANGE BASEMAP STYLE
 // Create constants for layerlist and inputs for different basemap styles in the html file, look at CityTours.html line 63
@@ -165,6 +112,7 @@ const inputs = layerList.getElementsByTagName('input'); //'input', <input> tag s
 // All sources and layers are removed when new style is loaded!!
 // So we need to add sources and layers each time new style is loaded.
 // We will create the functions addSource() and addLayer() to do this each time we load a new style.
+
 function addSource() { 
   // For each new source, we need to create map.addSource()
   map.addSource('englisch_garten', {
@@ -190,7 +138,7 @@ function addSource() {
       'type': 'geojson',
       'data': {
           'type': 'Feature',
-          'properties': {'name': "Walking tour route line", 'description': "Old Town Route", 'color': '#fbb904'},
+          'properties': {'name': "Walking tour route line", 'description': "Old Town Route", 'color': '#f1bc41'},
           'geometry': {
           'type': 'MultiLineString',
           'coordinates': [ 
@@ -206,83 +154,19 @@ function addSource() {
       'data':{
         "type": "FeatureCollection",
         "features": [
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Palaces Walking Tour",
-            "distance": "1.7 Km",
-            "color": '#ff768c'
-          },
-          "geometry": {
-            "coordinates": [[11.57831, 48.13845], [11.57836, 48.13852], [11.57847, 48.13868], [11.57847, 48.13868], [11.57887, 48.13931], [11.57888, 48.13932], [11.57888, 48.13932], [11.57838, 48.13942], [11.57838, 48.13942], [11.57839, 48.13944], [11.57841, 48.13949], [11.57855, 48.13975], [11.57861, 48.13999], [11.57861, 48.1401], [11.57856, 48.14013], [11.57841, 48.14017], [11.57823, 48.1402], [11.5782, 48.14022], [11.5782, 48.14022], [11.57809, 48.14029], [11.57741, 48.14043], [11.57741, 48.14043], [11.57739, 48.14049], [11.57739, 48.14049], [11.57696, 48.14055], [11.57696, 48.14055], [11.57689, 48.14035], [11.5768, 48.14004], [11.57673, 48.14005], [11.5767, 48.13997], [11.57648, 48.14], [11.57648, 48.14], [11.57613, 48.14005], [11.57613, 48.14005], [11.57608, 48.13995], [11.57608, 48.13995], [11.57575, 48.1401], [11.57513, 48.14032], [11.57513, 48.14032], [11.57433, 48.1406], [11.57433, 48.1406], [11.57445, 48.14074], [11.57445, 48.14074], [11.57452, 48.14082], [11.57482, 48.14119], [11.57482, 48.14119], [11.57501, 48.14144], [11.57501, 48.14144], [11.57599, 48.14124], [11.57612, 48.14122], [11.57638, 48.14116], [11.57665, 48.14109], [11.57665, 48.14109], [11.57682, 48.1414], [11.57692, 48.14159], [11.57692, 48.14159], [11.5776, 48.14145], [11.5776, 48.14145], [11.57763, 48.1416], [11.57763, 48.1416], [11.57765, 48.14169], [11.57784, 48.14235], [11.57789, 48.14251], [11.57789, 48.14251], [11.578, 48.1425], [11.57803, 48.14249], [11.5781, 48.14248], [11.57815, 48.14246], [11.57822, 48.14257], [11.57856, 48.1425], [11.57862, 48.14262], [11.57921, 48.14249], [11.57926, 48.14261], [11.57933, 48.14275], [11.57938, 48.14274], [11.57945, 48.14279], [11.57946, 48.14282], [11.57986, 48.14291], [11.57986, 48.14298], [11.57991, 48.14302], [11.57998, 48.14304], [11.58005, 48.14304], [11.58013, 48.14319], [11.58056, 48.1431], [11.58058, 48.14312], [11.58062, 48.14314], [11.58068, 48.14314], [11.58074, 48.14328], [11.5808, 48.14339], [11.58086, 48.14352], [11.58145, 48.1434], [11.58188, 48.14332], [11.58188, 48.14332], [11.58191, 48.14337], [11.58199, 48.14351], [11.58199, 48.14351], [11.58206, 48.14359], [11.58247, 48.1438], [11.58278, 48.1439], [11.58292, 48.14392], [11.58323, 48.1439], [11.58336, 48.14392], [11.58339, 48.14398]],
-            "type": "LineString"
-          },
-          "id": "47796ba2622df28fa907469661eba5a6"
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Top Religious Sites Walking Tour",
-            "distance": "2.7 Km",
-            "color": '#808fff'
-          },
-          "geometry": {
-            "coordinates": [[11.57277, 48.13855], [11.57277, 48.1384], [11.57279, 48.13836], [11.57279, 48.13836], [11.57258, 48.13841], [11.57219, 48.13871], [11.57219, 48.13871], [11.57209, 48.13866], [11.57186, 48.1385], [11.57161, 48.13823], [11.57154, 48.13813], [11.57154, 48.13813], [11.57088, 48.13838], [11.57051, 48.13846], [11.57051, 48.13846], [11.57071, 48.13881], [11.57071, 48.13881], [11.57051, 48.13846], [11.57051, 48.13846], [11.57007, 48.13843], [11.56966, 48.13844], [11.56939, 48.13847], [11.56939, 48.13847], [11.56936, 48.13842], [11.56927, 48.13806], [11.56911, 48.13765], [11.56906, 48.13752], [11.56906, 48.13752], [11.56902, 48.13743], [11.56902, 48.13743], [11.56844, 48.13633], [11.5684, 48.1363], [11.5684, 48.1363], [11.56836, 48.13627], [11.5681, 48.1358], [11.56807, 48.13577], [11.56807, 48.13577], [11.56899, 48.13552], [11.56926, 48.13542], [11.56945, 48.13538], [11.5699, 48.1352], [11.56996, 48.13514], [11.56996, 48.13514], [11.56987, 48.1351], [11.56971, 48.13504], [11.56971, 48.13504], [11.56987, 48.1351], [11.56996, 48.13514], [11.57057, 48.13539], [11.57115, 48.1356], [11.57164, 48.1358], [11.57171, 48.13583], [11.57201, 48.13595], [11.57265, 48.13623], [11.57273, 48.13625], [11.57285, 48.13627], [11.57328, 48.13646], [11.57328, 48.13646], [11.57367, 48.13641], [11.57367, 48.13641], [11.57366, 48.1364], [11.57366, 48.1364], [11.57374, 48.13629], [11.57382, 48.13623], [11.57405, 48.13619], [11.57409, 48.13616], [11.57415, 48.13609], [11.57436, 48.13612], [11.5744, 48.13611], [11.5744, 48.13611], [11.57455, 48.13617], [11.57473, 48.13623], [11.57482, 48.13627], [11.57487, 48.13629], [11.57509, 48.13639], [11.57524, 48.13648], [11.57524, 48.13648], [11.57529, 48.13647], [11.57574, 48.13631], [11.57624, 48.1362], [11.57643, 48.13623], [11.57658, 48.13631], [11.57665, 48.1364], [11.57664, 48.13642], [11.57664, 48.13642], [11.57663, 48.13646], [11.57669, 48.1365], [11.57669, 48.1365], [11.57669, 48.1365], [11.57672, 48.13652], [11.57672, 48.13652], [11.57676, 48.13655], [11.57676, 48.13655], [11.57696, 48.13652], [11.57711, 48.13657], [11.57723, 48.1366], [11.57723, 48.1366], [11.5772, 48.13662], [11.5772, 48.13662], [11.57732, 48.1367], [11.57738, 48.13675], [11.57809, 48.13724], [11.57829, 48.13744], [11.57864, 48.13787], [11.57868, 48.13793], [11.57909, 48.13847], [11.57909, 48.13847], [11.57924, 48.13842], [11.57924, 48.13842], [11.57966, 48.13877], [11.57966, 48.13877], [11.57995, 48.13911], [11.57996, 48.13912], [11.57996, 48.13912], [11.58018, 48.13908], [11.58018, 48.13908], [11.58019, 48.13909], [11.58031, 48.13939], [11.5805, 48.13986], [11.5805, 48.13986], [11.58057, 48.13984], [11.58057, 48.13984], [11.58082, 48.14044], [11.58082, 48.14044], [11.58076, 48.14046], [11.58076, 48.14046], [11.58092, 48.1408], [11.58092, 48.1408], [11.58086, 48.14082], [11.5805, 48.14088], [11.5804, 48.14063], [11.58032, 48.14042], [11.58024, 48.14043], [11.58024, 48.14043], [11.58016, 48.14045], [11.58024, 48.14066], [11.58047, 48.14119], [11.58047, 48.14121], [11.58047, 48.14121], [11.58047, 48.14121], [11.58022, 48.14127], [11.58014, 48.14128], [11.57911, 48.14149], [11.57911, 48.14149], [11.5791, 48.14146], [11.5791, 48.14146], [11.57895, 48.1415], [11.57895, 48.1415], [11.57878, 48.14153], [11.57871, 48.14154], [11.57871, 48.14154], [11.57842, 48.1416], [11.57805, 48.14167], [11.57805, 48.14167], [11.57777, 48.14174], [11.57777, 48.14174], [11.57776, 48.14167], [11.57765, 48.14169], [11.57743, 48.14174], [11.57744, 48.14177], [11.57729, 48.1418], [11.57728, 48.14177], [11.57705, 48.14181], [11.57705, 48.14181], [11.577, 48.14182], [11.57707, 48.142]],
-            "type": "LineString"
-          },
-          "id": "4b18499d37c9a1d879c2467ca2e50da9"
-        },
+
         {
           "type": "Feature",
           "properties": {
             "name": "Munich Introduction Walking Tour",
             "distance": "2.5 Km",
-            "color": '#36bfb6'
+            "color": '#f1bc41' //'#36bfb6'
           },
           "geometry": {
             "coordinates": [[11.5755, 48.13725], [11.57548, 48.13723], [11.57546, 48.13718], [11.57543, 48.13712], [11.57535, 48.13714], [11.57525, 48.13715], [11.57512, 48.13718], [11.57516, 48.13726], [11.57516, 48.13727], [11.57517, 48.13728], [11.57525, 48.13743], [11.57512, 48.13746], [11.57513, 48.13747], [11.57501, 48.1375], [11.57503, 48.13753], [11.57547, 48.13742], [11.57547, 48.13742], [11.57633, 48.13723], [11.57633, 48.13723], [11.57628, 48.13718], [11.57628, 48.13718], [11.57634, 48.13716], [11.57634, 48.13716], [11.57625, 48.13703], [11.57625, 48.13703], [11.57615, 48.13691], [11.57634, 48.13686], [11.57659, 48.13679], [11.57696, 48.13652], [11.57676, 48.13655], [11.57676, 48.13655], [11.57672, 48.13652], [11.57672, 48.13652], [11.57669, 48.1365], [11.57669, 48.1365], [11.57669, 48.1365], [11.57663, 48.13646], [11.57664, 48.13642], [11.57664, 48.13642], [11.57665, 48.1364], [11.57658, 48.13631], [11.57643, 48.13623], [11.57624, 48.1362], [11.57624, 48.1362], [11.57637, 48.13598], [11.57641, 48.13593], [11.57641, 48.13593], [11.57621, 48.13585], [11.57621, 48.13585], [11.57646, 48.13559], [11.57664, 48.1355], [11.57664, 48.1355], [11.57672, 48.13553], [11.57693, 48.13573], [11.57693, 48.13573], [11.57724, 48.13603], [11.57724, 48.13603], [11.57682, 48.13623], [11.57682, 48.13623], [11.57701, 48.13642], [11.57723, 48.1366], [11.57723, 48.1366], [11.57711, 48.13657], [11.57711, 48.13657], [11.57723, 48.1366], [11.57723, 48.1366], [11.5772, 48.13662], [11.5772, 48.13662], [11.57732, 48.1367], [11.57738, 48.13675], [11.57809, 48.13724], [11.57829, 48.13744], [11.57829, 48.13744], [11.57878, 48.13722], [11.57909, 48.13708], [11.57909, 48.13708], [11.57957, 48.13758], [11.57957, 48.13758], [11.57975, 48.13774], [11.57975, 48.13774], [11.57996, 48.13794], [11.57998, 48.13797], [11.58001, 48.138], [11.58001, 48.13814], [11.58001, 48.13814], [11.57991, 48.1382], [11.57991, 48.1382], [11.57994, 48.13822], [11.57994, 48.13822], [11.58001, 48.13832], [11.58003, 48.13834], [11.58003, 48.13834], [11.57995, 48.13838], [11.57986, 48.13842], [11.57982, 48.13844], [11.57982, 48.13844], [11.57992, 48.13857], [11.57998, 48.13864], [11.57998, 48.13864], [11.57966, 48.13877], [11.57966, 48.13877], [11.57995, 48.13911], [11.57996, 48.13912], [11.57996, 48.13912], [11.58008, 48.1391], [11.58008, 48.1391], [11.57996, 48.13912], [11.57938, 48.13923], [11.57898, 48.13931], [11.57888, 48.13932], [11.57838, 48.13942], [11.57838, 48.13942], [11.57839, 48.13944], [11.57841, 48.13949], [11.57855, 48.13975], [11.57861, 48.13999], [11.57861, 48.1401], [11.57856, 48.14013], [11.57841, 48.14017], [11.57823, 48.1402], [11.5782, 48.14022], [11.5782, 48.14022], [11.57809, 48.14029], [11.57741, 48.14043], [11.57741, 48.14043], [11.57739, 48.14049], [11.57744, 48.1408], [11.57746, 48.14088], [11.57756, 48.14126], [11.57756, 48.14127], [11.57757, 48.14128], [11.5776, 48.14145], [11.5776, 48.14145], [11.57692, 48.14159], [11.57692, 48.14159], [11.57695, 48.14164], [11.57705, 48.14181], [11.57705, 48.14181], [11.57728, 48.14177], [11.57729, 48.1418], [11.57735, 48.14179], [11.57735, 48.14179], [11.57729, 48.1418], [11.57728, 48.14177], [11.57705, 48.14181], [11.57705, 48.14181], [11.577, 48.14182], [11.57707, 48.142], [11.57707, 48.142], [11.57732, 48.14265], [11.57741, 48.14263], [11.57741, 48.14263], [11.57789, 48.14253], [11.57803, 48.14249], [11.57803, 48.14249], [11.5781, 48.14248], [11.57815, 48.14246], [11.57822, 48.14257], [11.57856, 48.1425], [11.57915, 48.14238], [11.57968, 48.14227], [11.58022, 48.14216], [11.58083, 48.14203], [11.58105, 48.14199], [11.58109, 48.14209], [11.58119, 48.14207], [11.58128, 48.14205], [11.58128, 48.14205], [11.58143, 48.14235], [11.58143, 48.14235], [11.58147, 48.14242], [11.58157, 48.14262], [11.58165, 48.1428], [11.58182, 48.14318], [11.58186, 48.14327], [11.58188, 48.14332], [11.58191, 48.14337], [11.58199, 48.14351], [11.58199, 48.14351], [11.58206, 48.14359], [11.58247, 48.1438], [11.58278, 48.1439], [11.58292, 48.14392], [11.58323, 48.1439], [11.58336, 48.14392], [11.58352, 48.14422], [11.58354, 48.14426], [11.5836, 48.1443], [11.58363, 48.14435], [11.58367, 48.14442], [11.58367, 48.14442], [11.58367, 48.14447], [11.58367, 48.14447], [11.58364, 48.14447]],
             "type": "LineString"
           },
           "id": "64c4cf28db71265f4812953b53953e0e"
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Glockenbachviertel Walking Tour (Self Guided), Munich",
-            "distance": "1.6 Km",
-            "color": '#dc7000'
-          },
-          "geometry": {
-            "coordinates": [[11.57593, 48.13165], [11.57588, 48.13162], [11.57588, 48.13162], [11.57574, 48.13154], [11.57574, 48.13154], [11.57585, 48.13148], [11.57601, 48.13145], [11.57598, 48.13136], [11.57564, 48.12883], [11.57564, 48.12883], [11.57559, 48.12847], [11.57557, 48.12842], [11.57557, 48.12842], [11.57545, 48.12846], [11.57541, 48.12846], [11.57484, 48.12889], [11.57465, 48.12903], [11.57392, 48.12957], [11.57332, 48.13002], [11.57332, 48.13002], [11.57331, 48.13001], [11.57308, 48.12987], [11.57308, 48.12987], [11.5725, 48.1295], [11.57177, 48.12904], [11.57066, 48.12837], [11.57052, 48.12831], [11.57035, 48.12833], [11.57035, 48.12833], [11.56993, 48.12847], [11.56993, 48.12847], [11.56975, 48.12853], [11.56972, 48.12853], [11.56958, 48.12857], [11.56958, 48.12857], [11.56968, 48.12905], [11.5698, 48.12952], [11.57002, 48.13013], [11.57029, 48.13078], [11.57029, 48.13088], [11.57029, 48.13088], [11.57015, 48.13089], [11.56994, 48.13092], [11.56968, 48.131], [11.56968, 48.131], [11.56912, 48.13116], [11.56829, 48.1314], [11.56809, 48.13148], [11.56792, 48.13158], [11.56769, 48.13179], [11.56756, 48.13191], [11.56717, 48.13226], [11.56709, 48.13241], [11.56709, 48.13246], [11.5671, 48.13248], [11.56725, 48.13257]],
-            "type": "LineString"
-          },
-          "id": "7c9b218449e012e54f9b1819b9f47c23"
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Third Reich Munich Walking Tour",
-            "distance": "3.3 Km",
-            "color": '#6750a2'
-          },
-          "geometry": {
-            "coordinates": [[11.56713, 48.14608], [11.56672, 48.14545], [11.56668, 48.14539], [11.56668, 48.14539], [11.56848, 48.14488], [11.56848, 48.14488], [11.56843, 48.14473], [11.56843, 48.14465], [11.56845, 48.14456], [11.56849, 48.14448], [11.56857, 48.14439], [11.56868, 48.14432], [11.56884, 48.14425], [11.56886, 48.14424], [11.56889, 48.14423], [11.56913, 48.1442], [11.56931, 48.1442], [11.56947, 48.14424], [11.56967, 48.14433], [11.56974, 48.14438], [11.56984, 48.14449], [11.56984, 48.14449], [11.57027, 48.14438], [11.57098, 48.14417], [11.57138, 48.14405], [11.57171, 48.14396], [11.57171, 48.14396], [11.57175, 48.14401], [11.5718, 48.14402], [11.57183, 48.14407], [11.57189, 48.14405], [11.57196, 48.14403], [11.57199, 48.14401], [11.57284, 48.14375], [11.57323, 48.14364], [11.57333, 48.14361], [11.57343, 48.14362], [11.57353, 48.14365], [11.57364, 48.14357], [11.57376, 48.14352], [11.57386, 48.14349], [11.57385, 48.14346], [11.57385, 48.14344], [11.57389, 48.14343], [11.57457, 48.14329], [11.57523, 48.14315], [11.57554, 48.14309], [11.57554, 48.14309], [11.57636, 48.14291], [11.57636, 48.14291], [11.57634, 48.14286], [11.57634, 48.14286], [11.57734, 48.14265], [11.57741, 48.14265], [11.57741, 48.14265], [11.57747, 48.14273], [11.57755, 48.14289], [11.5775, 48.1429], [11.57751, 48.14289], [11.57745, 48.14276], [11.57743, 48.14275], [11.57739, 48.14267], [11.57766, 48.14262], [11.57801, 48.14256], [11.57798, 48.14249], [11.578, 48.14249], [11.578, 48.14249], [11.578, 48.1425], [11.57803, 48.14249], [11.57803, 48.14249], [11.57801, 48.14244], [11.57787, 48.14217], [11.57784, 48.14201], [11.57777, 48.14174], [11.57776, 48.14167], [11.57765, 48.14169], [11.57743, 48.14174], [11.57744, 48.14177], [11.57735, 48.14179], [11.57735, 48.14179], [11.57729, 48.1418], [11.57728, 48.14177], [11.57705, 48.14181], [11.57705, 48.14181], [11.57695, 48.14164], [11.57692, 48.14159], [11.57692, 48.14159], [11.5776, 48.14145], [11.5776, 48.14145], [11.57757, 48.14128], [11.57756, 48.14127], [11.57756, 48.14126], [11.57746, 48.14088], [11.57744, 48.1408], [11.57739, 48.14049], [11.57741, 48.14043], [11.57749, 48.14005], [11.5775, 48.13997], [11.5775, 48.13993], [11.57754, 48.13973], [11.5775, 48.13958], [11.5775, 48.13958], [11.57749, 48.13955], [11.57727, 48.13886], [11.57727, 48.13886], [11.57847, 48.13868], [11.57847, 48.13868], [11.57851, 48.13866], [11.57858, 48.13864], [11.57909, 48.13847], [11.57924, 48.13842], [11.57967, 48.13828], [11.57991, 48.1382], [11.58001, 48.13814], [11.58001, 48.13814], [11.58001, 48.138], [11.57998, 48.13797], [11.57996, 48.13794], [11.57975, 48.13774], [11.57975, 48.13774], [11.57957, 48.13758], [11.57957, 48.13758], [11.57909, 48.13708], [11.57909, 48.13708], [11.57905, 48.13704], [11.57895, 48.13694], [11.57887, 48.13686], [11.57884, 48.13683], [11.57878, 48.13668], [11.57859, 48.13615], [11.57859, 48.13615], [11.57826, 48.13623], [11.57801, 48.13628], [11.57749, 48.13645], [11.57729, 48.13656], [11.57723, 48.1366], [11.57723, 48.1366], [11.57711, 48.13657], [11.57711, 48.13657], [11.57723, 48.1366], [11.57723, 48.1366], [11.57729, 48.13656], [11.57749, 48.13645], [11.57801, 48.13628], [11.57826, 48.13623], [11.57859, 48.13615], [11.57919, 48.13605], [11.57952, 48.13598], [11.57981, 48.1359], [11.58021, 48.13578], [11.58054, 48.13567], [11.58067, 48.13563], [11.58067, 48.13563], [11.58135, 48.13538], [11.58153, 48.13536], [11.58177, 48.13533], [11.58188, 48.13532], [11.58206, 48.13523], [11.58223, 48.13511], [11.58227, 48.13505], [11.58227, 48.13505], [11.58237, 48.1349], [11.58237, 48.1349], [11.58242, 48.13492], [11.58255, 48.13496], [11.58283, 48.13509], [11.58303, 48.13522], [11.58303, 48.13522], [11.58308, 48.13519], [11.58346, 48.13551], [11.5839, 48.13596], [11.5839, 48.13596], [11.58403, 48.1359], [11.58403, 48.1359], [11.58426, 48.13625], [11.58426, 48.13625], [11.58466, 48.13614], [11.58468, 48.13608], [11.58509, 48.13594], [11.58516, 48.13598], [11.58558, 48.13591], [11.58582, 48.13588], [11.58582, 48.13588], [11.58622, 48.13584], [11.58622, 48.13584], [11.58623, 48.13588], [11.58623, 48.13588], [11.58699, 48.1358], [11.58712, 48.13577], [11.58718, 48.13575], [11.58725, 48.13572], [11.58725, 48.13572], [11.58733, 48.13583], [11.58761, 48.13649]],
-            "type": "LineString"
-          },
-          "id": "978ca2bbe7411d2c5899208ad9f1651f"
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Neuhausen Architecture Walking Tour",
-            "distance": "2.4 Km",
-            "color": '#964350'
-          },
-          "geometry": {
-            "coordinates": [[11.52575, 48.15874], [11.52579, 48.15862], [11.52617, 48.1575], [11.52647, 48.15665], [11.52655, 48.15667], [11.52655, 48.15667], [11.52656, 48.15662], [11.52658, 48.15659], [11.52695, 48.15554], [11.52695, 48.15554], [11.52638, 48.15544], [11.52575, 48.15526], [11.52516, 48.15505], [11.52488, 48.15492], [11.52462, 48.15476], [11.52462, 48.15476], [11.52488, 48.15492], [11.52516, 48.15505], [11.52575, 48.15526], [11.52638, 48.15544], [11.52695, 48.15554], [11.52839, 48.15577], [11.52867, 48.15584], [11.52867, 48.15584], [11.52937, 48.15602], [11.53007, 48.15622], [11.53064, 48.1564], [11.53064, 48.1564], [11.5309, 48.15648], [11.5309, 48.15648], [11.53104, 48.15641], [11.53155, 48.15612], [11.53197, 48.15574], [11.53197, 48.15574], [11.53206, 48.15577], [11.53216, 48.15582], [11.53216, 48.15582], [11.5322, 48.15583], [11.53223, 48.15585], [11.53362, 48.15629], [11.53422, 48.15643], [11.53439, 48.15645], [11.53439, 48.15645], [11.53469, 48.15649], [11.53469, 48.15649], [11.53488, 48.15599], [11.53498, 48.15581], [11.53498, 48.15581], [11.53511, 48.15558], [11.53511, 48.15558], [11.536, 48.15582], [11.53656, 48.15596], [11.53664, 48.15598], [11.53673, 48.15598], [11.53673, 48.15598], [11.53693, 48.15598], [11.53693, 48.15598], [11.53678, 48.15403], [11.53689, 48.15408], [11.53732, 48.15424], [11.53745, 48.15429], [11.53744, 48.15421], [11.53742, 48.1541], [11.53741, 48.15392], [11.53741, 48.15392], [11.53754, 48.15404], [11.53754, 48.15404], [11.5376, 48.154], [11.53774, 48.15394], [11.53789, 48.15392], [11.53796, 48.15392], [11.53842, 48.15385], [11.53868, 48.15378], [11.53909, 48.15363], [11.54056, 48.15308], [11.54187, 48.15259], [11.54222, 48.15242], [11.54237, 48.15231]],
-            "type": "LineString"
-          },
-          "id": "d30a59db7dc9ee1000f4d622c1294298"
         }
       ]
       }
@@ -290,51 +174,11 @@ function addSource() {
   
       });
 
-    map.addSource('munich-intro-tour-points', {
-        'type': 'geojson',
-        'data': {
-        "type": "FeatureCollection",
-        "features": [
-        { "type": "Feature", "properties": { "Latitude": 48.137665, "Longitude": 11.579815, "Name": " Hofbrauhaus Beer Hall", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.579815, 48.137665 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.139152, "Longitude": 11.580089, "Name": " Maximilianstrasse", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.580089, 48.139152 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.140292, "Longitude": 11.578246, "Name": " Residenz Royal Palace", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.578246, 48.140292 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.141756, "Longitude": 11.577346, "Name": " Feldherrnhalle", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.577346, 48.141756 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.141978, "Longitude": 11.577134, "Name": " Theatine Church", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.577134, 48.141978 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.14236, "Longitude": 11.581422, "Name": " Hofgarten and War Memorial", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.581422, 48.14236 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.144495, "Longitude": 11.583641, "Name": " English Garden", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.583641, 48.144495 ] } }
-        ]
-        }
-        });
-    
-    map.addSource('old-town-points', {
-    'type': 'geojson',
-    'data': {
-      "type": "FeatureCollection",
-      "features": [
-      { "type": "Feature", "properties": { "Number": 1, "AttractionName": "Marienplatz", "Type": "Landmark", "Latitude": 48.13727, "Longitude": 11.575993 }, "geometry": { "type": "Point", "coordinates": [ 11.575993, 48.13727 ] } },
-    { "type": "Feature", "properties": { "Number": 2, "AttractionName": "Neus Rathaus", "Type": "Landmark", "Latitude": 48.137348, "Longitude": 11.576202 }, "geometry": { "type": "Point", "coordinates": [ 11.576202, 48.137348 ] } },
-    { "type": "Feature", "properties": { "Number": 3, "AttractionName": "Altes Rathaus", "Type": "Landmark", "Latitude": 48.136663, "Longitude": 11.576848 }, "geometry": { "type": "Point", "coordinates": [ 11.576848, 48.136663 ] } },
-    { "type": "Feature", "properties": { "Number": 4, "AttractionName": "Peterskirche", "Type": "Religious", "Latitude": 48.136503, "Longitude": 11.576054 }, "geometry": { "type": "Point", "coordinates": [ 11.576054, 48.136503 ] } },
-    { "type": "Feature", "properties": { "Number": 5, "AttractionName": "Viktualienmarkt", "Type": "Shopping", "Latitude": 48.135146, "Longitude": 11.576256 }, "geometry": { "type": "Point", "coordinates": [ 11.576256, 48.135146 ] } },
-    { "type": "Feature", "properties": { "Number": 6, "AttractionName": "Munchner Stadtmuseum", "Type": "Museum", "Latitude": 48.135455, "Longitude": 11.572886 }, "geometry": { "type": "Point", "coordinates": [ 11.572886, 48.135455 ] } },
-    { "type": "Feature", "properties": { "Number": 7, "AttractionName": "Asamkirche", "Type": "Religious", "Latitude": 48.135184, "Longitude": 11.569654 }, "geometry": { "type": "Point", "coordinates": [ 11.569654, 48.135184 ] } },
-    { "type": "Feature", "properties": { "Number": 8, "AttractionName": "Kaufingerstrasse/Neuhauserstrasse", "Type": "Shopping", "Latitude": 48.138169, "Longitude": 11.57152 }, "geometry": { "type": "Point", "coordinates": [ 11.57152, 48.138169 ] } },
-    { "type": "Feature", "properties": { "Number": 9, "AttractionName": "Frauenkirche", "Type": "Religious", "Latitude": 48.138676, "Longitude": 11.573637 }, "geometry": { "type": "Point", "coordinates": [ 11.573637, 48.138676 ] } },
-    { "type": "Feature", "properties": { "Number": 10, "AttractionName": "Karlsplatz", "Type": "Landmark", "Latitude": 48.139185, "Longitude": 11.566191 }, "geometry": { "type": "Point", "coordinates": [ 11.566191, 48.139185 ] } }
-    ]
-    }
-            });
-
-    map.addSource('district-boundaries', {
-      type: 'geojson',
-      data: 'data/OSM_munichdistricts_271222.geojson',
-  });
-
-  map.addSource('Munich_Districts_Centroids', {
-    type: 'vector',
-    url: 'mapbox://pheebely.clc6tlx164b6628qp1zoe1zad-8z5x5',
-
-})
+    //IF ADD THIS SOUCE THEN FUNCTION FOR LIST DOESNT WORK!
+    // map.addSource('munich-intro-tour-points', {
+    //     'type': 'geojson',
+    //     'data': attractions
+    //     });
 
   //Add source before this//          
   }
@@ -376,8 +220,8 @@ function addLayer() {
         },
         'paint': {
         'line-color': ['get','color'],
-        'line-width': 3.5,
-        'line-opacity': 0.6,
+        'line-width': 6,
+        'line-opacity': 0.8,
         },
         'metadata': {
           'displayName': 'Old Town Route',
@@ -400,7 +244,7 @@ function addLayer() {
         'paint': {
         'line-color': ['get','color'], // ['get','color']
         'line-width': 6,
-        'line-opacity': 0.5,
+        'line-opacity': 0.8,
         },
         'metadata': {
           'displayName': 'Walking Routes',
@@ -410,179 +254,84 @@ function addLayer() {
     map.setLayerZoomRange('walking-routes', 12, 22);
 
 
-    map.addLayer({
-        'id': 'munich-intro-tour-points',
-        'type': 'circle',
-        'source': 'munich-intro-tour-points',
-        'layer.minZoom': 12,
-        'metadata': 'Munich Intro Tour Points',
-        'paint': {
-        'circle-color': '#36bfb6', // ['get','color']
-        'circle-radius': 4,
-        'circle-stroke-width': 2,
-        'circle-stroke-color': '#ffffff'
-        },
-        'metadata': {
-          'displayName': 'Munich Introduction Points',
-          'showInLegend': true
-    }
-        });
-    map.setLayerZoomRange('munich-intro-tour-points', 12, 22);
+    //IF ADD THIS LAYER THEN FUNCTION FOR LIST DOESNT WORK!
+    // map.addLayer({
+    //     'id': 'munich-intro-tour-points',
+    //     'type': 'circle',
+    //     'source': {        
+    //       'type': 'geojson',
+    //     'data': attractions
+    //     },
+    //     'layer.minZoom': 12,
+    //     'paint': {
+    //     'circle-color': '#36bfb6', // ['get','color']
+    //     'circle-radius': 4,
+    //     'circle-stroke-width': 2,
+    //     'circle-stroke-color': '#ffffff'
+    //     },
+    //     'metadata': {
+    //       'displayName': 'Munich Introduction Points',
+    //       'showInLegend': true
+    // }
+    //     });
+    // map.setLayerZoomRange('munich-intro-tour-points', 12, 22);
 
-        
-    map.addLayer({
-        'id': 'old-town-points',
-        'type': 'circle',
-        'source': 'old-town-points',
-        'metadata': 'Old Town Points',
-        'layer.minZoom': 12,
-        'paint': {
-        'circle-color': '#fbb904', // ['get','color']
-        'circle-radius': 4,
-        'circle-stroke-width': 2,
-        'circle-stroke-color': '#ffffff'
-        },
-        'metadata': {
-          'displayName': 'Old Town Points',
-          'showInLegend': true
-    }
-        });
-    map.setLayerZoomRange('old-town-points', 12, 22);
-
-
-    map.addLayer({
-      id: 'district-line',
-      type: 'line',
-      source: 'district-boundaries',
-      paint: {
-          'line-color': '#48afef',
-          'line-width': 2,
-          'line-opacity': 0.7
-      },
-      layout: {
-        visibility: 'visible'
-    },
-      metadata: {
-        displayName: 'Munich Districts',
-        showInLegend: true
-  }
-  });
-
-  map.setLayerZoomRange('district-line', 9, 14);
-
-
-  map.addLayer({
-    'id': 'district-label',
-    'type': 'symbol',
-    'source': 'Munich_Districts_Centroids',
-    'source-layer': 'Munich_Districts_Centroids',
-    'minZoom': 10,
-    'maxZoom': 13,
-    'paint':{
-      'text-color': '#0d68a0',
-      'text-halo-color': "hsla(0, 0%, 100%, 0.75)",
-      'text-halo-width': 1,
-      'text-halo-blur': 0.5
-    },
-    'layout': {
-      'visibility': 'visible',
-      'text-field': ["get", "ref"],
-      'text-font' : [
-        "DIN Pro Regular",
-        "Arial Unicode MS Regular"
-      ],
-      'text-size': 16
-  },
-    'metadata': {
-      'displayName': 'Munich Districts Label',
-      'showInLegend': true
-}
-});
-
-map.setLayerZoomRange('district-label', 10, 13);
 
  //Add layer before this// 
 }
 
+
 // Here when map loads a style, we run the functions addSource() and addLayer() we created above 
 //which adds all the geojson sources and adds to the maps as layers.
-map.on('style.load', function() {
-		  addSource();
-		  addLayer();
-      
-  // TOGGLE LAYERS ON AND OFF
-  // If these layers were not added to the map, abort
-  if (
-    !map.getLayer("old-town-points") ||
-    !map.getLayer("munich-intro-tour-points") ||
-    !map.getLayer("old-town-route") ||
-    !map.getLayer("walking-routes") ||
-    !map.getLayer("district-line")
-  ) {
-    return;
-  }
+map.on('style.load', function(){
 
-  // Enumerate ids of the layers.
-  // const toggleableLayerIds = ['old-town-points', 'munich-intro-tour-points', 'old-town-route','walking-routes'];
+      map.addSource('munich-intro-tour-points', {
+        'type': 'geojson',
+        'data': attractions
+      });
+    
+        /**
+       * Add all the things to the page:
+       * - The location listings on the side of the page
+       * - The markers onto the map
+       */
+        buildLocationList(attractions);
+        addMarkers();
+        addSource();
+        addLayer();
 
-  // Create object with id and display names
-  const toggleableLayers = [
-    {
-      id: "old-town-points",
-      displayLabel: "Old Town Points"
-    },
-    {
-      id: "munich-intro-tour-points",
-      displayLabel: "Munich Intro Points"
-    },
-    {
-      id: "old-town-route",
-      displayLabel: "Old Town Route"
-    },
-    {
-      id: "walking-routes",
-      displayLabel: "Walking Routes"
-    },
-    {
-      id: "district-line",
-      displayLabel: "Munich Districts"
-    }
-  ];
+    //whatever layers you want to toggle go in to this function
+    // toggleLayer(['munich-intro-tour-points'], 'Points');
+    // toggleLayer(['walking-routes','old-town-route'], 'Routes');
 
-  // Set up the corresponding toggle button for each layer.
-  for (const layer of toggleableLayers) {
-    // Create a link.
+    // function toggleLayer(ids, name) {
+    //     var link = document.createElement('a');
+    //     link.href = '#';
+    //     link.className = 'active';
+    //     link.textContent = name;
 
-    const link = document.createElement("a");
-    link.id = layer.id;
-    link.href = "#";
-    link.textContent = layer.displayLabel; //change this for layer label
-    link.className = "active";
+    //     link.onclick = function (e) {
+    //         e.preventDefault();
+    //         e.stopPropagation();
+    //         for (layers in ids){
+    //             var visibility = map.getLayoutProperty(ids[layers], 'visibility');
+    //             if (visibility === 'visible') {
+    //                 map.setLayoutProperty(ids[layers], 'visibility', 'none');
+    //                 this.className = '';
+    //             } else {
+    //                 this.className = 'active';
+    //                 map.setLayoutProperty(ids[layers], 'visibility', 'visible');
+    //             }
+    //         }
 
-    // Show or hide layer when the toggle is clicked.
-    link.onclick = function (e) {
-      const clickedLayer = this.id;
-      console.log("click", clickedLayer);
+    //     };
 
-      e.preventDefault();
-      e.stopPropagation();
+    //     var layers = document.getElementById('layernav');
+    //     layers.appendChild(link);
 
-      const visibility = map.getLayoutProperty(clickedLayer, "visibility");
+    //   }
 
-      // Toggle layer visibility by changing the layout object's visibility property.
-      if (visibility === "visible") {
-        map.setLayoutProperty(clickedLayer, "visibility", "none");
-        this.className = "";
-      } else {
-        this.className = "active";
-        map.setLayoutProperty(clickedLayer, "visibility", "visible");
-      }
-    };
-
-    const layers = document.getElementById("layernav");
-    layers.appendChild(link);
-  }
-		});
+});
 
 for (const input of inputs) {
 input.onclick = (layer) => {
@@ -590,3 +339,135 @@ const layerId = layer.target.id;
 map.setStyle('mapbox://styles/' + layerId);
 };
 }
+
+// TOGGLE LAYERS ON AND OFF
+// map.on('load', () => {
+//   map.addSource('munich-intro-tour-points', {
+//     'type': 'geojson',
+//     'data': attractions
+//   });
+
+
+// });
+
+      /**
+       * Add a marker to the map for every attraction listing.
+       **/
+      function addMarkers() {
+        /* For each feature in the GeoJSON object above: */
+        for (const marker of attractions.features) {
+          /* Create a div element for the marker. */
+          const el = document.createElement('div');
+          /* Assign a unique `id` to the marker. */
+          el.id = `marker-${marker.properties.Number}`;
+          /* Assign the `marker` class to each marker for styling. */
+          el.className = 'marker';
+          el.textContent = marker.properties.Number;
+
+          /**
+           * Create a marker using the div element
+           * defined above and add it to the map.
+           **/
+          new mapboxgl.Marker(el, { offset: [0, -23] })
+            .setLngLat(marker.geometry.coordinates)
+            .addTo(map);
+
+          /**
+           * Listen to the element and when it is clicked, do three things:
+           * 1. Fly to the point
+           * 2. Close all other popups and display popup for clicked attraction
+           * 3. Highlight listing in sidebar (and remove highlight for all other listings)
+           **/
+          el.addEventListener('click', (e) => {
+            /* Fly to the point */
+            flyToattraction(marker);
+            /* Close all other popups and display popup for clicked attraction */
+            createPopUp(marker);
+            /* Highlight listing in sidebar */
+            const activeItem = document.getElementsByClassName('active');
+            e.stopPropagation();
+            if (activeItem[0]) {
+              activeItem[0].classList.remove('active');
+            }
+            const listing = document.getElementById(
+              `listing-${marker.properties.Number}`
+            );
+            listing.classList.add('active');
+          });
+        }
+      }
+
+      /**
+       * Add a listing for each attraction to the sidebar.
+       **/
+      function buildLocationList(attractions) {
+        for (const attraction of attractions.features) {
+          /* Add a new listing section to the sidebar. */
+          const listings = document.getElementById('listings');
+          const listing = listings.appendChild(document.createElement('div'));
+          /* Assign a unique `id` to the listing. */
+          listing.id = `listing-${attraction.properties.Number}`;
+          /* Assign the `item` class to each listing for styling. */
+          listing.className = 'item';
+
+          /* Add the link to the individual listing created above. */
+          const link = listing.appendChild(document.createElement('a'));
+          link.href = '#';
+          link.className = 'title';
+          link.id = `link-${attraction.properties.Number}`;
+          link.innerHTML = `${attraction.properties.Number}&middot ${attraction.properties.Name}`;
+
+          /* Add details to the individual listing. */
+          const details = listing.appendChild(document.createElement('div'));
+          details.innerHTML = `<i>${attraction.properties.Type}</i><br>${attraction.properties.Address}<br>`;
+          if (attraction.properties.Phone) {
+            details.innerHTML += `${attraction.properties.Phone}`;
+          }
+
+          /**
+           * Listen to the element and when it is clicked, do four things:
+           * 1. Update the `currentFeature` to the attraction associated with the clicked link
+           * 2. Fly to the point
+           * 3. Close all other popups and display popup for clicked attraction
+           * 4. Highlight listing in sidebar (and remove highlight for all other listings)
+           **/
+          link.addEventListener('click', function () {
+            for (const feature of attractions.features) {
+              if (this.id === `link-${feature.properties.Number}`) {
+                flyToattraction(feature);
+                createPopUp(feature);
+              }
+            }
+            const activeItem = document.getElementsByClassName('active');
+            if (activeItem[0]) {
+              activeItem[0].classList.remove('active');
+            }
+            this.parentNode.classList.add('active');
+          });
+        }
+      }
+
+      /**
+       * Use Mapbox GL JS's `flyTo` to move the camera smoothly
+       * a given center point.
+       **/
+      function flyToattraction(currentFeature) {
+        map.flyTo({
+          center: currentFeature.geometry.coordinates,
+          zoom: 16
+        });
+      }
+
+      /**
+       * Create a Mapbox GL JS `Popup`.
+       **/
+      function createPopUp(currentFeature) {
+        const popUps = document.getElementsByClassName('mapboxgl-popup');
+        if (popUps[0]) popUps[0].remove();
+        const popup = new mapboxgl.Popup({ closeOnClick: false })
+          .setLngLat(currentFeature.geometry.coordinates)
+          .setHTML(
+            `<h3>${currentFeature.properties.Name}</h3><p>${currentFeature.properties.image}<i><br>Image Source: Wikipedia.org</i><br>Attraction Type: ${currentFeature.properties.Type}<br><br>${currentFeature.properties.Description}</p>`
+          )
+          .addTo(map);
+      }

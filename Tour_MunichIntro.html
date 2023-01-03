@@ -20,12 +20,35 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
 <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
  <!-- CSS Stylesheet -->
-<link rel="stylesheet" href="CityTours.css"> 
+<link rel="stylesheet" href="Tour.css"> 
 
 
 </head>
 <body>
 
+    <div class="sidebar">
+        <div class="heading">
+          <h1 style="font-weight: 300">Munich Introduction Tour</h1>
+        </div>
+        <div id='listings' class='listings'></div>
+        <div id='legend' class="legend">
+          <h3>Legend Items</h3>
+        </div>
+        <nav id="layernav"></nav>
+    </div>
+
+<!-- Basemap Styles Menu -->
+
+<div id="menu"> 
+    Basemap:
+    <input id="pheebely/clazrqxnm000x15nwlwkpd8qn" type="radio" name="rtoggle" value="default" checked="checked">
+    <label for="pheebely/clazrqxnm000x15nwlwkpd8qn">Default</label>
+    <input id="mapbox/light-v11" type="radio" name="rtoggle" value="light">
+    <label for="mapbox/light-v11">Light</label>
+    <input id="mapbox/dark-v11" type="radio" name="rtoggle" value="dark">
+    <label for="mapbox/dark-v11">Dark</label>
+  </div>
+    </div>
   <div class="topnav" id="myTopnav">
     <a class="active" href="About.html">ABOUT</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -33,40 +56,13 @@
     </a>
   </div>
 
-<!-- Script for Responsive Topnav  -->
-<script> function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
 <div class="headertitle">
     <h1><a href="MainPage.html">MAPPY MUNICH</a></h1>
 </div>
-
-
 <!-- Embed JS Code for Main Map-->
 <div id="map">
-    <!-- Basemap Styles Menu -->
-    <div id="menu"> 
-        Basemap:
-        <input id="pheebely/clazrqxnm000x15nwlwkpd8qn" type="radio" name="rtoggle" value="default" checked="checked">
-        <label for="pheebely/clazrqxnm000x15nwlwkpd8qn">Default</label>
-          <!-- See a list of Mapbox-hosted public styles at -->
-        <!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
-        <input id="mapbox/light-v11" type="radio" name="rtoggle" value="light">
-        <label for="mapbox/light-v11">Light</label>
-        <input id="mapbox/dark-v11" type="radio" name="rtoggle" value="dark">
-        <label for="mapbox/dark-v11">Dark</label>
-      </div>
-      <nav id="layernav"></nav>
 </div>
-<script src="mapbox.js"> </script>
-
+<script src="mapbox_MunichIntro.js"> </script>
 
 
 </body>
