@@ -1,7 +1,7 @@
 # mappingproject
 To open website you need these files:
 
-MainPage.html -> Main page when website loads
+index.html -> Main page when website loads
 
 CityTours.html and CityTours.css -> Created CityTours page
 
