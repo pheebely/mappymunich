@@ -133,18 +133,16 @@ text-align: center;
 
 /* Style for attractions list */
 .listings {
-    height: 70%; /*72%*/
+    height: 65%; /*72%*/
     overflow: auto;
     padding-bottom: 60px;
     font-family: 'Inter Tight', sans-serif;
-    font-size: 13px;
     display: block;
   }
   
   .listings .item {
     border-bottom: 1px solid #eee;
     padding: 10px;
-    text-decoration: none;
   }
   
   .listings .item:last-child { border-bottom: none; }
@@ -154,6 +152,23 @@ text-align: center;
     color: #48a2b8;
     text-decoration: none;
     font-weight: 700;
+    font-size: 13px;
+
+  }
+
+  .listings .item .details {
+    padding-left: 15px;
+    padding-right: 0;
+    font-size: 11px;
+  }
+
+  .listings .item .details a {
+    text-decoration: none;
+    color: #48a2b8;
+  }
+
+  .listings .item .details a:hover {
+    color: #f1bc41;
   }
   
   .listings .item .title small { font-weight: 400; }
@@ -178,17 +193,25 @@ text-align: center;
   
   ::-webkit-scrollbar-thumb {
     background: #48a2b8;
-    border-radius: 0;
+    border-radius: 3px;
   }
 
 .legend {
-    display: block;
-    height: 20%;
-    bottom: 0;
-    background-color: transparent;
+    display: flex;
+    height: 13%;
+    top: 0;
+    background-color: #fff;
+    border-top: 1px solid #eee;
     font-family: 'Inter Tight', sans-serif;
     font-size: 12px;
-    padding: 1px 10px;
+    padding: 0 12px;
+    padding-bottom: 10px;
+}
+
+.legend p {
+    vertical-align: text-top;
+    overflow-wrap: break-word;
+    line-height: 2;
 }
 
 #menu {
@@ -255,48 +278,94 @@ background: #f1bc41;
     font-family: 'Inter Tight', sans-serif;
     font-size: 10px;
     font-weight: 700;
-    color: #f1bc41;
+    color: #6bcdd6;
     text-align: center;
     background-image: url(/images/location-pin-solid.svg);
+  }
+
+.marker:hover{
+    border: none;
+    cursor: pointer;
+    height: 24px;
+    width: 18px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    background-image: url(/images/location-pin-solid-yellow.svg);
+  }
+
+.marker.active {
+    border: none;
+    cursor: pointer;
+    height: 24px;
+    width: 18px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    background-image: url(/images/location-pin-solid-yellow.svg);
   }
 
 
 /* STYLE FOR POPUPS */
 .mapboxgl-popup{
     padding-bottom: 40px;
+    margin-top: 10px;
     width: 600px;
+    height: 330px;
 }
 
+
 .mapboxgl-popup-close-button {
-position: absolute;
-margin-top: -15px;
-color: #ddd;
+    margin-top: 5px;
+    color: rgb(158, 156, 156);
+    z-index: 999;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+    margin-top: 0px;
+  }
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+    margin-top: -15px;
+    color: #000;
+    border-bottom-color: #000;
 }
 
 .mapboxgl-popup-content {
+    position: absolute;
     inline-size: 140px;
     overflow-wrap: break-word;
-    font: 400 11px/11px 'Inter Tight', sans-serif;
+    overflow-y: scroll;
+    font: 400 12px/11px 'Inter Tight', sans-serif;
     padding: 0;
     padding-bottom: 5px;
     margin: 0 0 10px;
-    width: 160%;
+    width: 200%;
+    height: 120%;
 }
 
 .mapboxgl-popup-content h3 {
-    background: #f4f4f4;
+    position: fixed;
+    width: 193%;
+    background: #f1bc41;
     color: #000;
-    margin: 5;
-    padding: 10px;
+    margin-top: 0;
+    padding: 8px;
     border-radius: 3px 3px 0 0;
     font-weight: 700;
     font-kerning: auto;
+    text-align: center;
+    letter-spacing: 1px;
     line-height: normal;
-    margin-top: -15px;
 }
 
 .mapboxgl-popup-content p {
     padding: 0 10px;
+    padding-bottom: 10px;
     font-weight: 400;
     margin-top: 0px;
     margin: 5px;
@@ -304,4 +373,90 @@ color: #ddd;
     display: block;
 }
 
- 
+.mapboxgl-popup-content img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
