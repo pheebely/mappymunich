@@ -66,31 +66,44 @@ class HomeButton {
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
 
+// Add font awesome symbols for accessibility and must-see
+const wheelchair = "<i class=\"fa-brands fa-accessible-icon\"></i>"
+const elderly = "<i class=\"fa-solid fa-person-cane\"></i>"
+const stroller = "<i class=\"fa-solid fa-baby-carriage\"></i>"
+const elev = "<i class=\"fa-solid fa-elevator\"></i>"
+const fire = "<i class=\"fa-solid fa-fire\"></i>"
 
 // Add attractions layer as constant
 const attractions = {
   "type": "FeatureCollection",
   "name": "Munich-Intro",
   "features": [
-    { "type": "Feature", "properties": { "Latitude": 48.139185, "Longitude": 11.566191, "Name": "Karlsplatz", "MustSee": false, "Number": 1, "Type": "Landmark", "Address": "Karlsplatz 1, 80335 München", "Hours": "Open 24 hours", "Website": "https://www.muenchen.de/sehenswuerdigkeiten/orte/120328.html", "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.566191, 48.139185 ] } },
-    { "type": "Feature", "properties": { "Latitude": 48.138169, "Longitude": 11.57152, "Name": "Kaufingerstrasse/Neuhauserstrasse", "MustSee": false, "Number": 2, "Type": "Shopping", "Address": " ", "Hours": null, "Description": null, "Accessibility": null }, "geometry": { "type": "Point", "coordinates": [ 11.57152, 48.138169 ] } },
-    { "type": "Feature", "properties": { "Latitude": 48.135184, "Longitude": 11.569654, "Name": "Asamkirche", "MustSee": false, "Number": 3, "Type": "Religious", "Address": "Sendlinger Str. 32, 80331 München", "Hours": "Mo-Su 09:00-18:00", "Website": "https://alterpeter.de/nebenkirchen/#asamkirche", "Phone": "+49 89236879 89" }, "geometry": { "type": "Point", "coordinates": [ 11.569654, 48.135184 ] } },
-    { "type": "Feature", "properties": { "Latitude": 48.135455, "Longitude": 11.572886, "Name": "Münchner Stadtmuseum", "MustSee": false, "Number": 4, "Type": "Museum", "Address": "Sankt-Jakobs-Platz 1, 80331 München", "Hours": "Tu-Su 10:00-18:00", "Website": "https://www.muenchner-stadtmuseum.de/", "Phone": "+49 89 233223 70" }, "geometry": { "type": "Point", "coordinates": [ 11.572886, 48.135455 ] } },
-    { "type": "Feature", "properties": { "Latitude": 48.135146, "Longitude": 11.576256, "Name": "Viktualienmarkt", "MustSee": true, "Number": 5, "Type": "Shopping", "Address": "Viktualienmarkt 3, 80331 München", "Hours": "Mo-Sa 08:00-20:00", "Website": "https://www.viktualienmarkt-muenchen.de", "Phone": "+49 89 890682 05" }, "geometry": { "type": "Point", "coordinates": [ 11.576256, 48.135146 ] } },
-    { "type": "Feature", "properties": { "Latitude": 48.136503, "Longitude": 11.576054, "Name": "Peterskirche", "MustSee": true, "Number": 6, "Type": "Religious", "Address": "Rindermarkt 1, 80331 München", "Hours": "Mo-Su 07:30-19:00", "Website": "https://alterpeter.de/pfarrkirche-st-peter/", "Phone": "+49 89 210237 760" }, "geometry": { "type": "Point", "coordinates": [ 11.576054, 48.136503 ] } },
-    { "type": "Feature", "properties": { "Latitude": 48.136663, "Longitude": 11.576848, "Name": "Altes Rathaus", "MustSee": false, "Number": 7, "Type": "Landmark", "Address": "Marienplatz 15, 80331 München" }, "geometry": { "type": "Point", "coordinates": [ 11.576848, 48.136663 ] } },
-    { "type": "Feature", "properties": { "Latitude": 48.137245, "Longitude": 11.57551, "Name": "Marienplatz", "MustSee": true, "Number": 8, "Type": "Landmark", "Address": "Marienplatz, 80331 München", "Hours": null, "image":"<img src='/images/Marienplatz.jpg' border='0' alt='nyc-all-cause'/>",
+    { "type": "Feature", "properties": { "Latitude": 48.139185, "Longitude": 11.566191, "Name": "Karlsplatz", "MustSee": " ", "Number": 1, "Type": "Landmark", "Address": "Karlsplatz 1, 80335 München", "Hours": "Open 24 hours", "Website": "https://www.muenchen.de/sehenswuerdigkeiten/orte/120328.html", "Accessibility": wheelchair+"&nbsp;"+elderly+"&nbsp;"+stroller, 
+    "image": "src='https://www.munich.travel/var/ger_muc/storage/images/_aliases/stage_medium/7/9/0/7/717097-11-eng-GB/Stachus-Panorama-foto-joerg-lutz.jpg' alt='Karlsplatz plaza viewed from above'",
+    "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.566191, 48.139185 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.138169, "Longitude": 11.57152, "Name": "Kaufingerstrasse/Neuhauserstrasse<br>", "MustSee": " ", "Number": 2, "Type": "Shopping", "Address": " ", "Hours": "Open 24 hours", "Accessibility": wheelchair+"&nbsp;"+elderly+"&nbsp;"+stroller, "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.57152, 48.138169 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.135184, "Longitude": 11.569654, "Name": "Asamkirche", "MustSee": " ", "Number": 3, "Type": "Religious", "Address": "Sendlinger Str. 32, 80331 München", "Hours": "Su-Th 09:00-18:00 <br> Fr 13:00-19:00", "Elevator": " ", "Website": "https://alterpeter.de/nebenkirchen/#asamkirche", "Phone": "+49 89236879 89", "Accessibility": null, "Description": null}, "geometry": { "type": "Point", "coordinates": [ 11.569654, 48.135184 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.135455, "Longitude": 11.572886, "Name": "Münchner Stadtmuseum", "MustSee": " ", "Number": 4, "Type": "Museum", "Address": "Sankt-Jakobs-Platz 1, 80331 München", "Hours": "Tu-Su 10:00-18:00", "Website": "https://www.muenchner-stadtmuseum.de/", "Phone": "+49 89 233223 70", "Accessibility": wheelchair+"&nbsp;"+elderly+"&nbsp;"+stroller, "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.572886, 48.135455 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.135146, "Longitude": 11.576256, "Name": "Viktualienmarkt", "MustSee": fire, "Number": 5, "Type": "Shopping", "Address": "Viktualienmarkt 3, 80331 München", "Hours": "Mo-Sa 08:00-20:00", "Website": "https://www.viktualienmarkt-muenchen.de", "Phone": "+49 89 890682 05", "Accessibility": wheelchair+"&nbsp;"+elderly+"&nbsp;"+stroller, "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.576256, 48.135146 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.136503, "Longitude": 11.576054, "Name": "Peterskirche", "MustSee": fire, "Number": 6, "Type": "Religious", "Address": "Rindermarkt 1, 80331 München", "Hours": "Mo-Su 07:30-19:00", "Website": "https://alterpeter.de/pfarrkirche-st-peter/", "Phone": "+49 89 210237 760", "Accessibility": null, "Description": null}, "geometry": { "type": "Point", "coordinates": [ 11.576054, 48.136503 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.136663, "Longitude": 11.576848, "Name": "Altes Rathaus", "MustSee": " ", "Number": 7, "Type": "Landmark", "Address": "Marienplatz 15, 80331 München" , "Hours": null, "Accessibility": null, "Description": null}, "geometry": { "type": "Point", "coordinates": [ 11.576848, 48.136663 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.137245, "Longitude": 11.57551, "Name": "Marienplatz", "MustSee": fire, "Number": 8, "Type": "Landmark", "Address": "Marienplatz, 80331 München", "Hours": "Open 24 hours", "Accessibility": wheelchair+"&nbsp;"+elderly+"&nbsp;"+stroller,
+    "image":"<img src='/images/Marienplatz.jpg' border='0' alt='Marienplatz plaza in Munich Germany with Tourists' width='350'/><center><p><i>Image Source: Wikipedia.org</i></p></center>",
     "Description":
     "Marienplatz is a square in the heart of Munich that has been the main square of the city since 1158. As such, it was the main venue where public events, tournaments and executions traditionally took place. <br><br><strong>Why You Should Visit:</strong><br>Ideal location for the very first encounter with Munich. Historic, architecturally attractive and vibrant, filled with people (locals and tourists alike) throughout the day, it never lacks excitement. Also, just like the rest of Munich, it's spotlessly clean."
   }, "geometry": { "type": "Point", "coordinates": [ 11.57551, 48.137245 ] } },
-    { "type": "Feature", "properties": { "Latitude": 48.137348, "Longitude": 11.576202, "Name": "Neues Rathaus", "MustSee": true, "Number": 9, "Type": "Landmark", "Address": " ", "Hours": "Oct-Apr Mo-Fr 10:00-17:00; May-Sep 10:00-19:00" }, "geometry": { "type": "Point", "coordinates": [ 11.576202, 48.137348 ] } },
-  { "type": "Feature", "properties": { "Latitude": 48.137665, "Longitude": 11.579815, "Name": "Hofbräuhaus", "MustSee": true, "Number": 10, "Type": "Food", "Address": "Platzl 9, 80331 München", "Hours": "Mo-Su 09:00-24:00", "Website": "https://www.hofbraeuhaus.de/de/willkommen.html", "Phone": "+49 89 290136 129" }, "geometry": { "type": "Point", "coordinates": [ 11.579815, 48.137665 ] } },
-  { "type": "Feature", "properties": { "Latitude": 48.139152, "Longitude": 11.580089, "Name": "Maximilianstrasse", "MustSee": false, "Number": 11, "Type": "Landmark", "Address": " ", "Hours":""}, "geometry": { "type": "Point", "coordinates": [ 11.580089, 48.139152 ] } },
-  { "type": "Feature", "properties": { "Latitude": 48.140292, "Longitude": 11.578246, "Name": "Residenz München", "MustSee": true, "Number": 12, "Type": "Landmark", "Address": "Residenzstraße 1, 80333 München", "Website": "https://www.residenz-muenchen.de/", "Phone": "+49 89 29067-1" }, "geometry": { "type": "Point", "coordinates": [ 11.578246, 48.140292 ] } },
-  { "type": "Feature", "properties": { "Latitude": 48.141756, "Longitude": 11.577346, "Name": "Feldherrnhalle", "MustSee": false, "Number": 13, "Type": "Landmark", "Address": "Residenzstraße 1, 80333 München", "Hours": "Open 24 hours" }, "geometry": { "type": "Point", "coordinates": [ 11.577346, 48.141756 ] } },
-  { "type": "Feature", "properties": { "Latitude": 48.141978, "Longitude": 11.577134, "Name": "Theatine Church", "MustSee": false, "Number": 14, "Type": "Religious", "Address": "Salvatorplatz 2A, 80333 München", "Hours": "Mo-Su 07:00-20:00", "Website": "http://www.theatinerkirche.de/", "Phone": "+49 89 2106960" }, "geometry": { "type": "Point", "coordinates": [ 11.577134, 48.141978 ] } },
-  { "type": "Feature", "properties": { "Latitude": 48.14236, "Longitude": 11.581422, "Name": "Hofgarten and War Memorial", "MustSee": false, "Number": 15, "Type": "Garden", "Address": "Hofgartenstraße 1, 80538 München", "Hours": "Open 24 hours", "Website": "http://www.muenchen.de/sehenswuerdigkeiten/orte/120231.html" }, "geometry": { "type": "Point", "coordinates": [ 11.581422, 48.14236 ] } },
-  { "type": "Feature", "properties": { "Latitude": 48.144495, "Longitude": 11.583641, "Name": "Englischer Garden", "MustSee": true, "Number": 16, "Type": "Park", "Address": "Prinzregentenstraße, 80538 München", "Hours": "Open 24 hours", "Website": "https://www.muenchen.de/sehenswuerdigkeiten/orte/120242.html" }, "geometry": { "type": "Point", "coordinates": [ 11.583641, 48.144495 ] } },
+    { "type": "Feature", "properties": { "Latitude": 48.137348, "Longitude": 11.576202, "Name": "Neues Rathaus", "MustSee": fire, "Number": 9, "Type": "Landmark", "Address": " ", "Hours": "Oct-Apr Mo-Fr 10:00-17:00 <br> May-Sep 10:00-19:00", "Accessibility": elev,
+    "image":"<img src='/images/NeuesRathaus.jpg' border='0' alt='Neues Rathause building from the front in Munich Germany' width='350'/></img><center><p><i>Image Source: Jörg Lutz</i></p></center>",
+    "Description":
+    "With its ornate, Neo-Gothic facade, the Neues Rathaus (New Town Hall) at Marienplatz (square) looks slightly older than it actually is. As a matter of fact, initial construction took place between 1867 and 1905 after the neighbouring Altes Rathaus (Old Town Hall) became too small for Munich’s city council. <br> One of the most important attractions is the Glockenspiel in the hall's tower, whose daily performances at 11 a.m. and 12 a.m. (and 5 p.m. in the summer months) attract audiences from around the world." 
+  }, "geometry": { "type": "Point", "coordinates": [ 11.576202, 48.137348 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.137665, "Longitude": 11.579815, "Name": "Hofbräuhaus", "MustSee": fire, "Number": 10, "Type": "Food", "Address": "Platzl 9, 80331 München", "Hours": "Mo-Su 09:00-24:00", "Website": "https://www.hofbraeuhaus.de/de/willkommen.html", "Phone": "+49 89 290136 129", "Accessibility": wheelchair+"&nbsp;"+elderly+"&nbsp;"+stroller, "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.579815, 48.137665 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.139152, "Longitude": 11.580089, "Name": "Maximilianstrasse", "MustSee": " ", "Number": 11, "Type": "Landmark", "Address": " ", "Hours":"", "Accessibility": null, "Description": null}, "geometry": { "type": "Point", "coordinates": [ 11.580089, 48.139152 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.140292, "Longitude": 11.578246, "Name": "Residenz München", "MustSee": fire, "Number": 12, "Type": "Landmark", "Address": "Residenzstraße 1, 80333 München", "Website": "https://www.residenz-muenchen.de/", "Phone": "+49 89 29067-1", "Accessibility": null, "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.578246, 48.140292 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.141756, "Longitude": 11.577346, "Name": "Feldherrnhalle", "MustSee": " ", "Number": 13, "Type": "Landmark", "Address": "Residenzstraße 1, 80333 München", "Hours": "Open 24 hours", "Accessibility": null, "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.577346, 48.141756 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.141978, "Longitude": 11.577134, "Name": "Theatine Church", "MustSee": " ", "Number": 14, "Type": "Religious", "Address": "Salvatorplatz 2A, 80333 München", "Hours": "Mo-Su 07:00-20:00", "Website": "http://www.theatinerkirche.de/", "Phone": "+49 89 2106960", "Accessibility": null, "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.577134, 48.141978 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.14236, "Longitude": 11.581422, "Name": "Hofgarten and War Memorial", "MustSee": " ", "Number": 15, "Type": "Park", "Address": "Hofgartenstraße 1, 80538 München", "Hours": "Open 24 hours", "Website": "http://www.muenchen.de/sehenswuerdigkeiten/orte/120231.html", "Accessibility": null, "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.581422, 48.14236 ] } },
+  { "type": "Feature", "properties": { "Latitude": 48.144495, "Longitude": 11.583641, "Name": "Englischer Garden", "MustSee": fire, "Number": 16, "Type": "Park", "Address": "Prinzregentenstraße, 80538 München", "Hours": "Open 24 hours", "Website": "https://www.muenchen.de/sehenswuerdigkeiten/orte/120242.html", "Accessibility": elderly+"&nbsp;"+stroller, "Description": null }, "geometry": { "type": "Point", "coordinates": [ 11.583641, 48.144495 ] } },
   ]
   }
   ;
@@ -340,15 +353,6 @@ map.setStyle('mapbox://styles/' + layerId);
 };
 }
 
-// TOGGLE LAYERS ON AND OFF
-// map.on('load', () => {
-//   map.addSource('munich-intro-tour-points', {
-//     'type': 'geojson',
-//     'data': attractions
-//   });
-
-
-// });
 
       /**
        * Add a marker to the map for every attraction listing.
@@ -393,6 +397,18 @@ map.setStyle('mapbox://styles/' + layerId);
               `listing-${marker.properties.Number}`
             );
             listing.classList.add('active');
+
+            //Highlight marker on click
+            const activeMarker = document.getElementsByClassName('active');
+            e.stopPropagation();
+            if (activeMarker[0]) {
+              activeMarker[0].classList.remove('active');
+            }
+            const markerOn = document.getElementById(
+              `marker-${marker.properties.Number}`
+            );
+            markerOn.classList.add('active');
+
           });
         }
       }
@@ -415,14 +431,21 @@ map.setStyle('mapbox://styles/' + layerId);
           link.href = '#';
           link.className = 'title';
           link.id = `link-${attraction.properties.Number}`;
-          link.innerHTML = `${attraction.properties.Number}&middot ${attraction.properties.Name}`;
+          link.innerHTML = `${attraction.properties.Number}&middot ${attraction.properties.Name}&nbsp;&nbsp;&nbsp;${attraction.properties.MustSee}&nbsp;${attraction.properties.Accessibility}`;
 
           /* Add details to the individual listing. */
           const details = listing.appendChild(document.createElement('div'));
-          details.innerHTML = `<i>${attraction.properties.Type}</i><br>${attraction.properties.Address}<br>`;
-          if (attraction.properties.Phone) {
-            details.innerHTML += `${attraction.properties.Phone}`;
-          }
+          details.className = 'details';
+          details.innerHTML = `<i><strong><font color="#9f9f9f"><font size="1">${attraction.properties.Type}</font color></font size></strong></i><br>
+          ${attraction.properties.Address}<br>
+          ${attraction.properties.Hours}&nbsp;
+          <a href=${attraction.properties.Website}><i class="fa-solid fa-link"></i></a>
+          `;
+          // if (attraction.properties.Phone) {
+          //   details.innerHTML += `${attraction.properties.Phone}`;
+          // };
+          // details.innerHTML += `&nbsp;&nbsp;<a href=${attraction.properties.Website}><i class="fa-solid fa-link"></i></a>`;
+          
 
           /**
            * Listen to the element and when it is clicked, do four things:
@@ -430,19 +453,73 @@ map.setStyle('mapbox://styles/' + layerId);
            * 2. Fly to the point
            * 3. Close all other popups and display popup for clicked attraction
            * 4. Highlight listing in sidebar (and remove highlight for all other listings)
+           * 5. Highligh listing in map (and remove highlight for all other listings) **NOT WORKING YET**
            **/
           link.addEventListener('click', function () {
             for (const feature of attractions.features) {
               if (this.id === `link-${feature.properties.Number}`) {
                 flyToattraction(feature);
-                createPopUp(feature);
+                closePopUp(feature);
               }
-            }
+            } //Highlight listing in sidebar
             const activeItem = document.getElementsByClassName('active');
             if (activeItem[0]) {
               activeItem[0].classList.remove('active');
             }
             this.parentNode.classList.add('active');
+
+
+            //Highlight marker on click not working when highlight listing in sidebar is on
+            const activeMarker = document.getElementsByClassName('active');
+            e.stopPropagation();
+            if (activeMarker[0]) {
+              activeMarker[0].classList.remove('active');
+            }
+            const markerOn = document.getElementById(
+              `marker-${feature.properties.Number}`
+            );
+            markerOn.classList.add('active');
+          });
+
+
+          //Listen to the element and when it is hovered on, do this:
+          //1. Update the `currentFeature` to the attraction associated with the clicked link
+          //2. Highlight listing in map
+          //3. Stop highlighting listing when mouse leaves
+          link.addEventListener('mouseenter', function() {
+            for (const feature of attractions.features) {
+              if (this.id === `link-${feature.properties.Number}`) {
+
+              //Highlight marker on hover
+              const activeMarker = document.getElementsByClassName('active');
+              if (activeMarker[0]) {
+                activeMarker[0].classList.remove('active');
+              }
+              const markerOn = document.getElementById(
+                `marker-${feature.properties.Number}`
+              );
+              markerOn.classList.add('active');
+                
+              }
+            }
+
+          });
+
+          // Need to fix this so that on 'mouseleave' listings, no markers are highlighted.
+          link.addEventListener('mouseleave', function() {
+            for (const feature of attractions.features) {
+              if (this.id === `link-${feature.properties.Number}`) 
+              {}
+              else {
+
+              const markerOff = document.getElementById(
+                `marker-${feature.properties.Number}`
+              );
+              markerOff.classList.remove('active');
+                
+              }
+            }
+
           });
         }
       }
@@ -454,6 +531,7 @@ map.setStyle('mapbox://styles/' + layerId);
       function flyToattraction(currentFeature) {
         map.flyTo({
           center: currentFeature.geometry.coordinates,
+          offset: [-150, -150],
           zoom: 16
         });
       }
@@ -467,7 +545,27 @@ map.setStyle('mapbox://styles/' + layerId);
         const popup = new mapboxgl.Popup({ closeOnClick: false })
           .setLngLat(currentFeature.geometry.coordinates)
           .setHTML(
-            `<h3>${currentFeature.properties.Name}</h3><p>${currentFeature.properties.image}<i><br>Image Source: Wikipedia.org</i><br>Attraction Type: ${currentFeature.properties.Type}<br><br>${currentFeature.properties.Description}</p>`
+            `<h3>${currentFeature.properties.Name}</h3>
+            <img id="myImg" ${currentFeature.properties.image} style="width:100%;max-width:350px">
+            <div id="myModal" class="modal">
+              <span class="close">$times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+            <p>${currentFeature.properties.Description}</p>`
           )
           .addTo(map);
       }
+
+            /**
+       * Close lose all other popups and display popup for clicked attraction in the sidebar.
+       **/
+      function closePopUp(currentFeature) {
+        const popUps = document.getElementsByClassName('mapboxgl-popup');
+        if (popUps[0]) popUps[0].remove();
+        const popup = new mapboxgl.Popup({ closeOnClick: true })
+        .setLngLat(currentFeature.geometry.coordinates)
+
+      }
+
+
