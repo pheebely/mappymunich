@@ -292,18 +292,7 @@ function addSource() {
 
     map.addSource('munich-intro-tour-points', {
         'type': 'geojson',
-        'data': {
-        "type": "FeatureCollection",
-        "features": [
-        { "type": "Feature", "properties": { "Latitude": 48.137665, "Longitude": 11.579815, "Name": " Hofbrauhaus Beer Hall", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.579815, 48.137665 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.139152, "Longitude": 11.580089, "Name": " Maximilianstrasse", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.580089, 48.139152 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.140292, "Longitude": 11.578246, "Name": " Residenz Royal Palace", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.578246, 48.140292 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.141756, "Longitude": 11.577346, "Name": " Feldherrnhalle", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.577346, 48.141756 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.141978, "Longitude": 11.577134, "Name": " Theatine Church", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.577134, 48.141978 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.14236, "Longitude": 11.581422, "Name": " Hofgarten and War Memorial", "MustSee": false }, "geometry": { "type": "Point", "coordinates": [ 11.581422, 48.14236 ] } },
-        { "type": "Feature", "properties": { "Latitude": 48.144495, "Longitude": 11.583641, "Name": " English Garden", "MustSee": true }, "geometry": { "type": "Point", "coordinates": [ 11.583641, 48.144495 ] } }
-        ]
-        }
+        'data': 'data/Munich-Intro-Points.geojson'
         });
     
     map.addSource('old-town-points', {
@@ -333,8 +322,13 @@ function addSource() {
   map.addSource('Munich_Districts_Centroids', {
     type: 'vector',
     url: 'mapbox://pheebely.clc6tlx164b6628qp1zoe1zad-8z5x5',
+});
 
-})
+map.addSource('Munich-Intro-Route',{
+  type: 'geojson',
+  data:'data/Munich-Intro-Route.geojson',
+
+  });
 
   //Add source before this//          
   }
@@ -342,6 +336,8 @@ function addSource() {
 function addLayer() {
 // For each source we added, we need to use map.addLayer() to add it to the map.
 // map.setLayerZoomRange is used to set the layer zoom range
+
+
   map.addLayer({
     'id': 'englisch_garten',
     'type': 'line',
@@ -500,6 +496,23 @@ function addLayer() {
 });
 
 map.setLayerZoomRange('district-label', 10, 13);
+
+
+map.addLayer({
+  id: 'Munich-Intro-Route',
+  type: 'line',
+  source: 'Munich-Intro-Route',
+  layout: {
+      'line-join': 'round',
+      'line-cap': 'round'
+  },
+  paint: {
+  'line-color': '#36bfb6', // ['get','color']
+  'line-width': 6,
+  'line-opacity': 0.7,
+  }
+  });
+map.setLayerZoomRange('Munich-Intro-Route', 12, 22);
 
  //Add layer before this// 
 }
