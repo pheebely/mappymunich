@@ -291,7 +291,7 @@ map.setStyle('mapbox://styles/' + layerId);
           new mapboxgl.Marker(el, { offset: [0, -23] })
             .setLngLat(marker.geometry.coordinates)
             .addTo(map);
-            .
+          
 
           /**
            * Listen to the element and when it is clicked, do three things:

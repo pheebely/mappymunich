@@ -2,15 +2,15 @@
 
 // eslint-disable-next-line no-unused-vars
 const config = {
-  style: 'mapbox://styles/aiden1112/claren0tj001w15o20xw2uyb0',
+  style: 'mapbox://styles/pheebely/clazrqxnm000x15nwlwkpd8qn',
   accessToken:
-    'pk.eyJ1IjoiYWlkZW4xMTEyIiwiYSI6ImNsYXJiNWR0eTFkOTQzb25wbHhiY2tlMncifQ.1PbHt2YX0xMcRB7TOfYaaw',
+    'pk.eyJ1IjoicGhlZWJlbHkiLCJhIjoiY2s2aGZoZTR4MDJsdTNlcXI2NnI1bXhuaiJ9.l0hhT8MPnRuT8LuyPP8Ovw',
   CSV: './MunichAccessiblePoints.csv',
   center: [11.576142,48.138275],
   zoom: 10,
   title: 'Mappy Munich',
   description:
-    'Accessible location in Munich, Germany.',
+    'Accessible places in Munich, Germany.',
   sideBarInfo: ['name', 'opening_hours', 'website'],
   popupInfo: ['name'],
   filters: [

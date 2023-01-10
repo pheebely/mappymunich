@@ -412,6 +412,22 @@ geocoder.on('result', (ev) => {
 
 map.on('load', () => {
   map.addControl(geocoder, 'top-right');
+  // Add geolocate control to the map.
+map.addControl(
+  new mapboxgl.GeolocateControl({
+  positionOptions: {
+  enableHighAccuracy: true
+  },
+  // When active the map will receive updates to the device's location as it changes.
+  trackUserLocation: true,
+  // Draw an arrow next to the location dot to indicate which direction the device is heading.
+  showUserHeading: true
+  })
+  );
+
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
 
   // csv2geojson - following the Sheet Mapper tutorial https://www.mapbox.com/impact-tools/sheet-mapper
   console.log('loaded');
@@ -456,7 +472,7 @@ map.on('load', () => {
           },
           paint: {
             'circle-radius': 5, // size of circles
-            'circle-color': '#3D2E5D', // color of circles
+            'circle-color': '#48a2b8', // color of circles
             'circle-stroke-color': 'white',
             'circle-stroke-width': 1,
             'circle-opacity': 0.7,
@@ -501,9 +517,14 @@ exitButton.addEventListener('click', () => {
 });
 
 const title = document.getElementById('title');
-title.innerText = config.title;
+// title.innerText = config.title;
+title.innerHTML = `<a href="/index.html">${config.title}</a>`
+title.style.fontFamily = "MuseoModerno, cursive";
+
 const description = document.getElementById('description');
-description.innerText = config.description;
+// description.innerText = config.description;
+description.innerHTML = `${config.description}<br>
+Use 'Show Filter' option below to filter according to Amenity and Wheelchair Accessibility type.`
 
 function transformRequest(url) {
   const isMapboxRequest =

@@ -1,16 +1,16 @@
 #sidebarA{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #filterResults{
     font-size: 12px;
     color: white;
-    background-color: #448EE4;
+    background-color: #48a2b8;
 
 }
 
 .theme{
-    background-color: #2A395F;
+    background-color: #f1bc41;
 }
 
 .select{
@@ -37,7 +37,7 @@
 .listings .item .title {
     display: inline-block;
     width: 100%;
-    color: #2A395F;
+    color: #48a2b8;
     font-weight: 800;
     margin-top: 5px;
     text-decoration: none;
