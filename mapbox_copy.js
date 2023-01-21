@@ -352,6 +352,9 @@ function addLayer() {
     'line-opacity': 0.6,
     'line-dasharray': [1, 3]
     },
+    'layout': {
+      'visibility': 'none'
+  },
     'metadata': {
       'displayName': 'Englisch Garten Route',
       'showInLegend': true
@@ -415,7 +418,10 @@ function addLayer() {
         'circle-radius': 4,
         'circle-stroke-width': 2,
         'circle-stroke-color': '#ffffff'
-        },
+        },      
+        'layout': {
+          'visibility': 'visible'
+      },
         'metadata': {
           'displayName': 'Munich Introduction Points',
           'showInLegend': true
@@ -436,6 +442,9 @@ function addLayer() {
         'circle-stroke-width': 2,
         'circle-stroke-color': '#ffffff'
         },
+        'layout': {
+          'visibility': 'visible'
+      },
         'metadata': {
           'displayName': 'Old Town Points',
           'showInLegend': true
@@ -454,7 +463,7 @@ function addLayer() {
           'line-opacity': 0.7
       },
       layout: {
-        visibility: 'visible'
+        visibility: 'none'
     },
       metadata: {
         displayName: 'Munich Districts',
@@ -476,76 +485,76 @@ map.on('style.load', function() {
 
   // TOGGLE LAYERS ON AND OFF
   // If these layers were not added to the map, abort
-  if (
-    !map.getLayer("old-town-points") ||
-    !map.getLayer("munich-intro-tour-points") ||
-    !map.getLayer("old-town-route") ||
-    !map.getLayer("walking-routes") ||
-    !map.getLayer("district-line")
-  ) {
-    return;
-  }
+  // if (
+  //   !map.getLayer("old-town-points") ||
+  //   !map.getLayer("munich-intro-tour-points") ||
+  //   !map.getLayer("old-town-route") ||
+  //   !map.getLayer("walking-routes") ||
+  //   !map.getLayer("district-line")
+  // ) {
+  //   return;
+  // }
 
-  // Enumerate ids of the layers.
-  // const toggleableLayerIds = ['old-town-points', 'munich-intro-tour-points', 'old-town-route','walking-routes'];
+  // // Enumerate ids of the layers.
+  // // const toggleableLayerIds = ['old-town-points', 'munich-intro-tour-points', 'old-town-route','walking-routes'];
 
-  // Create object with id and display names
-  const toggleableLayers = [
-    {
-      id: "old-town-points",
-      displayLabel: "Old Town Points"
-    },
-    {
-      id: "munich-intro-tour-points",
-      displayLabel: "Munich Intro Points"
-    },
-    {
-      id: "old-town-route",
-      displayLabel: "Old Town Route"
-    },
-    {
-      id: "walking-routes",
-      displayLabel: "Walking Routes"
-    },
-    {
-      id: "district-line",
-      displayLabel: "Munich Districts"
-    }
-  ];
+  // // Create object with id and display names
+  // const toggleableLayers = [
+  //   {
+  //     id: "old-town-points",
+  //     displayLabel: "Old Town Points"
+  //   },
+  //   {
+  //     id: "munich-intro-tour-points",
+  //     displayLabel: "Munich Intro Points"
+  //   },
+  //   {
+  //     id: "old-town-route",
+  //     displayLabel: "Old Town Route"
+  //   },
+  //   {
+  //     id: "walking-routes",
+  //     displayLabel: "Walking Routes"
+  //   },
+  //   {
+  //     id: "district-line",
+  //     displayLabel: "Munich Districts"
+  //   }
+  // ];
 
-  // Set up the corresponding toggle button for each layer.
-  for (const layer of toggleableLayers) {
-    // Create a link.
+  // // Set up the corresponding toggle button for each layer.
+  // for (const layer of toggleableLayers) {
+  //   // Create a link.
 
-    const link = document.createElement("a");
-    link.id = layer.id;
-    link.href = "#";
-    link.textContent = layer.displayLabel; //change this for layer label
-    link.className = "active";
+  //   const link = document.createElement("a");
+  //   link.id = layer.id;
+  //   link.href = "#";
+  //   link.textContent = layer.displayLabel; //change this for layer label
+  //   link.className = "active";
 
-    // Show or hide layer when the toggle is clicked.
-    link.onclick = function (e) {
-      const clickedLayer = this.id;
-      console.log("click", clickedLayer);
+  //   // Show or hide layer when the toggle is clicked.
+  //   link.onclick = function (e) {
+  //     const clickedLayer = this.id;
+  //     console.log("click", clickedLayer);
 
-      e.preventDefault();
-      e.stopPropagation();
+  //     e.preventDefault();
+  //     e.stopPropagation();
 
-      const visibility = map.getLayoutProperty(clickedLayer, "visibility");
+  //     const visibility = map.getLayoutProperty(clickedLayer, "visibility");
 
-      // Toggle layer visibility by changing the layout object's visibility property.
-      if (visibility === "visible") {
-        map.setLayoutProperty(clickedLayer, "visibility", "none");
-        this.className = "";
-      } else {
-        this.className = "active";
-        map.setLayoutProperty(clickedLayer, "visibility", "visible");
-      }
-    };
+  //     // Toggle layer visibility by changing the layout object's visibility property.
+  //     if (visibility === "visible") {
+  //       map.setLayoutProperty(clickedLayer, "visibility", "none");
+  //       this.className = "";
+  //     } else {
+  //       this.className = "active";
+  //       map.setLayoutProperty(clickedLayer, "visibility", "visible");
+  //     }
+  //   };
 
-    const layers = document.getElementById("layernav");
-    layers.appendChild(link);
-  }
+  //   const layers = document.getElementById("layernav");
+  //   layers.appendChild(link);
+  // }
 
 		});
 
@@ -555,3 +564,41 @@ const layerId = layer.target.id;
 map.setStyle('mapbox://styles/' + layerId);
 };
 }
+
+//data layers controls
+toggleLayer = (ids, name) => {
+	// const button = document.createElement('div');
+	// button.classList.add('button');
+	
+  const checkbox = document.createElement('div');
+	checkbox.classList.add('checkbox');
+	
+	const label = document.createElement('p');
+	label.innerHTML = `<p>${name}</p>`;
+	checkbox.appendChild(label);
+	
+	//toggles properties when checkbox is clicked
+	checkbox.onclick = function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		for (layers in ids) {
+			let visibility = map.getLayoutProperty(ids[layers], 'visibility');
+			if (visibility === 'visible') {
+				map.setLayoutProperty(ids[layers], 'visibility', 'none');
+				checkbox.classList.remove('checked');
+				checkbox.removeAttribute('id');
+
+			} else {				
+        map.setLayoutProperty(ids[layers], 'visibility', 'visible');
+        checkbox.classList.add('checked');
+        checkbox.id = 'active';}
+		}
+	};
+
+    let layers = document.getElementById('data-layers');
+    layers.appendChild(checkbox);
+}
+
+//controller options
+toggleLayer(['old-town-points', 'munich-intro-tour-points'], 'Points');
+toggleLayer(['district-line', 'englisch_garten', 'walking-routes'], 'Lines');

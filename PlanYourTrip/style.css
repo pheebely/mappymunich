@@ -1,16 +1,29 @@
 #sidebarA{
-    color: white;
+    color: rgb(0, 0, 0);
+}
+
+#sidebarA h3{
+    font-size: 22px;
+}
+
+#sidebarA a:hover{
+    color: #3c899c;
 }
 
 #filterResults{
     font-size: 12px;
     color: white;
-    background-color: #448EE4;
+    background-color: #48a2b8;
+
+}
+
+#filterResults:hover{
+    background-color: #3c899c
 
 }
 
 .theme{
-    background-color: #2A395F;
+    background-color: #f1bc41;
 }
 
 .select{
@@ -30,6 +43,7 @@
     border-bottom: solid rgb(34, 33, 33, .3) 1px;
 }
 
+
 .listings .item:last-child {
     border-bottom: none;
 }
@@ -37,10 +51,14 @@
 .listings .item .title {
     display: inline-block;
     width: 100%;
-    color: #2A395F;
+    color: #48a2b8;
     font-weight: 800;
     margin-top: 5px;
     text-decoration: none;
+}
+
+.listings .item .title:hover {
+    color: #f1bc41;
 }
 
 
@@ -60,7 +78,6 @@
     background: #2A395F;
 }
 
-
 .clearfix {
     display: block;
 }
@@ -71,6 +88,14 @@
     height: 0;
     clear: both;
     visibility: hidden;
+}
+
+.flex-parent .btn {
+    background-color:#48a2b8
+}
+
+.flex-parent .btn:hover {
+    background-color: #3c899c
 }
 
 .mapboxgl-popup-content {
@@ -85,12 +110,19 @@
   }
 
 .mapboxgl-popup-content h3 {
-    color:black;
+    color: black;
     font-weight: 500;
     margin: 0;
     display: block;
 
   }
+
+  .mapboxgl-popup-content h3:hover {
+    color: #f1bc41;
+
+  }
+
+
 
 
   

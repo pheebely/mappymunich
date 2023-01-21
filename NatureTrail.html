@@ -20,30 +20,12 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
 <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
  <!-- CSS Stylesheet -->
-<link rel="stylesheet" href="Tour.css"> 
+<link rel="stylesheet" href="NatureTrail.css"> 
 
 
 </head>
 <body>
 
-    <div class="sidebar">
-        <div class="heading">
-          <h1 style="font-weight: 400">Tour Information</h1>
-        </div>
-        <nav id="layernav"></nav>
-
-<!-- Basemap Styles Menu -->
-
-<div id="menu"> 
-    Basemap:
-    <input id="pheebely/clazrqxnm000x15nwlwkpd8qn" type="radio" name="rtoggle" value="default" checked="checked">
-    <label for="pheebely/clazrqxnm000x15nwlwkpd8qn">Default</label>
-    <input id="mapbox/light-v11" type="radio" name="rtoggle" value="light">
-    <label for="mapbox/light-v11">Light</label>
-    <input id="mapbox/dark-v11" type="radio" name="rtoggle" value="dark">
-    <label for="mapbox/dark-v11">Dark</label>
-  </div>
-    </div>
   <div class="topnav" id="myTopnav">
     <a class="active" href="About.html">ABOUT</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -63,15 +45,43 @@
 </script>
 
 <div class="headertitle">
-    <h1><a href="MainPage.html">MAPPY MUNICH</a></h1>
+    <h1><a href="index.html">MAPPY MUNICH</a></h1>
 </div>
-
-
 
 
 <!-- Embed JS Code for Main Map-->
 <div id="map"></div>
-<script src="mapbox.js"> </script>
+    <!-- Basemap Styles Menu -->
+            <!-- See a list of Mapbox-hosted public styles at -->
+      <!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
+    <div id="menu"> 
+    Basemap:
+    <input id="pheebely/clazrqxnm000x15nwlwkpd8qn" type="radio" name="rtoggle" value="default" checked="checked">
+    <label for="pheebely/clazrqxnm000x15nwlwkpd8qn">Default</label>
+    <input id="pheebely/cla8sc66z003t15kj00un6g7d" type="radio" name="rtoggle" value="light">
+    <label for="pheebely/cla8sc66z003t15kj00un6g7d">Light</label>
+    <input id="pheebely/clcjqsq3y000a14t2t08353lm" type="radio" name="rtoggle" value="dark">
+    <label for="pheebely/clcjqsq3y000a14t2t08353lm">Dark</label> 
+    </div>
+
+    <!-- BUTTONS FOR TOGGLE LAYER -->
+    <!-- <div class="legend-container">
+      <div class="legend-header"> </div>
+      <div class="legend-content">
+        <nav id="layernav"></nav>
+      </div>
+    </div> -->
+
+    <!-- CHECKBOX FOR TOGGLE LAYER -->
+    <div class="container" id="controller">
+      <div class="container-drawer">
+      <h3>Data</h3>
+      <div class ="container-drawer" id="data-layers"></div>
+  </div>
+
+<!-- Mapbox Script -->
+<script src="mapbox_copy.js"> </script>
+
 
 
 </body>

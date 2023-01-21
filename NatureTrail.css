@@ -91,7 +91,7 @@ body { margin: 0; padding: 0;
 .headertitle {
     position: absolute;
     top: 0;
-    right: 45%;
+    right: 40%;
     font-family: 'MuseoModerno', cursive;
     font-weight: 100;
     font-size: 12px;
@@ -114,14 +114,15 @@ body { margin: 0; padding: 0;
 
 #menu {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50px;
+    left: 10px;
     background: rgb(255,255,255, 0.6);
     color: #000000;
     padding: 5px 10px;
     font-family: 'Inter Tight', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 11px;
+    font-weight: 400;
+    border-radius: 6px;
     z-index: 1;
     }
 
@@ -158,10 +159,86 @@ body { margin: 0; padding: 0;
         background: #75a895;
         }
 
+.legend-container {
+    width: 12%;
+    height: 20%;
+    top: 9.5%;
+    margin-left: 10px;
+    background-color: rgb(255,255,255, 0.6);
+    box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 6px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter Tight', sans-serif;
+    z-index: 1;
+}
+
+.legend-header {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+.container {
+	position: absolute;
+    margin-top: 50px;
+    width: 8%;
+	background: rgba(255, 255, 255, 0.60);
+	backdrop-filter: blur(8px);
+	border-radius: 6px;
+	box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.15);
+    font-family: 'Inter Tight', sans-serif;
+    z-index: 1;
+}
+
+.container h3{
+    font-size: 14px;
+    font-weight: 700;
+	line-height: 18px;
+	margin: 0 8px 0 8px;
+}
+
+.container p{
+    font-size: 13px;
+    font-family: 'Inter Tight', sans-serif;
+	line-height: 10px;
+	margin: 0 8px 0 10px;
+}
+
+.container-drawer {
+	display: block;
+	margin: 8px 0 10px 5px;
+}
+
+#controller {
+	padding: 0px;
+	top: 30px;
+	left: 10px;
+}
+
+.checkbox {
+	width: 10px;
+	height: 10px;
+	border: 1px solid rgba(82, 82, 82, 0.697);
+	border-radius: 2px;
+	margin: 3px 2px 0 4px;
+	transition: all 0.3s ease;
+
+}
+
+.checked {
+    /* background-color: #000; */
+    font-family: "Font Awesome 5 Free";
+    background-color: #f1bc41;
+}
+
+
 #layernav {
 display: block;
 position: absolute;
-bottom: 35px;
+top: 14%;
 left: 10px;
 width: 160px;
 font-family: 'Inter Tight', sans-serif;
@@ -171,14 +248,14 @@ z-index: 1;
 }
     
 #layernav a {
-font-size: 12px;
+font-size: 11px;
 color: #838383;
-background-color: rgb(240, 240, 240);
+background-color: rgba(193, 193, 193, 0.477);
 display: block;
 margin: 0;
 padding: 3px;
 text-decoration: none;
-border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+border-bottom: 1px solid rgba(52, 80, 94, 0.25);
 text-align: center;
 border-radius: 3px;
 
@@ -194,12 +271,12 @@ color: #404040;
 }
     
 #layernav a.active {
-background-color: #48a2b8;
-color: #ffffff;
+background-color: #0588a9ab;
+color: rgb(255, 255, 255);
 }
     
 #layernav a.active:hover {
-background: #f1bc41;
+background: #f1bc41e7;
 }
 
 

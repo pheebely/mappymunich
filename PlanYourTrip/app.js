@@ -21,7 +21,7 @@ const map = new mapboxgl.Map({
 function flyToLocation(currentFeature) {
   map.flyTo({
     center: currentFeature,
-    zoom: 11,
+    zoom: 15,
   });
 }
 
@@ -31,7 +31,7 @@ function createPopup(currentFeature) {
   if (popups[0]) popups[0].remove();
   new mapboxgl.Popup({ closeOnClick: true })
     .setLngLat(currentFeature.geometry.coordinates)
-    .setHTML('<h3>' + currentFeature.properties[config.popupInfo] + '</h3>')
+    .setHTML('<h3><a href=" '+currentFeature.properties[config.popupInfo2]+' ">' + currentFeature.properties[config.popupInfo]+'</a></h3>' + '<p>'+ currentFeature.properties[config.popupInfo3]+'</p>')
     .addTo(map);
 }
 
@@ -412,6 +412,22 @@ geocoder.on('result', (ev) => {
 
 map.on('load', () => {
   map.addControl(geocoder, 'top-right');
+  // Add geolocate control to the map.
+map.addControl(
+  new mapboxgl.GeolocateControl({
+  positionOptions: {
+  enableHighAccuracy: true
+  },
+  // When active the map will receive updates to the device's location as it changes.
+  trackUserLocation: true,
+  // Draw an arrow next to the location dot to indicate which direction the device is heading.
+  showUserHeading: true
+  })
+  );
+
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
 
   // csv2geojson - following the Sheet Mapper tutorial https://www.mapbox.com/impact-tools/sheet-mapper
   console.log('loaded');
@@ -456,7 +472,7 @@ map.on('load', () => {
           },
           paint: {
             'circle-radius': 5, // size of circles
-            'circle-color': '#3D2E5D', // color of circles
+            'circle-color': '#48a2b8', // color of circles
             'circle-stroke-color': 'white',
             'circle-stroke-width': 1,
             'circle-opacity': 0.7,
@@ -501,9 +517,13 @@ exitButton.addEventListener('click', () => {
 });
 
 const title = document.getElementById('title');
-title.innerText = config.title;
+// title.innerText = config.title;
+title.innerHTML = `<h3><a href="/index.html">${config.title}</a></h3>`
+title.style.fontFamily = "MuseoModerno, cursive";
+
 const description = document.getElementById('description');
-description.innerText = config.description;
+// description.innerText = config.description;
+description.innerHTML = `${config.description}`
 
 function transformRequest(url) {
   const isMapboxRequest =
