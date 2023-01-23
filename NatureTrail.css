@@ -219,11 +219,11 @@ body { margin: 0; padding: 0;
 }
 
 .checkbox {
-	width: 10px;
-	height: 10px;
-	border: 1px solid rgba(82, 82, 82, 0.697);
+	width: 9px;
+	height: 9px;
+	border: 2.5px solid rgba(30, 30, 30, 0.697);
 	border-radius: 2px;
-	margin: 3px 2px 0 4px;
+	margin: 4px 4px 0 4px;
 	transition: all 0.3s ease;
 
 }

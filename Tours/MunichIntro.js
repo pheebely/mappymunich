@@ -4,7 +4,7 @@ const home = [11.578, 48.137437] //coordinates for the default "home" view
 const map = new mapboxgl.Map({
 container: 'map',
 // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-  style: 'mapbox://styles/pheebely/clazrqxnm000x15nwlwkpd8qn',
+  style: 'mapbox://styles/pheebely/cld82me56000d01t7749mkago',
 center: home,
 zoom: 14.5,
 minZoom: 9,
@@ -13,14 +13,66 @@ pitch: 35, // pitch in degrees
 projection: 'globe'
 });
 
-
+/* Given a query in the form "lng, lat" or "lat, lng"
+* returns the matching geographic coordinate(s)
+* as search results in carmen geojson format,
+* https://github.com/mapbox/carmen/blob/master/carmen-geojson.md */
+const coordinatesGeocoder = function (query) {
+  // Match anything which looks like
+  // decimal degrees coordinate pair.
+  const matches = query.match(
+  /^[ ]*(?:Lat: )?(-?\d+\.?\d*)[, ]+(?:Lng: )?(-?\d+\.?\d*)[ ]*$/i
+  );
+  if (!matches) {
+  return null;
+  }
+   
+  function coordinateFeature(lng, lat) {
+  return {
+  center: [lng, lat],
+  geometry: {
+  type: 'Point',
+  coordinates: [lng, lat]
+  },
+  place_name: 'Lat: ' + lat + ' Lng: ' + lng,
+  place_type: ['coordinate'],
+  properties: {},
+  type: 'Feature'
+  };
+  }
+   
+  const coord1 = Number(matches[1]);
+  const coord2 = Number(matches[2]);
+  const geocodes = [];
+   
+  if (coord1 < -90 || coord1 > 90) {
+  // must be lng, lat
+  geocodes.push(coordinateFeature(coord1, coord2));
+  }
+   
+  if (coord2 < -90 || coord2 > 90) {
+  // must be lat, lng
+  geocodes.push(coordinateFeature(coord2, coord1));
+  }
+   
+  if (geocodes.length === 0) {
+  // else could be either lng, lat or lat, lng
+  geocodes.push(coordinateFeature(coord1, coord2));
+  geocodes.push(coordinateFeature(coord2, coord1));
+  }
+   
+  return geocodes;
+  };
 
 // Add the geocoder control to the map.
 map.addControl(
 new MapboxGeocoder({
 accessToken: mapboxgl.accessToken,
+localGeocoder: coordinatesGeocoder,
+placeholder: 'Search or "Lat, Long"',
 mapboxgl: mapboxgl,
-collapsed: true
+collapsed: true,
+reverseGeocode: true
 })
 );
 
@@ -352,29 +404,11 @@ map.setStyle('mapbox://styles/' + layerId);
           link.href = '#';
           link.className = 'title';
           link.id = `link-${attraction.properties.Number}`;
-          link.innerHTML = `${attraction.properties.Number}&middot ${attraction.properties.Name}&nbsp;&nbsp;${attraction.properties.MustSee}`;
-          // if (attraction.properties.wheelchair !== null) {
-          //   link.innerHTML += `${attraction.properties.wheelchair}&nbsp;&nbsp;`
-          // };
-          // if (attraction.properties.wc){
-          //   link.innerHTML += `${attraction.properties.wc}&nbsp;&nbsp;`
-          // };
-          // if (attraction.properties.parking){
-          //   link.innerHTML += `${attraction.properties.parking}&nbsp;&nbsp;`
-          // };
-          // if (attraction.properties.elevator) {
-          //   link.innerHTML += `${attraction.properties.elevator}&nbsp;&nbsp;`
-          // };
-          // if (attraction.properties.guideDog) {
-          //   link.innerHTML += `${attraction.properties.guideDog}&nbsp;&nbsp;`
-          // };
-          // if (attraction.properties.audioGuide) {
-          //   link.innerHTML += `${attraction.properties.audioGuide}&nbsp;&nbsp;`
-          // };
-          // if (attraction.properties.guidedTour) {
-          //   link.innerHTML += `${attraction.properties.guidedTour}&nbsp;&nbsp;`
-          // };
+          link.innerHTML = `${attraction.properties.Number}&period; ${attraction.properties.Name}&nbsp;&nbsp;`;
 
+          if (attraction.properties.MustSee){
+            link.innerHTML += `${attraction.properties.MustSee}`
+          };
 
           /* Add details to the individual listing. */
           const details = listing.appendChild(document.createElement('div'));
@@ -399,6 +433,14 @@ map.setStyle('mapbox://styles/' + layerId);
           if (attraction.properties.wheelchair) {
             details.innerHTML += `${attraction.properties.wheelchair}&nbsp;&nbsp;`
           };
+
+          if (attraction.properties.elderly) {
+            details.innerHTML += `${attraction.properties.elderly}&nbsp;&nbsp;`
+          };
+          if (attraction.properties.stroller) {
+            details.innerHTML += `${attraction.properties.stroller}&nbsp;&nbsp;`
+          };
+
           if (attraction.properties.wc){
             details.innerHTML += `${attraction.properties.wc}&nbsp;&nbsp;`
           };

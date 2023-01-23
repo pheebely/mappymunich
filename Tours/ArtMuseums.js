@@ -1,19 +1,17 @@
-const home = [11.575853, 48.137437] //coordinates for the default "home" view
+const home = [11.571874, 48.146521] //coordinates for the default "home" view
 
 	mapboxgl.accessToken = 'pk.eyJ1IjoicGhlZWJlbHkiLCJhIjoiY2s2aGZoZTR4MDJsdTNlcXI2NnI1bXhuaiJ9.l0hhT8MPnRuT8LuyPP8Ovw';
 const map = new mapboxgl.Map({
 container: 'map',
 // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-style: 'mapbox://styles/pheebely/clazrqxnm000x15nwlwkpd8qn',
+  style: 'mapbox://styles/pheebely/clazrqxnm000x15nwlwkpd8qn',
 center: home,
 zoom: 14.5,
-minZoom: 7,
+minZoom: 9,
 maxZoom: 18,
-pitch: 40, // pitch in degrees
+pitch: 35, // pitch in degrees
 projection: 'globe'
 });
-
-
 
 /* Given a query in the form "lng, lat" or "lat, lng"
 * returns the matching geographic coordinate(s)
@@ -123,30 +121,39 @@ class HomeButton {
 map.addControl(new mapboxgl.NavigationControl());
 
 // Add font awesome symbols for accessibility and must-see
-const wheelchair = "<i class=\"fa-brands fa-accessible-icon\"></i>"
-const elderly = "<i class=\"fa-solid fa-person-cane\"></i>"
-const stroller = "<i class=\"fa-solid fa-baby-carriage\"></i>"
-const elev = "<i class=\"fa-solid fa-elevator\"></i>"
-const fire = "<i class=\"fa-solid fa-fire\"></i>"
+// const wheelchair = "<i class=\"fa-brands fa-accessible-icon\"></i>"
+// const elderly = "<i class=\"fa-solid fa-person-cane\"></i>"
+// const stroller = "<i class=\"fa-solid fa-baby-carriage\"></i>"
+// const elev = "<i class=\"fa-solid fa-elevator\"></i>"
+// const fire = "<i class=\"fa-solid fa-fire\"></i>"
 
-// Add attractions layer as constant
-// https://github.com/pheebely/mappymunich/blob/main/data/Munich-Intro.geojson
-const attractions = 
+// Add attractions layer as constant.
+// Tried to use github link but it didn't work.
+// const attractions = "https://github.com/pheebely/mappymunich/blob/main/data/Munich-Intro.geojson";
+// Tried local source but didn't work.
+  // const attractionPoints = "../data/Munich-Intro.geojson";
+
+// var attractions = "https://github.com/pheebely/mappymunich/blob/main/data/Munich-Intro.geojson"
+
+const attractions =
 {
   "type": "FeatureCollection",
-  "name": "Top-Religious-Fields",
+  "name": "ArtMuseums",
   "features": [
-  { "type": "Feature", "properties": { "Number": 1, "Name": "Frauenkirche", "Latitude": 48.138554, "Longtitude": 11.572816, "Type": "Religious", "Address": "Frauenplatz 1, 80331 München", "Hours": "Mo-Su 07:30-20:30", "MustSee": "<i class=\"fa-solid fa-fire\"></i>", "MVV": "S1-S8 (coming from the central station exit left for the elevator!), U3, U6, Bus 132 Marienplatz, S1-S8 (exit left to the elevator!), U4, U5, Tram 16, 17, 18, 19, 20, 21, 27, 28, N17, N19, N20, N27, N40, N41, N45 Karlsplatz.", "Access": "Ramp with an incline of 6 % at the northern porch (left side of the main entrace)", "Description": "The Cathedral Church of Our Lady (Frauenkirche) is Munich's most famous church and its two towers are unmistakable landmarks of the city. <br>Ramp with an incline of 6 % at the northern porch (left side of the main entrace)", "image": "src='https://www.muenchen.de/sites/default/files/styles/3_2_w1216/public/2022-06/201203_Frauenkirche_Panorma_Shutterstock_3061137.jpg?h=b78320da'", "image2": "src='https://www.muenchen-tourismus-barrierefrei.de/images/dom_rampe_steinklein.jpg'", "imgsource": "Shutterstock,  simplyMunich", "imgsource2": null, "Website": "https://www.muenchner-dom.de/home/", "Phone": "+49 89 2900820", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": null, "elevator": null, "parking": "<i class=\"fa-solid fa-square-parking\"></i>", "parking_text": "3 spaces Ettstraße 2, 7 spaces distributed in Maxburgstraße", "guideDog": null, "elderly": null, "stroller": null, "guidedTour": "<i class=\"fa-solid fa-flag\"></i>", "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.572816, 48.138554 ] } },
-  { "type": "Feature", "properties": { "Number": 2, "Name": "St. Michael Kirche", "Latitude": 48.138808, "Longtitude": 11.570635, "Type": "Religious", "Address": "Maxburgstraße 1, 80333 München", "Hours": "Mo-Su 07:30-19:00", "MustSee": " ", "MVV": "S1-S8 (coming from the central station exit left for the elevator), U3, U6, Bus 132 Marienplatz, S1-S8 (exit left to the elevator!), U4, U5, Tram 16, 18, 19, 20, 21, 27, 28, N17, N19, N20, N27, N40, N41, N45 Karlsplatz.", "Access": "Ramp with an incline of 6 % at the right side of the main portal,  electric door opener; only stairs to the crypt.", "Description": "The St. Michael Church in Munich is the largest Renaissance-style religious building north of the Alps. It is managed by the Jesuit order and was built by the Duke of Bavaria, William IV, as a center for the Counter Reformation in response to Martin Luther’s protestant reforms of Christendom.", "image": "src='https://www.muenchen.de/sites/default/files/styles/3_2_w1216/public/2022-06/st-michael-01.jpg?h=84071268'", "image2": "src='https://www.muenchen-tourismus-barrierefrei.de/images/stories/st._michael_rampe.klein.jpg'", "imgsource": "simplyMunich, Katy Spichal", "imgsource2": "Katy Spichal", "Website": "https://www.st-michael-muenchen.de/index.php?id=23", "Phone": "+49 892317060", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": null, "elevator": null, "parking": "<i class=\"fa-solid fa-square-parking\"></i>", "parking_text": "3 spaces Ettstraße 2, 7 spaces distributed in Maxburgstraße", "guideDog": null, "elderly": null, "stroller": null, "guidedTour": "<i class=\"fa-solid fa-flag\"></i>", "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.570635, 48.138808 ] } },
-  { "type": "Feature", "properties": { "Number": 3, "Name": "Damenstiftkirche St. Anna", "Latitude": 48.137418, "Longtitude": 11.569039, "Type": "Religious", "Address": "Damenstiftstraße 1, 80331 München", "Hours": "Opening Hours Unavailable", "MustSee": " ", "MVV": null, "Access": "Single low step at main entrance.", "Description": "The Women’s Collegiate Church of St. Anna is located in the historic Old Town of Munich. The collegiate was once a religious refuge for ladies from aristocratic families. Today, the St. Anna Damenstift serves as a parish church of Munich’s St. Peter parish. The convent has been converted into a high school. Noteworthy treasures inside the church are the altarpiece of the Virgin and Child by Joseph Ruffini and the frescoes in the bay, on the dome ceiling and the choir room by Cosmas Damian Asam.", "image": "src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/MUC_DamenstiftskircheStAnnaB.jpg/631px-MUC_DamenstiftskircheStAnnaB.jpg'", "image2": null, "imgsource": "Wikipedia.org", "imgsource2": null, "Website": "https://petrusbruderschaft.de/pages/wo-wir-sind/deutschland/niederlassungen/muenchen/home.php", "Phone": "+49 089 23076770", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": null, "elevator": null, "parking": null, "parking_text": null, "guideDog": null, "elderly": null, "stroller": null, "guidedTour": null, "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.569039, 48.137418 ] } },
-  { "type": "Feature", "properties": { "Number": 4, "Name": "Asamkirche", "Latitude": 48.135089, "Longtitude": 11.569694, "Type": "Religious", "Address": "Sendlinger Str. 32, 80331 München", "Hours": "Su-Th 09:00-19:00 <br> Fr 13-18:00", "MustSee": "<i class=\"fa-solid fa-fire\"></i>", "MVV": null, "Access": "Wheelchair users can only view facade from the outside.  ", "Description": "A hidden gem church in the middle of Munich's pedestrian zone. The St. John Nepomuk Church was designed by the Asam brothers as a magnificent private church in the style of the Bavarian late Baroque and is one of their masterpieces.", "image": "src='/images/asamkirche.jpg' alt='Asamkirche baroque architecture from the outside'", "image2": null, "imgsource": "Wikipedia.org", "imgsource2": null, "Website": "https://alterpeter.de/nebenkirchen/#asamkirche", "Phone": "+49 89 236879 89", "wheelchair": null, "wc": null, "elevator": null, "parking": null, "parking_text": "Disabled parking spaces available free of charge:\nSt.-Jacobs-Platz 12 / Rosental 7 / Hackenstr. 1\nCar parks (not free of charge): Parkhaus Oberanger", "guideDog": null, "elderly": "<i class=\"fa-solid fa-person-cane\"></i>", "stroller": "<i class=\"fa-solid fa-baby-carriage\"></i>", "guidedTour": null, "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.569694, 48.135089 ] } },
-  { "type": "Feature", "properties": { "Number": 5, "Name": "Peterskirche", "Latitude": 48.136405, "Longtitude": 11.576584, "Type": "Religious", "Address": "Rindermarkt 1, 80331 München", "Hours": "Mo-Su 07:30-19:00", "MustSee": "<i class=\"fa-solid fa-fire\"></i>", "MVV": "S1-S8 (coming from the central station exit left to access the elevator!), U3, U6, Bus 132 Marienplatz", "Access": "Stepless. to Viktualienmarkt precipitous!", "Description": "St. Peter's Church is a Roman Catholic parish church in the inner city of Munich, southern Germany. Its 91-metre tower is commonly known as \"Alter Peter\"‚ÄîOld Peter‚Äîand is emblematic of Munich. St Peter's is the oldest recorded parish church in Munich and presumably the originating point for the whole city.", "image": "src='https://www.munich.travel/var/ger_muc/storage/images/_aliases/stage_large/6/7/4/2/2662476-1-ger-DE/Alter%20Peter%20mit%20Sonnenstern%2C%20©%20München%20Tourismus%2C%20Joerg%20Lutz.jpg'", "image2": "src='https://www.muenchen-tourismus-barrierefrei.de/images/stories/st._peter.klein.jpg'", "imgsource": "Jörg Lutz,  simplyMunich", "imgsource2": "src='https://www.muenchen-tourismus-barrierefrei.de/images/stories/st._peter.klein.jpg'", "Website": "https://alterpeter.de/pfarrkirche-st-peter/", "Phone": "+49 89 210237 760", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": null, "elevator": null, "parking": "<i class=\"fa-solid fa-square-parking\"></i>", "parking_text": "2 spaces Rindermarkt 14, 3 spaces Rindermarkt 5", "guideDog": null, "elderly": null, "stroller": null, "guidedTour": null, "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.576584, 48.136405 ] } },
-  { "type": "Feature", "properties": { "Number": 6, "Name": "Allerheiligen-Hofkirche", "Latitude": 48.1404, "Longtitude": 11.580236, "Type": "Religious", "Address": "Residenzstr. 1, 80333 München", "Hours": "Mo-Su 09:00-18:00", "MustSee": " ", "MVV": "S1-S8 (from the main station to get off to the left!), U3, U6, Bus 132 Marienplatz, U3-U6, Bus 100, 153, N40, N41, N45 Odeonsplatz, Tram 19, N19 Nationaltheater.", "Access": "From the cabinet garden, electric door opener 85 high, lift. Entrance door Electric door opener. <br> In the pharmacy yard, 3 of which are from 6 p.m. to 9 p.m.", "Description": "The All Saints' Court Church can only be visited as part of a visit to the residence, or as part of an event.<br><br>\nAfter many years of renovation, the All Saints' Court Church in the Munich Residence now serves as a hall for events. During World War II, the church was severely damaged, reconstruction was delayed for a long time. Even an demolition of the ruin was in the room.\n\nIn 2000, it was finally committed to a careful renovation of the church. In 2006, it received the prize for cityscape maintenance of the city of Munich.", "image": "src='https://www.muenchen.de/sites/default/files/styles/3_2_w1216/public/2022-06/shutterstock_1696836058.png?h=707772c7'", "image2": null, "imgsource": "Shutterstock", "imgsource2": null, "Website": "https://www.residenz-muenchen.de/deutsch/ahkirche/index.htm", "Phone": "+49 89290671", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": null, "elevator": null, "parking": null, "parking_text": null, "guideDog": null, "elderly": null, "stroller": null, "guidedTour": null, "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.580236, 48.1404 ] } },
-  { "type": "Feature", "properties": { "Number": 7, "Name": "Theatinerkirche", "Latitude": 48.141978, "Longtitude": 11.577134, "Type": "Religious", "Address": "Salvatorplatz 2A, 80333 München", "Hours": "Mo-Su 07:00-20:00", "MustSee": " ", "MVV": "U3-U6, Bus 100, 153, N40, N41, N45 Odeonsplatz", "Access": "Ground level at the right entrance,  electric door opener 85 cm high.  Inside electric door opener 85 cm high to the nave.", "Description": "With its yellow facade and ornate interior, the Theatinerkirche (Theatine Church) at Odeonsplatz is one of the most beautiful churches in Munich. To say thank you for the birth of Max Emanuel, the long-awaited heir to the throne, in the mid 17th century, Elector Ferdinand Maria and his wife Henriette Adelaide commissioned architects from Italy to build the ‚Äúmost beautiful and precious church.‚Äù", "image": "src='https://www.munich.travel/var/ger_muc/storage/images/_aliases/stage_medium/4/2/3/9/69324-1-ger-DE/theatinerkirche-innen-sonne-foto-sven-kolb-3000.jpg'", "image2": "src='https://www.muenchen-tourismus-barrierefrei.de/images/theatinerkirche-eingang-rechts.klein.jpg'", "imgsource": "simplyMunich", "imgsource2": null, "Website": "http://www.theatinerkirche.de/", "Phone": "+49 89 2106960", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": null, "elevator": null, "parking": "<i class=\"fa-solid fa-square-parking\"></i>", "parking_text": null, "guideDog": null, "elderly": null, "stroller": null, "guidedTour": null, "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.577134, 48.141978 ] } }
+  { "type": "Feature", "properties": { "Number": 1, "Name": "Alte Pinakothek", "Latitude": 48.147989, "Longitude": 11.571022, "Type": "Museum", "Address": "Barer Straße 27, 80333 München", "Hours": "Tue 10:00 a.m.-8:00 p.m., Wed-Sun 10:00 a.m.-6.00 p.m. ,  Mon-Closed.", "MustSee": "<i class=\"fa-solid fa-fire\"></i>", "MVV": "Tram 27, N27 (exit onto the street, therefore not suitable with a rollator or walking aid!), Bus 58, 68, 100 Pinakotheken\nU2, U8 Theresienstraße\nU3-U6, Bus 100, 153, N40, N41, N45 Odeonsplatz", "Access": "Ramp at the main entrance, existent elevators", "Description": "Fantastic museum to visit if you admire the classics. Thorough selection of Reubens, Turner, Monet, and van Gogh.... and a terrific copy of the Mona Lisa in better condition than the original hanging in the Louvre. The Alte Pinakothek has over 8,000 valuable pieces of art created before the 19th century. Collections include works by German artists between the 14th and 18th centuries, paintings of Dutch masters created between the 15th and 18th centuries, Flemish masterpieces, Italian, French and Spanish works from the 13th to the 18th centuries. A notable work is Rubens’ vast canvas called the ‘Last Judgment’. ", "image": "src='https://www.muenchen.de/sites/default/files/styles/3_2_w1216/public/2022-06/alte-pinakothek-02.jpeg?h=08b866d1'", "image2": null, "imgsource": "Katy Spichal", "Website": "www.pinakothek.de/en", "Phone": "49 (0) 89 / 23805-216", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": "<i class=\"fa-solid fa-restroom\"></i>", "parking": "<i class=\"fa-solid fa-square-parking\"></i>", "parking_text": "On the North side (access from Arcis- and Barer Straße, ring at the gate, have your Blue Badge ready), 3 spaces Theresienstraße 72 (corner Barer Straße)", "elevator": null, "elderly": null, "stroller": null, "guidedTour": "<i class=\"fa-solid fa-flag\"></i>", "guideDog": null, "audioGuide": "<i class=\"fa-solid fa-headphones\"></i>" }, "geometry": { "type": "Point", "coordinates": [ 11.571022, 48.147989 ] } },
+  { "type": "Feature", "properties": { "Number": 2, "Name": "Brandhorst Museum", "Latitude": 48.148153, "Longitude": 11.574513, "Type": "Museum", "Address": "Theresienstraße 35 a, 80333 München", "Hours": "Tu-Su 10:00 - 18:00, Th 10:00-20:00, Mon-Closed.", "MustSee": null, "MVV": "Tram 27, N27 (exit onto the street, therefore not suitable with a rollator or walking aid!), Bus 58, 68, 100 Pinakotheken, Bus 68, 100 Maxvorstadt/Sammlung Brandhorst", "Access": "At ground level, automatic door opener, elevators to all levels", "Description": "The Brandhorst Museum displays the collection of contemporary art belonging to Udo Fritz-Hermann and his wife, Anette Brandhorst. The brightly colored eco friendly building is also regarded by the locals as a magnificent work of modern architecture. Exhibits at the Brandhorst Museum include over 60 canvases by the American artist, Cy Twombly, a 100 works of Andy Warhol and works by Jannis Kounellis, Georg Baselitz, Gerhard Richter and Bruce Nauman. Among the museum’s treasures is a display of 112 original editions of books illustrated by Picasso.\n", "image": "src='https://www.muenchen.de/sites/default/files/styles/3_2_w1216/public/2022-06/44_1_MuseumBrandhorst_Au%C3%9Fenansicht.jpg?h=f8390da7'", "image2": "src='https://www.muenchen-tourismus-barrierefrei.de/images/stories/museum_brandhorst.klein.jpg'", "imgsource": "Andreas Lechtape, muenchen-tourismus-barrierefrei.de", "Website": "https://www.museum-brandhorst.de/en/", "Phone": "49 (0) 89 / 23805-2286", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": "<i class=\"fa-solid fa-restroom\"></i>", "parking": "<i class=\"fa-solid fa-square-parking\"></i>", "parking_text": "2 spaces in front of the museum", "elevator": "<i class=\"fa-solid fa-elevator\"></i>", "elderly": null, "stroller": null, "guidedTour": "<i class=\"fa-solid fa-flag\"></i>", "guideDog": null, "audioGuide": "<i class=\"fa-solid fa-headphones\"></i>" }, "geometry": { "type": "Point", "coordinates": [ 11.574513, 48.148153 ] } },
+  { "type": "Feature", "properties": { "Number": 3, "Name": "Galerie Thomas", "Latitude": 48.146299, "Longitude": 11.573464, "Type": "Gallery", "Address": "Türkenstraße 16\n80333 München", "Hours": "Mo-Fri 9:00-18:00, Sa 10-18:00", "MustSee": null, "MVV": "Tram, No 27: Stop Pinakotheken; U-Bahn, U3 | U6: Stop Universität; Bus,No 100 (Museumslinie/museum line): Stop Pinakotheken", "Access": "Barrier-free access at the main entrance via a ramp. The gallery has a lift. Access to all gallery is guaranteed. Barrier-free toilets are located in the gallery.", "Description": "Galerie Thomas is specialized in the German Expressionism and Classical Modernism. Founded by Raimund Thomas in 1964, today it is one of the leading international galleries in this area. Here you can find a wide collection of artworks from artists such as Wassily Kandinsky, Alexej Jawlensky, August Macke, Franz Marc, Ernst Ludwig Kirchner, Otto Mueller, Karl Schmidt-Rottluff and others. For many years, Galerie Thomas has also been a regular exhibitor at national and international art fairs such as \"ART\" in Basel and Miami, \"ART Cologne\", and \"TEFAF\" in Maastricht.\n", "image": "src='https://www.galerie-thomas.de/files/images/Die-Galerie/_750xAUTO_fit_center-center_none/Galerie_Fassade_T16.jpg'", "image2": null, "imgsource": "Galerie Thomas", "Website": "https://kunstareal.de/en/galleries/galerie-thomas-modern", "Phone": "49-89-290008-0", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": "<i class=\"fa-solid fa-restroom\"></i>", "parking": null, "parking_text": null, "elevator": "<i class=\"fa-solid fa-elevator\"></i>", "elderly": null, "stroller": null, "guidedTour": null, "guideDog": null, "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.573464, 48.146299 ] } },
+  { "type": "Feature", "properties": { "Number": 4, "Name": "Pinakothek der Moderne", "Latitude": 48.146521, "Longitude": 11.571874, "Type": "Museum", "Address": "Barer Straße 40, 80333 München", "Hours": "Tu, Wed, Fr-Su 10:00-18:00\nTh 10:00-20:00,  Mon-Closed", "MustSee": null, "MVV": "Tram 27, N27 (exit onto the street, therefore not suitable with a rollator or walking aid!), Bus 58, 68, 100 Pinakotheken\nU2, U8 Theresienstraße\nU3-U6, Bus 100, 153, N40, N41, N45 Odeonsplatz", "Access": "On ground level, electric door opener, elevators from the rotunda to all levels. The elevator to the collection \"Design\" is hard to find, don't hesitate to ask for assistance. The \"Danner Rotunda\" in the \"Design\" collection is accessible only by steps with a patchy handrail on one side.", "Description": "The Pinakothek der Moderne in Munich unifies four art disciplines, paintings, graphics, architecture and design. It is one of the most visited contemporary art museums in Europe. The collection of modern paintings represents the 20th and 21st century with works by German and international artists on display. Video, photo and new media works are also displayed here. There are about 400,000 graphic sheets including old German and Dutch sketches, 19th century and contemporary works. The architecture museum hosts temporary exhibitions displaying blueprints, drawings, photographs, models and computer animations. The design collection has objects relating to industrial design, motor vehicle design, graphic design, and computer-generated models. \n", "image": "src='https://www.muenchen.de/sites/default/files/styles/3_2_w1216/public/2022-06/Pinakothek-der-Moderne.png?h=707772c7'", "image2": "src='https://www.muenchen-tourismus-barrierefrei.de/images/stories/pinakothek_der_moderneklein.jpg'", "imgsource": "muenchen.de, muenchen-tourismus-barrierefrei.de", "Website": "www.pinakothek-der-moderne.de/en/", "Phone": "49 (0) 89 / 23805–360", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": "<i class=\"fa-solid fa-restroom\"></i>", "parking": "<i class=\"fa-solid fa-square-parking\"></i>", "parking_text": "2 spaces (access via Gabelsbergerstraße, use the bell at the gateway and keep your Blue Badge ready. The bottom covering is gravel.), 2 spaces Theresienstraße 72 (corner Barerstraße)", "elevator": "<i class=\"fa-solid fa-elevator\"></i>", "elderly": null, "stroller": null, "guidedTour": "<i class=\"fa-solid fa-flag\"></i>", "guideDog": null, "audioGuide": "<i class=\"fa-solid fa-headphones\"></i>" }, "geometry": { "type": "Point", "coordinates": [ 11.571874, 48.146521 ] } },
+  { "type": "Feature", "properties": { "Number": 5, "Name": "Egyptian Museum Munich", "Latitude": 48.147443, "Longitude": 11.568546, "Type": "Museum", "Address": "Gabelsbergerstraße 35, 80333 München", "Hours": "Tu 10:00-20:00\nWed - Su 10:00-18:00\n(Mon-Closed,  except Easter Monday and Whit Monday)", "MustSee": null, "MVV": "Tram 27, N27 (exit onto the street, therefore not suitable with a rollator or walking aid!), Bus 58, 68, 100 Pinakotheken\nU2, U8 Theresienstraße\nU3-U6, Bus 100, 153, N40, N41, N45 Odeonsplatz", "Access": "There are elevators", "Description": "Exhibits from all periods of the history of ancient Egypt are displayed at this museum. Exhibits include statues, sculptures, papyri, stone tablets with hieroglyphics, glassware, textiles and pottery. Famous works on display are a double sided statue of Pharaoh Nyuserre Ini, with one side showing him as a young man and the other as an old man, statues of Pharaoh Ramses II and Tutmosis II and a collection of jewelry belonging to the Nubian Queen Amanishakheto. The museum periodically holds special themed exhibitions and offers conducted tours for children during the summer holidays.", "image": "src='https://www.muenchen.de/sites/default/files/styles/3_2_w1216/public/2022-06/staatliches-museum-aegyptischer-kunst-06.jpeg?h=84071268'", "image2": "src='https://www.muenchen-tourismus-barrierefrei.de/images/stories/aegyptisches_museum_eingang.klein.jpg'", "imgsource": "Marianne Franke, muenchen-tourismus-barrierefrei.de", "Website": "https://smaek.de/en/", "Phone": "49 (0) 89 / 28927-630", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": "<i class=\"fa-solid fa-restroom\"></i>", "parking": "<i class=\"fa-solid fa-square-parking\"></i>", "parking_text": "3 spaces Theresienstraße 72", "elevator": "<i class=\"fa-solid fa-elevator\"></i>", "elderly": null, "stroller": null, "guidedTour": "<i class=\"fa-solid fa-flag\"></i>", "guideDog": null, "audioGuide": "<i class=\"fa-solid fa-headphones\"></i>" }, "geometry": { "type": "Point", "coordinates": [ 11.568546, 48.147443 ] } },
+  { "type": "Feature", "properties": { "Number": 6, "Name": "Glyptothek", "Latitude": 48.145825, "Longitude": 11.565192, "Type": "Museum", "Address": "Königsplatz 3, 80333 München", "Hours": "Tu, Wed, Fr 10:00-17:00, Th until 20:00; if the Thursday is a bank holiday only until 17:00,  Mon-Closed.", "MustSee": null, "MVV": "U2, U8, Bus 58, 68, 100 Königsplatz, Tram 27, 28, N27 Karolinenplatz", "Access": "For wheelchair users from the rear via a ramp with small cobblestones and 6% gradient. Bell 85 cm high. Threshold 4 cm high.\nInside to one hall 2 ramps with 14 % incline, handrail right and left only partial.\nPlatform lift to inner courtyard with a capacity of 300 kg.\nInner courtyard with large paving stones and large slabs.", "Description": "The Glyptotheck is a Greek and Roman Sculpture Museum. It was constructed between 1816 and 1830 in neoclassical style to resemble a Greek Temple. The architect, Leo von Klenze, designed the building. Originally, all the walls of the structure were made of marble. The classical style building has an Ionic portico and the exterior walls have niches where 18 original Greek and Roman sculptures were installed. Well known pieces at the Glyptotheck are the Munich Kouros and the temple figures of Aegina from the archaic period, the portrait of Homer and the Medusa Rondanini from the classical period, the Barberini Faun, which is regarded as the most famous sculpture from the Hellenistic period, and Roman busts including those of Emperor Augustus, Nero, Septimius Severus and his wife, Julia Domna. ", "image": "src='https://www.muenchen.de/sites/default/files/styles/3_2_w1216/public/2022-07/glypto-neu.png?h=30098a68'", "image2": "src='https://www.muenchen-tourismus-barrierefrei.de/images/glyptothek_hubliftklein.jpg'", "imgsource": "Michael Hofmann, muenchen-tourismus-barrierefrei.de", "Website": "https://www.antike-am-koenigsplatz.mwn.de/glyptothek-muenchen.html", "Phone": "49 (0) 89  28 61 00", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": "<i class=\"fa-solid fa-restroom\"></i>", "parking": "<i class=\"fa-solid fa-square-parking\"></i>", "parking_text": "2 spaces in Luisenstraße 29", "elevator": null, "elderly": null, "stroller": null, "guidedTour": "<i class=\"fa-solid fa-flag\"></i>", "guideDog": "<i class=\"fa-solid fa-dog\"></i>", "audioGuide": "<i class=\"fa-solid fa-headphones\"></i>" }, "geometry": { "type": "Point", "coordinates": [ 11.565192, 48.145825 ] } },
+  { "type": "Feature", "properties": { "Number": 7, "Name": "Lenbachhaus", "Latitude": 48.146756, "Longitude": 11.564377, "Type": "Museum", "Address": "Luisenstraße 33, 80333 München", "Hours": "\nTu 10:00-21:00, Wed-Su 10:00-18:00 (Mon-Closed)", "MustSee": null, "MVV": "U2, U8, Bus 58, 68, 100 Königsplatz, Tram 27, 28, N27 Karolinenplatz", "Access": "At ground level, electric door openers. Stairlift (max. weight 300 kg, only with staff), elevators to all levels.\nGarden: the bell at the entrance is 120 cm high, pavement: tiling and gravel.", "Description": "It houses a gallery displaying contemporary art including works of eminent Munich-based artists. A variety of contemporary Munich-based and international artists are represented at the Lenbachhaus art gallery. The works on display include paintings by Munich artists of the 19th and 20th centuries. Notable works are from a collection of works of a group of early 20th-century expressionist artists called the Blaue Reiter. The collection was donated in 1957 by Gabriele Munter, one of the best-known members of the group. International works on display include paintings by Andy Warhol and Joseph Beuys. Exhibitions promoting works by new contemporary artists are regularly held at the Kunstbau.\n\n", "image": "src='https://www.muenchen.de/sites/default/files/styles/3_2_w1216/public/2022-06/34_2_Florian%20Holzherr.jpeg?h=7f8854f4'", "image2": "src='https://www.muenchen-tourismus-barrierefrei.de/images/stories/lenbachhaus_eingang.klein.jpg'", "imgsource": "Städtische Galerie im Lenbachhaus und Kunstbau, muenchen-tourismus-barrierefrei.de", "Website": "www.lenbachhaus.de", "Phone": "49 (0) 89 / 233-32000", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": "<i class=\"fa-solid fa-restroom\"></i>", "parking": "<i class=\"fa-solid fa-square-parking\"></i>", "parking_text": "2 spaces Luisenstraße 33", "elevator": "<i class=\"fa-solid fa-elevator\"></i>", "elderly": null, "stroller": null, "guidedTour": "<i class=\"fa-solid fa-flag\"></i>", "guideDog": null, "audioGuide": "<i class=\"fa-solid fa-headphones\"></i>" }, "geometry": { "type": "Point", "coordinates": [ 11.564377, 48.146756 ] } }
   ]
   }
-    
+  
+  
   ;
+
+  console.log(attractions)
 
 /**USE properties.Number instead of assigning a new unique id!!!
  * Assign a unique id to each attraction. You'll use this `id`
@@ -168,17 +175,13 @@ const attractions =
 
 function addSource() { 
   // For each new source, we need to create map.addSource()
-  
-  map.addSource('Top-Religious-Route', { 
-      'type': 'geojson',
-      'data': '/data/Top-Religious-Route.geojson'
-  });
 
-    //IF ADD THIS SOUCE THEN FUNCTION FOR LIST DOESNT WORK!
-    // map.addSource('munich-intro-tour-points', {
-    //     'type': 'geojson',
-    //     'data': attractions
-    //     });
+  map.addSource('Art-Museum-Route',{
+      type: 'geojson',
+      data:'/data/Art-Museums-Route.geojson'
+  
+      });
+
 
   //Add source before this//          
   }
@@ -187,10 +190,11 @@ function addLayer() {
 // For each source we added, we need to use map.addLayer() to add it to the map.
 // map.setLayerZoomRange is used to set the layer zoom range
 
+    
     map.addLayer({
-        id: 'Top-Religious-Route',
+        id: 'Art-Museum-Route',
         type: 'line',
-        source: 'Top-Religious-Route',
+        source: 'Art-Museum-Route',
         layout: {
             'line-join': 'round',
             'line-cap': 'round'
@@ -202,13 +206,12 @@ function addLayer() {
         'line-blur': 1.5
         }
         });
-    map.setLayerZoomRange('Top-Religious-Route', 12, 22);
+    map.setLayerZoomRange('Art-Museum-Route', 12, 22);
 
 
 
  //Add layer before this// 
 }
-
 
 // Here when map loads a style, we run the functions addSource() and addLayer() we created above 
 //which adds all the geojson sources and adds to the maps as layers.
@@ -216,7 +219,7 @@ map.on('style.load', function(){
   const layers = map.getStyle().layers;
 
 
-      map.addSource('top-religious', {
+      map.addSource('ArtMuseums', {
         'type': 'geojson',
         'data': attractions
       });
@@ -297,6 +300,7 @@ map.setStyle('mapbox://styles/' + layerId);
           new mapboxgl.Marker(el, { offset: [0, -23] })
             .setLngLat(marker.geometry.coordinates)
             .addTo(map);
+          
 
           /**
            * Listen to the element and when it is clicked, do three things:
@@ -401,7 +405,6 @@ map.setStyle('mapbox://styles/' + layerId);
             link.innerHTML += `${attraction.properties.MustSee}`
           };
 
-
           /* Add details to the individual listing. */
           const details = listing.appendChild(document.createElement('div'));
           details.className = 'details';
@@ -429,6 +432,7 @@ map.setStyle('mapbox://styles/' + layerId);
           if (attraction.properties.elderly) {
             details.innerHTML += `${attraction.properties.elderly}&nbsp;&nbsp;`
           };
+
           if (attraction.properties.stroller) {
             details.innerHTML += `${attraction.properties.stroller}&nbsp;&nbsp;`
           };
@@ -451,6 +455,9 @@ map.setStyle('mapbox://styles/' + layerId);
           if (attraction.properties.guidedTour) {
             details.innerHTML += `${attraction.properties.guidedTour}&nbsp;&nbsp;`
           };
+          // if (attraction.properties.Phone) {
+          //   details.innerHTML += `${attraction.properties.Phone}`;
+          // };
           
 
           /**
@@ -587,7 +594,6 @@ map.setStyle('mapbox://styles/' + layerId);
             </p>`
           )
           .addTo(map);
-
         // Set an event listener that will fire
         // any time the popup is closed
         popup.on('close', () => {

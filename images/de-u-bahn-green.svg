@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="de-u-bahn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 17 17" style="enable-background:new 0 0 17 17;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.75;fill:#FFFFFF;enable-background:new    ;}
+	.st1{fill:#1AA341;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:none;}
+</style>
+<g>
+	<path class="st0" d="M2,0h13c0,0,2,0,2,2v13c0,0,0,2-2,2H2c0,0-2,0-2-2V2C0,2,0,0,2,0"/>
+	<path class="st1" d="M2,1h13c0,0,1,0,1,1v13c0,0,0,1-1,1H2c0,0-1,0-1-1V2C1,2,1,1,2,1"/>
+	<path class="st2" d="M10.5,9c-0.1,1.1-0.9,1.9-2,2c-1.1-0.1-1.9-0.9-2-2V3.5H4v5c0,2.8,1.7,5,4.5,5s4.5-2.3,4.5-5v-5h-2.5V9z"/>
+	<path class="st3" d="M0,0h17v17H0V0z"/>
+</g>
+</svg>
