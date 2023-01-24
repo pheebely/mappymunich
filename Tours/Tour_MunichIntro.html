@@ -31,7 +31,7 @@
 
     <div class="sidebar">
         <div class="heading">
-          <h1 style="font-weight: 300">Munich Introduction Tour</h1>
+          <h1>Munich Introduction Tour</h1>
         </div>
         <div id='listings' class='listings'></div>
         <div id='legend' class="legend">
@@ -101,7 +101,13 @@
     </div>
   </div>
 </div> -->
-<div class="mapLegend">
+
+
+<div class="main-container">
+  <div class="coll-container">
+    <div class="coll-header"><button class="coll-btn">Legend</button></div>
+    <div class="mapLegend">
+
   <!-- <div class="legend-item"><img src="/images/smoothness_yes.png" width="15">&nbsp; Smooth Surface</div>
   <div class="legend-item"><img src="/images/smoothness_no.png" width="15">&nbsp; Unsmooth Surface</div>
   <div class="legend-item"><img src="/images/problemPath.png" width="15">&nbsp; Unsmooth Path</div>
@@ -110,28 +116,35 @@
   <div class="legend-item"><img src="/images/crosswalk_bw-01.svg" width="14">&nbsp; Crosswalk</div>
   <div class="legend-item"><img src="/images/UnderCon_icon-01.svg" width="15">&nbsp; Construction</div> -->
   
-  <div class="legent-item">
     <ul> 
-      <li><b>Problem Areas</b></li>
-      <li><img src="/images/smoothness_yes.png" width="16">&nbsp; Surface Material</li>
+      <li><img src="/images/tourRoute.png" width="15">&nbsp; <b>Tour Route</b> &nbsp; <img src="/images/location-pin-solid.svg" width="10">&nbsp; <b>Attraction</b></li>
+      <li><h4>Problem Areas</h4></li>
+      <li><img src="/images/smoothness_yes.png" width="16">&nbsp; Difficult Surface Material</li>
       <li><img src="/images/smoothness_no.png" width="16">&nbsp; Unsmooth</li>
       <li><img src="/images/problemPath.png" width="15">&nbsp; Difficult Surface/Unsmooth</li>
       <li><img src="/images/problemSidewalk.png" width="15">&nbsp; Sidewalk < 2.5 m</li>
-      <li><br></li>
-      <!-- <li><b>Caution</b></li> -->
-      <li><img src="/images/tourRoute.png" width="15">&nbsp; Tour Route</li>
-      <li><img src="/images/pedestrianZone.png" width="16">&nbsp; Pedestrian Zone</li> 
-      <li><img src="/images/crosswalk_bw-01.svg" width="14">&nbsp; Crosswalk</li>
-      <li><img src="/images/UnderCon_icon-01.svg" width="15">&nbsp; Construction</li>
       <li><img src="/images/stairs.png" width="15">&nbsp; Stairs</li>
-    </ul>
+      <li><h4>Traffic Symbols</h4></li>
+      <li><img src="/images/pedestrianZone.png" width="16">&nbsp; Pedestrian Zone</li> 
+      <li><img src="/images/UnderCon_icon-01.svg" width="15">&nbsp; Construction</li>
+      <li><img src="/images/crosswalk_bw_lines.svg" width="14">&nbsp; Crosswalk (Controlled)</li>
+      <li><img src="/images/crosswalk_bw_signalred2.svg" width="14">&nbsp; Crosswalk (Traffic Signal)</li>
+      <li><img src="/images/sbahn.svg" width="15">&nbsp; S-Bahn (<i class="fa-brands fa-accessible-icon"></i>&nbsp; Accessible)</li>
+      <li><img src="/images/sbahn-red.svg" width="15">&nbsp; S-Bahn (Not <i class="fa-brands fa-accessible-icon"></i>&nbsp;Accessible)</li>
+      <li><img src="/images/Ubahn_green2.svg" width="13">&nbsp;&nbsp; U-Bahn (Platform to Train < 8cm)</li>
+      <li><img src="/images/Ubahn.svg" width="13">&nbsp;&nbsp; U-Bahn (Platform to Train > 8cm)</li>
+
+    </ul><br>
     <p>Smoothness is a measure of the level of comfort experienced by the traveling public while riding over a pavement surface.</p>
+    </div>
   </div>
 </div>
 
-<!-- <script>
+
+
+<script>
 //Collapse Content Container 
-let collapseContent = document.getElementsByClassName("coll-content")[0];
+let collapseContent = document.getElementsByClassName("mapLegend")[0];
 //Collapse Header (toggle button)
 let collapseHeader = document.getElementsByClassName("coll-header")[0];
 //Always Starts in Hidden Mode
@@ -141,7 +154,7 @@ collapseHeader.onclick = () => {
   if(collapseContent.style.visibility == "hidden") {
     collapseContent.style.visibility = "visible";
     collapseContent.style.opacity = "1";
-    collapseContent.style.maxHeight = "300px";
+    collapseContent.style.maxHeight = "500px";
   } else if (collapseContent.style.visibility == "visible") {
     collapseContent.style.visibility = "hidden";
     collapseContent.style.opacity = "0";
@@ -149,7 +162,7 @@ collapseHeader.onclick = () => {
   }
 }
 
-</script> -->
+</script>
 
 <script src="/Tours/MunichIntro.js"> </script>
 

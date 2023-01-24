@@ -1,4 +1,4 @@
-const home = [11.578, 48.137437] //coordinates for the default "home" view
+const home = [11.580089, 48.139152] //coordinates for the default "home" view
 
 	mapboxgl.accessToken = 'pk.eyJ1IjoicGhlZWJlbHkiLCJhIjoiY2s2aGZoZTR4MDJsdTNlcXI2NnI1bXhuaiJ9.l0hhT8MPnRuT8LuyPP8Ovw';
 const map = new mapboxgl.Map({
@@ -6,7 +6,7 @@ container: 'map',
 // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
   style: 'mapbox://styles/pheebely/cld82me56000d01t7749mkago',
 center: home,
-zoom: 14.5,
+zoom: 15,
 minZoom: 9,
 maxZoom: 18,
 pitch: 35, // pitch in degrees
@@ -92,7 +92,7 @@ showUserHeading: true
 // Add home button to fly to home
 const homePosition = {
     center: home,
-    zoom: 14.5,
+    zoom: 15,
     pitch: 40,
     bearing: 0
 };
@@ -207,7 +207,7 @@ function addLayer() {
         paint: {
         'line-color': '#48a2b8', // ['get','color']
         'line-width': 6,
-        'line-opacity': 0.8,
+        'line-opacity': 0.75,
         'line-blur': 1.5
         }
         });
@@ -237,7 +237,7 @@ map.on('style.load', function(){
         buildLocationList(attractions);
         addMarkers();
         addSource();
-        addLayer();
+        // addLayer();
 
 
     //whatever layers you want to toggle go in to this function
@@ -404,7 +404,7 @@ map.setStyle('mapbox://styles/' + layerId);
           link.href = '#';
           link.className = 'title';
           link.id = `link-${attraction.properties.Number}`;
-          link.innerHTML = `${attraction.properties.Number}&period; ${attraction.properties.Name}&nbsp;&nbsp;`;
+          link.innerHTML = `<span class="pin"><img src="/images/location-pin-solid-list.svg" width="20"><span class="pinTitle">${attraction.properties.Number}&nbsp;&nbsp;&nbsp;</span></span> ${attraction.properties.Name}&nbsp;&nbsp;`;
 
           if (attraction.properties.MustSee){
             link.innerHTML += `${attraction.properties.MustSee}`
