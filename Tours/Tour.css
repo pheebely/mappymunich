@@ -314,25 +314,23 @@ margin-bottom: -13px;
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
 
     #map {
       left: 0%;
       width: 100%;
-    }
-
-    .headertitle {
-      text-align: left;
-      left: 0;
-      margin-left: 4%;
+      height: 95%;
     }
 
     .sidebar {
       display: none;
     }
 
-    .headertitle h1, a {
-      font-size: 18px;
+    .headertitle {
+      left: 42%;
+    }
+    .headertitle a {
+      font-size: 22px;
     }
 
     .h2, .coll-btn {
@@ -350,12 +348,18 @@ margin-bottom: -13px;
     }
     
     .mapLegend {
+      margin-bottom: 0px;
       width: 250%;
     }
 }
 
 
 @media screen and (max-height: 800px){
+
+  #map {
+    height: 90%;
+  }
+
   .h2, .coll-btn {
     display: none;
     }
@@ -380,6 +384,12 @@ margin-bottom: -13px;
   .mapLegend {
     width: 660%;
   }
+
+  .headertitle {
+    text-align: left;
+    left: 10px;
+  }
+
 
 }
 

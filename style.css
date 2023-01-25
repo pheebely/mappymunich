@@ -1,4 +1,4 @@
-body { margin: 3% 0; padding: 0;
+body { margin: 3% 0; padding: 0; height: 100vh;
     /* background-image: url("images/Picture\ 1.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -56,19 +56,22 @@ body { margin: 3% 0; padding: 0;
         }
 
 
-
 .headertitle {
     position: absolute;
-    top: 1.5%;
-    left: 0%;
+    top: 0;
+    width: 100%;
     font-family: 'MuseoModerno', cursive;
     font-weight: 200;
     font-size: 14px;
     line-height: 60%;
     text-align: left;
     color:#000;
-    margin: 2% 0 0 6%;
+    padding-left: 5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
     min-height: 30px;
+    background-color: rgba(206, 206, 206, 0.365);
+
     }
 
 .headertitle a{
@@ -85,10 +88,11 @@ body { margin: 3% 0; padding: 0;
 
 .headerSubtitle h3 {
     padding-top: 10px;
+    padding-right: 5%;
     font-family: 'Inter Tight', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .h2 {
@@ -196,8 +200,10 @@ _:-ms-lang(x), A > IMG.lazyloaded:hover { -webkit-filter:none; filter:none }
     position: relative;
 	top: 150px;
     margin: auto;
-    width: 75%;
+    width: 70%;
+    height: 55%;
 	display: flex;
+    /* background-color: #75a895; */
 }
 
 section.right, section.left {
@@ -210,11 +216,13 @@ section.right {
 	width: 35%;
     text-align: center;
     margin-top: 30px;
-
 }
 
 section.left {
 	width: 65%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 section.right h2 {
@@ -295,31 +303,37 @@ section.right a.buttonLong:hover {
 	align-items: center;
 }
 
-.svg-container svg {
-	width: 100%;
-	height: 100%;
+.svg-container svg, img {
+	height: fit-content;
+    border-radius: 10px;
+
 }
 
 .svg-container-resp {
     display: none;
-    margin-top: 60px;
     text-align: center;
 
 }
 
 .svg-container-resp img {
-    width: 250px;
+    width: 500px;
     text-align: center;
     vertical-align: middle;
+    border-radius: 10px;
+    margin-top: 0;
 
 }
 
 
 
 @media all and (max-width: 900px) {
+
+    .container {
+        top: 30px;
+    }
 	section.right {
 		width: 100%;
-        margin-top: -50px;
+        margin-left: -50px;
         text-align: center;
 	}
 
@@ -334,19 +348,30 @@ section.right a.buttonLong:hover {
 
     .svg-container-resp {
         display: block;
+        margin-top: 40px;
+        
     }
+}
+
+@media all and (max-width: 400px) {
+    .svg-container-resp img {
+      width: 255px;
+      text-align: center;
+    }
+
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: rgba(188, 188, 188, 0.037);
+    /* background-color: rgba(188, 188, 188, 0.375); */
     overflow: hidden;
-    top: 15px;
     display: flex;
-    margin-right: 5%;
+    padding-right: 5%;
     justify-content: right;
     align-items: right;
-    min-height: 30px;
+    min-height: 40px;
+    background-color: transparent;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -354,11 +379,12 @@ section.right a.buttonLong:hover {
     float: right;
     color: #797979;
     text-align: center;
-    padding: 8px 1%;
+    padding: 0px 1%;
     text-decoration: none;
     font-family: 'Inter Tight', sans-serif;
     font-size: 14px;
     font-weight: 700;
+    z-index: 1;
 }
 
 /* Change the color of links on hover */
@@ -410,14 +436,22 @@ section.right a.buttonLong:hover {
 
 @media screen and (max-width: 700px) {
 
+    .headertitle {
+        padding-bottom: 0;
+    }
+
     .headertitle h1, a {
-        font-size: 18px;
+        font-size: 28px;
       }
 
     .grid-container {
         margin-top: 30px;
         margin-inline: 0px;
         grid-template-columns: 100%;
+    }
+
+    .grid-item h3, a {
+        font-size: medium;
     }
 
     .grid-item img {
@@ -431,6 +465,14 @@ section.right a.buttonLong:hover {
 
 }
 
+@media screen and (max-width: 900px) {
+    .grid-container {
+        margin-inline: 8px ;
+    
+    }
+
+
+}
 
 
 
