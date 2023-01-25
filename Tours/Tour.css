@@ -573,7 +573,7 @@ background: #f1bc41;
     font-weight: 700;
     color: #000000;
     text-align: center;
-    background-image: url(/images/location-pin-solid.svg);
+    background-image: url(../images/location-pin-solid.svg);
   }
 
 .marker:hover,
@@ -588,7 +588,7 @@ background: #f1bc41;
     font-weight: 700;
     color: #000;
     text-align: center;
-    background-image: url(/images/location-pin-solid-green.svg);
+    background-image: url(../images/location-pin-solid-green.svg);
   }
 
 .marker.activeClick {
@@ -601,7 +601,7 @@ background: #f1bc41;
     font-weight: 700;
     color: #000;
     text-align: center;
-    background-image: url(/images/location-pin-solid-yellow.svg);
+    background-image: url(../images/location-pin-solid-yellow.svg);
   }
 
 
