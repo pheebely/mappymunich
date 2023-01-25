@@ -74,6 +74,12 @@
     vertical-align: middle;
   }
 
+  @media screen and (max-width: 1200px) {
+    .mapLegend {
+        display: none;
+    }
+  }
+
   /* Styling for Toggle Layer container */
 
   
