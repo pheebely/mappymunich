@@ -679,7 +679,7 @@ exitButton.addEventListener('click', () => {
 });
 
 const title = document.getElementById('title');
-title.innerHTML = `<h3><a href="/index.html">${config.title}</a></h3>`
+title.innerHTML = `<h3><a href="../index.html">${config.title}</a></h3>`
 title.style.fontFamily = "MuseoModerno, cursive";
 
 const description = document.getElementById('description');
