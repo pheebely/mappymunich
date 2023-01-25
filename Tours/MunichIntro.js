@@ -207,7 +207,7 @@ function addLayer() {
         paint: {
         'line-color': '#48a2b8', // ['get','color']
         'line-width': 6,
-        'line-opacity': 0.75,
+        'line-opacity': 0.7,
         'line-blur': 1.5
         }
         });
@@ -222,6 +222,14 @@ function addLayer() {
 //which adds all the geojson sources and adds to the maps as layers.
 map.on('style.load', function(){
   const layers = map.getStyle().layers;
+  // Find the index of the first symbol layer in the map style.
+  let firstSymbolId;
+  for (const layer of layers) {
+  if (layer.type === 'symbol') {
+  firstSymbolId = layer.id;
+  break;
+  }
+  }
 
 
       map.addSource('munich-intro-tour-points', {
@@ -415,7 +423,7 @@ map.setStyle('mapbox://styles/' + layerId);
           details.className = 'details';
           details.innerHTML = `
           <ul>
-          <li><i><b><font color="#9f9f9f"><font size="1">${attraction.properties.Type}</font color></font size></b></i></li>
+          <li><i><b><font color="#9f9f9f"><font size=normal>${attraction.properties.Type}</font color></font size></b></i></li>
           <li>${attraction.properties.Address}</li>
           <li><i>${attraction.properties.Hours}</i>&nbsp;
           <a href=${attraction.properties.Website}><i class="fa-solid fa-link"></i></a></li></ul>`
@@ -573,7 +581,7 @@ map.setStyle('mapbox://styles/' + layerId);
         map.flyTo({
           center: currentFeature.geometry.coordinates,
           offset: [-150, -150],
-          zoom: 16
+          zoom: 16.5
         });
       }
 

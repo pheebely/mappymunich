@@ -21,8 +21,6 @@
 <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
  <!-- CSS Stylesheet -->
 <link rel="stylesheet" href="/Tours/Tour.css"> 
-<!-- Link to Munich-Intro geojson -->
-<!-- <script src="../data/Munich-Intro.geojson"></script> -->
 
 
 
@@ -49,7 +47,6 @@
       <!-- <p>Wheelchair accessible locations are also stroller accessible and accessible to those with assisted walking. 
           </p> -->
         </div>
-        <nav id="layernav"></nav>
     </div>
 
 <!-- Basemap Styles Menu -->
@@ -63,14 +60,20 @@
     <input id="pheebely/clcjqsq3y000a14t2t08353lm" type="radio" name="rtoggle" value="dark">
     <label for="pheebely/clcjqsq3y000a14t2t08353lm">Dark</label>  -->
     <!-- </div> -->
-  <div class="topnav" id="myTopnav">
-    <a class="active" href="/Tours/Tour_OldTown.html">NEXT</a>
-    <a class="active" href="/CityToursList.html">TOURS</a>
-    <a class="active" href="/About.html">ABOUT</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+  
+    <div class="headerBanner">
+      <div class="headertitle">
+        <h1><a href="/index.html">MAPPY MUNICH</a></h1>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a class="active" href="/Tours/Tour_OldTown.html">NEXT</a>
+        <a class="active" href="/CityToursList.html">TOURS</a>
+        <a class="active" href="/About.html">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
 
 <!-- Script for Responsive Topnav  -->
 <script> function myFunction() {
@@ -83,26 +86,11 @@
 }
 </script>
 
-<div class="headertitle">
-    <h1><a href="/index.html">MAPPY MUNICH</a></h1>
-</div>
+
 <!-- Embed JS Code for Main Map-->
 <div id="map"></div>
-<!-- <div class="main-container">
-  <div class="coll-container">
-    <div class="coll-header"><button class="coll-btn">Legend</button></div>
-    <div class="coll-content">
-      <div class="coll-item"><img src="/images/smooth_yes.png" width="25">&nbsp; Smooth Surface</div>
-      <div class="coll-item"><img src="/images/smooth_no.png" width="25">&nbsp; Unsmooth Surface</div>
-      <div class="coll-item">Item 3</div>
-      <div class="coll-item">Item 4</div>
-      <div class="coll-item">Item 5</div>
-      <div class="coll-item">Item 6</div>
-    </div>
-  </div>
-</div> -->
 
-
+<!-- Map Legend -->
 <div class="main-container">
   <div class="coll-container">
     <div class="coll-header"><button class="coll-btn">Legend</button></div>
@@ -117,7 +105,7 @@
   <div class="legend-item"><img src="/images/UnderCon_icon-01.svg" width="15">&nbsp; Construction</div> -->
   
     <ul> 
-      <li><img src="/images/tourRoute.png" width="15">&nbsp; <b>Tour Route</b> &nbsp; <img src="/images/location-pin-solid.svg" width="10">&nbsp; <b>Attraction</b></li>
+      <li><img src="/images/tourRoute.png" width="15">&nbsp; <b>Tour Route</b> &nbsp; <img src="/images/location-pin-solid.svg" width="12">&nbsp; <b>Attraction</b></li>
       <li><h4>Problem Areas</h4></li>
       <li><img src="/images/smoothness_yes.png" width="16">&nbsp; Difficult Surface Material</li>
       <li><img src="/images/smoothness_no.png" width="16">&nbsp; Unsmooth</li>
@@ -158,7 +146,7 @@ collapseHeader.onclick = () => {
   } else if (collapseContent.style.visibility == "visible") {
     collapseContent.style.visibility = "hidden";
     collapseContent.style.opacity = "0";
-    collapseContent.style.maxHeight = "0px";
+    // collapseContent.style.maxHeight = "0px";
   }
 }
 

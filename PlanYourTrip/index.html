@@ -6,14 +6,18 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- GOOGLE FONTS -->
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fjalla+One&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&family=MuseoModerno:ital@0;1&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fjalla+One&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&family=MuseoModerno:ital@0;1&display=swap"
+        rel="stylesheet">
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/e1e6165088.js" crossorigin="anonymous"></script>
     <link href='https://api.mapbox.com/mapbox-assembly/v0.24.0/assembly.min.css' rel='stylesheet'>
     <script src='https://api.mapbox.com/mapbox-assembly/v0.24.0/assembly.js'></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' />
     <script
         src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
     <link rel='stylesheet'
@@ -41,7 +45,8 @@
                         <div class="flex-parent flex-parent--center-main relative-ml absolute right top mt0-ml mt6">
                             <button id='filterResults' class='txt-bold btn btn--stroke mr0-ml mr12 px18-ml px6'>
                                 <svg class='icon inline-block align-middle h24 w24'>
-                                    <use xlink:href='#icon-filter' /></svg>
+                                    <use xlink:href='#icon-filter' />
+                                </svg>
                                 <p class="inline-block-ml align-middle remove none">Show Filters</p>
                             </button>
                         </div>
@@ -82,11 +87,44 @@
     </div>
 
     </div>
+
+    <!-- <div class="main-container">
+        <div class="coll-container">
+          <div class="coll-header"><button class="coll-btn">Legend</button></div> -->
+          <div class="mapLegend">
+          <ul> 
+            <li><img src="/images/sbahn.svg" width="15">&nbsp; S-Bahn (<i class="fa-brands fa-accessible-icon"></i>&nbsp; Accessible)</li>
+            <li><img src="/images/sbahn-red.svg" width="15">&nbsp; S-Bahn (Not <i class="fa-brands fa-accessible-icon"></i>&nbsp;Accessible)</li>
+            <li><img src="/images/Ubahn_green2.svg" width="13">&nbsp;&nbsp; U-Bahn (Platform to Train < 8cm)</li>
+            <li><img src="/images/Ubahn.svg" width="13">&nbsp;&nbsp; U-Bahn (Platform to Train > 8cm)</li>
+          </ul>
+          </div>
+        <!-- </div>
+      </div> -->
 </body>
 
-<script>
+<!-- <script>
+    //Collapse Content Container 
+    let collapseContent = document.getElementsByClassName("mapLegend")[0];
+    //Collapse Header (toggle button)
+    let collapseHeader = document.getElementsByClassName("coll-header")[0];
+    //Always Starts in Hidden Mode
+    collapseContent.style.visibility = "hidden";
+    //Custom Javascript (You can Implement it in a better way!) (ES6)
+    collapseHeader.onclick = () => {
+      if(collapseContent.style.visibility == "hidden") {
+        collapseContent.style.visibility = "visible";
+        collapseContent.style.opacity = "1";
+        collapseContent.style.maxHeight = "500px";
+      } else if (collapseContent.style.visibility == "visible") {
+        collapseContent.style.visibility = "hidden";
+        collapseContent.style.opacity = "0";
+        // collapseContent.style.maxHeight = "0px";
+      }
+    }
+    
+    </script> -->
 
-</script>
 <script src="config.js"></script>
 <script src="app.js"></script>
 

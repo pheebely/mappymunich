@@ -15,13 +15,14 @@ const map = new mapboxgl.Map({
   style: config.style,
   center: config.center,
   zoom: config.zoom,
+  minZoom: 9,
   transformRequest: transformRequest,
 });
 
 function flyToLocation(currentFeature) {
   map.flyTo({
     center: currentFeature,
-    zoom: 15,
+    zoom: 18,
   });
 }
 
@@ -29,10 +30,26 @@ function createPopup(currentFeature) {
   const popups = document.getElementsByClassName('mapboxgl-popup');
   /** Check if there is already a popup on the map and if so, remove it */
   if (popups[0]) popups[0].remove();
-  new mapboxgl.Popup({ closeOnClick: true })
+
+  // new mapboxgl.Popup({ closeOnClick: true })
+  // .setLngLat(currentFeature.geometry.coordinates)
+  // .setHTML('<h3>'+ currentFeature.properties[config.popupInfo]+'</h3>' + '<p>' + currentFeature.properties[config.popupInfo4] + '</p>' + '<p>' + currentFeature.properties[config.popupInfo3] + '</p>'+ '<p><a href=' + currentFeature.properties[config.popupInfo2] + '><i class="fa-solid fa-link"></a></p>')
+  // .addTo(map);
+
+
+  if (currentFeature.properties[config.popupInfo2]) {
+    new mapboxgl.Popup({ closeOnClick: true })
     .setLngLat(currentFeature.geometry.coordinates)
-    .setHTML('<h3><a href=" '+currentFeature.properties[config.popupInfo2]+' ">' + currentFeature.properties[config.popupInfo]+'</a></h3>' + '<p>'+ currentFeature.properties[config.popupInfo3]+'</p>')
+    .setHTML('<h3>'+ currentFeature.properties[config.popupInfo]+'</h3>' + '<p>' + currentFeature.properties[config.popupInfo4] + '</p>' + '<p>' + currentFeature.properties[config.popupInfo3] + '</p>' + '<p><a href=' + currentFeature.properties[config.popupInfo2] + '><i class="fa-solid fa-link"></a></p>')
     .addTo(map);
+  } else {
+    new mapboxgl.Popup({ closeOnClick: true })
+    .setLngLat(currentFeature.geometry.coordinates)
+    .setHTML('<h3>'+ currentFeature.properties[config.popupInfo]+'</h3>' + '<p>' + currentFeature.properties[config.popupInfo4] + '</p>' + '<p>' + currentFeature.properties[config.popupInfo3] + '</p>')
+    .addTo(map);
+  }
+
+  
 }
 
 function buildLocationList(locationData) {
@@ -54,7 +71,7 @@ function buildLocationList(locationData) {
     link.className = 'title';
     link.id = 'link-' + prop.id;
     link.innerHTML =
-      '<p style="line-height: 1.25">' + prop[columnHeaders[0]] + '</p>';
+      '<p style="line-height: 1">' + prop[columnHeaders[0]] +'</p>';
 
     /* Add details to the individual listing. */
     const details = listing.appendChild(document.createElement('div'));
@@ -412,22 +429,21 @@ geocoder.on('result', (ev) => {
 
 map.on('load', () => {
   map.addControl(geocoder, 'top-right');
-  // Add geolocate control to the map.
-map.addControl(
-  new mapboxgl.GeolocateControl({
-  positionOptions: {
-  enableHighAccuracy: true
-  },
-  // When active the map will receive updates to the device's location as it changes.
-  trackUserLocation: true,
-  // Draw an arrow next to the location dot to indicate which direction the device is heading.
-  showUserHeading: true
-  })
-  );
 
+  map.addControl(
+    new mapboxgl.GeolocateControl({
+    positionOptions: {
+    enableHighAccuracy: true
+    },
+    // When active the map will receive updates to the device's location as it changes.
+    trackUserLocation: true,
+    // Draw an arrow next to the location dot to indicate which direction the device is heading.
+    showUserHeading: true
+    })
+    )
 
-// Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
+  // Add zoom and rotation controls to the map.
+  map.addControl(new mapboxgl.NavigationControl());
 
   // csv2geojson - following the Sheet Mapper tutorial https://www.mapbox.com/impact-tools/sheet-mapper
   console.log('loaded');
@@ -463,32 +479,178 @@ map.addControl(new mapboxgl.NavigationControl());
 
         geojsonData = data;
         // Add the the layer to the map
-        map.addLayer({
-          id: 'locationData',
-          type: 'circle',
-          source: {
-            type: 'geojson',
-            data: geojsonData,
-          },
-          paint: {
-            'circle-radius': 5, // size of circles
-            'circle-color': '#48a2b8', // color of circles
-            'circle-stroke-color': 'white',
-            'circle-stroke-width': 1,
-            'circle-opacity': 0.7,
-          },
-        });
+        map.addSource('locationData', {
+          type: 'geojson',
+          data: geojsonData,
+          cluster: true,
+          clusterMaxZoom: 18, // Max zoom to cluster points on
+          clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
+
+        })
+
       },
     );
 
-    map.on('click', 'locationData', (e) => {
+    map.addLayer({
+      id: 'locationData',
+      type: 'circle',
+      source: 'locationData',
+
+      paint: {
+        'circle-radius': 5, // size of circles
+        'circle-color': '#3D2E5D', // color of circles
+        'circle-stroke-color': 'none',
+        'circle-stroke-width': 1,
+        'circle-opacity': 0,
+      },
+    });
+
+    map.addLayer({
+      id: 'clusters',
+      type: 'circle',
+      source: 'locationData',
+      filter: ['has', 'point_count'],
+      paint: {
+        // Use step expressions (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-step)
+        // with three steps to implement three types of circles:
+        //   * Blue, 20px circles when point count is less than 100
+        //   * Yellow, 30px circles when point count is between 100 and 750
+        //   * Pink, 40px circles when point count is greater than or equal to 750
+        'circle-color': [
+          'step',
+          ['get', 'point_count'],
+          '#F7E8AA',
+          75,
+          '#F8DF7A',
+          150,
+          '#FECC11',
+          250,
+          '#E8B004'
+        ],
+        'circle-radius': [
+          'step',
+          ['get', 'point_count'],
+          15,
+          75,
+          25,
+          150,
+          35,
+          250,
+          40
+        ]
+      }
+    });
+
+    map.addLayer({
+      id: 'cluster-count',
+      type: 'symbol',
+      source: 'locationData',
+      filter: ['has', 'point_count'],
+      layout: {
+        'text-field': ['get', 'point_count_abbreviated'],
+        'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+        'text-size': 12
+      }
+    });
+
+    map.addLayer({
+      id: 'unclustered-point',
+      type: 'circle',
+      source: 'locationData',
+      filter: ['!', ['has', 'point_count']],
+      paint: {
+        'circle-color': '#F7E8AA',
+        'circle-radius': [
+          "interpolate", ["linear"], ["zoom"],
+          // zoom is 5 (or less) -> circle radius will be 1px
+          15, 5,
+          // zoom is 10 (or greater) -> circle radius will be 5px
+          18, 2.8
+      ],
+        'circle-stroke-width': [
+          "interpolate", ["linear"], ["zoom"],
+          // zoom is 5 (or less) -> circle radius will be 1px
+          15, 2,
+          // zoom is 10 (or greater) -> circle radius will be 5px
+          18, 2
+      ],
+        'circle-stroke-color': '#48a2b8',
+        'circle-opacity': 0.75,
+      }
+    });
+
+    map.on('mouseenter', 'clusters', () => {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'clusters', () => {
+      map.getCanvas().style.cursor = '';
+    });
+
+    // ATTENTION
+    // The following code is fundamental for clustering function
+
+
+    // map.on('click', 'clusters', (e) => {
+    //   const features = map.queryRenderedFeatures(e.point, {
+    //     layers: ['clusters'],
+    //   });
+    //   const clickedPoint = features[0].geometry.coordinates;
+    //   flyToLocation(clickedPoint);
+    //   sortByDistance(clickedPoint);
+    //   // createPopup(features[0]);
+    // });
+
+
+    map.on('click', 'clusters', (e) => {
       const features = map.queryRenderedFeatures(e.point, {
-        layers: ['locationData'],
+          layers: ['clusters']
+      });
+      const clusterId = features[0].properties.cluster_id;
+      map.getSource('locationData').getClusterExpansionZoom(
+          clusterId,
+          (err, zoom) => {
+              if (err) return;
+
+              map.easeTo({
+                  center: features[0].geometry.coordinates,
+                  zoom: zoom
+              });
+          }
+      );
+  });
+
+    // When a click event occurs on a feature in
+    // the unclustered-point layer, open a popup at
+    // the location of the feature, with
+    // description HTML from its properties.
+    map.on('click', 'unclustered-point', (e) => {
+      const features = map.queryRenderedFeatures(e.point, {
+        layers: ['unclustered-point'],
       });
       const clickedPoint = features[0].geometry.coordinates;
       flyToLocation(clickedPoint);
       sortByDistance(clickedPoint);
       createPopup(features[0]);
+
+      // const coordinates = e.features[0].geometry.coordinates.slice();
+      // const mag = e.features[0].properties.mag;
+      // const tsunami =
+      //   e.features[0].properties.tsunami === 1 ? 'yes' : 'no';
+
+      // // Ensure that if the map is zoomed out such that
+      // // multiple copies of the feature are visible, the
+      // // popup appears over the copy being pointed to.
+      // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+      //   coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+      // }
+
+      // new mapboxgl.Popup()
+      //   .setLngLat(coordinates)
+      //   .setHTML(
+      //     `magnitude: ${mag}<br>Was there a tsunami?: ${tsunami}`
+      //   )
+      //   .addTo(map);
     });
 
     map.on('mouseenter', 'locationData', () => {
@@ -517,13 +679,11 @@ exitButton.addEventListener('click', () => {
 });
 
 const title = document.getElementById('title');
-// title.innerText = config.title;
 title.innerHTML = `<h3><a href="/index.html">${config.title}</a></h3>`
 title.style.fontFamily = "MuseoModerno, cursive";
 
 const description = document.getElementById('description');
-// description.innerText = config.description;
-description.innerHTML = `${config.description}`
+description.innerText = config.description;
 
 function transformRequest(url) {
   const isMapboxRequest =
@@ -532,4 +692,5 @@ function transformRequest(url) {
   return {
     url: isMapboxRequest ? url.replace('?', '?pluginName=finder&') : url,
   };
+
 }

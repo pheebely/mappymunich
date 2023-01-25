@@ -1,12 +1,12 @@
-const home = [11.578, 48.137437] //coordinates for the default "home" view
+const home = [11.577618, 48.141602] //coordinates for the default "home" view
 
 	mapboxgl.accessToken = 'pk.eyJ1IjoicGhlZWJlbHkiLCJhIjoiY2s2aGZoZTR4MDJsdTNlcXI2NnI1bXhuaiJ9.l0hhT8MPnRuT8LuyPP8Ovw';
 const map = new mapboxgl.Map({
 container: 'map',
 // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-  style: 'mapbox://styles/pheebely/clazrqxnm000x15nwlwkpd8qn',
+  style: 'mapbox://styles/pheebely/cldbuqg63005w01oewud9g2yd',
 center: home,
-zoom: 14.5,
+zoom: 15,
 minZoom: 9,
 maxZoom: 18,
 pitch: 35, // pitch in degrees
@@ -92,7 +92,7 @@ showUserHeading: true
 // Add home button to fly to home
 const homePosition = {
     center: home,
-    zoom: 14.5,
+    zoom: 15,
     pitch: 40,
     bearing: 0
 };
@@ -140,7 +140,7 @@ const attractions =
   "type": "FeatureCollection",
   "name": "Palaces",
   "features": [
-  { "type": "Feature", "properties": { "Number": 1, "Name": "Alter Hof", "Latitude": 48.138462, "Longitude": 11.578274, "Type": "Palace/Landmark", "Address": "Alter Hof 1, 80331 München", "Hours": "Mo-Sa 10:00-18:00", "MustSee": "<i class=\"fa-solid fa-fire\"></i>", "MVV": null, "Access": "Cobblestone", "Description": "The Alte Hof is located in the middle of Munich's old town. It belongs to the first imperial castle of the Wittelsbacher in Munich and has great significance for the history of the city. One of the most exciting legends about Munich revolves around the monkey tower.", "image": "src'https://www.muenchen.de/sites/default/files/styles/3_2_w1216/public/2022-06/07-alter-hof.jpg?h=08b866d1'", "image2": null, "imgsource": "Katy Spichal", "Website": "https://www.muenchen.de/sehenswuerdigkeiten/alter-hof", "Phone": "+49 89 21014050", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": null, "parking": null, "parking_text": null, "elevator": null, "elderly": null, "stroller": null, "guidedTour": null, "guideDog": null, "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.578274, 48.138462 ] } },
+  { "type": "Feature", "properties": { "Number": 1, "Name": "Alter Hof", "Latitude": 48.138462, "Longitude": 11.578274, "Type": "Palace/Landmark", "Address": "Alter Hof 1, 80331 München", "Hours": "Mo-Sa 10:00-18:00", "MustSee": "<i class=\"fa-solid fa-fire\"></i>", "MVV": null, "Access": "Cobblestone", "Description": "The Alter Hof is located in the middle of Munich's old town. It belongs to the first imperial castle of the Wittelsbacher in Munich and has great significance for the history of the city. One of the most exciting legends about Munich revolves around the monkey tower.", "image": "src='https://www.muenchen.de/sites/default/files/styles/3_2_w1216/public/2022-06/07-alter-hof.jpg?h=08b866d1'", "image2": null, "imgsource": "Katy Spichal", "Website": "https://www.muenchen.de/sehenswuerdigkeiten/alter-hof", "Phone": "+49 89 21014050", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": null, "parking": null, "parking_text": null, "elevator": null, "elderly": null, "stroller": null, "guidedTour": null, "guideDog": null, "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.578274, 48.138462 ] } },
   { "type": "Feature", "properties": { "Number": 2, "Name": "Residenz München", "Latitude": 48.140292, "Longitude": 11.578246, "Type": "Palace/Landmark", "Address": "Residenzstraße 1, 80333 München", "Hours": "Garden: Open 24 Hours<br>Museum: Mo-Su 10:00-17:00", "MustSee": "<i class=\"fa-solid fa-fire\"></i>", "MVV": "Tram 19, 21, N19 Nationaltheater (exit onto the street, therefore not suitable with a rollator or walking aid!), U3, U4, U5, U6, Bus 100, 153, N40, N41, N45 Odeonsplatz, S1-S8 (coming from the central station exit left to access the elevator!), U3, U6, Bus 132 Marienplatz", "Access": "Users of wheelchairs need assistance! Group guided tours for persons with walking disabilities and sight impaired on special arrangement with the chateau administration. The king's building is accessible from Max-Joseph-Platz, you need assistance of the staff for the elevator. Cuvillies-Theater: at ground level via Brunnenhof (cobblestone pavement!), bell 85 cm high, elevator to the first balcony.", "Description": "The Residenz Royal Palace (or Munich Residenz) is the former seat of the Bavarian Government and the residence of dukes, electors and kings from the Wittelsbach family, rulers of Bavaria, who lived here between 1508 and 1918. Today, the palace houses a museum and boasts some of the finest room decorations in Europe.", "image": "src='https://www.residenz-muenchen.de/bilder/residenz/slider/079a_fassade_m-j-platz500.jpg?timestamp=1673217684277'", "image2": null, "imgsource": "Residenz München", "Website": "https://www.residenz-muenchen.de/englisch/tourist/index.htm", "Phone": "+49 89 29067-1", "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": "<i class=\"fa-solid fa-restroom\"></i>", "parking": "<i class=\"fa-solid fa-square-parking\"></i>", "parking_text": "5 spaces in Maximilianstraße 8,<br>2 spaces at Max-Joseph-Platz 2", "elevator": "<i class=\"fa-solid fa-elevator\"></i>", "elderly": null, "stroller": null, "guidedTour": "<i class=\"fa-solid fa-flag\"></i>", "guideDog": null, "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.578246, 48.140292 ] } },
   { "type": "Feature", "properties": { "Number": 3, "Name": "Palais Porcia", "Latitude": 48.14072, "Longitude": 11.574469, "Type": "Palace", "Address": "Kardinal-Faulhaber-Straße 14, 80333 München", "Hours": "Available to view 24 Hours", "MustSee": null, "MVV": "S1-S8 (coming from central station exit left to the elevator!), U3, U6, Bus 132 Marienplatz", "Access": "Pedestrian zone, cobblestone", "Description": "Palais Porcia is a large mansion located near the Residenz Royal Palace in Munich, and is the city’s oldest surviving Baroque-style building. From 1932, the Palais Porcia has housed the headquarters of a prominent Bavarian-based German bank, the Bayerische Vereinsbank. The building was severely damaged by the World War II bombings, but was carefully restored after the war, between 1950 and 1952.", "image": "src='https://upload.wikimedia.org/wikipedia/commons/5/5e/M%C3%BCnchen-Altstadt_Palais_Porcia_740.jpg'", "image2": null, "imgsource": "GFreihalter via Wikimedia", "Website": "https://en.wikipedia.org/wiki/Palais_Porcia", "Phone": null, "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": null, "parking": null, "parking_text": null, "elevator": null, "elderly": null, "stroller": null, "guidedTour": null, "guideDog": null, "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.574469, 48.14072 ] } },
   { "type": "Feature", "properties": { "Number": 4, "Name": "Palais Holnstein", "Latitude": 48.141159, "Longitude": 11.574856, "Type": "Palace", "Address": "Salvatorstraße, 80333 München", "Hours": "Available to view 24 Hours", "MustSee": null, "MVV": "U3, U4, U5, U6 at Odeonsplatz, Tram 19, 21 at Marienplatz (Theatinerstrasse)", "Access": "Pedestrian zone, cobblestone", "Description": "The Palais Holnstein is a large historic mansion commissioned by the Elector Charles Albert in 1733. It is regarded as the finest Rococo-style building in Munich.<br><br>Visitors are not allowed to view the interiors because of the building’s function as the Archbishop’s residence, but the magnificent Rococo façade is available for all to see.", "image": "src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Muekardifaulhaberstr7062018c99.jpg/640px-Muekardifaulhaberstr7062018c99.jpg'", "image2": null, "imgsource": "Wikimedia", "Website": "https://en.wikipedia.org/wiki/Holnstein_Palace", "Phone": null, "wheelchair": "<i class=\"fa-brands fa-accessible-icon\"></i>", "wc": null, "parking": null, "parking_text": null, "elevator": null, "elderly": null, "stroller": null, "guidedTour": null, "guideDog": null, "audioGuide": null }, "geometry": { "type": "Point", "coordinates": [ 11.574856, 48.141159 ] } },
@@ -399,7 +399,7 @@ map.setStyle('mapbox://styles/' + layerId);
           link.href = '#';
           link.className = 'title';
           link.id = `link-${attraction.properties.Number}`;
-          link.innerHTML = `${attraction.properties.Number}&period; ${attraction.properties.Name}&nbsp;&nbsp;`;
+          link.innerHTML = `<span class="pin"><img src="/images/location-pin-solid-list.svg" width="20"><span class="pinTitle">${attraction.properties.Number}&nbsp;&nbsp;&nbsp;</span></span> ${attraction.properties.Name}&nbsp;&nbsp;`;
 
           if (attraction.properties.MustSee){
             link.innerHTML += `${attraction.properties.MustSee}`
@@ -410,7 +410,7 @@ map.setStyle('mapbox://styles/' + layerId);
           details.className = 'details';
           details.innerHTML = `
           <ul>
-          <li><i><b><font color="#9f9f9f"><font size="1">${attraction.properties.Type}</font color></font size></b></i></li>
+          <li><i><b><font color="#9f9f9f"><font size="normal">${attraction.properties.Type}</font color></font size></b></i></li>
           <li>${attraction.properties.Address}</li>
           <li><i>${attraction.properties.Hours}</i>&nbsp;
           <a href=${attraction.properties.Website}><i class="fa-solid fa-link"></i></a></li></ul>`
@@ -569,7 +569,7 @@ map.setStyle('mapbox://styles/' + layerId);
         map.flyTo({
           center: currentFeature.geometry.coordinates,
           offset: [-150, -150],
-          zoom: 16
+          zoom: 16.5
         });
       }
 

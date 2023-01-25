@@ -4,9 +4,9 @@ const home = [11.575853, 48.137437] //coordinates for the default "home" view
 const map = new mapboxgl.Map({
 container: 'map',
 // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-style: 'mapbox://styles/pheebely/clazrqxnm000x15nwlwkpd8qn',
+style: 'mapbox://styles/pheebely/cldbvauu7004w01mfrzvptq6r',
 center: home,
-zoom: 14.5,
+zoom: 15,
 minZoom: 7,
 maxZoom: 18,
 pitch: 40, // pitch in degrees
@@ -94,7 +94,7 @@ showUserHeading: true
 // Add home button to fly to home
 const homePosition = {
     center: home,
-    zoom: 14.5,
+    zoom: 15,
     pitch: 40,
     bearing: 0
 };
@@ -395,7 +395,7 @@ map.setStyle('mapbox://styles/' + layerId);
           link.href = '#';
           link.className = 'title';
           link.id = `link-${attraction.properties.Number}`;
-          link.innerHTML = `${attraction.properties.Number}&period; ${attraction.properties.Name}&nbsp;&nbsp;`;
+          link.innerHTML = `<span class="pin"><img src="/images/location-pin-solid-list.svg" width="20"><span class="pinTitle">${attraction.properties.Number}&nbsp;&nbsp;&nbsp;</span></span> ${attraction.properties.Name}&nbsp;&nbsp;`;
 
           if (attraction.properties.MustSee){
             link.innerHTML += `${attraction.properties.MustSee}`
@@ -407,7 +407,7 @@ map.setStyle('mapbox://styles/' + layerId);
           details.className = 'details';
           details.innerHTML = `
           <ul>
-          <li><i><b><font color="#9f9f9f"><font size="1">${attraction.properties.Type}</font color></font size></b></i></li>
+          <li><i><b><font color="#9f9f9f"><font size="normal">${attraction.properties.Type}</font color></font size></b></i></li>
           <li>${attraction.properties.Address}</li>
           <li><i>${attraction.properties.Hours}</i>&nbsp;
           <a href=${attraction.properties.Website}><i class="fa-solid fa-link"></i></a></li></ul>`
@@ -562,7 +562,7 @@ map.setStyle('mapbox://styles/' + layerId);
         map.flyTo({
           center: currentFeature.geometry.coordinates,
           offset: [-150, -150],
-          zoom: 16
+          zoom: 16.5
         });
       }
 

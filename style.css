@@ -83,6 +83,14 @@ body { margin: 3% 0; padding: 0;
     color: #f1bc41;
 }
 
+.headerSubtitle h3 {
+    padding-top: 10px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+}
+
 .h2 {
     position: absolute;
     top: 130px;
@@ -117,10 +125,10 @@ body { margin: 3% 0; padding: 0;
 } */
 
 .About {
-    text-align: center;
+    margin: auto;
     width: 50%;
-    margin-left: 400px;
-    margin-top: 70px;
+    text-align: center;
+    /* margin-top: 70px; */
     font-family: 'Inter Tight', sans-serif;
     background-color: transparent;
 }
@@ -178,7 +186,6 @@ body { margin: 3% 0; padding: 0;
     align-items: center;
     border-radius: 4px;
     backdrop-filter: blur(8px);
-
 }
 
 A > IMG.lazyloaded:hover { -webkit-filter:sepia(0.5) hue-rotate(-30deg) saturate(1.2) contrast(0.8); filter:sepia(0.5) hue-rotate(-30deg) saturate(1.2) contrast(0.8) }
@@ -187,7 +194,7 @@ _:-ms-lang(x), A > IMG.lazyloaded:hover { -webkit-filter:none; filter:none }
 
 .container {
     position: relative;
-	top: 200px;
+	top: 150px;
     margin: auto;
     width: 75%;
 	display: flex;
@@ -202,6 +209,7 @@ section.right, section.left {
 section.right {
 	width: 35%;
     text-align: center;
+    margin-top: 30px;
 
 }
 
@@ -209,14 +217,14 @@ section.left {
 	width: 65%;
 }
 
-section.right h3 {
+section.right h2 {
 	width: calc(100% - 100px);
     margin-left: 50px;
 	line-height: 130%;
     text-align: center;
     font-family: 'Inter Tight', sans-serif;
-    font-weight: 300;
-    font-size: 1.4em;
+    font-weight: 700;
+    font-size: 22px;
     color: #000;
 }
 
@@ -239,8 +247,8 @@ section.right a.button {
     margin-top: 0px;
     margin-bottom: 20px;
     margin-right: 0px;
-    padding: 10px;
-    background-color: #d9d9d9;
+    padding: 13px;
+    background-color: #f1bc41;
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -258,7 +266,7 @@ section.right a.buttonLong {
     margin-bottom: 20px;
     margin-right: 0px;
     padding: 13px;
-    background-color: #d9d9d9;
+    background-color: #f1bc41;
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -272,7 +280,7 @@ section.right a.buttonLong {
 
 section.right a.button:hover,
 section.right a.buttonLong:hover {
-    background-color:#f1bc41;
+    background-color:#48a2b8;
     transition: 0.7s;
 }
 
@@ -292,16 +300,41 @@ section.right a.buttonLong:hover {
 	height: 100%;
 }
 
+.svg-container-resp {
+    display: none;
+    margin-top: 60px;
+    text-align: center;
 
-@media all and (max-width: 768px) {
-	section.right, section.left {
-		width: 100%
+}
+
+.svg-container-resp img {
+    width: 250px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+
+
+@media all and (max-width: 900px) {
+	section.right {
+		width: 100%;
+        margin-top: -50px;
+        text-align: center;
 	}
+
+    section.left {
+        width: 0;
+    }
 
 	section.right {
 		padding-left: 50px;
 		margin-bottom: 50px;
 	}
+
+    .svg-container-resp {
+        display: block;
+    }
 }
 
 /* Add a black background color to the top navigation */
@@ -345,6 +378,14 @@ section.right a.buttonLong:hover {
     display: none;
 }
 
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        margin-top: 30px;
+        grid-template-columns: 40% 40%;
+    }
+
+}
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -366,6 +407,30 @@ section.right a.buttonLong:hover {
     text-align: right;
     }
 }
+
+@media screen and (max-width: 700px) {
+
+    .headertitle h1, a {
+        font-size: 18px;
+      }
+
+    .grid-container {
+        margin-top: 30px;
+        margin-inline: 0px;
+        grid-template-columns: 100%;
+    }
+
+    .grid-item img {
+        width: 250px;
+
+    }
+
+    .citylist h2 {
+        font-size: 18px;
+    }
+
+}
+
 
 
 
