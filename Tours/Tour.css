@@ -244,7 +244,7 @@ margin-bottom: -13px;
     text-decoration: none;
     font-family: 'Inter Tight', sans-serif;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 /* Change the color of links on hover */
@@ -438,7 +438,8 @@ margin-bottom: -13px;
 
   .listings .item .details {
     padding-right: 0;
-    font-size: 12px;
+    font-size: 11.5px;
+    color: #252525;
   }
   
 

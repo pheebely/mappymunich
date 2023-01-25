@@ -95,8 +95,9 @@ body { margin: 3% 0; padding: 0; height: 100vh;
     padding-right: 5%;
     font-family: 'Inter Tight', sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.2;
+    color: #232323;
 }
 
 .h2 {
@@ -135,7 +136,7 @@ body { margin: 3% 0; padding: 0; height: 100vh;
 .About {
     margin: auto;
     margin-top: 10%;
-    width: 50%;
+    width: twothirds;
     text-align: center;
     /* margin-top: 70px; */
     font-family: 'Inter Tight', sans-serif;
@@ -377,10 +378,12 @@ section.right a.buttonLong:hover {
     /* background-color: rgba(188, 188, 188, 0.375); */
     overflow: hidden;
     display: flex;
+    margin-top: -30px;
     padding-right: 5%;
     justify-content: right;
     align-items: right;
     min-height: 40px;
+
 
 }
 
@@ -390,10 +393,11 @@ section.right a.buttonLong:hover {
     color: #797979;
     text-align: center;
     padding: 0px 1%;
+    padding-top: 5px;
     text-decoration: none;
     font-family: 'Inter Tight', sans-serif;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     z-index: 1;
 }
 
@@ -447,12 +451,20 @@ section.right a.buttonLong:hover {
 @media screen and (max-width: 700px) {
 
     .headertitle {
-        padding-bottom: 0;
+        padding-bottom: 8%;
     }
 
     .headertitle h1, a {
         font-size: 28px;
       }
+    
+    .topnav {
+        margin-top: 0px;
+    }
+
+    .About {
+        margin-top: 20%;
+    }
 
     .grid-container {
         margin-top: 30px;
