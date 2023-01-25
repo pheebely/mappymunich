@@ -395,7 +395,7 @@ map.setStyle('mapbox://styles/' + layerId);
           link.href = '#';
           link.className = 'title';
           link.id = `link-${attraction.properties.Number}`;
-          link.innerHTML = `<span class="pin"><img src="/images/location-pin-solid-list.svg" width="20"><span class="pinTitle">${attraction.properties.Number}&nbsp;&nbsp;&nbsp;</span></span> ${attraction.properties.Name}&nbsp;&nbsp;`;
+          link.innerHTML = `<span class="pin"><img src="../images/location-pin-solid-list.svg" width="20"><span class="pinTitle">${attraction.properties.Number}&nbsp;&nbsp;&nbsp;</span></span> ${attraction.properties.Name}&nbsp;&nbsp;`;
 
           if (attraction.properties.MustSee){
             link.innerHTML += `${attraction.properties.MustSee}`
