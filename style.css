@@ -1,4 +1,4 @@
-body { margin: 3% 0; padding: 0; height: 100vh;
+body { margin: 3% 0; padding: 0; height: 90vh;
     /* background-image: url("images/background-index.svg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -230,6 +230,30 @@ margin-left: 0;
  margin-top: 30px;
 }
 
+#Pins > path {
+    animation-name: pinsBounce;
+	animation-duration: 3s; 
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-delay: 1s;
+	transform-origin: bottom;
+}
+
+@keyframes pinsBounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-7px);
+    }
+    60% {
+      transform: translateY(-3px);
+    }
+  }
 
 .container {
     position: relative;
