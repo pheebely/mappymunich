@@ -63,7 +63,7 @@ const config = {
         'Bus Stop',
         'Tram Stop',
         'Subway Station',
-        'Railway Station'
+        'Train Station'
       ],
     },
     {

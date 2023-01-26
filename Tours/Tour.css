@@ -230,6 +230,7 @@ margin-bottom: -13px;
 .topnav {
     overflow: hidden;
     height: 35px;
+    padding-right: 10px;
     margin-right: 0px;
     min-height: 30px;
 }
@@ -243,7 +244,7 @@ margin-bottom: -13px;
     padding: 8px 0.5%;
     text-decoration: none;
     font-family: 'Inter Tight', sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -277,7 +278,7 @@ margin-bottom: -13px;
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
     position: absolute;
-    right: 38%;
+    right: 28%;
     top: 0;
     }
     .topnav.responsive a {
@@ -381,6 +382,7 @@ margin-bottom: -13px;
 }
 
 @media screen and (max-width: 415px) {
+
   .mapLegend {
     width: 660%;
   }
@@ -390,10 +392,14 @@ margin-bottom: -13px;
     left: 10px;
   }
 
-
 }
 
+@media screen and (max-width: 375px) {
+  #map {
+    height: 94%;
+  }
 
+}
 
 
 /* Style for attractions list */
