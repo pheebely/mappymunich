@@ -1,12 +1,12 @@
 body { margin: 3% 0; padding: 0; height: 100vh;
-    /* background-image: url("images/Picture\ 1.png");
+    /* background-image: url("images/background-index.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: top;
-    background-blend-mode: lighten; */
-    }
-
+    background-blend-mode: lighten;
+     */
+}
 
 #map { position: absolute; top:15%; left: 6%; width: 88vw; height: 100%;}
 
@@ -215,20 +215,37 @@ A > IMG.lazyloaded:hover { -webkit-filter:sepia(0.5) hue-rotate(-30deg) saturate
 /* Internet Explorer 10+, Microsoft Edge Browser */
 _:-ms-lang(x), A > IMG.lazyloaded:hover { -webkit-filter:none; filter:none }
 
+.img-container {
+ position: absolute;
+ display: block;
+ width: 100%;
+height: 85%;
+margin-top: 4%;
+margin-left: 0;
+}   
+
+.img-container svg {
+ width: 100%;
+ margin-left: -40px;
+ margin-top: 30px;
+}
+
+
 .container {
     position: relative;
-	top: 150px;
+	top: 280px;
     margin: auto;
-    width: 70%;
+    width: 100%;
     height: 55%;
 	display: flex;
-    /* background-color: #75a895; */
+    z-index: 1;
 }
 
 section.right, section.left {
 	display: inline-block;
 	position: relative;
 	margin-bottom: 80px;
+
 }
 
 section.right {
@@ -241,7 +258,32 @@ section.left {
 	width: 65%;
     padding: 0;
     margin: 0;
+    margin-left: -50px;
     text-align: center;
+}
+
+section.left h2 {
+	width: calc(100% - 100px);
+    margin-left: 50px;
+	line-height: 100%;
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #000;
+}
+
+section.left p {
+	width: calc(100% - 100px);
+	margin-left: 50px;
+    margin-top: 8px;
+	line-height: 155%;
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    color: #48a2b8;
 }
 
 section.right h2 {
@@ -269,9 +311,9 @@ section.right p {
 }
 
 
-section.right a.button {
+section.right a.button, section.left a.button {
     display: inline-block;
-    width: 25%;
+    width: 15%;
     margin-top: 0px;
     margin-bottom: 20px;
     margin-right: 0px;
@@ -287,9 +329,9 @@ section.right a.button {
     color: #000;
 }
 
-section.right a.buttonLong {
+section.right a.buttonLong, section.left a.buttonLong {
     display: inline-block;
-    width: fit-content;
+    width: 15%;
     margin-top: 0px;
     margin-bottom: 20px;
     margin-right: 0px;
@@ -306,8 +348,8 @@ section.right a.buttonLong {
 
 }
 
-section.right a.button:hover,
-section.right a.buttonLong:hover {
+section.right a.button:hover,section.left a.button:hover,
+section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     background-color:#48a2b8;
     transition: 0.7s;
 }
@@ -346,19 +388,22 @@ section.right a.buttonLong:hover {
 
 
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1100px) {
 
     .container {
         top: 30px;
     }
 	section.right {
-		width: 100%;
+		width: 0%;
         margin-left: -50px;
         text-align: center;
 	}
 
     section.left {
-        width: 0;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 50px;
+
     }
 
 	section.right {
@@ -371,6 +416,32 @@ section.right a.buttonLong:hover {
         margin-top: 40px;
         
     }
+
+    .img-container svg {
+        display: none;
+       }
+}
+
+@media all and (max-height: 600px) {
+    .container {
+        height: 30%;
+    }
+
+    section.left p, section.left h2{
+        line-height: 50%;
+    }
+
+    section.right a.buttonLong, section.left a.buttonLong, section.right a.button, section.left a.button {
+        padding: 10px;
+        width: fit-content;
+        
+    }
+}
+
+@media all and (max-width: 1400px) {
+    .img-container {
+        margin-top: 90px;
+       }
 }
 
 @media all and (max-width: 400px) {
