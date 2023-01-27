@@ -339,12 +339,14 @@ margin-bottom: -13px;
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px),
+screen {
 
     #map {
       left: 0%;
       width: 100%;
       height: 96%;
+      left: 0;
     }
 
     .sidebar {
@@ -377,6 +379,7 @@ margin-bottom: -13px;
       width: 250%;
     }
 }
+
 
 
 @media screen and (max-height: 800px),
@@ -428,12 +431,21 @@ screen and (max-width: 1400)
     left: 10px;
   }
 
+  #map {
+    width: 100%;
+    left: 0;
+  }
+
+
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-height: 390px) {
   #map {
-    height: 94%;
+    height: 90%;
+    width: 100%;
+    left: 0;
   }
+
 
 }
 

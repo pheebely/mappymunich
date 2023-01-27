@@ -542,6 +542,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 }
 
 @media all and (max-width: 420px) {
+
     .svg-container-resp img {
     display: flex;
       width: 30%;
@@ -552,6 +553,10 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 
     section.left p, section.left h2{
         line-height: 1.5;
+    }
+
+    .grid-container {
+        padding: 30px;
     }
 }
 
