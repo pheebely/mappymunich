@@ -402,6 +402,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 .svg-container-resp {
     display: none;
     text-align: center;
+    padding: 30px;
 
 }
 
@@ -409,7 +410,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     text-align: center;
     vertical-align: middle;
     border-radius: 10px;
-    margin-top: 0;
+    width: 80%;
 
 }
 
@@ -453,8 +454,14 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     .svg-container-resp {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
         
+    }
+    
+    .svg-container-resp img {
+        display: flex;
+      text-align: center;
+      justify-content: center;
+
     }
 
     .img-container svg {
@@ -521,9 +528,14 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 }
 
 @media all and (max-width: 1024px){
+
+    .headertitle {
+        padding-bottom: 4%;
+    }
+
     section.left p, section.left h2{
         line-height: 10%;
-        font-size: large;
+        font-size: medium;
     }
 
     section.right a.buttonLong, section.left a.buttonLong, section.right a.button, section.left a.button {
@@ -543,9 +555,15 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 
 @media all and (max-width: 420px) {
 
+    .svg-container-resp {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }
+
     .svg-container-resp img {
     display: flex;
-      width: 110px;
       text-align: center;
       justify-content: center;
 
@@ -667,6 +685,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
         font-size: 18px;
     }
 
+    
 
 }
 
