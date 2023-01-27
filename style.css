@@ -462,7 +462,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
         display: flex;
       text-align: center;
       justify-content: center;
-      padding-bottom: 15px;
+      padding-bottom: 0px;
 
     }
 
