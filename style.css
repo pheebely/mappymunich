@@ -453,7 +453,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     .svg-container-resp {
         display: flex;
         justify-content: center;
-        margin-top: 40px;
+        margin-top: 20px;
         
     }
 
@@ -545,7 +545,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 
     .svg-container-resp img {
     display: flex;
-      width: 30%;
+      width: 110px;
       text-align: center;
       justify-content: center;
 

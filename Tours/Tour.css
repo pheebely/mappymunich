@@ -266,7 +266,7 @@ margin-bottom: -13px;
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
     float: right;
@@ -274,7 +274,7 @@ margin-bottom: -13px;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
     position: absolute;
@@ -339,8 +339,7 @@ margin-bottom: -13px;
 
 }
 
-@media screen and (max-width: 800px),
-screen {
+@media all and (max-width: 800px) {
 
     #map {
       left: 0%;
@@ -420,7 +419,7 @@ screen and (max-width: 1400)
   }
 }
 
-@media screen and (max-width: 415px) {
+@media all and (max-width: 415px) {
 
   .mapLegend {
     width: 660%;
@@ -439,7 +438,7 @@ screen and (max-width: 1400)
 
 }
 
-@media screen and (max-height: 390px) {
+@media all and (max-height: 390px) {
   #map {
     height: 90%;
     width: 100%;
