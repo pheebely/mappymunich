@@ -402,7 +402,8 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 .svg-container-resp {
     display: none;
     text-align: center;
-    padding: 30px;
+    padding-top: 20px;
+
 
 }
 
@@ -410,7 +411,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     text-align: center;
     vertical-align: middle;
     border-radius: 10px;
-    width: 80%;
+    width: 100%;
 
 }
 
