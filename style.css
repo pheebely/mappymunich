@@ -140,7 +140,7 @@ body { margin: 3% 0; padding: 0; height: 90vh;
 .About {
     margin: auto;
     margin-top: 10%;
-    width: twothirds;
+    width: 50%;
     text-align: center;
     /* margin-top: 70px; */
     font-family: 'Inter Tight', sans-serif;
@@ -151,7 +151,7 @@ body { margin: 3% 0; padding: 0; height: 90vh;
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: 500;
-    color: #48a2b8;
+    color: #000000;
 }
 
 .About p {
@@ -556,7 +556,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 }
 
 @media all and (max-width: 420px) {
-
+    
     .container {
         height: auto;
         padding-bottom: 10px;
@@ -583,6 +583,10 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 
     .grid-container {
         padding: 30px;
+    }
+
+    .About {
+        width: 100%;
     }
 }
 
