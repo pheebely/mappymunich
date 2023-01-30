@@ -485,7 +485,7 @@ map.setStyle('mapbox://styles/' + layerId);
 
               if (this.id === `link-${feature.properties.Number}`) {
                 flyToattraction(feature);
-                closePopUp(feature);
+                createPopUp(feature); //closePopup(feature)
 
             //Remove highlight for all other markers
             const activeMarker = document.getElementsByClassName('activeClick');
@@ -602,7 +602,7 @@ map.setStyle('mapbox://styles/' + layerId);
             <p>
             <font size= 1><i>Image Sources:&nbsp;${currentFeature.properties.imgsource}<br>
             Text Sources: Wikipedia, Muenchen.de, simplyMunich.
-            </i></font size>
+            <center><b>Click on the map or scroll back up to close!</center></b></i></font size>
             </p>`
           )
           .addTo(map);

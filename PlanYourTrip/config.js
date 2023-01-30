@@ -10,7 +10,7 @@ const config = {
   zoom: 11,
   title: 'MAPPY MUNICH',
   description:
-    'Accessible places in Munich, Germany. Use "Show Filter" option below to filter according to Amenity type. Once your selection is made, exit the filter window to view the map.',
+    'Accessible places in Munich, Germany. Use "Show Filter" option below to filter according to Amenity type. Once your selection is made, exit the filter window to view the map. ❗️❗️The map may take a few seconds to load❗️❗️',
   sideBarInfo: ['name', 'What','opening_hours'],
   popupInfo: ['name'],
   popupInfo2: ['website'],
@@ -20,9 +20,9 @@ const config = {
   filters: [
     {
       type: 'dropdown',
-      title: 'Toilet Accessibility: ',
+      title: 'Accessible Toilet (WC): ',
       columnHeader: 'toilets:wheelchair', // Case sensitive - must match spreadsheet entry
-      listItems: ['Fully Wheelchair Accessible', 'Partially Wheelchair Accessible','no'], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
+      listItems: ['Fully Wheelchair Accessible','no'], // Case sensitive - must match spreadsheet entry; This will take up to six inputs but is best used with a maximum of three;
     },
     {
       type: 'checkbox',
