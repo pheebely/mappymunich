@@ -1,27 +1,8 @@
 # mappingproject
-To open website you need these files:
+Mappy Munich is an online guide for tourists with limited mobility, that provides accessibility information for essential amenities and tourist attractions in the city center of Munich through interactive web maps.
 
-index.html -> Main page when website loads
+Webmaps created with Mapbox Studio and Mapbox GL JS.
 
-CityTours.html and CityTours.css -> Created CityTours page
+Sources: Mapbox GL JS, gpsMYCITY, OSM, Muenchen Tourismus, Muenchen.de
 
-About.html -> About page
-
-Hiking.html -> Copied code from CityTours and still needs to be updated for hiking routes only
-
-style.css -> still used as main style css
-
-mapbox.js -> main javascript for all mapbox related content
-
-Munich Intro Tour -> Tour_MunichIntro.html, Tour.css, mapbox_MunichIntro.js
-
-functionfilter.js -> function filter code for geojson layers (created by Zhenjiang)
-
-mapbox_copy.js -> used for scratch layer
-
-Mapbox_MappyMunich.html is deprecated and will be preserved as original script. Moving forward, it shall not be used for active website.
-
-
-Spatial Data files are located in the folder 'Original Data'. Formats include shapefile, geojson.
-
-Sources: MapBox, GPSMYCITY, OSM, City of Munich
+Created by: Phoebe Ly, Dilara Bozkurt, and Zhenjiang Li (Cartography MSc, Class of 2024)
