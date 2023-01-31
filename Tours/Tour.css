@@ -28,8 +28,9 @@ color: #000000;
 font-family: 'Inter Tight', sans-serif;
 font-size: 9px;
 padding: 4px 0;
-margin: 35px 0 0 0;
+margin: 33px 0 0 0;
 text-align: center;
+border-radius: 3px;
 }
 
 .sidebar h1 {
@@ -205,6 +206,7 @@ margin-bottom: -13px;
   position: absolute;
   top: 0;
   left: 45%;
+  padding-top: 1px;
   font-family: 'MuseoModerno', cursive;
   line-height: 0%;
   text-align: center;
@@ -229,10 +231,10 @@ margin-bottom: -13px;
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
-    height: 35px;
+    height: 25px;
     padding-right: 10px;
     margin-right: 0px;
-    min-height: 30px;
+    min-height: 25px;
 }
 
 /* Style the links inside the navigation bar */
@@ -308,6 +310,7 @@ margin-bottom: -13px;
   .heading {
     margin-top: 40px;
   }
+
 }
 
 @media screen and (max-width: 1400px) {
@@ -331,10 +334,6 @@ margin-bottom: -13px;
 
   .mapLegend ul {
     columns: 2;
-  }
-
-  .heading {
-    margin-top: 38px;
   }
 
 }
