@@ -6,4 +6,4 @@ Webmaps created with Mapbox Studio and Mapbox GL JS.
 
 Sources: Mapbox GL JS, gpsMYCITY, OSM, Muenchen Tourismus, Muenchen.de
 
-Created by: Phoebe Ly, Dilara Bozkurt, and Zhenjiang Li (Mapping Project for Cartography MSc, Class of 2024)
+Created by: Phoebe Ly, Dilara Bozkurt, and Zhenjiang Li (Mapping Project for Cartography MSc, 12th Intake)
