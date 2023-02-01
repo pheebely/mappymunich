@@ -587,6 +587,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 
     .grid-container {
         padding: 30px;
+	padding-bottom: 50px;
     }
 
     .About {
