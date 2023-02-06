@@ -409,9 +409,9 @@ screen and (max-width: 1400)
   .mapLegend {
     width: 230%;
   }
-  .mapLegend ul {
+/*   .mapLegend ul {
     columns: 2;
-  }
+  } */
 
   .legend {
     margin-top: -10px;
