@@ -348,7 +348,8 @@ margin-bottom: -13px;
     }
 
     .sidebar {
-      display: none;
+      position: relative;
+
     }
 
     .headertitle {
