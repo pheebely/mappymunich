@@ -57,19 +57,20 @@ body { margin: 3% 0; padding: 0; height: 90vh;
     font-family: 'MuseoModerno', cursive;
     font-weight: 200;
     font-size: 14px;
-    line-height: 60%;
+    line-height: 1;
     text-align: left;
     color:#000;
     padding-left: 5%;
-    padding-top: 1%;
+    padding-top: 15px;
     padding-bottom: 2%;
     max-height: 60px;
     background-color: #f1bc41;
+    vertical-align: middle;
     }
 
 .headertitle h1{
     font-weight: 200;
-    margin-bottom: 0px;
+    margin: 5px auto;
 }
 
 .headertitle a{
@@ -90,12 +91,22 @@ body { margin: 3% 0; padding: 0; height: 90vh;
 }
 
 .headerSubtitle h3 {
+    margin: 5px 0;
+}
+
+
+.headerSubtitle h3, .headerSubtitle-sm h3 {
 
     font-family: 'Inter Tight', sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.2;
     color: #232323;
+}
+
+.headerSubtitle-sm {
+    visibility: hidden;
+    padding: 10px;
 }
 
 .h2 {
@@ -251,7 +262,7 @@ text-align: center;
 
 .container {
     position: relative;
-	top: 275px;
+	top: 200px;
     margin: auto;
     width: 100%;
     height: 40%;
@@ -579,10 +590,6 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 	padding-bottom: 50px;
     }
 
-    .About {
-        width: 100%;
-        padding-bottom: 20%;
-    }
 }
 
 /* Add a black background color to the top navigation */
@@ -634,15 +641,14 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     display: none;
 }
 
+
 @media all and (max-width: 600px) {
+
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
     float: right;
     display: block;
     }
-}
-
-@media all and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
     position: absolute;
@@ -654,15 +660,8 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     display: block;
     text-align: right;
     }
-}
 
-@media all and (max-width: 700px) {
-
-
-    .headertitle h1, a {
-        font-size: 26px;
-      }
-    
+        
     .headerSubtitle h3 {
         font-size: 13px;
     }
@@ -670,8 +669,20 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
         margin-top: 0px;
     }
 
+
+    .headerSubtitle {
+        visibility: hidden;
+    }
+
+    .headerSubtitle-sm {
+        visibility: visible;
+
+        
+    }
+
     .About {
-        margin-top: 20%;
+        margin: 25% auto;
+        padding-bottom: 20%;
     }
 
     .grid-container {
@@ -693,9 +704,20 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
         font-size: 18px;
     }
 
+    .container {
+        height: fit-content;
+        line-height: 2;
+    }
+
     
+   section.left a.buttonLong, section.left a.button {
+        margin-top: 10px;
+        margin-bottom: 50px;
+
+    }
 
 }
+
 
 @media all and (max-width: 900px) {
     .grid-container {
