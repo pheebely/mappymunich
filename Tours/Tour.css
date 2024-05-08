@@ -343,12 +343,20 @@ margin-bottom: -13px;
     #map {
       left: 0%;
       width: 100%;
-      height: 96%;
+      height: 96vh;
       left: 0;
     }
 
+    .headerBanner {
+      position: absolute;
+      top: 0px;
+    }
+    
     .sidebar {
       position: relative;
+      margin-top: 96vh;
+      width: 100vw;
+      margin-bottom: evh;
 
     }
 
@@ -675,7 +683,7 @@ background: #f1bc41;
 .mapboxgl-popup{
     padding-bottom: 40px;
     margin-top: 10px;
-    width: 600px;
+    width: 400px;
     height: 300px;
 }
 
