@@ -61,8 +61,8 @@ body { margin: 3% 0; padding: 0; height: 90vh;
     text-align: left;
     color:#000;
     padding-left: 5%;
-    padding-top: 15px;
-    padding-bottom: 2%;
+    padding-top: 10px;
+    padding-bottom: 15px;
     max-height: 60px;
     background-color: #f1bc41;
     vertical-align: middle;
@@ -86,7 +86,6 @@ body { margin: 3% 0; padding: 0; height: 90vh;
 }
 
 .headerSubtitle {
-    padding-top: 5px;
     padding-right: 30%;
 }
 
@@ -98,7 +97,7 @@ body { margin: 3% 0; padding: 0; height: 90vh;
 .headerSubtitle h3, .headerSubtitle-sm h3 {
 
     font-family: 'Inter Tight', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.2;
     color: #232323;
