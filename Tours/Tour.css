@@ -349,8 +349,20 @@ margin-bottom: -13px;
       
     }
 
+    .mapLegend {
+      width: 660%;
+    }
+
+    .mapLegend ul {
+      columns: 2;
+    }
+
+    .legend {
+      margin-top: -10px;
+    }
+
     .coll-container {
-      bottom: 90px;
+      bottom: 70px;
       right: 10px;
     }
 
@@ -398,10 +410,6 @@ margin-bottom: -13px;
       padding: 2px 10px;
     }
     
-    .mapLegend {
-      margin-bottom: 0px;
-      width: 250%;
-    }
 
     .topnav a {
       padding-top: 4px;
