@@ -532,10 +532,6 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 
 @media all and (max-width: 1024px){
 
-    .headertitle {
-        padding-bottom: 4%;
-    }
-
     section.left p, section.left h2{
         line-height: 10%;
         font-size: medium;
@@ -614,7 +610,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     border: 2px solid #000;
     border-radius: 12px;
     text-align: center;
-    padding: 10px 15px;
+    padding: 9px 14px;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Inter Tight', sans-serif;
@@ -667,6 +663,10 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     }
     .topnav {
         margin-top: 0px;
+    }
+
+    .headertitle h1 {
+        margin: 10px auto;
     }
 
 
