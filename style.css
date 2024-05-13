@@ -686,7 +686,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     }
 
     .grid-container {
-        margin-top: 30px;
+        margin-top: 50px;
         margin-inline: 0px;
         grid-template-columns: 100%;
     }
@@ -700,10 +700,14 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 
     }
 
-    .citylist h2 {
+    .citylist {
         top: 8%;
+        margin-bottom: 10px;
+
+    }
+
+    .citylist h2 {
         font-size: 18px;
-        padding-top: 0;
     }
 
     .container {
@@ -730,7 +734,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 
 @media all and (max-width: 1200px) {
     .grid-container {
-        margin-top: 30px;
+        margin-top: 50px;
         grid-template-columns: auto;
     }
 
