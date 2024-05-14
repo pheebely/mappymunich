@@ -469,7 +469,9 @@ section.right a.buttonLong, section.left a.buttonLong {
 section.right a.button:hover,section.left a.button:hover,
 section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     background-color:#48a2b8;
-    transition: 0.7s;
+    transition: 0.3s;
+    border: 3px solid black;
+    color: #ffffff; 
 }
 
 
@@ -722,6 +724,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 
     .headerSubtitle-sm {
         visibility: visible;
+        padding: 10px 20px;
         
     }
 
@@ -778,7 +781,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     
    section.left a.buttonLong, section.left a.button {
         margin-top: 10px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
     }
 
