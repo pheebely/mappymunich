@@ -362,7 +362,7 @@ margin-bottom: -13px;
     }
 
     .coll-container {
-      bottom: 110px;
+      bottom: 90px;
       right: 10px;
     }
 
@@ -374,8 +374,7 @@ margin-bottom: -13px;
     }
     
     .sidebar {
-      position: relative;
-      margin-top: 91vh;
+      margin-top: 85vh;
       width: 100vw;
       margin-bottom: 1vh;
 
