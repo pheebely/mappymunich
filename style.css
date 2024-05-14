@@ -673,7 +673,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
         max-height: 53px;
     }
     .headertitlemain {
-        width: 65%;
+        width: 70%;
 
     }
 
@@ -694,7 +694,9 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     .topnav a {
         height: 14px;
         padding: 10px 10px;
-        margin: 5px;
+        margin: 7px;
+        border-width: 1px;
+        font-weight: 400;
     }
 
     .About {
