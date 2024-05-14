@@ -344,7 +344,7 @@ margin-bottom: -13px;
     #map {
       left: 0%;
       width: 100vw;
-      height: 70vh;
+      height: 72vh;
       top: 1%;
       
     }
@@ -362,7 +362,7 @@ margin-bottom: -13px;
     }
 
     .coll-container {
-      bottom: 70px;
+      bottom: 60px;
       right: 10px;
     }
 
@@ -375,7 +375,7 @@ margin-bottom: -13px;
     
     .sidebar {
       position: -webkit-sticky;
-      margin-top: 76vh;
+      margin-top: 78vh;
       width: 100vw;
       margin-bottom: 1%;
 
