@@ -344,7 +344,7 @@ margin-bottom: -13px;
     #map {
       left: 0%;
       width: 100vw;
-      height: 79vh;
+      height: 74vh;
       top: 1%;
       
     }
@@ -374,10 +374,10 @@ margin-bottom: -13px;
     }
     
     .sidebar {
-      position: relative;
-      margin-top: 85vh;
-      width: 100%;
-      margin-bottom: 1vh;
+      position: -webkit-sticky;
+      margin-top: 80vh;
+      width: 100vw;
+      margin-bottom: 1%;
 
     }
 
@@ -415,6 +415,12 @@ margin-bottom: -13px;
     .topnav a {
       padding-top: 4px;
   }
+
+  .mapboxgl-popup .mapboxgl-popup-content h3 {
+    padding-left: 0;
+
+  }
+
 }
 
 
@@ -644,8 +650,8 @@ background: #f1bc41;
 .mapboxgl-popup{
     padding-bottom: 40px;
     margin-top: 10px;
-    width: 400px;
-    height: 300px;
+    width: 38vw;
+    height: 38vh;
 }
 
 
@@ -671,17 +677,17 @@ background: #f1bc41;
     overflow-wrap: break-word;
     overflow-y: scroll;
     font: 400 12px/11px 'Inter Tight', sans-serif;
-    padding: 0;
-    padding-bottom: 5px;
+    padding: 0px 0px 5px 0px;
     margin-top: 10px;
     margin: 0 0 10px;
     width: 220%;
     height: 120%;
+    z-index: 2;
 }
 
 .mapboxgl-popup-content h3 {
     position: fixed;
-    width: 213%;
+    width: 212%;
     background: #f1bc41;
     color: #000;
     margin-top: 0;
