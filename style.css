@@ -2,6 +2,23 @@ body { margin: 3% 0; padding: 0; height: 90vh;
 
 }
 
+p {
+    font-family: 'Din Pro Medium', sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+
+}
+
+a {
+    color: #48a2b8;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #f1bc41;
+}
+
 #map { position: absolute; top:15%; left: 6%; width: 88vw; height: 100%;}
 
 #menu {
@@ -49,12 +66,22 @@ body { margin: 3% 0; padding: 0; height: 90vh;
         background: #75a895;
         }
 
+footer {
+
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 5px;
+    background-color: #ffffff;
+
+}
 
 .headertitle {
     position: absolute;
     display: flex;
     top: 0;
-    width: 100%;
+    width: 100vw;
     font-family: 'MuseoModerno', cursive;
     font-weight: 200;
     font-size: 14px;
@@ -66,10 +93,12 @@ body { margin: 3% 0; padding: 0; height: 90vh;
     padding-bottom: 15px;
     background-color: #f1bc41;
     vertical-align: middle;
+    align-items: center;
+    column-gap: 5px;
     }
 
     .headertitlemain {
-        width: 85%;
+        width: 80vw;
     }
 
 .headertitle h1{
@@ -111,6 +140,58 @@ body { margin: 3% 0; padding: 0; height: 90vh;
     visibility: hidden;
     padding: 10px;
 }
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    /* background-color: rgba(188, 188, 188, 0.375); */
+    width: 10vw;
+    overflow: hidden;
+    display: flex;
+    margin: 10px 10px;
+    justify-content: right;
+    align-items: right;
+    min-height: 40px;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #000;
+    background-color: #f1bc41;
+    border: 2px solid #000;
+    border-radius: 12px;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #48a2b8;
+    color: #ffffff;
+    transition: 0.7s;
+}
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+    background-color: #d4d1c7;
+    color: rgb(93, 93, 93);
+} */
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
 
 .h2 {
     position: absolute;
@@ -191,7 +272,7 @@ body { margin: 3% 0; padding: 0; height: 90vh;
     align-self: center;
   }
 
-  .grid-item h3,a {
+  .grid-item h3, .grid-item a {
     font-family: 'Inter Tight', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -591,56 +672,6 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
 
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-    /* background-color: rgba(188, 188, 188, 0.375); */
-    overflow: hidden;
-    display: flex;
-    margin: 10px 10px;
-    padding-right: 5%;
-    justify-content: right;
-    align-items: right;
-    min-height: 40px;
-
-
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: right;
-    color: #000;
-    background-color: #f1bc41;
-    border: 2px solid #000;
-    border-radius: 12px;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Inter Tight', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    z-index: 1;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #48a2b8;
-    color: #ffffff;
-    transition: 0.7s;
-}
-
-/* Add a color to the active/current link */
-/* .topnav a.active {
-    background-color: #d4d1c7;
-    color: rgb(93, 93, 93);
-} */
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-
 
 @media all and (max-width: 600px) {
 
@@ -665,15 +696,18 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     .headerSubtitle h3 {
         font-size: 13px;
     }
-    .topnav {
-        margin-top: 0px;
-    }
+
 
     .headertitle {
         max-height: 53px;
+        padding-top: 15px;
+        padding-bottom: 10px;
     }
+
     .headertitlemain {
-        width: 70%;
+        width: 65%;
+        padding-top: 55px;
+
 
     }
 
@@ -689,6 +723,12 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     .headerSubtitle-sm {
         visibility: visible;
         
+    }
+
+    .topnav {
+        margin-top: 0px;
+        width: 30%;
+        justify-content: left;
     }
 
     .topnav a {
@@ -711,7 +751,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
         grid-template-columns: 100%;
     }
 
-    .grid-item h3, a {
+    .grid-item h3,.grid-item a {
         font-size: medium;
     }
 
