@@ -281,7 +281,7 @@ margin-bottom: -13px;
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
     position: absolute;
-    right: 22%;
+    right: 28%;
     top: 0;
     }
     .topnav.responsive a {
@@ -344,7 +344,7 @@ margin-bottom: -13px;
     #map {
       left: 0%;
       width: 100vw;
-      height: 74vh;
+      height: 70vh;
       top: 1%;
       
     }
@@ -362,7 +362,7 @@ margin-bottom: -13px;
     }
 
     .coll-container {
-      bottom: 90px;
+      bottom: 70px;
       right: 10px;
     }
 
@@ -375,7 +375,7 @@ margin-bottom: -13px;
     
     .sidebar {
       position: -webkit-sticky;
-      margin-top: 80vh;
+      margin-top: 76vh;
       width: 100vw;
       margin-bottom: 1%;
 
