@@ -265,19 +265,21 @@ footer {
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px;
-    font-size: 20px;
+    background-color: #f1bc412c;
     text-align: center;
-    align-self: center;
+    background: linear-gradient(#f1bc416e 45%, #48a2b855 100%);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 25px 10px -10px rgba(0, 0, 0, 0.094);
+    opacity: 0.85;
   }
 
   .grid-item h3, .grid-item a {
     font-family: 'Inter Tight', sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
+    letter-spacing: 1.1px;
     color: #48a2b8;
-    text-align: center;
     text-decoration: none;
     margin-top: 5px;
 }
@@ -359,17 +361,11 @@ text-align: center;
     z-index: 1;
 }
 
-section.right, section.left {
+section.left {
 	display: inline-block;
 	position: relative;
 	margin-bottom: 80px;
 
-}
-
-section.right {
-	width: 35%;
-    text-align: center;
-    margin-top: 30px;
 }
 
 section.left {
@@ -404,32 +400,7 @@ section.left p {
     color: #48a2b8;
 }
 
-section.right h2 {
-	width: calc(100% - 100px);
-    margin-left: 50px;
-	line-height: 130%;
-    text-align: center;
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    color: #000;
-}
-
-section.right p {
-	width: calc(100% - 100px);
-	margin-left: 50px;
-    margin-top: 8px;
-	line-height: 155%;
-    text-align: center;
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 500;
-    font-size: 0.9em;
-    letter-spacing: 1.5px;
-    color: #48a2b8;
-}
-
-
-section.right a.button, section.left a.button {
+section.left a.button {
     display: inline-block;
     width: 18%;
     margin-top: 0px;
@@ -444,30 +415,11 @@ section.right a.button, section.left a.button {
     text-decoration: none;
     font-size: 0.7em;
     font-weight: 700;
+    letter-spacing: 1.1px;
     color: #000;
 }
 
-section.right a.buttonLong, section.left a.buttonLong {
-    display: inline-block;
-    width: 18%;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    padding: 13px;
-    background-color: #f1bc41;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    font-family: 'Inter Tight', sans-serif;
-    text-decoration: none;
-    font-size: 0.7em;
-    font-weight: 700;
-    color: #000;
-
-}
-
-section.right a.button:hover,section.left a.button:hover,
-section.right a.buttonLong:hover, section.left a.buttonLong:hover {
+section.left a.button:hover {
     background-color:#48a2b8;
     transition: 0.3s;
     border: 3px solid black;
@@ -573,7 +525,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
         line-height: 30%;
     }
 
-    section.right a.buttonLong, section.left a.buttonLong, section.right a.button, section.left a.button {
+    section.left a.button {
         padding: 10px;
         width: fit-content;
         
@@ -628,7 +580,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
         font-size: medium;
     }
 
-    section.right a.buttonLong, section.left a.buttonLong, section.right a.button, section.left a.button {
+    section.left a.button {
         padding: 10px;
         width: fit-content;
         
@@ -779,7 +731,7 @@ section.right a.buttonLong:hover, section.left a.buttonLong:hover {
     }
 
     
-   section.left a.buttonLong, section.left a.button {
+   section.left a.button {
         margin-top: 10px;
         margin-bottom: 30px;
 
