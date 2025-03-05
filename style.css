@@ -265,9 +265,8 @@ footer {
 }
 
 .grid-item {
-    background-color: #f1bc412c;
+    background-color: #f1bc413b;
     text-align: center;
-    background: linear-gradient(#f1bc416e 45%, #48a2b855 100%);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 25px 10px -10px rgba(0, 0, 0, 0.094);
