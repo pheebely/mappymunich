@@ -561,9 +561,10 @@ function addMarkers() {
       listing.classList.add("active");
       // Scroll to the clicked item smoothly
       setTimeout(() => {
-        listing.scrollIntoView({
+        const parentDiv = listing.parentElement; // Get the scrollable container
+        parentDiv.scrollTo({
+          top: listing.offsetTop - parentDiv.offsetTop, // Moves item to the top
           behavior: "smooth",
-          block: "start",
         });
       }, 100);
 
