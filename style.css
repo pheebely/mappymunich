@@ -226,7 +226,8 @@ footer {
 
 
 .About {
-    margin: 8% 30px;
+    max-width: 640px;
+    margin: 8% auto;
     padding-bottom: 10%;
     text-align: center;
     font-family: 'Inter Tight', sans-serif;
@@ -255,8 +256,8 @@ footer {
     display: grid;
     margin-top: 100px;
     margin-inline: 110px;
-    column-gap: 2%;
-    row-gap: 15px;
+    column-gap: 2rem;
+    row-gap: 2rem;
     grid-template-columns: 370px 370px 370px;
     padding: 50px;
     padding-top: 65px;
@@ -265,7 +266,7 @@ footer {
 }
 
 .grid-item {
-    background-color: #f1bc413b;
+    background-color: #fcf8ed;
     text-align: center;
     padding: 1.5rem;
     border-radius: 8px;
@@ -277,23 +278,37 @@ footer {
     font-family: 'Inter Tight', sans-serif;
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 1.1px;
-    color: #48a2b8;
+    letter-spacing: 1.2px;
+    color: #000;
     text-decoration: none;
-    margin-top: 5px;
+    margin-top: 0px;
+    text-transform: uppercase;
 }
 
-.grid-item a:hover{
-    color: #f1bc41;
+.textmarker-effect {
+    background: linear-gradient(to bottom, #f1ede000 40%, #f1bc4164 50%, #f1bc419a 90%);
+    padding: 2px 3px 2px 0;
 
 }
+
+.textmarker-effect:hover {
+    color: #48a2b8;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #f1ede000 40%, #f1bc4189 50%, #ffc743b1 90%);
+    transition: all 0.5s;
+    padding-bottom: 4px;
+
+}
+
+
 .grid-item p {
     font-family: 'Inter Tight', sans-serif;
     font-weight: 300;
     font-size: 12px;
     word-wrap: break-word;
     text-align: left;
-    margin: 5px 25px;
+    margin: 10px 25px;
+    line-height: 1.5;
 }
 
 .grid-item img {
