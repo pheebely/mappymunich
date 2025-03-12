@@ -29,7 +29,6 @@ font-size: 9px;
 padding: 4px 0;
 margin: 33px 0 0 0;
 text-align: center;
-border-radius: 3px;
 }
 
 .heading h1 {
@@ -320,7 +319,7 @@ margin-bottom: -13px;
     #map {
       left: 0%;
       width: 100vw;
-      height: 72vh;
+      height: 76vh;
       top: 1%;
       
     }
@@ -338,8 +337,8 @@ margin-bottom: -13px;
     }
 
     .coll-container {
-      bottom: 90px;
-      right: 10px;
+      bottom: 22%;
+      right: 0.3rem;
     }
 
     .headerBanner {
@@ -350,8 +349,8 @@ margin-bottom: -13px;
     }
     
     .sidebar {
-      position: -webkit-sticky;
-      margin-top: 78vh;
+      display: block;
+      margin-top: 81vh;
       width: 100vw;
       margin-bottom: 1%;
 
@@ -363,7 +362,7 @@ margin-bottom: -13px;
     }
 
     .headertitle {
-            text-align: left;
+      text-align: left;
       left: 10px;
       line-height: 0.4;
       padding-bottom: 0%;
