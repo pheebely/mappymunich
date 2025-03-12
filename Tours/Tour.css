@@ -319,7 +319,7 @@ margin-bottom: -13px;
     #map {
       left: 0%;
       width: 100vw;
-      height: 76vh;
+      height: 75vh;
       top: 1%;
       
     }
@@ -332,12 +332,8 @@ margin-bottom: -13px;
       columns: 2;
     }
 
-    .legend {
-      margin-top: -10px;
-    }
-
     .coll-container {
-      bottom: 22%;
+      bottom: 23%;
       right: 0.3rem;
     }
 
@@ -350,7 +346,7 @@ margin-bottom: -13px;
     
     .sidebar {
       display: block;
-      margin-top: 81vh;
+      margin-top: 77vh;
       width: 100vw;
       margin-bottom: 1%;
 
@@ -358,7 +354,7 @@ margin-bottom: -13px;
 
     .heading {
       padding: 8px;
-      margin: 0px;
+      margin-top: 30px;
     }
 
     .headertitle {
