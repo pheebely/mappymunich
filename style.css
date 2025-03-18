@@ -82,13 +82,9 @@ footer {
     display: flex;
     top: 0;
     width: 100vw;
-    font-family: 'MuseoModerno', cursive;
-    font-weight: 200;
-    font-size: 14px;
     line-height: 1;
     text-align: left;
     color:#000;
-    padding-left: 5%;
     padding-top: 10px;
     padding-bottom: 15px;
     background-color: #f1bc41;
@@ -99,6 +95,7 @@ footer {
 
     .headertitlemain {
         width: 80vw;
+        padding-left: 5%;
     }
 
 .headertitle h1{
@@ -108,10 +105,11 @@ footer {
 
 .headertitle a{
     text-decoration: none;
-    font-family: 'MuseoModerno', cursive;
-    font-weight: 200;
+    font-family: "Tilt Warp", sans-serif;
+    font-weight: 400;
     font-size: 28px;
     color: #000 ;
+    letter-spacing: 1.5px;
     }
 
 .headertitle a:hover{
@@ -673,7 +671,6 @@ section.left a.button:hover {
     }
 
     .headertitlemain {
-        width: 65%;
         padding-top: 55px;
 
 
