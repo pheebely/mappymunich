@@ -4,6 +4,9 @@
 
 #sidebarA h3{
     font-size: 24px;
+    font-family: "Tilt Warp", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
 }
 
 #sidebarA a:hover{
@@ -33,7 +36,6 @@
     padding-bottom: 5px;
     width: 15%;
     height: fit-content;
-    /* max-height: 500px; */
     border: 1px solid #eee;
     font-size: 12px;
     line-height: 1.2;
@@ -41,9 +43,6 @@
     background-color: rgba(255, 255, 255, 0.713);
     border-radius: 6px;
     backdrop-filter: blur(5px);
-    /* transition-property: max-height;
-    visibility: hidden;
-    transition: 300ms ease-in; */
 
   }
   
@@ -51,8 +50,6 @@
   list-style-type: none; /* Remove bullets */
   columns: 1;
   column-gap: 0px;
-  /* -moz-column-gap: 90px;
-  -webkit-column-gap: 90px; */
   -webkit-columns: 1;
   -moz-columns: 1;
   line-height: 1.6;

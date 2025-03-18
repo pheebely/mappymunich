@@ -1,17 +1,17 @@
 /* global config csv2geojson turf Assembly $ */
-'use strict';
+"use strict";
 
 mapboxgl.accessToken = config.accessToken;
 const columnHeaders = config.sideBarInfo;
 
 let geojsonData = {};
 const filteredGeojson = {
-  type: 'FeatureCollection',
+  type: "FeatureCollection",
   features: [],
 };
 
 const map = new mapboxgl.Map({
-  container: 'map',
+  container: "map",
   style: config.style,
   center: config.center,
   zoom: config.zoom,
@@ -27,7 +27,7 @@ function flyToLocation(currentFeature) {
 }
 
 function createPopup(currentFeature) {
-  const popups = document.getElementsByClassName('mapboxgl-popup');
+  const popups = document.getElementsByClassName("mapboxgl-popup");
   /** Check if there is already a popup on the map and if so, remove it */
   if (popups[0]) popups[0].remove();
 
@@ -36,79 +36,99 @@ function createPopup(currentFeature) {
   // .setHTML('<h3>'+ currentFeature.properties[config.popupInfo]+'</h3>' + '<p>' + currentFeature.properties[config.popupInfo4] + '</p>' + '<p>' + currentFeature.properties[config.popupInfo3] + '</p>'+ '<p><a href=' + currentFeature.properties[config.popupInfo2] + '><i class="fa-solid fa-link"></a></p>')
   // .addTo(map);
 
-
   if (currentFeature.properties[config.popupInfo2]) {
     new mapboxgl.Popup({ closeOnClick: true })
-    .setLngLat(currentFeature.geometry.coordinates)
-    .setHTML('<h3>'+ currentFeature.properties[config.popupInfo]+'</h3>' + '<p>' + currentFeature.properties[config.popupInfo4] + '</p>' + '<p>' + currentFeature.properties[config.popupInfo3] + '</p>' + '<p><a href=' + currentFeature.properties[config.popupInfo2] + '><i class="fa-solid fa-link"></a></p>')
-    .addTo(map);
+      .setLngLat(currentFeature.geometry.coordinates)
+      .setHTML(
+        "<h3>" +
+          currentFeature.properties[config.popupInfo] +
+          "</h3>" +
+          "<p>" +
+          currentFeature.properties[config.popupInfo4] +
+          "</p>" +
+          "<p>" +
+          currentFeature.properties[config.popupInfo3] +
+          "</p>" +
+          "<p><a href=" +
+          currentFeature.properties[config.popupInfo2] +
+          '><i class="fa-solid fa-link"></a></p>'
+      )
+      .addTo(map);
   } else {
     new mapboxgl.Popup({ closeOnClick: true })
-    .setLngLat(currentFeature.geometry.coordinates)
-    .setHTML('<h3>'+ currentFeature.properties[config.popupInfo]+'</h3>' + '<p>' + currentFeature.properties[config.popupInfo4] + '</p>' + '<p>' + currentFeature.properties[config.popupInfo3] + '</p>')
-    .addTo(map);
+      .setLngLat(currentFeature.geometry.coordinates)
+      .setHTML(
+        "<h3>" +
+          currentFeature.properties[config.popupInfo] +
+          "</h3>" +
+          "<p>" +
+          currentFeature.properties[config.popupInfo4] +
+          "</p>" +
+          "<p>" +
+          currentFeature.properties[config.popupInfo3] +
+          "</p>"
+      )
+      .addTo(map);
   }
-
-  
 }
 
 function buildLocationList(locationData) {
   /* Add a new listing section to the sidebar. */
-  const listings = document.getElementById('listings');
-  listings.innerHTML = '';
+  const listings = document.getElementById("listings");
+  listings.innerHTML = "";
   locationData.features.forEach((location, i) => {
     const prop = location.properties;
 
-    const listing = listings.appendChild(document.createElement('div'));
+    const listing = listings.appendChild(document.createElement("div"));
     /* Assign a unique `id` to the listing. */
-    listing.id = 'listing-' + prop.id;
+    listing.id = "listing-" + prop.id;
 
     /* Assign the `item` class to each listing for styling. */
-    listing.className = 'item';
+    listing.className = "item";
 
     /* Add the link to the individual listing created above. */
-    const link = listing.appendChild(document.createElement('button'));
-    link.className = 'title';
-    link.id = 'link-' + prop.id;
+    const link = listing.appendChild(document.createElement("button"));
+    link.className = "title";
+    link.id = "link-" + prop.id;
     link.innerHTML =
-      '<p style="line-height: 1">' + prop[columnHeaders[0]] +'</p>';
+      '<p style="line-height: 1">' + prop[columnHeaders[0]] + "</p>";
 
     /* Add details to the individual listing. */
-    const details = listing.appendChild(document.createElement('div'));
-    details.className = 'content';
+    const details = listing.appendChild(document.createElement("div"));
+    details.className = "content";
 
     for (let i = 1; i < columnHeaders.length; i++) {
-      const div = document.createElement('div');
+      const div = document.createElement("div");
       div.innerText += prop[columnHeaders[i]];
       div.className;
       details.appendChild(div);
     }
 
-    link.addEventListener('click', function () {
+    link.addEventListener("click", function () {
       const clickedListing = location.geometry.coordinates;
       flyToLocation(clickedListing);
       createPopup(location);
 
-      const activeItem = document.getElementsByClassName('active');
+      const activeItem = document.getElementsByClassName("active");
       if (activeItem[0]) {
-        activeItem[0].classList.remove('active');
+        activeItem[0].classList.remove("active");
       }
-      this.parentNode.classList.add('active');
+      this.parentNode.classList.add("active");
 
-      const divList = document.querySelectorAll('.content');
+      const divList = document.querySelectorAll(".content");
       const divCount = divList.length;
       for (i = 0; i < divCount; i++) {
         divList[i].style.maxHeight = null;
       }
 
       for (let i = 0; i < geojsonData.features.length; i++) {
-        this.parentNode.classList.remove('active');
-        this.classList.toggle('active');
+        this.parentNode.classList.remove("active");
+        this.classList.toggle("active");
         const content = this.nextElementSibling;
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
         } else {
-          content.style.maxHeight = content.scrollHeight + 'px';
+          content.style.maxHeight = content.scrollHeight + "px";
         }
       }
     });
@@ -121,23 +141,23 @@ function buildLocationList(locationData) {
 // listItems - the array of filter items
 
 function buildDropDownList(title, listItems) {
-  const filtersDiv = document.getElementById('filters');
-  const mainDiv = document.createElement('div');
-  const filterTitle = document.createElement('h3');
+  const filtersDiv = document.getElementById("filters");
+  const mainDiv = document.createElement("div");
+  const filterTitle = document.createElement("h3");
   filterTitle.innerText = title;
-  filterTitle.classList.add('py12', 'txt-bold');
+  filterTitle.classList.add("py12", "txt-bold");
   mainDiv.appendChild(filterTitle);
 
-  const selectContainer = document.createElement('div');
-  selectContainer.classList.add('select-container', 'center');
+  const selectContainer = document.createElement("div");
+  selectContainer.classList.add("select-container", "center");
 
-  const dropDown = document.createElement('select');
-  dropDown.classList.add('select', 'filter-option');
+  const dropDown = document.createElement("select");
+  dropDown.classList.add("select", "filter-option");
 
-  const selectArrow = document.createElement('div');
-  selectArrow.classList.add('select-arrow');
+  const selectArrow = document.createElement("div");
+  selectArrow.classList.add("select-arrow");
 
-  const firstOption = document.createElement('option');
+  const firstOption = document.createElement("option");
 
   dropDown.appendChild(firstOption);
   selectContainer.appendChild(dropDown);
@@ -146,7 +166,7 @@ function buildDropDownList(title, listItems) {
 
   for (let i = 0; i < listItems.length; i++) {
     const opt = listItems[i];
-    const el1 = document.createElement('option');
+    const el1 = document.createElement("option");
     el1.textContent = opt;
     el1.value = opt;
     dropDown.appendChild(el1);
@@ -160,46 +180,46 @@ function buildDropDownList(title, listItems) {
 // To DO: Clean up code - for every third checkbox, create a div and append new checkboxes to it
 
 function buildCheckbox(title, listItems) {
-  const filtersDiv = document.getElementById('filters');
-  const mainDiv = document.createElement('div');
-  const filterTitle = document.createElement('div');
-  const formatcontainer = document.createElement('div');
-  filterTitle.classList.add('center', 'flex-parent', 'py12', 'txt-bold');
+  const filtersDiv = document.getElementById("filters");
+  const mainDiv = document.createElement("div");
+  const filterTitle = document.createElement("div");
+  const formatcontainer = document.createElement("div");
+  filterTitle.classList.add("center", "flex-parent", "py12", "txt-bold");
   formatcontainer.classList.add(
-    'center',
-    'flex-parent',
-    'flex-parent--column',
-    'px3',
-    'flex-parent--space-between-main',
+    "center",
+    "flex-parent",
+    "flex-parent--column",
+    "px3",
+    "flex-parent--space-between-main"
   );
-  const secondLine = document.createElement('div');
+  const secondLine = document.createElement("div");
   secondLine.classList.add(
-    'center',
-    'flex-parent',
-    'py12',
-    'px3',
-    'flex-parent--space-between-main',
+    "center",
+    "flex-parent",
+    "py12",
+    "px3",
+    "flex-parent--space-between-main"
   );
   filterTitle.innerText = title;
   mainDiv.appendChild(filterTitle);
   mainDiv.appendChild(formatcontainer);
 
   for (let i = 0; i < listItems.length; i++) {
-    const container = document.createElement('label');
+    const container = document.createElement("label");
 
-    container.classList.add('checkbox-container');
+    container.classList.add("checkbox-container");
 
-    const input = document.createElement('input');
-    input.classList.add('px12', 'filter-option');
-    input.setAttribute('type', 'checkbox');
-    input.setAttribute('id', listItems[i]);
-    input.setAttribute('value', listItems[i]);
+    const input = document.createElement("input");
+    input.classList.add("px12", "filter-option");
+    input.setAttribute("type", "checkbox");
+    input.setAttribute("id", listItems[i]);
+    input.setAttribute("value", listItems[i]);
 
-    const checkboxDiv = document.createElement('div');
-    const inputValue = document.createElement('p');
+    const checkboxDiv = document.createElement("div");
+    const inputValue = document.createElement("p");
     inputValue.innerText = listItems[i];
-    checkboxDiv.classList.add('checkbox', 'mr6');
-    checkboxDiv.appendChild(Assembly.createIcon('check'));
+    checkboxDiv.classList.add("checkbox", "mr6");
+    checkboxDiv.appendChild(Assembly.createIcon("check"));
 
     container.appendChild(input);
     container.appendChild(checkboxDiv);
@@ -215,7 +235,7 @@ const checkboxFilters = [];
 
 function createFilterObject(filterSettings) {
   filterSettings.forEach((filter) => {
-    if (filter.type === 'checkbox') {
+    if (filter.type === "checkbox") {
       const keyValues = {};
       Object.assign(keyValues, {
         header: filter.columnHeader,
@@ -223,7 +243,7 @@ function createFilterObject(filterSettings) {
       });
       checkboxFilters.push(keyValues);
     }
-    if (filter.type === 'dropdown') {
+    if (filter.type === "dropdown") {
       const keyValues = {};
       Object.assign(keyValues, {
         header: filter.columnHeader,
@@ -235,10 +255,10 @@ function createFilterObject(filterSettings) {
 }
 
 function applyFilters() {
-  const filterForm = document.getElementById('filters');
+  const filterForm = document.getElementById("filters");
 
-  filterForm.addEventListener('change', function () {
-    const filterOptionHTML = this.getElementsByClassName('filter-option');
+  filterForm.addEventListener("change", function () {
+    const filterOptionHTML = this.getElementsByClassName("filter-option");
     const filterOption = [].slice.call(filterOptionHTML);
 
     const geojSelectFilters = [];
@@ -249,7 +269,7 @@ function applyFilters() {
     // filteredGeojson.features = [];
 
     filterOption.forEach((filter) => {
-      if (filter.type === 'checkbox' && filter.checked) {
+      if (filter.type === "checkbox" && filter.checked) {
         checkboxFilters.forEach((objs) => {
           Object.entries(objs).forEach(([, value]) => {
             if (value.includes(filter.value)) {
@@ -259,7 +279,7 @@ function applyFilters() {
           });
         });
       }
-      if (filter.type === 'select-one' && filter.value) {
+      if (filter.type === "select-one" && filter.value) {
         selectFilters.forEach((objs) => {
           Object.entries(objs).forEach(([, value]) => {
             if (value.includes(filter.value)) {
@@ -281,7 +301,7 @@ function applyFilters() {
           if (feature.properties[filter[0]].includes(filter[1])) {
             if (
               filteredGeojson.features.filter(
-                (f) => f.properties.id === feature.properties.id,
+                (f) => f.properties.id === feature.properties.id
               ).length === 0
             ) {
               filteredGeojson.features.push(feature);
@@ -308,7 +328,7 @@ function applyFilters() {
         let uniqueRemoveIds = [...new Set(removeIds)];
         uniqueRemoveIds.forEach(function (id) {
           const idx = filteredGeojson.features.findIndex(
-            (f) => f.properties.id === id,
+            (f) => f.properties.id === id
           );
           filteredGeojson.features.splice(idx, 1);
         });
@@ -327,7 +347,7 @@ function applyFilters() {
         if (
           selected === true &&
           filteredGeojson.features.filter(
-            (f) => f.properties.id === feature.properties.id,
+            (f) => f.properties.id === feature.properties.id
           ).length === 0
         ) {
           filteredGeojson.features.push(feature);
@@ -335,29 +355,29 @@ function applyFilters() {
       });
     }
 
-    map.getSource('locationData').setData(filteredGeojson);
+    map.getSource("locationData").setData(filteredGeojson);
     buildLocationList(filteredGeojson);
   });
 }
 
 function filters(filterSettings) {
   filterSettings.forEach((filter) => {
-    if (filter.type === 'checkbox') {
+    if (filter.type === "checkbox") {
       buildCheckbox(filter.title, filter.listItems);
-    } else if (filter.type === 'dropdown') {
+    } else if (filter.type === "dropdown") {
       buildDropDownList(filter.title, filter.listItems);
     }
   });
 }
 
 function removeFilters() {
-  const input = document.getElementsByTagName('input');
-  const select = document.getElementsByTagName('select');
+  const input = document.getElementsByTagName("input");
+  const select = document.getElementsByTagName("select");
   const selectOption = [].slice.call(select);
   const checkboxOption = [].slice.call(input);
   filteredGeojson.features = [];
   checkboxOption.forEach((checkbox) => {
-    if (checkbox.type === 'checkbox' && checkbox.checked === true) {
+    if (checkbox.type === "checkbox" && checkbox.checked === true) {
       checkbox.checked = false;
     }
   });
@@ -366,13 +386,13 @@ function removeFilters() {
     option.selectedIndex = 0;
   });
 
-  map.getSource('locationData').setData(geojsonData);
+  map.getSource("locationData").setData(geojsonData);
   buildLocationList(geojsonData);
 }
 
 function removeFiltersButton() {
-  const removeFilter = document.getElementById('removeFilters');
-  removeFilter.addEventListener('click', () => {
+  const removeFilter = document.getElementById("removeFilters");
+  removeFilter.addEventListener("click", () => {
     removeFilters();
   });
 }
@@ -391,7 +411,7 @@ const geocoder = new MapboxGeocoder({
 });
 
 function sortByDistance(selectedPoint) {
-  const options = { units: 'miles' };
+  const options = { units: "miles" };
   let data;
   if (filteredGeojson.features.length > 0) {
     data = filteredGeojson;
@@ -399,7 +419,7 @@ function sortByDistance(selectedPoint) {
     data = geojsonData;
   }
   data.features.forEach((data) => {
-    Object.defineProperty(data.properties, 'distance', {
+    Object.defineProperty(data.properties, "distance", {
       value: turf.distance(selectedPoint, data.geometry, options),
       writable: true,
       enumerable: true,
@@ -416,44 +436,44 @@ function sortByDistance(selectedPoint) {
     }
     return 0; // a must be equal to b
   });
-  const listings = document.getElementById('listings');
+  const listings = document.getElementById("listings");
   while (listings.firstChild) {
     listings.removeChild(listings.firstChild);
   }
   buildLocationList(data);
 }
 
-geocoder.on('result', (ev) => {
+geocoder.on("result", (ev) => {
   const searchResult = ev.result.geometry;
   sortByDistance(searchResult);
 });
 
-map.on('load', () => {
-  map.addControl(geocoder, 'top-right');
+map.on("load", () => {
+  map.addControl(geocoder, "top-right");
 
   map.addControl(
     new mapboxgl.GeolocateControl({
-    positionOptions: {
-    enableHighAccuracy: true
-    },
-    // When active the map will receive updates to the device's location as it changes.
-    trackUserLocation: true,
-    // Draw an arrow next to the location dot to indicate which direction the device is heading.
-    showUserHeading: true
+      positionOptions: {
+        enableHighAccuracy: true,
+      },
+      // When active the map will receive updates to the device's location as it changes.
+      trackUserLocation: true,
+      // Draw an arrow next to the location dot to indicate which direction the device is heading.
+      showUserHeading: true,
     })
-    )
+  );
 
   // Add zoom and rotation controls to the map.
   map.addControl(new mapboxgl.NavigationControl());
 
   // csv2geojson - following the Sheet Mapper tutorial https://www.mapbox.com/impact-tools/sheet-mapper
-  console.log('loaded');
+  console.log("loaded");
   $(document).ready(() => {
-    console.log('ready');
+    console.log("ready");
     $.ajax({
-      type: 'GET',
+      type: "GET",
       url: config.CSV,
-      dataType: 'text',
+      dataType: "text",
       success: function (csvData) {
         makeGeoJSON(csvData);
       },
@@ -469,9 +489,9 @@ map.on('load', () => {
     csv2geojson.csv2geojson(
       csvData,
       {
-        latfield: 'Latitude',
-        lonfield: 'Longitude',
-        delimiter: ',',
+        latfield: "Latitude",
+        lonfield: "Longitude",
+        delimiter: ",",
       },
       (err, data) => {
         data.features.forEach((data, i) => {
@@ -480,117 +500,122 @@ map.on('load', () => {
 
         geojsonData = data;
         // Add the the layer to the map
-        map.addSource('locationData', {
-          type: 'geojson',
+        map.addSource("locationData", {
+          type: "geojson",
           data: geojsonData,
           cluster: true,
           clusterMaxZoom: 18, // Max zoom to cluster points on
-          clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
-
-        })
-
-      },
+          clusterRadius: 50, // Radius of each cluster when clustering points (defaults to 50)
+        });
+      }
     );
 
     map.addLayer({
-      id: 'locationData',
-      type: 'circle',
-      source: 'locationData',
+      id: "locationData",
+      type: "circle",
+      source: "locationData",
 
       paint: {
-        'circle-radius': 5, // size of circles
-        'circle-color': '#3D2E5D', // color of circles
-        'circle-stroke-color': 'none',
-        'circle-stroke-width': 1,
-        'circle-opacity': 0,
+        "circle-radius": 5, // size of circles
+        "circle-color": "#3D2E5D", // color of circles
+        "circle-stroke-color": "none",
+        "circle-stroke-width": 1,
+        "circle-opacity": 0,
       },
     });
 
     map.addLayer({
-      id: 'clusters',
-      type: 'circle',
-      source: 'locationData',
-      filter: ['has', 'point_count'],
+      id: "clusters",
+      type: "circle",
+      source: "locationData",
+      filter: ["has", "point_count"],
       paint: {
         // Use step expressions (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-step)
         // with three steps to implement three types of circles:
         //   * Blue, 20px circles when point count is less than 100
         //   * Yellow, 30px circles when point count is between 100 and 750
         //   * Pink, 40px circles when point count is greater than or equal to 750
-        'circle-color': [
-          'step',
-          ['get', 'point_count'],
-          '#F7E8AA',
+        "circle-color": [
+          "step",
+          ["get", "point_count"],
+          "#F7E8AA",
           75,
-          '#F8DF7A',
+          "#F8DF7A",
           150,
-          '#FECC11',
+          "#FECC11",
           250,
-          '#E8B004'
+          "#E8B004",
         ],
-        'circle-radius': [
-          'step',
-          ['get', 'point_count'],
+        "circle-radius": [
+          "step",
+          ["get", "point_count"],
           15,
           75,
           25,
           150,
           35,
           250,
-          40
-        ]
-      }
+          40,
+        ],
+      },
     });
 
     map.addLayer({
-      id: 'cluster-count',
-      type: 'symbol',
-      source: 'locationData',
-      filter: ['has', 'point_count'],
+      id: "cluster-count",
+      type: "symbol",
+      source: "locationData",
+      filter: ["has", "point_count"],
       layout: {
-        'text-field': ['get', 'point_count_abbreviated'],
-        'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-        'text-size': 12
-      }
+        "text-field": ["get", "point_count_abbreviated"],
+        "text-font": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+        "text-size": 12,
+      },
     });
 
     map.addLayer({
-      id: 'unclustered-point',
-      type: 'circle',
-      source: 'locationData',
-      filter: ['!', ['has', 'point_count']],
+      id: "unclustered-point",
+      type: "circle",
+      source: "locationData",
+      filter: ["!", ["has", "point_count"]],
       paint: {
-        'circle-color': '#F7E8AA',
-        'circle-radius': [
-          "interpolate", ["linear"], ["zoom"],
+        "circle-color": "#F7E8AA",
+        "circle-radius": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
           // zoom is 5 (or less) -> circle radius will be 1px
-          15, 5,
+          15,
+          5,
           // zoom is 10 (or greater) -> circle radius will be 5px
-          18, 2.8
-      ],
-        'circle-stroke-width': [
-          "interpolate", ["linear"], ["zoom"],
+          18,
+          2.8,
+        ],
+        "circle-stroke-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
           // zoom is 5 (or less) -> circle radius will be 1px
-          15, 2,
+          15,
+          2,
           // zoom is 10 (or greater) -> circle radius will be 5px
-          18, 2
-      ],
-        'circle-stroke-color': '#48a2b8',
-        'circle-opacity': 0.75,
-      }
+          18,
+          2,
+        ],
+        "circle-stroke-color": "#48a2b8",
+        "circle-opacity": 0.75,
+      },
     });
 
-    map.on('mouseenter', 'clusters', () => {
-      map.getCanvas().style.cursor = 'pointer';
+    map.on("mouseenter", "clusters", () => {
+      map.getCanvas().style.cursor = "pointer";
     });
 
-    map.on('mouseleave', 'clusters', () => {
-      map.getCanvas().style.cursor = '';
+    map.on("mouseleave", "clusters", () => {
+      map.getCanvas().style.cursor = "";
     });
 
     // ATTENTION
     // The following code is fundamental for clustering function
-
 
     // map.on('click', 'clusters', (e) => {
     //   const features = map.queryRenderedFeatures(e.point, {
@@ -602,32 +627,30 @@ map.on('load', () => {
     //   // createPopup(features[0]);
     // });
 
-
-    map.on('click', 'clusters', (e) => {
+    map.on("click", "clusters", (e) => {
       const features = map.queryRenderedFeatures(e.point, {
-          layers: ['clusters']
+        layers: ["clusters"],
       });
       const clusterId = features[0].properties.cluster_id;
-      map.getSource('locationData').getClusterExpansionZoom(
-          clusterId,
-          (err, zoom) => {
-              if (err) return;
+      map
+        .getSource("locationData")
+        .getClusterExpansionZoom(clusterId, (err, zoom) => {
+          if (err) return;
 
-              map.easeTo({
-                  center: features[0].geometry.coordinates,
-                  zoom: zoom
-              });
-          }
-      );
-  });
+          map.easeTo({
+            center: features[0].geometry.coordinates,
+            zoom: zoom,
+          });
+        });
+    });
 
     // When a click event occurs on a feature in
     // the unclustered-point layer, open a popup at
     // the location of the feature, with
     // description HTML from its properties.
-    map.on('click', 'unclustered-point', (e) => {
+    map.on("click", "unclustered-point", (e) => {
       const features = map.queryRenderedFeatures(e.point, {
-        layers: ['unclustered-point'],
+        layers: ["unclustered-point"],
       });
       const clickedPoint = features[0].geometry.coordinates;
       flyToLocation(clickedPoint);
@@ -654,44 +677,42 @@ map.on('load', () => {
       //   .addTo(map);
     });
 
-    map.on('mouseenter', 'locationData', () => {
-      map.getCanvas().style.cursor = 'pointer';
+    map.on("mouseenter", "locationData", () => {
+      map.getCanvas().style.cursor = "pointer";
     });
 
-    map.on('mouseleave', 'locationData', () => {
-      map.getCanvas().style.cursor = '';
+    map.on("mouseleave", "locationData", () => {
+      map.getCanvas().style.cursor = "";
     });
     buildLocationList(geojsonData);
   }
 });
 
 // Modal - popup for filtering results
-const filterResults = document.getElementById('filterResults');
-const exitButton = document.getElementById('exitButton');
-const modal = document.getElementById('modal');
+const filterResults = document.getElementById("filterResults");
+const exitButton = document.getElementById("exitButton");
+const modal = document.getElementById("modal");
 
-filterResults.addEventListener('click', () => {
-  modal.classList.remove('hide-visually');
-  modal.classList.add('z5');
+filterResults.addEventListener("click", () => {
+  modal.classList.remove("hide-visually");
+  modal.classList.add("z5");
 });
 
-exitButton.addEventListener('click', () => {
-  modal.classList.add('hide-visually');
+exitButton.addEventListener("click", () => {
+  modal.classList.add("hide-visually");
 });
 
-const title = document.getElementById('title');
-title.innerHTML = `<h3><a href="../index.html">${config.title}</a></h3>`
-title.style.fontFamily = "MuseoModerno, cursive";
+const title = document.getElementById("title");
+title.innerHTML = `<h3><a href="../index.html">${config.title}</a></h3>`;
 
-const description = document.getElementById('description');
+const description = document.getElementById("description");
 description.innerText = config.description;
 
 function transformRequest(url) {
   const isMapboxRequest =
-    url.slice(8, 22) === 'api.mapbox.com' ||
-    url.slice(10, 26) === 'tiles.mapbox.com';
+    url.slice(8, 22) === "api.mapbox.com" ||
+    url.slice(10, 26) === "tiles.mapbox.com";
   return {
-    url: isMapboxRequest ? url.replace('?', '?pluginName=finder&') : url,
+    url: isMapboxRequest ? url.replace("?", "?pluginName=finder&") : url,
   };
-
 }
