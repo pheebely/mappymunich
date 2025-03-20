@@ -22,13 +22,14 @@ body { margin: 0; padding: 0;
 .heading {
 height: 30px;
 line-height: 60%;
-background-color: #f1bc41;
+background-color: #ffffff;
 color: #000000;
 font-family: 'Inter Tight', sans-serif;
 font-size: 9px;
 padding: 4px 0;
 margin: 33px 0 0 0;
 text-align: center;
+border-bottom: 3px solid #eeeeeeac;
 }
 
 .heading h1 {
@@ -174,7 +175,7 @@ margin-bottom: -13px;
   width: 100%;
   padding-bottom: 10px;
   top: 0;
-  background-color: rgb(238, 238, 238);
+  background-color: #f1bc41;
   z-index: 100;
   position: fixed;
 }
@@ -218,7 +219,7 @@ margin-bottom: -13px;
 .topnav a {
     float: right;
     margin-right: 5px;
-    color: #757575;
+    color: #272727;
     text-align: center;
     padding: 8px 0.5%;
     text-decoration: none;
@@ -230,7 +231,7 @@ margin-bottom: -13px;
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: transparent;
-    color: #f1bc41;
+    color: #4094a9;
     cursor: pointer;
 }
 
