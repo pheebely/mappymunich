@@ -1150,27 +1150,9 @@ function buildLocationList(attractions) {
     link.id = `link-${attraction.properties.Number}`;
     link.innerHTML = `<span class="pin"><img src="../images/location-pin-solid-list.svg" width="20"><span class="pinTitle">${attraction.properties.Number}&nbsp;&nbsp;&nbsp;</span></span> ${attraction.properties.Name}&nbsp;&nbsp;`;
 
-    // if (attraction.properties.wheelchair !== null) {
-    //   link.innerHTML += `${attraction.properties.wheelchair}&nbsp;&nbsp;`
-    // };
-    // if (attraction.properties.wc){
-    //   link.innerHTML += `${attraction.properties.wc}&nbsp;&nbsp;`
-    // };
-    // if (attraction.properties.parking){
-    //   link.innerHTML += `${attraction.properties.parking}&nbsp;&nbsp;`
-    // };
-    // if (attraction.properties.elevator) {
-    //   link.innerHTML += `${attraction.properties.elevator}&nbsp;&nbsp;`
-    // };
-    // if (attraction.properties.guideDog) {
-    //   link.innerHTML += `${attraction.properties.guideDog}&nbsp;&nbsp;`
-    // };
-    // if (attraction.properties.audioGuide) {
-    //   link.innerHTML += `${attraction.properties.audioGuide}&nbsp;&nbsp;`
-    // };
-    // if (attraction.properties.guidedTour) {
-    //   link.innerHTML += `${attraction.properties.guidedTour}&nbsp;&nbsp;`
-    // };
+    if (attraction.properties.MustSee) {
+      link.innerHTML += `${attraction.properties.MustSee}`;
+    }
 
     /* Add details to the individual listing. */
     const details = listing.appendChild(document.createElement("div"));

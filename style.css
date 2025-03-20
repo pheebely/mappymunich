@@ -5,7 +5,7 @@ body { margin: 3% 0; padding: 0; height: 90vh;
 p {
     font-family: 'Din Pro Medium', sans-serif;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 14px;
 
 }
 
@@ -302,7 +302,7 @@ footer {
 .grid-item p {
     font-family: 'Inter Tight', sans-serif;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 14px;
     word-wrap: break-word;
     text-align: left;
     margin: 10px 25px;
