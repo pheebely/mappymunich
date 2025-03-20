@@ -71,9 +71,10 @@
     vertical-align: middle;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 600px) {
     .mapLegend {
-        display: none;
+        bottom: 37%;
+        width: fit-content;
     }
   }
 
