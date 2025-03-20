@@ -57,6 +57,7 @@ text-align: center;
   transition-property: max-height;
   visibility: hidden;
   transition: 300ms ease-in;
+  z-index: 10;
 
 }
 
