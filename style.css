@@ -301,7 +301,7 @@ footer {
 .textmarker-effect {
     /* background: linear-gradient(to bottom, #f1ede000 40%, #f1bc4164 50%, #f1bc419a 90%); */
     /* padding: 2px 3px 2px 0; */
-    background: url(/images/wave.png) repeat-x; 
+    background: url(./images/wave.png) repeat-x; 
     background-size: 14px; background-position: 0px;
     padding-bottom: 28px;
     transition: all ease 0.5s;
